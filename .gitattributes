@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.ttf binary
+# Preserve the upstream license verbatim, including its existing whitespace.
+public/fonts/OFL.txt -whitespace

@@ -1,0 +1,52 @@
+[
+  {
+    "path": "public/art/approve.png",
+    "bytes": 120697,
+    "sha256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4"
+  },
+  {
+    "path": "public/art/background.png",
+    "bytes": 3447119,
+    "sha256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928"
+  },
+  {
+    "path": "public/art/defer.png",
+    "bytes": 118975,
+    "sha256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2"
+  },
+  {
+    "path": "public/art/note.png",
+    "bytes": 2298027,
+    "sha256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179"
+  },
+  {
+    "path": "public/art/paper-mobile.png",
+    "bytes": 2085205,
+    "sha256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b"
+  },
+  {
+    "path": "public/art/paper.png",
+    "bytes": 1925065,
+    "sha256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01"
+  },
+  {
+    "path": "public/art/reject.png",
+    "bytes": 118472,
+    "sha256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb"
+  },
+  {
+    "path": "public/art/written_reply.png",
+    "bytes": 122836,
+    "sha256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343"
+  },
+  {
+    "path": "public/fonts/OFL.txt",
+    "bytes": 5176,
+    "sha256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e"
+  },
+  {
+    "path": "public/fonts/wenkai.woff2",
+    "bytes": 5305668,
+    "sha256": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe"
+  }
+]
