@@ -50,4 +50,18 @@ IAB 用于首屏与批示状态的实际检查；可重复测试与指定尺寸�
 
 未执行真实手机硬件、Safari / Firefox、屏幕阅读器人工验收或长期玩家试玩。自动测试可证明操作与调度，不等于所有文学分支均经人工逐字审稿。12 条链后两阶段会汇合，日常短函不是完整长支线；主体后四类循环函会重复主题。存档只支持单浏览器单局，不做多标签并发同步。
 
-发布验证见后续本文件的线上记录及 GitHub Actions 状态。
+## 发布状态（2026-10-20，北京时间）
+
+**BLOCKED：正式网页尚未完成发布，不能视为全部收工。**
+
+- 公开仓库：[seiya058904/Dear-Mayor](https://github.com/seiya058904/Dear-Mayor)。About 描述、Homepage、六个 topics、默认分支 main 均已配置。
+- Pages 已设置 GitHub Actions 发布、HTTPS enforced；目标地址为 `https://seiya058904.github.io/Dear-Mayor/`。
+- 首次代码提交 `68a5998f50623618a9036373c4f270b8d1c1ede2` 的 [工作流](https://github.com/seiya058904/Dear-Mayor/actions/runs/39281492765) 已生成 `github-pages` 部署包（15,191,570 字节）。
+- **CONFIRMED：**实际 verify 作业日志记录类型检查完成、14 项引擎测试零失败、5 项浏览器测试通过、产物上传成功。云端产物版本 `ac6f75899129` 与本地构建一致。
+- **BLOCKED：**GitHub 状态接口仍返回 queued，deploy 作业尚无可取日志；正式站点 `build-info.json` 返回 404。部署环境无待人工批准项，不需要用户补授权。
+- [GitHub 官方状态](https://www.githubstatus.com/) 在 2026-10-19 15:49 UTC（北京时间 23:49）起报告 Actions / Pages degraded performance，15:50 UTC 又报告 Webhooks 降级。本次首次推送为 15:54 UTC，处于该事故窗口。
+- **UNVERIFIED：**正式网址上的桌面/手机操作、离线刷新及最终部署提交。不能把本地与云端测试通过等同于生产页面已经可玩。
+
+### 恢复后收尾
+
+保留现有工作流队列，不因外部故障重写游戏或关闭检查。恢复后检查最新 `main` 对应的 Actions；若因事故失败，仅重跑失败作业。待 Pages 可访问后比对 `build-info.json` 的 commit 与远端 main，再设置 `GAME_URL=https://seiya058904.github.io/Dear-Mayor/` 执行 `npm run test:e2e`，实际打开正式页面检查。将结果更新到本记录后，才能称上线验收完成。
