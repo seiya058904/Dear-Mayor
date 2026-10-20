@@ -5,9 +5,8 @@ import {newGame,decide} from '../src/game/engine';
 import {documents} from '../src/content';
 const key='dear-mayor:save:v1';
 
-test('v4 catalog18 pending retains original sender prose and A B C after cancel and reload',async({page})=>{
- await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');
- for(const fixture of fixtures){
+for(const fixture of fixtures)test(`v4 catalog18 pending retains original sender prose and A B C after cancel and reload: ${fixture.name}`,async({page})=>{
+  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');
   const raw=JSON.stringify(fixture.state);
   await page.evaluate(({key,raw})=>{localStorage.clear();localStorage.setItem(key,raw)},{key,raw});await page.reload();
   await expect(page.locator('article')).toHaveAttribute('data-letter-id',fixture.name);
@@ -21,7 +20,6 @@ test('v4 catalog18 pending retains original sender prose and A B C after cancel 
   await page.getByRole('button',{name:'批示回复',exact:true}).click();await page.locator('[data-choice]').nth(2).click();
   await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.length,key)).toBe(fixture.state.history.length+1);
   expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.at(-1).result,key)).toBe(fixture.document.replies[2].result);
- }
 });
 
 for(const viewport of [{width:1672,height:941},{width:1366,height:768},{width:390,height:844}])test(`v4 new prose and lossless paper readable ${viewport.width}`,async({page})=>{

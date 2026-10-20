@@ -2,6 +2,10 @@
 
 日期：2026-10-20（北京时间）。本轮为本地候选，未提交、推送或发布；未使用子代理。
 
+## GitHub 同步检查点补记
+
+首个 V4 提交 `a05b5fa` 已正常推送；该次 Actions 的 check/build 通过，但浏览器验收中把 31 份旧 pending 夹具放在同一项测试，Linux CI 在默认 30 秒测试时限报超时（34 项通过、1 项失败、1 项未运行），因此部署跳过。后续仅将这 31 份夹具拆为逐份测试，保留原断言与每项时限；没有改游戏正文、引擎、图片或发布工作流。最终 Actions、Pages 版本和线上交互仍须按最终提交 SHA 单独核验。
+
 ## 实际基线与范围
 
 开工 `git status --short` 为空；`git fetch origin` 后 HEAD/main/origin/main 均为 `7a89bba65e1f562d5e6ed46e57bf25eb6324aa9c`。没有需要覆盖或暂存的用户工作。README 基线 SHA-256 为 `66B4D574B69470D695F0F0E1DB3C40B494644143603E34BFAA7004EF7892F3DC`；本轮不编辑 README。源插画、字体、冻结 v1/v2/v3、历史 delta 与既有正文快照均保留。
