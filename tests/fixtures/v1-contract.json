@@ -1,0 +1,13 @@
+{
+  "commit": "fa76a25c3b31b3c1f4dd69c9d0531cc7ddaef61c",
+  "hashes": {
+    "game/engine.ts": "f7b2b1a616323736684c1e107b59578721151f31c12c912143b15bb6906cc40d",
+    "game/types.ts": "24c76d89bfb1488e7c48785afaf496a1176ff77575048b7adfeb4c13a88a9461",
+    "content/index.ts": "28fe4dcd37610dca7fcc6da320243dcce631743f85dfb7d0e99cecef3499b4e5",
+    "content/author.ts": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+    "content/daily.ts": "521319769c1c2f6f7f94b7e3552c40afc83db941b58bd1cacdc7f2029a91bb87",
+    "content/chains-a.ts": "dbc0683442bfe1f0a0040400329f410ece9d171052f510fdbe852dadeb599ab2",
+    "content/chains-b.ts": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+    "content/chains-c.ts": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e"
+  }
+}

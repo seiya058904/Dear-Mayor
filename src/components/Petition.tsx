@@ -34,33 +34,12 @@ export const Petition = forwardRef<
       </h1>
       <div className="letter-source">来源：{doc.sender}</div>
       <div
-        className={`letter-reading ${doc.id === "bridge/start" ? "first-letter" : ""}`}
+        className="letter-reading"
         tabIndex={0}
         aria-label="文书正文"
       >
         <p className="salutation">{doc.salutation ?? "镇长大人："}</p>
-        {doc.body.map((p, i) => (
-          <p key={i}>
-            {doc.id === "bridge/start"
-              ? (i === 0
-                  ? [
-                      "北渡口之大桥，年久失修，桥面木板多已朽烂，",
-                      "近日往来车马渐多，行经时屡有颠簸，部分板面已",
-                      "出现断裂之虞。若不及时修缮，恐秋雨一至，桥身",
-                      "更为损坏，不仅妨碍商旅往来，亦恐生险情。",
-                    ]
-                  : [
-                      "恳请镇政厅批准修缮事宜，使工匠们尽早动工，",
-                      "以保行旅平安。",
-                    ]
-                ).map((line, n) => (
-                  <span className="reference-line" key={n}>
-                    {line}
-                  </span>
-                ))
-              : p}
-          </p>
-        ))}
+        {doc.body.map((p, i) => <p key={i}>{p}</p>)}
       </div>
       <div className="signature">{doc.sender}</div>
       {departing && departing !== "defer" && (

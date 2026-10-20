@@ -1,0 +1,25 @@
+{
+  "description": "Batch 02 working-tree content version 3, 316 authored nodes",
+  "hashes": {
+    "game/engine.ts": "77b4dd3fc6a7a7c835a77e44cb3896c056925b766f8223b8e3cdc654532d1cf3",
+    "game/types.ts": "701ff594ef2f2303a1733f71474a8a469646db38e6fd6fb40d64e687effc39c0",
+    "content/author.ts": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+    "content/chains-a.ts": "a1e22d69c66c1a3de94ab403ad277cc1b57e90ddc35cd595d21e3b7468fb06df",
+    "content/chains-b.ts": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+    "content/chains-c.ts": "645e65221ea5827176ac52235570f505aa0242faf188e3421bcdff2df6e35e24",
+    "content/daily.ts": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+    "content/echoes.ts": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+    "content/index.ts": "fc9cd42d42415af3a8471588ee0d0f2cacd7cea35084ba146f8393bbae1ba905",
+    "content/second-chains-a.ts": "7b2a247a849fe0d2bde9db4fdcc278c3b06875d81f304956077039c574fc0d0b",
+    "content/second-chains-b.ts": "e3fdbf7f9a4999c93fef2824ff0e50fc5ec536033d471e5e34bd57abb13dca53",
+    "content/second-chains-c.ts": "16e4ad4ddc473e68fc1665d64be6fdc6bd967f0e3134342d2cbf61d79624b0d6",
+    "content/second-chains-d.ts": "cd61eb825687945e18da3f8c4ea1ed2ac7720b16632c5792a5d034617d5d7361",
+    "content/second-echoes.ts": "512fb4f9011e47527a90c23630dc87dda98cc2df50944d528239b129d3ff35e0",
+    "content/second-letters.ts": "1ff60b8634d03406af10890212838a292fdb78e349bba24507e796514b898b9a",
+    "content/town-chains-a.ts": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+    "content/town-chains-b.ts": "6eb44f335a5639699bf8a5049c8feab3c97c0deba49fb7e98c7d983fa1ef0caf",
+    "content/town-chains-c.ts": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+    "content/town-chains-d.ts": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+    "content/town-letters.ts": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d"
+  }
+}

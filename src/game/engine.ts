@@ -1,9 +1,17 @@
-import { chains, daily, documents } from "../content";
+import { documents } from "../content";
+import { catalogAt, latestCatalogRevision } from "./catalog";
 import type { Action, Branch, Document, GameState } from "./types";
 
-export function newGame(seed = 6271): GameState {
+export function newGame(seed = 6271, revision = latestCatalogRevision): GameState {
+  catalogAt(revision);
   return {
-    version: 1,
+    version: 2,
+    contentVersion: 4,
+    v3Length: 0,
+    initialCatalogRevision: revision,
+    catalogRevision: revision,
+    v2Length: 0,
+    legacyLength: 0,
     day: 1,
     inDay: 0,
     current: "bridge/start",
@@ -57,15 +65,11 @@ export function currentDocument(state: GameState): Document {
     const n = Number(state.current.split("/")[1]);
     const [title, body, request, a, b, c] =
       seasonalRequests[n % seasonalRequests.length];
-    const last = state.history.at(-1);
     return {
       id: state.current,
       title,
       sender: "镇厅书记官露西安",
-      body: [
-        `这是第${Math.floor(n / seasonalRequests.length) + 1}轮换季的日常来函。${last ? `前次来信的处理已经记下：${last.result}` : ""}`,
-        body,
-      ],
+      body: [body],
       results: {
         approve: `您准许${request}，书记官已照办。`,
         reject: `您正式拒绝${request}，书记官改以现有物件应付。`,
@@ -77,18 +81,40 @@ export function currentDocument(state: GameState): Document {
       })),
     };
   }
-  const doc = documents[state.current];
-  if (!doc) throw new Error(`Unknown document: ${state.current}`);
+  const catalog = catalogAt(state.catalogRevision);
+  const source = documents[state.current];
+  const contract = catalog.letters[state.current];
+  if (!source || !contract) throw new Error(`Unknown document: ${state.current}`);
+  const doc = { ...source, ...contract };
   const previous = doc.chain ? state.facts[doc.chain] : undefined;
-  if (previous && (doc.stage! >= 3 || state.current.endsWith("/reply"))) {
+  if (previous && catalog.chains.find(c => c.id === doc.chain)?.quotePrevious !== false &&
+      state.current.endsWith("/reply")) {
     return { ...doc, body: [previous.lastResult, ...doc.body] };
   }
   return doc;
 }
 
+/** Stable ID ranking: inserting an unrelated item does not reshuffle every candidate. */
+export function rank(id: string, seed: number) {
+  let h = seed | 0;
+  for (const c of id) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  h ^= h >>> 16;
+  return h >>> 0;
+}
+
+export function eligibleDay(id: string, s: GameState): number {
+  const contract = catalogAt(s.catalogRevision).letters[id];
+  if (!contract) return Infinity;
+  const gate = contract.requires;
+  if (!gate) return 1;
+  const source = s.history.find(h => h.id === gate.id);
+  return source && gate.actions.includes(source.action) ? source.day + gate.days : Infinity;
+}
+
 function selectNext(s: GameState) {
+  const {chains, letters, standaloneIds} = catalogAt(s.catalogRevision);
   // One new cast member per day, with overdue follow-ups taking the remaining slots.
-  const starter = chains.find((c, i) => i < s.day && !s.started.includes(c.id));
+  const starter = chains.find((c, i) => i < s.day && !s.started.includes(c.id) && eligibleDay(`${c.id}/start`,s) <= s.day);
   if (starter && s.inDay === 0) {
     s.started.push(starter.id);
     s.current = `${starter.id}/start`;
@@ -102,20 +128,27 @@ function selectNext(s: GameState) {
     s.current = due.id;
     return;
   }
-  const available = daily
-    .map((_, i) => `daily/${i}`)
-    .filter((id) => !s.readDaily.includes(id));
+  const read = new Set(s.readDaily);
+  const unread = standaloneIds.filter(id => !read.has(id));
+  const available = unread.filter(id => eligibleDay(id, s) <= s.day)
+    // Rank once per candidate rather than re-hashing both IDs on every comparison.
+    .map(id => ({id, rank: rank(id, s.seed)}))
+    .sort((a, b) => a.rank - b.rank || a.id.localeCompare(b.id))
+    .map(candidate => candidate.id);
   if (available.length) {
-    const id = available[(s.seed + s.history.length * 7) % available.length];
+    // Prefer a different sender and form when several letters can arrive today.
+    const previous = letters[s.history.at(-1)?.id ?? ""];
+    const id = available.find(id => letters[id].sender !== previous?.sender &&
+      (letters[id].kind ?? "letter") !== (previous?.kind ?? "letter")) ?? available[0];
     s.readDaily.push(id);
     s.current = id;
     return;
   }
   // Do not replay old letters to fill a gap. Let the printed date move to the next arrival.
-  const nextStart = chains.findIndex((c) => !s.started.includes(c.id));
   const future = Math.min(
     ...s.pending.map((p) => p.due),
-    nextStart < 0 ? Infinity : nextStart + 1,
+    ...unread.map(id => eligibleDay(id, s)),
+    ...chains.map((c,i)=>s.started.includes(c.id) ? Infinity : Math.max(i+1,eligibleDay(`${c.id}/start`,s))),
   );
   if (Number.isFinite(future)) {
     s.day = Math.max(s.day + 1, future);
@@ -131,7 +164,9 @@ export function decide(
   expectedId: string,
   action: Action,
   reply?: number,
+  nextRevision = latestCatalogRevision,
 ): GameState {
+  if (!Number.isInteger(nextRevision) || nextRevision < state.catalogRevision || nextRevision > latestCatalogRevision) return state;
   if (
     state.current !== expectedId ||
     state.history.some((h) => h.id === expectedId)
@@ -149,13 +184,17 @@ export function decide(
     action === "written_reply"
       ? doc.replies[reply!].result
       : doc.results[action];
-  const s = structuredClone(state);
+  // History entries are immutable. Avoid cloning the entire transcript on every choice.
+  const s: GameState = { ...state, catalogRevision: nextRevision, history: [...state.history],
+    pending: [...state.pending], started: [...state.started],
+    readDaily: [...state.readDaily], facts: { ...state.facts } };
   s.history.push({
     id: expectedId,
     day: s.day,
     action,
     ...(action === "written_reply" ? { reply } : {}),
     result,
+    nextCatalogRevision: nextRevision,
   });
   if (doc.chain) {
     const branch: Branch = action === "written_reply" ? "reply" : action;
@@ -175,7 +214,7 @@ export function decide(
     if (suffix)
       s.pending.push({
         id: `${doc.chain}/${suffix}`,
-        due: s.day + 2,
+        due: s.day + (catalogAt(state.catalogRevision).chains.find(c => c.id === doc.chain)?.delays?.[doc.stage! - 1] ?? 2),
         order: s.history.length,
       });
   }
@@ -199,5 +238,7 @@ export function dateLabel(day: number) {
         ? "十"
         : (n < 20 ? "十" : digits[Math.floor(n / 10)] + "十") +
           (n % 10 ? digits[n % 10] : "");
-  return `${months[Math.floor((day + 4) / 30) % months.length]}第${number}日`;
+  const year = Math.floor((day + 4) / 180) + 1;
+  const yearNumber = year < 10 ? digits[year] : year < 20 ? `十${year % 10 ? digits[year % 10] : ''}` : year < 100 ? `${digits[Math.floor(year / 10)]}十${year % 10 ? digits[year % 10] : ''}` : String(year);
+  return `${year > 1 ? `第${yearNumber}年·` : ''}${months[Math.floor((day + 4) / 30) % months.length]}第${number}日`;
 }

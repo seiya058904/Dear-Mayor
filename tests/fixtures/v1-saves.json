@@ -1,0 +1,4783 @@
+[
+  {
+    "name": "seed-6271-after-0-plan-0",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 0,
+      "current": "bridge/start",
+      "seed": 6271,
+      "history": [],
+      "pending": [],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [],
+      "facts": {},
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-1-plan-0",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 1,
+      "current": "daily/6",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "bridge/approve",
+          "due": 3,
+          "order": 1
+        }
+      ],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [
+        "daily/6"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "approve",
+          "lastResult": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。",
+          "lastDay": 1
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-1-plan-1",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 1,
+      "current": "daily/6",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝了修桥经费，玛塔暂时封住危段，请行人绕渡口。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "bridge/reject",
+          "due": 3,
+          "order": 1
+        }
+      ],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [
+        "daily/6"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reject",
+          "lastResult": "镇里正式拒绝了修桥经费，玛塔暂时封住危段，请行人绕渡口。",
+          "lastDay": 1
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-1-plan-2",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 1,
+      "current": "daily/6",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "defer",
+          "result": "行会没有收到回音，玛塔自发在危段拉起绳子，修缮尚未开工。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "bridge/defer",
+          "due": 3,
+          "order": 1
+        }
+      ],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [
+        "daily/6"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "defer",
+          "lastResult": "行会没有收到回音，玛塔自发在危段拉起绳子，修缮尚未开工。",
+          "lastDay": 1
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-1-plan-3",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 1,
+      "current": "daily/6",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "镇里批示先换危板，商队交来木料，危险桥段已加固。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "bridge/reply",
+          "due": 3,
+          "order": 1
+        }
+      ],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [
+        "daily/6"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "镇里批示先换危板，商队交来木料，危险桥段已加固。",
+          "lastDay": 1
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-1-plan-4",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 1,
+      "current": "daily/6",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "玛塔依批示验桥并标出危板，渡船暂代通行；桥还未修好。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "bridge/reply",
+          "due": 3,
+          "order": 1
+        }
+      ],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [
+        "daily/6"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "玛塔依批示验桥并标出危板，渡船暂代通行；桥还未修好。",
+          "lastDay": 1
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-1-plan-5",
+    "state": {
+      "version": 1,
+      "day": 1,
+      "inDay": 1,
+      "current": "daily/6",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "修桥获准，旧木留下做学徒的练习料，新桥面已经铺妥。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "bridge/reply",
+          "due": 3,
+          "order": 1
+        }
+      ],
+      "started": [
+        "bridge"
+      ],
+      "readDaily": [
+        "daily/6"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "修桥获准，旧木留下做学徒的练习料，新桥面已经铺妥。",
+          "lastDay": 1
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-1-after-10-plan-6",
+    "state": {
+      "version": 1,
+      "day": 3,
+      "inDay": 2,
+      "current": "daily/23",
+      "seed": 1,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝了修桥经费，玛塔暂时封住危段，请行人绕渡口。"
+        },
+        {
+          "id": "daily/8",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许调整教堂清扫时辰与方法，来信人已照办。"
+        },
+        {
+          "id": "daily/16",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请木匠检查标记与火焰的距离。"
+        },
+        {
+          "id": "daily/24",
+          "day": 1,
+          "action": "defer",
+          "result": "有关核对并更新商会接待路线图的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "reject",
+          "result": "修钟经费被正式拒绝，阿尔诺没有动用镇款修钟。"
+        },
+        {
+          "id": "daily/7",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许按物品隐藏特征核对失主，来信人已照办。"
+        },
+        {
+          "id": "daily/18",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先准备柔软无尖端的草料。"
+        },
+        {
+          "id": "daily/28",
+          "day": 2,
+          "action": "defer",
+          "result": "有关誊清褪色的练习乐谱的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "reject",
+          "result": "拴桩未获批准，托比把薄荷留在牧场。"
+        },
+        {
+          "id": "bridge/reject",
+          "day": 3,
+          "action": "approve",
+          "result": "库存支梁获准借出，步行便道已经撑稳，马车仍走渡口。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "clock/reject",
+          "due": 4,
+          "order": 5
+        },
+        {
+          "id": "goat/reject",
+          "due": 5,
+          "order": 9
+        },
+        {
+          "id": "bridge/continuation",
+          "due": 5,
+          "order": 10
+        }
+      ],
+      "started": [
+        "bridge",
+        "clock",
+        "goat"
+      ],
+      "readDaily": [
+        "daily/8",
+        "daily/16",
+        "daily/24",
+        "daily/7",
+        "daily/18",
+        "daily/28",
+        "daily/23"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reject",
+          "lastResult": "库存支梁获准借出，步行便道已经撑稳，马车仍走渡口。",
+          "lastDay": 3
+        },
+        "clock": {
+          "branch": "reject",
+          "lastResult": "修钟经费被正式拒绝，阿尔诺没有动用镇款修钟。",
+          "lastDay": 2
+        },
+        "goat": {
+          "branch": "reject",
+          "lastResult": "拴桩未获批准，托比把薄荷留在牧场。",
+          "lastDay": 3
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-935-after-20-plan-6",
+    "state": {
+      "version": 1,
+      "day": 6,
+      "inDay": 0,
+      "current": "flag/start",
+      "seed": 935,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "镇里批示先换危板，商队交来木料，危险桥段已加固。"
+        },
+        {
+          "id": "daily/14",
+          "day": 1,
+          "action": "defer",
+          "result": "有关展示正确书写地址的小样的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/20",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝借用完整陶器记录磨坊雨量，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/28",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许誊清褪色的练习乐谱，来信人已照办。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "店铺分担修钟费，钟锤校准后不再多响。"
+        },
+        {
+          "id": "daily/13",
+          "day": 2,
+          "action": "defer",
+          "result": "有关在学堂窗内展示孩子的画的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/29",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝区分公用与私人餐具存放，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/12",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许分类回收旧纸供安全再用，来信人已照办。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "废纸试用苦浆糊后，薄荷不愿再啃告示。"
+        },
+        {
+          "id": "bridge/reply",
+          "day": 3,
+          "action": "defer",
+          "result": "巡看申请未获回音，伊沃先替师傅看守工具。"
+        },
+        {
+          "id": "daily/21",
+          "day": 3,
+          "action": "reject",
+          "result": "镇里正式拒绝给花摊添置分用途的篮筐，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/15",
+          "day": 3,
+          "action": "approve",
+          "result": "镇里准许用缝线记区分客栈枕套，来信人已照办。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "卫兵牵绳让鸭群过街，车马停留片刻。"
+        },
+        {
+          "id": "clock/reply",
+          "day": 4,
+          "action": "defer",
+          "result": "告示申请无回音，居民仍传各自听到的版本。"
+        },
+        {
+          "id": "daily/1",
+          "day": 4,
+          "action": "reject",
+          "result": "镇里正式拒绝借梯重新挂正学堂门牌，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/6",
+          "day": 4,
+          "action": "approve",
+          "result": "镇里准许给染坊晾杆设置固定标记，来信人已照办。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "驿夫们吃过面包，写回很适合赶路的评语。"
+        },
+        {
+          "id": "goat/reply",
+          "day": 5,
+          "action": "defer",
+          "result": "学堂申请无回音，孩子仍在远处念诗给羊听。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "reject",
+          "result": "花地申请被拒，贝拉把花移进自家旧陶盆。"
+        },
+        {
+          "id": "daily/18",
+          "day": 5,
+          "action": "approve",
+          "result": "镇里准许由托比在学堂教一次草编，来信人已照办。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "ducks/reply",
+          "due": 6,
+          "order": 13
+        },
+        {
+          "id": "clock/continuation",
+          "due": 6,
+          "order": 14
+        },
+        {
+          "id": "bread/reply",
+          "due": 7,
+          "order": 17
+        },
+        {
+          "id": "goat/continuation",
+          "due": 7,
+          "order": 18
+        },
+        {
+          "id": "bridge/finale",
+          "due": 7,
+          "order": 19
+        }
+      ],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag"
+      ],
+      "readDaily": [
+        "daily/14",
+        "daily/20",
+        "daily/28",
+        "daily/13",
+        "daily/29",
+        "daily/12",
+        "daily/21",
+        "daily/15",
+        "daily/1",
+        "daily/6",
+        "daily/18"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "花地申请被拒，贝拉把花移进自家旧陶盆。",
+          "lastDay": 5
+        },
+        "clock": {
+          "branch": "reply",
+          "lastResult": "告示申请无回音，居民仍传各自听到的版本。",
+          "lastDay": 4
+        },
+        "goat": {
+          "branch": "reply",
+          "lastResult": "学堂申请无回音，孩子仍在远处念诗给羊听。",
+          "lastDay": 5
+        },
+        "ducks": {
+          "branch": "reply",
+          "lastResult": "卫兵牵绳让鸭群过街，车马停留片刻。",
+          "lastDay": 4
+        },
+        "bread": {
+          "branch": "reply",
+          "lastResult": "驿夫们吃过面包，写回很适合赶路的评语。",
+          "lastDay": 5
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-42-after-79-plan-6",
+    "state": {
+      "version": 1,
+      "day": 20,
+      "inDay": 3,
+      "current": "daily/7",
+      "seed": 42,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "defer",
+          "result": "行会没有收到回音，玛塔自发在危段拉起绳子，修缮尚未开工。"
+        },
+        {
+          "id": "daily/17",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝在约定的午后时段练习短曲，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/26",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许在书库入口设小失物篮，来信人已照办。"
+        },
+        {
+          "id": "daily/3",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先停机检查磨损再定材料。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "defer",
+          "result": "阿尔诺没有收到修钟答复，钟楼暂按旧样敲响。"
+        },
+        {
+          "id": "daily/21",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝给花摊添置分用途的篮筐，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/0",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许给书库猫借一个浅木篮，来信人已照办。"
+        },
+        {
+          "id": "daily/12",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：全部重新制浆后再送学堂。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "defer",
+          "result": "拴桩没有回音，托比牵着薄荷站在集市外等候。"
+        },
+        {
+          "id": "bridge/defer",
+          "day": 3,
+          "action": "reject",
+          "result": "专班未获批准，孩子由家长结伴绕行。"
+        },
+        {
+          "id": "daily/10",
+          "day": 3,
+          "action": "approve",
+          "result": "镇里准许借绳固定鱼摊遮阳布，来信人已照办。"
+        },
+        {
+          "id": "daily/25",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：另备夜间轻敲木片供访客使用。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "defer",
+          "result": "过街申请没有答复，鸭群仍自行寻找过街空隙。"
+        },
+        {
+          "id": "clock/defer",
+          "day": 4,
+          "action": "reject",
+          "result": "铜扣诱引未获准，阿尔诺只关好钟楼小窗。"
+        },
+        {
+          "id": "daily/28",
+          "day": 4,
+          "action": "approve",
+          "result": "镇里准许誊清褪色的练习乐谱，来信人已照办。"
+        },
+        {
+          "id": "daily/13",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：让孩子自己写作品名与日期。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "defer",
+          "result": "试吃没有回音，修士的评语仍在街坊流传。"
+        },
+        {
+          "id": "goat/defer",
+          "day": 5,
+          "action": "reject",
+          "result": "河边放牧未获准，托比牵羊回了旧牧场。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "approve",
+          "result": "岸边留下小花地，通行路面没有缩窄。"
+        },
+        {
+          "id": "daily/31",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：下次来访时共同品尝果酱。"
+        },
+        {
+          "id": "flag/start",
+          "day": 6,
+          "action": "defer",
+          "result": "换旗没有答复，卫兵仍被偶尔认作栗子摊。"
+        },
+        {
+          "id": "ducks/defer",
+          "day": 6,
+          "action": "reject",
+          "result": "说明未获准，贝拉只好逐个解释鸭脚印。"
+        },
+        {
+          "id": "clock/continuation",
+          "day": 6,
+          "action": "approve",
+          "result": "婚礼获准在正午后敲小铃，大钟照常报时。"
+        },
+        {
+          "id": "daily/20",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：以现有完好水罐替代另借器具。"
+        },
+        {
+          "id": "garden/start",
+          "day": 7,
+          "action": "defer",
+          "result": "花地没有回音，艾琳只浇现有的花，不再扩大。"
+        },
+        {
+          "id": "bread/defer",
+          "day": 7,
+          "action": "reject",
+          "result": "访炉未获准，彼得自己记下每炉烘烤时辰。"
+        },
+        {
+          "id": "goat/continuation",
+          "day": 7,
+          "action": "approve",
+          "result": "旧申诉获准补交，书记官重新核查事实。"
+        },
+        {
+          "id": "bridge/finale",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "渡口与工棚各存一份巡查簿，交接有据。"
+        },
+        {
+          "id": "well/start",
+          "day": 8,
+          "action": "defer",
+          "result": "检修没有回音，罗温先封存磨损旧绳，居民改取邻井。"
+        },
+        {
+          "id": "flag/defer",
+          "day": 8,
+          "action": "reject",
+          "result": "代还请求被拒，钱暂由书记官封存等认领。"
+        },
+        {
+          "id": "ducks/continuation",
+          "day": 8,
+          "action": "approve",
+          "result": "晾衣绳移高，衣裙不再扫过鸭背。"
+        },
+        {
+          "id": "clock/finale",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "钟楼改为异响时检查，停钟前须说明缘由。"
+        },
+        {
+          "id": "post/start",
+          "day": 9,
+          "action": "defer",
+          "result": "路牌没有回音，驿夫仍须逐户核对姓名。"
+        },
+        {
+          "id": "garden/defer",
+          "day": 9,
+          "action": "reject",
+          "result": "查契请求被拒，艾琳将照料范围限于现有花株。"
+        },
+        {
+          "id": "bread/continuation",
+          "day": 9,
+          "action": "approve",
+          "result": "艾达有了稳固矮凳，揉面不再踮脚。"
+        },
+        {
+          "id": "goat/finale",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "学徒做了旧板箱，托比习惯了随手盖好。"
+        },
+        {
+          "id": "wedding/start",
+          "day": 10,
+          "action": "defer",
+          "result": "借椅没有回音，两家仍在清点家中椅子。"
+        },
+        {
+          "id": "well/defer",
+          "day": 10,
+          "action": "reject",
+          "result": "说明未获准，罗温逐个解释绳损缘由。"
+        },
+        {
+          "id": "flag/continuation",
+          "day": 10,
+          "action": "approve",
+          "result": "卫兵在值房练轻声交接，街坊帮助确认音量。"
+        },
+        {
+          "id": "ducks/finale",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "约定只有三条，大家都能记住。"
+        },
+        {
+          "id": "warmth/start",
+          "day": 11,
+          "action": "defer",
+          "result": "求助没有收到答复，伊莎先送去一条备用毛毯。"
+        },
+        {
+          "id": "post/defer",
+          "day": 11,
+          "action": "reject",
+          "result": "认领条未获准，信件密封留站等待本人来问。"
+        },
+        {
+          "id": "garden/continuation",
+          "day": 11,
+          "action": "approve",
+          "result": "花旁添了共用长凳，过路者可以休息。"
+        },
+        {
+          "id": "bread/finale",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "学徒簿保留成果与建议，艾达知道下一炉要试什么。"
+        },
+        {
+          "id": "fair/start",
+          "day": 12,
+          "action": "defer",
+          "result": "展示位没有答复，商会先拉开通行空隙。"
+        },
+        {
+          "id": "wedding/defer",
+          "day": 12,
+          "action": "reject",
+          "result": "暂存未获准，米拉请客人将多余椅子放回自家。"
+        },
+        {
+          "id": "well/continuation",
+          "day": 12,
+          "action": "approve",
+          "result": "公共桶有了带盖高架，远离泥地存放。"
+        },
+        {
+          "id": "flag/finale",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "新兵复述并签名，规矩不再只是抄写。"
+        },
+        {
+          "id": "warmth/defer",
+          "day": 13,
+          "action": "defer",
+          "result": "确认也没有回音，伊莎继续探望而不许诺结果。"
+        },
+        {
+          "id": "post/continuation",
+          "day": 13,
+          "action": "reject",
+          "result": "新格未获准，驿夫继续在现有簿中标记待核。"
+        },
+        {
+          "id": "garden/finale",
+          "day": 13,
+          "action": "approve",
+          "result": "种子留在学堂，明春由愿意照料的人领取。"
+        },
+        {
+          "id": "daily/30",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先读原结尾再区分各自创作。"
+        },
+        {
+          "id": "fair/defer",
+          "day": 14,
+          "action": "defer",
+          "result": "冠架申请无回音，商会先把它挪回摊内。"
+        },
+        {
+          "id": "wedding/continuation",
+          "day": 14,
+          "action": "reject",
+          "result": "借台未获准，米拉在自家小台分段改衣。"
+        },
+        {
+          "id": "well/finale",
+          "day": 14,
+          "action": "approve",
+          "result": "取水设施有了检查簿，平安无事也据实记下。"
+        },
+        {
+          "id": "daily/14",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：让不识字者可请驿夫口述代写。"
+        },
+        {
+          "id": "warmth/continuation",
+          "day": 15,
+          "action": "defer",
+          "result": "改衣没有回音，少年先用软带收住长袖。"
+        },
+        {
+          "id": "post/finale",
+          "day": 15,
+          "action": "reject",
+          "result": "交接办法未获准，塞缪尔亲自带新人认路。"
+        },
+        {
+          "id": "daily/27",
+          "day": 15,
+          "action": "approve",
+          "result": "镇里准许在清扫休息处备小扇与饮水，来信人已照办。"
+        },
+        {
+          "id": "daily/22",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：将袜子留作备用而不强作礼物。"
+        },
+        {
+          "id": "fair/continuation",
+          "day": 16,
+          "action": "defer",
+          "result": "轮值没有答复，菲恩先请各摊收回自家杂物。"
+        },
+        {
+          "id": "wedding/finale",
+          "day": 16,
+          "action": "reject",
+          "result": "借物簿未获准，米拉继续保留每次独立借条。"
+        },
+        {
+          "id": "daily/19",
+          "day": 16,
+          "action": "approve",
+          "result": "镇里准许借车安全移走门中迎宾石，来信人已照办。"
+        },
+        {
+          "id": "daily/5",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：用旧茶盒分格收好纽扣。"
+        },
+        {
+          "id": "warmth/finale",
+          "day": 17,
+          "action": "defer",
+          "result": "物柜没有回音，伊莎将备用毛毯妥善收存。"
+        },
+        {
+          "id": "daily/11",
+          "day": 17,
+          "action": "reject",
+          "result": "镇里正式拒绝修补学徒的工作手套，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/23",
+          "day": 17,
+          "action": "approve",
+          "result": "镇里准许为客栈糖罐配一把专用小勺，来信人已照办。"
+        },
+        {
+          "id": "daily/15",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：请裁缝用不硌人的线缝在边角。"
+        },
+        {
+          "id": "fair/finale",
+          "day": 18,
+          "action": "defer",
+          "result": "鸣谢无回音，奥斯温先把漏记的人补回原稿。"
+        },
+        {
+          "id": "daily/18",
+          "day": 18,
+          "action": "reject",
+          "result": "镇里正式拒绝由托比在学堂教一次草编，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/4",
+          "day": 18,
+          "action": "approve",
+          "result": "镇里准许在蜂场外设置止步提示牌，来信人已照办。"
+        },
+        {
+          "id": "daily/29",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：私人餐具由主人自带自收。"
+        },
+        {
+          "id": "daily/6",
+          "day": 19,
+          "action": "defer",
+          "result": "有关给染坊晾杆设置固定标记的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/1",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝借梯重新挂正学堂门牌，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/8",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许调整教堂清扫时辰与方法，来信人已照办。"
+        },
+        {
+          "id": "daily/9",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先检查笔尖切口并调整蘸墨量。"
+        },
+        {
+          "id": "daily/16",
+          "day": 20,
+          "action": "defer",
+          "result": "有关给路灯添加安全的形状标记的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/24",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝核对并更新商会接待路线图，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/2",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许给厨房储物罐制作清晰标签，来信人已照办。"
+        }
+      ],
+      "pending": [],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag",
+        "garden",
+        "well",
+        "post",
+        "wedding",
+        "warmth",
+        "fair"
+      ],
+      "readDaily": [
+        "daily/17",
+        "daily/26",
+        "daily/3",
+        "daily/21",
+        "daily/0",
+        "daily/12",
+        "daily/10",
+        "daily/25",
+        "daily/28",
+        "daily/13",
+        "daily/31",
+        "daily/20",
+        "daily/30",
+        "daily/14",
+        "daily/27",
+        "daily/22",
+        "daily/19",
+        "daily/5",
+        "daily/11",
+        "daily/23",
+        "daily/15",
+        "daily/18",
+        "daily/4",
+        "daily/29",
+        "daily/6",
+        "daily/1",
+        "daily/8",
+        "daily/9",
+        "daily/16",
+        "daily/24",
+        "daily/2",
+        "daily/7"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "defer",
+          "lastResult": "渡口与工棚各存一份巡查簿，交接有据。",
+          "lastDay": 7
+        },
+        "clock": {
+          "branch": "defer",
+          "lastResult": "钟楼改为异响时检查，停钟前须说明缘由。",
+          "lastDay": 8
+        },
+        "goat": {
+          "branch": "defer",
+          "lastResult": "学徒做了旧板箱，托比习惯了随手盖好。",
+          "lastDay": 9
+        },
+        "ducks": {
+          "branch": "defer",
+          "lastResult": "约定只有三条，大家都能记住。",
+          "lastDay": 10
+        },
+        "bread": {
+          "branch": "defer",
+          "lastResult": "学徒簿保留成果与建议，艾达知道下一炉要试什么。",
+          "lastDay": 11
+        },
+        "flag": {
+          "branch": "defer",
+          "lastResult": "新兵复述并签名，规矩不再只是抄写。",
+          "lastDay": 12
+        },
+        "garden": {
+          "branch": "defer",
+          "lastResult": "种子留在学堂，明春由愿意照料的人领取。",
+          "lastDay": 13
+        },
+        "well": {
+          "branch": "defer",
+          "lastResult": "取水设施有了检查簿，平安无事也据实记下。",
+          "lastDay": 14
+        },
+        "post": {
+          "branch": "defer",
+          "lastResult": "交接办法未获准，塞缪尔亲自带新人认路。",
+          "lastDay": 15
+        },
+        "wedding": {
+          "branch": "defer",
+          "lastResult": "借物簿未获准，米拉继续保留每次独立借条。",
+          "lastDay": 16
+        },
+        "warmth": {
+          "branch": "defer",
+          "lastResult": "物柜没有回音，伊莎将备用毛毯妥善收存。",
+          "lastDay": 17
+        },
+        "fair": {
+          "branch": "defer",
+          "lastResult": "鸣谢无回音，奥斯温先把漏记的人补回原稿。",
+          "lastDay": 18
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-6271-after-80-plan-6",
+    "state": {
+      "version": 1,
+      "day": 21,
+      "inDay": 0,
+      "current": "season/0",
+      "seed": 6271,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "镇里批示先换危板，商队交来木料，危险桥段已加固。"
+        },
+        {
+          "id": "daily/6",
+          "day": 1,
+          "action": "defer",
+          "result": "有关给染坊晾杆设置固定标记的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/24",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝核对并更新商会接待路线图，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/23",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许为客栈糖罐配一把专用小勺，来信人已照办。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "店铺分担修钟费，钟锤校准后不再多响。"
+        },
+        {
+          "id": "daily/14",
+          "day": 2,
+          "action": "defer",
+          "result": "有关展示正确书写地址的小样的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/15",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝用缝线记区分客栈枕套，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/2",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许给厨房储物罐制作清晰标签，来信人已照办。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "废纸试用苦浆糊后，薄荷不愿再啃告示。"
+        },
+        {
+          "id": "bridge/reply",
+          "day": 3,
+          "action": "defer",
+          "result": "巡看申请未获回音，伊沃先替师傅看守工具。"
+        },
+        {
+          "id": "daily/29",
+          "day": 3,
+          "action": "reject",
+          "result": "镇里正式拒绝区分公用与私人餐具存放，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/30",
+          "day": 3,
+          "action": "approve",
+          "result": "镇里准许安排一次自愿的故事续写课，来信人已照办。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "卫兵牵绳让鸭群过街，车马停留片刻。"
+        },
+        {
+          "id": "clock/reply",
+          "day": 4,
+          "action": "defer",
+          "result": "告示申请无回音，居民仍传各自听到的版本。"
+        },
+        {
+          "id": "daily/11",
+          "day": 4,
+          "action": "reject",
+          "result": "镇里正式拒绝修补学徒的工作手套，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/7",
+          "day": 4,
+          "action": "approve",
+          "result": "镇里准许按物品隐藏特征核对失主，来信人已照办。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "驿夫们吃过面包，写回很适合赶路的评语。"
+        },
+        {
+          "id": "goat/reply",
+          "day": 5,
+          "action": "defer",
+          "result": "学堂申请无回音，孩子仍在远处念诗给羊听。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "reject",
+          "result": "花地申请被拒，贝拉把花移进自家旧陶盆。"
+        },
+        {
+          "id": "daily/3",
+          "day": 5,
+          "action": "approve",
+          "result": "镇里准许请木匠检查磨坊转轴，来信人已照办。"
+        },
+        {
+          "id": "flag/start",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "裁缝做了样旗，城门试看确认远处可辨。"
+        },
+        {
+          "id": "ducks/reply",
+          "day": 6,
+          "action": "defer",
+          "result": "代领无回音，卫兵独自研究叫声计票。"
+        },
+        {
+          "id": "clock/continuation",
+          "day": 6,
+          "action": "reject",
+          "result": "婚礼借铃未获准，新人改在门口拍手致意。"
+        },
+        {
+          "id": "daily/10",
+          "day": 6,
+          "action": "approve",
+          "result": "镇里准许借绳固定鱼摊遮阳布，来信人已照办。"
+        },
+        {
+          "id": "garden/start",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "地契核查期间先清走碎片，幼苗原处保留。"
+        },
+        {
+          "id": "bread/reply",
+          "day": 7,
+          "action": "defer",
+          "result": "食谱无回音，彼得先在炉边记下配比。"
+        },
+        {
+          "id": "goat/continuation",
+          "day": 7,
+          "action": "reject",
+          "result": "补交请求被拒，原记录继续保留。"
+        },
+        {
+          "id": "bridge/finale",
+          "day": 7,
+          "action": "approve",
+          "result": "巡查簿存入渡口柜，下一位木匠可据实接手。"
+        },
+        {
+          "id": "well/start",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "两位井匠验出松动井栏，先加固后开放。"
+        },
+        {
+          "id": "flag/reply",
+          "day": 8,
+          "action": "defer",
+          "result": "演练申请无回音，布鲁诺先婉拒新的预约。"
+        },
+        {
+          "id": "ducks/continuation",
+          "day": 8,
+          "action": "reject",
+          "result": "移绳未获准，贝拉把长裙晾到院里。"
+        },
+        {
+          "id": "clock/finale",
+          "day": 8,
+          "action": "approve",
+          "result": "钟楼有了固定检修上午，居民会提前看到告示。"
+        },
+        {
+          "id": "post/start",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "收信簿记明井边与磨坊边的蓝门，投递准确了。"
+        },
+        {
+          "id": "garden/reply",
+          "day": 9,
+          "action": "defer",
+          "result": "辨花课没有回音，艾琳在花签上补了不可食用。"
+        },
+        {
+          "id": "bread/continuation",
+          "day": 9,
+          "action": "reject",
+          "result": "矮凳未获准，彼得先挪出较低的揉面板。"
+        },
+        {
+          "id": "goat/finale",
+          "day": 9,
+          "action": "approve",
+          "result": "集市设了带盖废纸箱，旧纸交造纸人回收。"
+        },
+        {
+          "id": "wedding/start",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "婚宴借了长凳，新人坐中间，两家不再争椅子。"
+        },
+        {
+          "id": "well/reply",
+          "day": 10,
+          "action": "defer",
+          "result": "移课无回音，罗温先请孩子退到井栏外。"
+        },
+        {
+          "id": "flag/continuation",
+          "day": 10,
+          "action": "reject",
+          "result": "试听未获准，布鲁诺先按旧规亲自示范。"
+        },
+        {
+          "id": "ducks/finale",
+          "day": 10,
+          "action": "approve",
+          "result": "让路约定写好，下一季洗衣人有据可循。"
+        },
+        {
+          "id": "warmth/start",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "邻里私下轮送干柴，诺拉不必在众人面前致谢。"
+        },
+        {
+          "id": "post/reply",
+          "day": 11,
+          "action": "defer",
+          "result": "递送调整没有回音，驿夫照旧认真逐封送达。"
+        },
+        {
+          "id": "garden/continuation",
+          "day": 11,
+          "action": "reject",
+          "result": "长凳未获准，艾琳继续分享自家小凳。"
+        },
+        {
+          "id": "bread/finale",
+          "day": 11,
+          "action": "approve",
+          "result": "艾达的第一炉记入学徒簿，练习有了自己的名字。"
+        },
+        {
+          "id": "fair/start",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "瓜主人收缩货架，把南瓜安置在自己摊内。"
+        },
+        {
+          "id": "wedding/reply",
+          "day": 12,
+          "action": "defer",
+          "result": "座次申请没回音，两家先照顾老人孩子入席。"
+        },
+        {
+          "id": "well/continuation",
+          "day": 12,
+          "action": "reject",
+          "result": "高架未获准，罗温暂将桶挂到干净屋檐下。"
+        },
+        {
+          "id": "flag/finale",
+          "day": 12,
+          "action": "approve",
+          "result": "经验纸交给新卫兵，允许补记实际难事。"
+        },
+        {
+          "id": "warmth/reply",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "诺拉写下时辰，帮助按她的节奏进行。"
+        },
+        {
+          "id": "post/continuation",
+          "day": 13,
+          "action": "defer",
+          "result": "设格没有答复，塞缪尔先单独保存未达信。"
+        },
+        {
+          "id": "garden/finale",
+          "day": 13,
+          "action": "reject",
+          "result": "存种请求未获准，艾琳将纸包分给熟识邻里。"
+        },
+        {
+          "id": "daily/16",
+          "day": 13,
+          "action": "approve",
+          "result": "镇里准许给路灯添加安全的形状标记，来信人已照办。"
+        },
+        {
+          "id": "fair/reply",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "首片分三小份，三家都得到一点好意头。"
+        },
+        {
+          "id": "wedding/continuation",
+          "day": 14,
+          "action": "defer",
+          "result": "借台无回音，礼服暂妥善收好等待改制。"
+        },
+        {
+          "id": "well/finale",
+          "day": 14,
+          "action": "reject",
+          "result": "检查簿未获准，罗温继续自留工作笔记。"
+        },
+        {
+          "id": "daily/12",
+          "day": 14,
+          "action": "approve",
+          "result": "镇里准许分类回收旧纸供安全再用，来信人已照办。"
+        },
+        {
+          "id": "warmth/continuation",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "袖口改好，诺拉与少年自己约定借还。"
+        },
+        {
+          "id": "post/finale",
+          "day": 15,
+          "action": "defer",
+          "result": "交接没有回音，塞缪尔保留路线簿待人接手。"
+        },
+        {
+          "id": "daily/31",
+          "day": 15,
+          "action": "reject",
+          "result": "镇里正式拒绝接受邻镇关于此次无需回礼的约定，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/5",
+          "day": 15,
+          "action": "approve",
+          "result": "镇里准许给裁缝铺借一只带盖零件盒，来信人已照办。"
+        },
+        {
+          "id": "fair/continuation",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "清理范围分明，商会承担公共角落。"
+        },
+        {
+          "id": "wedding/finale",
+          "day": 16,
+          "action": "defer",
+          "result": "借物簿没有回音，米拉先替本次婚宴结清借物。"
+        },
+        {
+          "id": "daily/1",
+          "day": 16,
+          "action": "reject",
+          "result": "镇里正式拒绝借梯重新挂正学堂门牌，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/19",
+          "day": 16,
+          "action": "approve",
+          "result": "镇里准许借车安全移走门中迎宾石，来信人已照办。"
+        },
+        {
+          "id": "warmth/finale",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "物柜只收洗净合用衣物，取用的人无需挑拣破物。"
+        },
+        {
+          "id": "daily/18",
+          "day": 17,
+          "action": "defer",
+          "result": "有关由托比在学堂教一次草编的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/28",
+          "day": 17,
+          "action": "reject",
+          "result": "镇里正式拒绝誊清褪色的练习乐谱，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/22",
+          "day": 17,
+          "action": "approve",
+          "result": "镇里准许自愿赠出洗净完好的异色袜，来信人已照办。"
+        },
+        {
+          "id": "fair/finale",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "鸣谢存入行会，参与者一起坐下吃了饭。"
+        },
+        {
+          "id": "daily/0",
+          "day": 18,
+          "action": "defer",
+          "result": "有关给书库猫借一个浅木篮的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/8",
+          "day": 18,
+          "action": "reject",
+          "result": "镇里正式拒绝调整教堂清扫时辰与方法，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/4",
+          "day": 18,
+          "action": "approve",
+          "result": "镇里准许在蜂场外设置止步提示牌，来信人已照办。"
+        },
+        {
+          "id": "daily/27",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先改善阴凉歇脚处再添物件。"
+        },
+        {
+          "id": "daily/26",
+          "day": 19,
+          "action": "defer",
+          "result": "有关在书库入口设小失物篮的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/20",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝借用完整陶器记录磨坊雨量，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/13",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许在学堂窗内展示孩子的画，来信人已照办。"
+        },
+        {
+          "id": "daily/25",
+          "day": 20,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：换成尺寸较小但清楚可闻的门环。"
+        },
+        {
+          "id": "daily/9",
+          "day": 20,
+          "action": "defer",
+          "result": "有关为书记官制作小笔架的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/21",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝给花摊添置分用途的篮筐，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/17",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许在约定的午后时段练习短曲，来信人已照办。"
+        }
+      ],
+      "pending": [],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag",
+        "garden",
+        "well",
+        "post",
+        "wedding",
+        "warmth",
+        "fair"
+      ],
+      "readDaily": [
+        "daily/6",
+        "daily/24",
+        "daily/23",
+        "daily/14",
+        "daily/15",
+        "daily/2",
+        "daily/29",
+        "daily/30",
+        "daily/11",
+        "daily/7",
+        "daily/3",
+        "daily/10",
+        "daily/16",
+        "daily/12",
+        "daily/31",
+        "daily/5",
+        "daily/1",
+        "daily/19",
+        "daily/18",
+        "daily/28",
+        "daily/22",
+        "daily/0",
+        "daily/8",
+        "daily/4",
+        "daily/27",
+        "daily/26",
+        "daily/20",
+        "daily/13",
+        "daily/25",
+        "daily/9",
+        "daily/21",
+        "daily/17"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "巡查簿存入渡口柜，下一位木匠可据实接手。",
+          "lastDay": 7
+        },
+        "clock": {
+          "branch": "reply",
+          "lastResult": "钟楼有了固定检修上午，居民会提前看到告示。",
+          "lastDay": 8
+        },
+        "goat": {
+          "branch": "reply",
+          "lastResult": "集市设了带盖废纸箱，旧纸交造纸人回收。",
+          "lastDay": 9
+        },
+        "ducks": {
+          "branch": "reply",
+          "lastResult": "让路约定写好，下一季洗衣人有据可循。",
+          "lastDay": 10
+        },
+        "bread": {
+          "branch": "reply",
+          "lastResult": "艾达的第一炉记入学徒簿，练习有了自己的名字。",
+          "lastDay": 11
+        },
+        "flag": {
+          "branch": "reply",
+          "lastResult": "经验纸交给新卫兵，允许补记实际难事。",
+          "lastDay": 12
+        },
+        "garden": {
+          "branch": "reply",
+          "lastResult": "存种请求未获准，艾琳将纸包分给熟识邻里。",
+          "lastDay": 13
+        },
+        "well": {
+          "branch": "reply",
+          "lastResult": "检查簿未获准，罗温继续自留工作笔记。",
+          "lastDay": 14
+        },
+        "post": {
+          "branch": "reply",
+          "lastResult": "交接没有回音，塞缪尔保留路线簿待人接手。",
+          "lastDay": 15
+        },
+        "wedding": {
+          "branch": "reply",
+          "lastResult": "借物簿没有回音，米拉先替本次婚宴结清借物。",
+          "lastDay": 16
+        },
+        "warmth": {
+          "branch": "reply",
+          "lastResult": "物柜只收洗净合用衣物，取用的人无需挑拣破物。",
+          "lastDay": 17
+        },
+        "fair": {
+          "branch": "reply",
+          "lastResult": "鸣谢存入行会，参与者一起坐下吃了饭。",
+          "lastDay": 18
+        }
+      },
+      "seasonal": 1
+    }
+  },
+  {
+    "name": "seed-5-after-80-plan-0",
+    "state": {
+      "version": 1,
+      "day": 21,
+      "inDay": 0,
+      "current": "season/0",
+      "seed": 5,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。"
+        },
+        {
+          "id": "daily/12",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许分类回收旧纸供安全再用，来信人已照办。"
+        },
+        {
+          "id": "daily/20",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许借用完整陶器记录磨坊雨量，来信人已照办。"
+        },
+        {
+          "id": "daily/28",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里准许誊清褪色的练习乐谱，来信人已照办。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里批准修钟，阿尔诺校正了钟锤，钟楼恢复十二响。"
+        },
+        {
+          "id": "daily/11",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许修补学徒的工作手套，来信人已照办。"
+        },
+        {
+          "id": "daily/22",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许自愿赠出洗净完好的异色袜，来信人已照办。"
+        },
+        {
+          "id": "daily/0",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里准许给书库猫借一个浅木篮，来信人已照办。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "approve",
+          "result": "集市给薄荷设了拴绳桩，托比负责看管。"
+        },
+        {
+          "id": "bridge/approve",
+          "day": 3,
+          "action": "approve",
+          "result": "桥头挂上验桥木牌，玛塔不必再跳舞作证。"
+        },
+        {
+          "id": "daily/29",
+          "day": 3,
+          "action": "approve",
+          "result": "镇里准许区分公用与私人餐具存放，来信人已照办。"
+        },
+        {
+          "id": "daily/8",
+          "day": 3,
+          "action": "approve",
+          "result": "镇里准许调整教堂清扫时辰与方法，来信人已照办。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "approve",
+          "result": "午后留了鸭群过街时段，贝拉负责清扫。"
+        },
+        {
+          "id": "clock/approve",
+          "day": 4,
+          "action": "approve",
+          "result": "面包店获准补写招牌，修好的钟保持十二响。"
+        },
+        {
+          "id": "daily/9",
+          "day": 4,
+          "action": "approve",
+          "result": "镇里准许为书记官制作小笔架，来信人已照办。"
+        },
+        {
+          "id": "daily/25",
+          "day": 4,
+          "action": "approve",
+          "result": "镇里准许改良门环的夜间敲击声，来信人已照办。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "approve",
+          "result": "彼得获准办蘸汤试吃，面包终于被当作食物。"
+        },
+        {
+          "id": "goat/approve",
+          "day": 5,
+          "action": "approve",
+          "result": "薄荷只在上午短时留在集市，午后回牧场。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "approve",
+          "result": "岸边留下小花地，通行路面没有缩窄。"
+        },
+        {
+          "id": "daily/7",
+          "day": 5,
+          "action": "approve",
+          "result": "镇里准许按物品隐藏特征核对失主，来信人已照办。"
+        },
+        {
+          "id": "flag/start",
+          "day": 6,
+          "action": "approve",
+          "result": "卫兵获准换大队旗，路人能看清巡卫字样。"
+        },
+        {
+          "id": "ducks/approve",
+          "day": 6,
+          "action": "approve",
+          "result": "河岸设了固定食槽，鸭群跟着统一喂食时刻走。"
+        },
+        {
+          "id": "clock/continuation",
+          "day": 6,
+          "action": "approve",
+          "result": "婚礼获准在正午后敲小铃，大钟照常报时。"
+        },
+        {
+          "id": "daily/30",
+          "day": 6,
+          "action": "approve",
+          "result": "镇里准许安排一次自愿的故事续写课，来信人已照办。"
+        },
+        {
+          "id": "garden/start",
+          "day": 7,
+          "action": "approve",
+          "result": "镇里准许清理废墙碎片，留出公共小花地。"
+        },
+        {
+          "id": "bread/approve",
+          "day": 7,
+          "action": "approve",
+          "result": "食堂借出小锅，晚到的人也吃上蘸汤面包。"
+        },
+        {
+          "id": "goat/continuation",
+          "day": 7,
+          "action": "approve",
+          "result": "旧申诉获准补交，书记官重新核查事实。"
+        },
+        {
+          "id": "bridge/finale",
+          "day": 7,
+          "action": "approve",
+          "result": "巡查簿存入渡口柜，下一位木匠可据实接手。"
+        },
+        {
+          "id": "well/start",
+          "day": 8,
+          "action": "approve",
+          "result": "井绳与井栏获准检修，新绳已经换好。"
+        },
+        {
+          "id": "flag/approve",
+          "day": 8,
+          "action": "approve",
+          "result": "值房外设了旗架，大旗不再撞门。"
+        },
+        {
+          "id": "ducks/continuation",
+          "day": 8,
+          "action": "approve",
+          "result": "晾衣绳移高，衣裙不再扫过鸭背。"
+        },
+        {
+          "id": "clock/finale",
+          "day": 8,
+          "action": "approve",
+          "result": "钟楼有了固定检修上午，居民会提前看到告示。"
+        },
+        {
+          "id": "post/start",
+          "day": 9,
+          "action": "approve",
+          "result": "岔口获准挂巷名牌，蓝门住址可以分清。"
+        },
+        {
+          "id": "garden/approve",
+          "day": 9,
+          "action": "approve",
+          "result": "花地放了共用水壶，邻里轮流按需浇水。"
+        },
+        {
+          "id": "bread/continuation",
+          "day": 9,
+          "action": "approve",
+          "result": "艾达有了稳固矮凳，揉面不再踮脚。"
+        },
+        {
+          "id": "goat/finale",
+          "day": 9,
+          "action": "approve",
+          "result": "集市设了带盖废纸箱，旧纸交造纸人回收。"
+        },
+        {
+          "id": "wedding/start",
+          "day": 10,
+          "action": "approve",
+          "result": "镇厅借出椅子，婚宴人人有座。"
+        },
+        {
+          "id": "well/approve",
+          "day": 10,
+          "action": "approve",
+          "result": "取水桶固定，居民不再随意换挂重物。"
+        },
+        {
+          "id": "flag/continuation",
+          "day": 10,
+          "action": "approve",
+          "result": "卫兵在值房练轻声交接，街坊帮助确认音量。"
+        },
+        {
+          "id": "ducks/finale",
+          "day": 10,
+          "action": "approve",
+          "result": "让路约定写好，下一季洗衣人有据可循。"
+        },
+        {
+          "id": "warmth/start",
+          "day": 11,
+          "action": "approve",
+          "result": "干柴送到，木匠征得同意后修补了窗缝。"
+        },
+        {
+          "id": "post/approve",
+          "day": 11,
+          "action": "approve",
+          "result": "两条巷子定名井巷与磨坊巷，地址简短可辨。"
+        },
+        {
+          "id": "garden/continuation",
+          "day": 11,
+          "action": "approve",
+          "result": "花旁添了共用长凳，过路者可以休息。"
+        },
+        {
+          "id": "bread/finale",
+          "day": 11,
+          "action": "approve",
+          "result": "艾达的第一炉记入学徒簿，练习有了自己的名字。"
+        },
+        {
+          "id": "fair/start",
+          "day": 12,
+          "action": "approve",
+          "result": "广场角获准设南瓜展示位，通道让出。"
+        },
+        {
+          "id": "wedding/approve",
+          "day": 12,
+          "action": "approve",
+          "result": "两条丝带编在一起，祖母坐了那把椅子。"
+        },
+        {
+          "id": "well/continuation",
+          "day": 12,
+          "action": "approve",
+          "result": "公共桶有了带盖高架，远离泥地存放。"
+        },
+        {
+          "id": "flag/finale",
+          "day": 12,
+          "action": "approve",
+          "result": "经验纸交给新卫兵，允许补记实际难事。"
+        },
+        {
+          "id": "warmth/approve",
+          "day": 13,
+          "action": "approve",
+          "result": "邻人按诺拉选的时辰陪坐，她也有安静休息的时候。"
+        },
+        {
+          "id": "post/continuation",
+          "day": 13,
+          "action": "approve",
+          "result": "驿站设待核地址格，定期核查并密封退回未达信。"
+        },
+        {
+          "id": "garden/finale",
+          "day": 13,
+          "action": "approve",
+          "result": "种子留在学堂，明春由愿意照料的人领取。"
+        },
+        {
+          "id": "daily/3",
+          "day": 13,
+          "action": "approve",
+          "result": "镇里准许请木匠检查磨坊转轴，来信人已照办。"
+        },
+        {
+          "id": "fair/approve",
+          "day": 14,
+          "action": "approve",
+          "result": "南瓜铺了素色旧布，展示不带商会大字。"
+        },
+        {
+          "id": "wedding/continuation",
+          "day": 14,
+          "action": "approve",
+          "result": "米拉获准在空闲午后借工作台，礼服改成日常裙。"
+        },
+        {
+          "id": "well/finale",
+          "day": 14,
+          "action": "approve",
+          "result": "取水设施有了检查簿，平安无事也据实记下。"
+        },
+        {
+          "id": "daily/17",
+          "day": 14,
+          "action": "approve",
+          "result": "镇里准许在约定的午后时段练习短曲，来信人已照办。"
+        },
+        {
+          "id": "warmth/continuation",
+          "day": 15,
+          "action": "approve",
+          "result": "外套袖口改短并留余量，少年穿得合身。"
+        },
+        {
+          "id": "post/finale",
+          "day": 15,
+          "action": "approve",
+          "result": "核址办法留给新驿夫，信件按清楚而谨慎的流程交接。"
+        },
+        {
+          "id": "daily/26",
+          "day": 15,
+          "action": "approve",
+          "result": "镇里准许在书库入口设小失物篮，来信人已照办。"
+        },
+        {
+          "id": "daily/18",
+          "day": 15,
+          "action": "approve",
+          "result": "镇里准许由托比在学堂教一次草编，来信人已照办。"
+        },
+        {
+          "id": "fair/continuation",
+          "day": 16,
+          "action": "approve",
+          "result": "各摊轮值清理过道，收摊后的责任分担清楚。"
+        },
+        {
+          "id": "wedding/finale",
+          "day": 16,
+          "action": "approve",
+          "result": "裁缝铺设借物簿，邻里借还更清楚。"
+        },
+        {
+          "id": "daily/14",
+          "day": 16,
+          "action": "approve",
+          "result": "镇里准许展示正确书写地址的小样，来信人已照办。"
+        },
+        {
+          "id": "daily/23",
+          "day": 16,
+          "action": "approve",
+          "result": "镇里准许为客栈糖罐配一把专用小勺，来信人已照办。"
+        },
+        {
+          "id": "warmth/finale",
+          "day": 17,
+          "action": "approve",
+          "result": "邻里设了私下取还的保暖物柜，只记物品去向。"
+        },
+        {
+          "id": "daily/27",
+          "day": 17,
+          "action": "approve",
+          "result": "镇里准许在清扫休息处备小扇与饮水，来信人已照办。"
+        },
+        {
+          "id": "daily/31",
+          "day": 17,
+          "action": "approve",
+          "result": "镇里准许接受邻镇关于此次无需回礼的约定，来信人已照办。"
+        },
+        {
+          "id": "daily/13",
+          "day": 17,
+          "action": "approve",
+          "result": "镇里准许在学堂窗内展示孩子的画，来信人已照办。"
+        },
+        {
+          "id": "fair/finale",
+          "day": 18,
+          "action": "approve",
+          "result": "新版鸣谢按实际工作列名，漏记者可自行补上。"
+        },
+        {
+          "id": "daily/6",
+          "day": 18,
+          "action": "approve",
+          "result": "镇里准许给染坊晾杆设置固定标记，来信人已照办。"
+        },
+        {
+          "id": "daily/15",
+          "day": 18,
+          "action": "approve",
+          "result": "镇里准许用缝线记区分客栈枕套，来信人已照办。"
+        },
+        {
+          "id": "daily/21",
+          "day": 18,
+          "action": "approve",
+          "result": "镇里准许给花摊添置分用途的篮筐，来信人已照办。"
+        },
+        {
+          "id": "daily/16",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许给路灯添加安全的形状标记，来信人已照办。"
+        },
+        {
+          "id": "daily/19",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许借车安全移走门中迎宾石，来信人已照办。"
+        },
+        {
+          "id": "daily/2",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许给厨房储物罐制作清晰标签，来信人已照办。"
+        },
+        {
+          "id": "daily/1",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许借梯重新挂正学堂门牌，来信人已照办。"
+        },
+        {
+          "id": "daily/5",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许给裁缝铺借一只带盖零件盒，来信人已照办。"
+        },
+        {
+          "id": "daily/10",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许借绳固定鱼摊遮阳布，来信人已照办。"
+        },
+        {
+          "id": "daily/24",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许核对并更新商会接待路线图，来信人已照办。"
+        },
+        {
+          "id": "daily/4",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许在蜂场外设置止步提示牌，来信人已照办。"
+        }
+      ],
+      "pending": [],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag",
+        "garden",
+        "well",
+        "post",
+        "wedding",
+        "warmth",
+        "fair"
+      ],
+      "readDaily": [
+        "daily/12",
+        "daily/20",
+        "daily/28",
+        "daily/11",
+        "daily/22",
+        "daily/0",
+        "daily/29",
+        "daily/8",
+        "daily/9",
+        "daily/25",
+        "daily/7",
+        "daily/30",
+        "daily/3",
+        "daily/17",
+        "daily/26",
+        "daily/18",
+        "daily/14",
+        "daily/23",
+        "daily/27",
+        "daily/31",
+        "daily/13",
+        "daily/6",
+        "daily/15",
+        "daily/21",
+        "daily/16",
+        "daily/19",
+        "daily/2",
+        "daily/1",
+        "daily/5",
+        "daily/10",
+        "daily/24",
+        "daily/4"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "approve",
+          "lastResult": "巡查簿存入渡口柜，下一位木匠可据实接手。",
+          "lastDay": 7
+        },
+        "clock": {
+          "branch": "approve",
+          "lastResult": "钟楼有了固定检修上午，居民会提前看到告示。",
+          "lastDay": 8
+        },
+        "goat": {
+          "branch": "approve",
+          "lastResult": "集市设了带盖废纸箱，旧纸交造纸人回收。",
+          "lastDay": 9
+        },
+        "ducks": {
+          "branch": "approve",
+          "lastResult": "让路约定写好，下一季洗衣人有据可循。",
+          "lastDay": 10
+        },
+        "bread": {
+          "branch": "approve",
+          "lastResult": "艾达的第一炉记入学徒簿，练习有了自己的名字。",
+          "lastDay": 11
+        },
+        "flag": {
+          "branch": "approve",
+          "lastResult": "经验纸交给新卫兵，允许补记实际难事。",
+          "lastDay": 12
+        },
+        "garden": {
+          "branch": "approve",
+          "lastResult": "种子留在学堂，明春由愿意照料的人领取。",
+          "lastDay": 13
+        },
+        "well": {
+          "branch": "approve",
+          "lastResult": "取水设施有了检查簿，平安无事也据实记下。",
+          "lastDay": 14
+        },
+        "post": {
+          "branch": "approve",
+          "lastResult": "核址办法留给新驿夫，信件按清楚而谨慎的流程交接。",
+          "lastDay": 15
+        },
+        "wedding": {
+          "branch": "approve",
+          "lastResult": "裁缝铺设借物簿，邻里借还更清楚。",
+          "lastDay": 16
+        },
+        "warmth": {
+          "branch": "approve",
+          "lastResult": "邻里设了私下取还的保暖物柜，只记物品去向。",
+          "lastDay": 17
+        },
+        "fair": {
+          "branch": "approve",
+          "lastResult": "新版鸣谢按实际工作列名，漏记者可自行补上。",
+          "lastDay": 18
+        }
+      },
+      "seasonal": 1
+    }
+  },
+  {
+    "name": "seed-935-after-84-plan-1",
+    "state": {
+      "version": 1,
+      "day": 22,
+      "inDay": 0,
+      "current": "season/4",
+      "seed": 935,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝了修桥经费，玛塔暂时封住危段，请行人绕渡口。"
+        },
+        {
+          "id": "daily/14",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝展示正确书写地址的小样，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/20",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝借用完整陶器记录磨坊雨量，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/28",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝誊清褪色的练习乐谱，来信人没有照原案办理。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "reject",
+          "result": "修钟经费被正式拒绝，阿尔诺没有动用镇款修钟。"
+        },
+        {
+          "id": "daily/13",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝在学堂窗内展示孩子的画，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/29",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝区分公用与私人餐具存放，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/12",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝分类回收旧纸供安全再用，来信人没有照原案办理。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "reject",
+          "result": "拴桩未获批准，托比把薄荷留在牧场。"
+        },
+        {
+          "id": "bridge/reject",
+          "day": 3,
+          "action": "reject",
+          "result": "支梁未获批准，危段继续封闭，贝拉收回了门板。"
+        },
+        {
+          "id": "daily/21",
+          "day": 3,
+          "action": "reject",
+          "result": "镇里正式拒绝给花摊添置分用途的篮筐，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/15",
+          "day": 3,
+          "action": "reject",
+          "result": "镇里正式拒绝用缝线记区分客栈枕套，来信人没有照原案办理。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "reject",
+          "result": "鸭群过街申请被拒，贝拉带它们沿河绕行。"
+        },
+        {
+          "id": "clock/reject",
+          "day": 4,
+          "action": "reject",
+          "result": "借日晷未获准，彼得自己用沙漏掌握炉时。"
+        },
+        {
+          "id": "daily/1",
+          "day": 4,
+          "action": "reject",
+          "result": "镇里正式拒绝借梯重新挂正学堂门牌，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/6",
+          "day": 4,
+          "action": "reject",
+          "result": "镇里正式拒绝给染坊晾杆设置固定标记，来信人没有照原案办理。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "reject",
+          "result": "试吃申请被拒，彼得仍照常卖黑面包。"
+        },
+        {
+          "id": "goat/reject",
+          "day": 5,
+          "action": "reject",
+          "result": "木牌未获准，托比每天站在门边劝人。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "reject",
+          "result": "花地申请被拒，贝拉把花移进自家旧陶盆。"
+        },
+        {
+          "id": "daily/18",
+          "day": 5,
+          "action": "reject",
+          "result": "镇里正式拒绝由托比在学堂教一次草编，来信人没有照原案办理。"
+        },
+        {
+          "id": "flag/start",
+          "day": 6,
+          "action": "reject",
+          "result": "大旗未获批准，卫兵继续使用旧队旗。"
+        },
+        {
+          "id": "ducks/reject",
+          "day": 6,
+          "action": "reject",
+          "result": "开门未获准，贝拉改请孩子轮流带鸭绕行。"
+        },
+        {
+          "id": "clock/continuation",
+          "day": 6,
+          "action": "reject",
+          "result": "婚礼借铃未获准，新人改在门口拍手致意。"
+        },
+        {
+          "id": "daily/5",
+          "day": 6,
+          "action": "reject",
+          "result": "镇里正式拒绝给裁缝铺借一只带盖零件盒，来信人没有照原案办理。"
+        },
+        {
+          "id": "garden/start",
+          "day": 7,
+          "action": "reject",
+          "result": "花地请求被拒，艾琳把幼苗移回自家陶盆。"
+        },
+        {
+          "id": "bread/reject",
+          "day": 7,
+          "action": "reject",
+          "result": "印图未获准，彼得只在柜台口头说明。"
+        },
+        {
+          "id": "goat/continuation",
+          "day": 7,
+          "action": "reject",
+          "result": "补交请求被拒，原记录继续保留。"
+        },
+        {
+          "id": "bridge/finale",
+          "day": 7,
+          "action": "reject",
+          "result": "存簿请求未获批准，行会自留原本。"
+        },
+        {
+          "id": "well/start",
+          "day": 8,
+          "action": "reject",
+          "result": "检修申请被拒，罗温暂将旧桶停用并提醒绕取邻井。"
+        },
+        {
+          "id": "flag/reject",
+          "day": 8,
+          "action": "reject",
+          "result": "移位未获准，栗子贩改到路对面摆摊。"
+        },
+        {
+          "id": "ducks/continuation",
+          "day": 8,
+          "action": "reject",
+          "result": "移绳未获准，贝拉把长裙晾到院里。"
+        },
+        {
+          "id": "clock/finale",
+          "day": 8,
+          "action": "reject",
+          "result": "固定检修日未获准，阿尔诺继续逐次申请。"
+        },
+        {
+          "id": "post/start",
+          "day": 9,
+          "action": "reject",
+          "result": "路牌申请被拒，塞缪尔暂记两户邻近标志。"
+        },
+        {
+          "id": "garden/reject",
+          "day": 9,
+          "action": "reject",
+          "result": "借窗台未获准，艾琳将多出的花送给邻居。"
+        },
+        {
+          "id": "bread/continuation",
+          "day": 9,
+          "action": "reject",
+          "result": "矮凳未获准，彼得先挪出较低的揉面板。"
+        },
+        {
+          "id": "goat/finale",
+          "day": 9,
+          "action": "reject",
+          "result": "废纸箱未获准，商户各自保存旧纸待收。"
+        },
+        {
+          "id": "wedding/start",
+          "day": 10,
+          "action": "reject",
+          "result": "借椅被拒，米拉向邻里另借座椅。"
+        },
+        {
+          "id": "well/reject",
+          "day": 10,
+          "action": "reject",
+          "result": "送水车未获准，邻里自愿帮忙提水。"
+        },
+        {
+          "id": "flag/continuation",
+          "day": 10,
+          "action": "reject",
+          "result": "试听未获准，布鲁诺先按旧规亲自示范。"
+        },
+        {
+          "id": "ducks/finale",
+          "day": 10,
+          "action": "reject",
+          "result": "约定未获准，贝拉把经验口头传给同行。"
+        },
+        {
+          "id": "warmth/start",
+          "day": 11,
+          "action": "reject",
+          "result": "柴与修窗请求未获准，伊莎先用自己的余柴帮助诺拉。"
+        },
+        {
+          "id": "post/reject",
+          "day": 11,
+          "action": "reject",
+          "result": "核簿未获准，驿夫继续先问姓名再交信。"
+        },
+        {
+          "id": "garden/continuation",
+          "day": 11,
+          "action": "reject",
+          "result": "长凳未获准，艾琳继续分享自家小凳。"
+        },
+        {
+          "id": "bread/finale",
+          "day": 11,
+          "action": "reject",
+          "result": "登记未获准，彼得继续带艾达练习。"
+        },
+        {
+          "id": "fair/start",
+          "day": 12,
+          "action": "reject",
+          "result": "展示位被拒，瓜主人将南瓜搬回自家摊内。"
+        },
+        {
+          "id": "wedding/reject",
+          "day": 12,
+          "action": "reject",
+          "result": "借低桌未获准，婚宴改分两轮入席。"
+        },
+        {
+          "id": "well/continuation",
+          "day": 12,
+          "action": "reject",
+          "result": "高架未获准，罗温暂将桶挂到干净屋檐下。"
+        },
+        {
+          "id": "flag/finale",
+          "day": 12,
+          "action": "reject",
+          "result": "交接纸未获准，布鲁诺继续口头教新人。"
+        },
+        {
+          "id": "warmth/reject",
+          "day": 13,
+          "action": "reject",
+          "result": "借边料未获准，伊莎寻找可安全使用的自家余料。"
+        },
+        {
+          "id": "post/continuation",
+          "day": 13,
+          "action": "reject",
+          "result": "新格未获准，驿夫继续在现有簿中标记待核。"
+        },
+        {
+          "id": "garden/finale",
+          "day": 13,
+          "action": "reject",
+          "result": "存种请求未获准，艾琳将纸包分给熟识邻里。"
+        },
+        {
+          "id": "daily/22",
+          "day": 13,
+          "action": "reject",
+          "result": "镇里正式拒绝自愿赠出洗净完好的异色袜，来信人没有照原案办理。"
+        },
+        {
+          "id": "fair/reject",
+          "day": 14,
+          "action": "reject",
+          "result": "借厨娘未获准，两摊请有经验的邻人帮切。"
+        },
+        {
+          "id": "wedding/continuation",
+          "day": 14,
+          "action": "reject",
+          "result": "借台未获准，米拉在自家小台分段改衣。"
+        },
+        {
+          "id": "well/finale",
+          "day": 14,
+          "action": "reject",
+          "result": "检查簿未获准，罗温继续自留工作笔记。"
+        },
+        {
+          "id": "daily/16",
+          "day": 14,
+          "action": "reject",
+          "result": "镇里正式拒绝给路灯添加安全的形状标记，来信人没有照原案办理。"
+        },
+        {
+          "id": "warmth/continuation",
+          "day": 15,
+          "action": "reject",
+          "result": "改衣未获准，诺拉用可拆线先挽好袖口。"
+        },
+        {
+          "id": "post/finale",
+          "day": 15,
+          "action": "reject",
+          "result": "交接办法未获准，塞缪尔亲自带新人认路。"
+        },
+        {
+          "id": "daily/17",
+          "day": 15,
+          "action": "reject",
+          "result": "镇里正式拒绝在约定的午后时段练习短曲，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/8",
+          "day": 15,
+          "action": "reject",
+          "result": "镇里正式拒绝调整教堂清扫时辰与方法，来信人没有照原案办理。"
+        },
+        {
+          "id": "fair/continuation",
+          "day": 16,
+          "action": "reject",
+          "result": "轮值未获准，商会继续另行雇人清扫。"
+        },
+        {
+          "id": "wedding/finale",
+          "day": 16,
+          "action": "reject",
+          "result": "借物簿未获准，米拉继续保留每次独立借条。"
+        },
+        {
+          "id": "daily/23",
+          "day": 16,
+          "action": "reject",
+          "result": "镇里正式拒绝为客栈糖罐配一把专用小勺，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/26",
+          "day": 16,
+          "action": "reject",
+          "result": "镇里正式拒绝在书库入口设小失物篮，来信人没有照原案办理。"
+        },
+        {
+          "id": "warmth/finale",
+          "day": 17,
+          "action": "reject",
+          "result": "物柜未获准，保暖物继续由邻里自愿互借。"
+        },
+        {
+          "id": "daily/7",
+          "day": 17,
+          "action": "reject",
+          "result": "镇里正式拒绝按物品隐藏特征核对失主，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/11",
+          "day": 17,
+          "action": "reject",
+          "result": "镇里正式拒绝修补学徒的工作手套，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/0",
+          "day": 17,
+          "action": "reject",
+          "result": "镇里正式拒绝给书库猫借一个浅木篮，来信人没有照原案办理。"
+        },
+        {
+          "id": "fair/finale",
+          "day": 18,
+          "action": "reject",
+          "result": "公开鸣谢未获准，商会逐一致谢不再贴名单。"
+        },
+        {
+          "id": "daily/31",
+          "day": 18,
+          "action": "reject",
+          "result": "镇里正式拒绝接受邻镇关于此次无需回礼的约定，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/19",
+          "day": 18,
+          "action": "reject",
+          "result": "镇里正式拒绝借车安全移走门中迎宾石，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/3",
+          "day": 18,
+          "action": "reject",
+          "result": "镇里正式拒绝请木匠检查磨坊转轴，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/30",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝安排一次自愿的故事续写课，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/24",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝核对并更新商会接待路线图，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/4",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝在蜂场外设置止步提示牌，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/2",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝给厨房储物罐制作清晰标签，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/27",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝在清扫休息处备小扇与饮水，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/10",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝借绳固定鱼摊遮阳布，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/25",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝改良门环的夜间敲击声，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/9",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝为书记官制作小笔架，来信人没有照原案办理。"
+        },
+        {
+          "id": "season/0",
+          "day": 21,
+          "action": "reject",
+          "result": "您正式拒绝换一张结实草垫，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/1",
+          "day": 21,
+          "action": "reject",
+          "result": "您正式拒绝领取防雨布补雨披，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/2",
+          "day": 21,
+          "action": "reject",
+          "result": "您正式拒绝借出陶壶供应午后热水，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/3",
+          "day": 21,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        }
+      ],
+      "pending": [],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag",
+        "garden",
+        "well",
+        "post",
+        "wedding",
+        "warmth",
+        "fair"
+      ],
+      "readDaily": [
+        "daily/14",
+        "daily/20",
+        "daily/28",
+        "daily/13",
+        "daily/29",
+        "daily/12",
+        "daily/21",
+        "daily/15",
+        "daily/1",
+        "daily/6",
+        "daily/18",
+        "daily/5",
+        "daily/22",
+        "daily/16",
+        "daily/17",
+        "daily/8",
+        "daily/23",
+        "daily/26",
+        "daily/7",
+        "daily/11",
+        "daily/0",
+        "daily/31",
+        "daily/19",
+        "daily/3",
+        "daily/30",
+        "daily/24",
+        "daily/4",
+        "daily/2",
+        "daily/27",
+        "daily/10",
+        "daily/25",
+        "daily/9"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reject",
+          "lastResult": "存簿请求未获批准，行会自留原本。",
+          "lastDay": 7
+        },
+        "clock": {
+          "branch": "reject",
+          "lastResult": "固定检修日未获准，阿尔诺继续逐次申请。",
+          "lastDay": 8
+        },
+        "goat": {
+          "branch": "reject",
+          "lastResult": "废纸箱未获准，商户各自保存旧纸待收。",
+          "lastDay": 9
+        },
+        "ducks": {
+          "branch": "reject",
+          "lastResult": "约定未获准，贝拉把经验口头传给同行。",
+          "lastDay": 10
+        },
+        "bread": {
+          "branch": "reject",
+          "lastResult": "登记未获准，彼得继续带艾达练习。",
+          "lastDay": 11
+        },
+        "flag": {
+          "branch": "reject",
+          "lastResult": "交接纸未获准，布鲁诺继续口头教新人。",
+          "lastDay": 12
+        },
+        "garden": {
+          "branch": "reject",
+          "lastResult": "存种请求未获准，艾琳将纸包分给熟识邻里。",
+          "lastDay": 13
+        },
+        "well": {
+          "branch": "reject",
+          "lastResult": "检查簿未获准，罗温继续自留工作笔记。",
+          "lastDay": 14
+        },
+        "post": {
+          "branch": "reject",
+          "lastResult": "交接办法未获准，塞缪尔亲自带新人认路。",
+          "lastDay": 15
+        },
+        "wedding": {
+          "branch": "reject",
+          "lastResult": "借物簿未获准，米拉继续保留每次独立借条。",
+          "lastDay": 16
+        },
+        "warmth": {
+          "branch": "reject",
+          "lastResult": "物柜未获准，保暖物继续由邻里自愿互借。",
+          "lastDay": 17
+        },
+        "fair": {
+          "branch": "reject",
+          "lastResult": "公开鸣谢未获准，商会逐一致谢不再贴名单。",
+          "lastDay": 18
+        }
+      },
+      "seasonal": 5
+    }
+  },
+  {
+    "name": "seed-4096-after-110-plan-6",
+    "state": {
+      "version": 1,
+      "day": 28,
+      "inDay": 2,
+      "current": "season/30",
+      "seed": 4096,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "approve",
+          "result": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。"
+        },
+        {
+          "id": "daily/7",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：先封存一旬等物主来询。"
+        },
+        {
+          "id": "daily/19",
+          "day": 1,
+          "action": "defer",
+          "result": "有关借车安全移走门中迎宾石的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/8",
+          "day": 1,
+          "action": "reject",
+          "result": "镇里正式拒绝调整教堂清扫时辰与方法，来信人没有照原案办理。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "approve",
+          "result": "镇里批准修钟，阿尔诺校正了钟锤，钟楼恢复十二响。"
+        },
+        {
+          "id": "daily/15",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：保留一套不同厚度的清洁备用枕。"
+        },
+        {
+          "id": "daily/26",
+          "day": 2,
+          "action": "defer",
+          "result": "有关在书库入口设小失物篮的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/17",
+          "day": 2,
+          "action": "reject",
+          "result": "镇里正式拒绝在约定的午后时段练习短曲，来信人没有照原案办理。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "approve",
+          "result": "集市给薄荷设了拴绳桩，托比负责看管。"
+        },
+        {
+          "id": "bridge/approve",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "商队空车示范过桥，围观者终于肯跟着走。"
+        },
+        {
+          "id": "daily/6",
+          "day": 3,
+          "action": "defer",
+          "result": "有关给染坊晾杆设置固定标记的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/30",
+          "day": 3,
+          "action": "reject",
+          "result": "镇里正式拒绝安排一次自愿的故事续写课，来信人没有照原案办理。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "approve",
+          "result": "午后留了鸭群过街时段，贝拉负责清扫。"
+        },
+        {
+          "id": "clock/approve",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "面包当众称过，客人知道少一声不等于少一口。"
+        },
+        {
+          "id": "daily/24",
+          "day": 4,
+          "action": "defer",
+          "result": "有关核对并更新商会接待路线图的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/21",
+          "day": 4,
+          "action": "reject",
+          "result": "镇里正式拒绝给花摊添置分用途的篮筐，来信人没有照原案办理。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "approve",
+          "result": "彼得获准办蘸汤试吃，面包终于被当作食物。"
+        },
+        {
+          "id": "goat/approve",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "薄荷每旬只到场一天，商会备好草料。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "defer",
+          "result": "花地未获答复，贝拉只替石缝里的花浇水。"
+        },
+        {
+          "id": "daily/5",
+          "day": 5,
+          "action": "reject",
+          "result": "镇里正式拒绝给裁缝铺借一只带盖零件盒，来信人没有照原案办理。"
+        },
+        {
+          "id": "flag/start",
+          "day": 6,
+          "action": "approve",
+          "result": "卫兵获准换大队旗，路人能看清巡卫字样。"
+        },
+        {
+          "id": "ducks/approve",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "贝拉负责固定投喂，过街时刻稳定下来。"
+        },
+        {
+          "id": "clock/continuation",
+          "day": 6,
+          "action": "defer",
+          "result": "婚礼没有收到答复，只带了一串不会响的丝带。"
+        },
+        {
+          "id": "daily/23",
+          "day": 6,
+          "action": "reject",
+          "result": "镇里正式拒绝为客栈糖罐配一把专用小勺，来信人没有照原案办理。"
+        },
+        {
+          "id": "garden/start",
+          "day": 7,
+          "action": "approve",
+          "result": "镇里准许清理废墙碎片，留出公共小花地。"
+        },
+        {
+          "id": "bread/approve",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "小杯试吃让每个人都尝到了软面包。"
+        },
+        {
+          "id": "goat/continuation",
+          "day": 7,
+          "action": "defer",
+          "result": "申诉补交没有回音，托比把残纸妥善封好。"
+        },
+        {
+          "id": "bridge/finale",
+          "day": 7,
+          "action": "reject",
+          "result": "存簿请求未获批准，行会自留原本。"
+        },
+        {
+          "id": "well/start",
+          "day": 8,
+          "action": "approve",
+          "result": "井绳与井栏获准检修，新绳已经换好。"
+        },
+        {
+          "id": "flag/approve",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "大旗留城门，小旗巡街，门框终于安静。"
+        },
+        {
+          "id": "ducks/continuation",
+          "day": 8,
+          "action": "defer",
+          "result": "移绳没有回音，贝拉先将裙摆折起夹住。"
+        },
+        {
+          "id": "clock/finale",
+          "day": 8,
+          "action": "reject",
+          "result": "固定检修日未获准，阿尔诺继续逐次申请。"
+        },
+        {
+          "id": "post/start",
+          "day": 9,
+          "action": "approve",
+          "result": "岔口获准挂巷名牌，蓝门住址可以分清。"
+        },
+        {
+          "id": "garden/approve",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "孩子轮值浇花，成人帮忙看土是否真干。"
+        },
+        {
+          "id": "bread/continuation",
+          "day": 9,
+          "action": "defer",
+          "result": "矮凳没有答复，艾达改在低案上练手。"
+        },
+        {
+          "id": "goat/finale",
+          "day": 9,
+          "action": "reject",
+          "result": "废纸箱未获准，商户各自保存旧纸待收。"
+        },
+        {
+          "id": "wedding/start",
+          "day": 10,
+          "action": "approve",
+          "result": "镇厅借出椅子，婚宴人人有座。"
+        },
+        {
+          "id": "well/approve",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "罗温演示了稳妥提水，大家不再拿石头试绳。"
+        },
+        {
+          "id": "flag/continuation",
+          "day": 10,
+          "action": "defer",
+          "result": "试听没有回音，新兵改用近距离交接。"
+        },
+        {
+          "id": "ducks/finale",
+          "day": 10,
+          "action": "reject",
+          "result": "约定未获准，贝拉把经验口头传给同行。"
+        },
+        {
+          "id": "warmth/start",
+          "day": 11,
+          "action": "approve",
+          "result": "干柴送到，木匠征得同意后修补了窗缝。"
+        },
+        {
+          "id": "post/approve",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "临时木牌试挂一旬，住户确认没有混淆。"
+        },
+        {
+          "id": "garden/continuation",
+          "day": 11,
+          "action": "defer",
+          "result": "长凳没有回音，邻居先轮流带便凳过来。"
+        },
+        {
+          "id": "bread/finale",
+          "day": 11,
+          "action": "reject",
+          "result": "登记未获准，彼得继续带艾达练习。"
+        },
+        {
+          "id": "fair/start",
+          "day": 12,
+          "action": "approve",
+          "result": "广场角获准设南瓜展示位，通道让出。"
+        },
+        {
+          "id": "wedding/approve",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "祖母打了一个结，两家都不敢再拆。"
+        },
+        {
+          "id": "well/continuation",
+          "day": 12,
+          "action": "defer",
+          "result": "高架无回音，取水人先轮流把桶收回室内。"
+        },
+        {
+          "id": "flag/finale",
+          "day": 12,
+          "action": "reject",
+          "result": "交接纸未获准，布鲁诺继续口头教新人。"
+        },
+        {
+          "id": "warmth/approve",
+          "day": 13,
+          "action": "approve",
+          "result": "邻人按诺拉选的时辰陪坐，她也有安静休息的时候。"
+        },
+        {
+          "id": "post/continuation",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "书记官每旬核对退信，信件不再长期搁置。"
+        },
+        {
+          "id": "garden/finale",
+          "day": 13,
+          "action": "defer",
+          "result": "存种没有回音，艾琳把种子收在干燥木盒。"
+        },
+        {
+          "id": "daily/20",
+          "day": 13,
+          "action": "reject",
+          "result": "镇里正式拒绝借用完整陶器记录磨坊雨量，来信人没有照原案办理。"
+        },
+        {
+          "id": "fair/approve",
+          "day": 14,
+          "action": "approve",
+          "result": "南瓜铺了素色旧布，展示不带商会大字。"
+        },
+        {
+          "id": "wedding/continuation",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "花边装入小袋交还，新裙照常穿用。"
+        },
+        {
+          "id": "well/finale",
+          "day": 14,
+          "action": "defer",
+          "result": "检查簿没有回音，罗温把记录交同行互看。"
+        },
+        {
+          "id": "daily/28",
+          "day": 14,
+          "action": "reject",
+          "result": "镇里正式拒绝誊清褪色的练习乐谱，来信人没有照原案办理。"
+        },
+        {
+          "id": "warmth/continuation",
+          "day": 15,
+          "action": "approve",
+          "result": "外套袖口改短并留余量，少年穿得合身。"
+        },
+        {
+          "id": "post/finale",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "新驿夫随行一旬，认路也学会保守私事。"
+        },
+        {
+          "id": "daily/2",
+          "day": 15,
+          "action": "defer",
+          "result": "有关给厨房储物罐制作清晰标签的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/9",
+          "day": 15,
+          "action": "reject",
+          "result": "镇里正式拒绝为书记官制作小笔架，来信人没有照原案办理。"
+        },
+        {
+          "id": "fair/continuation",
+          "day": 16,
+          "action": "approve",
+          "result": "各摊轮值清理过道，收摊后的责任分担清楚。"
+        },
+        {
+          "id": "wedding/finale",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "双方各留半张借条，归还时合在一起。"
+        },
+        {
+          "id": "daily/3",
+          "day": 16,
+          "action": "defer",
+          "result": "有关请木匠检查磨坊转轴的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/14",
+          "day": 16,
+          "action": "reject",
+          "result": "镇里正式拒绝展示正确书写地址的小样，来信人没有照原案办理。"
+        },
+        {
+          "id": "warmth/finale",
+          "day": 17,
+          "action": "approve",
+          "result": "邻里设了私下取还的保暖物柜，只记物品去向。"
+        },
+        {
+          "id": "daily/1",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请孩子在课后看一次安全修缮示范。"
+        },
+        {
+          "id": "daily/22",
+          "day": 17,
+          "action": "defer",
+          "result": "有关自愿赠出洗净完好的异色袜的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/13",
+          "day": 17,
+          "action": "reject",
+          "result": "镇里正式拒绝在学堂窗内展示孩子的画，来信人没有照原案办理。"
+        },
+        {
+          "id": "fair/finale",
+          "day": 18,
+          "action": "approve",
+          "result": "新版鸣谢按实际工作列名，漏记者可自行补上。"
+        },
+        {
+          "id": "daily/11",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先调换安全的备用手套。"
+        },
+        {
+          "id": "daily/25",
+          "day": 18,
+          "action": "defer",
+          "result": "有关改良门环的夜间敲击声的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/12",
+          "day": 18,
+          "action": "reject",
+          "result": "镇里正式拒绝分类回收旧纸供安全再用，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/0",
+          "day": 19,
+          "action": "approve",
+          "result": "镇里准许给书库猫借一个浅木篮，来信人已照办。"
+        },
+        {
+          "id": "daily/10",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "来信人照批示另作安排：缩小遮阳布幅面避免兜风。"
+        },
+        {
+          "id": "daily/4",
+          "day": 19,
+          "action": "defer",
+          "result": "有关在蜂场外设置止步提示牌的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/18",
+          "day": 19,
+          "action": "reject",
+          "result": "镇里正式拒绝由托比在学堂教一次草编，来信人没有照原案办理。"
+        },
+        {
+          "id": "daily/16",
+          "day": 20,
+          "action": "approve",
+          "result": "镇里准许给路灯添加安全的形状标记，来信人已照办。"
+        },
+        {
+          "id": "daily/27",
+          "day": 20,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：使用可清洗的现有小扇并定期清洁。"
+        },
+        {
+          "id": "daily/29",
+          "day": 20,
+          "action": "defer",
+          "result": "有关区分公用与私人餐具存放的申请未收到答复，来信人仍在等待，并未收到禁令。"
+        },
+        {
+          "id": "daily/31",
+          "day": 20,
+          "action": "reject",
+          "result": "镇里正式拒绝接受邻镇关于此次无需回礼的约定，来信人没有照原案办理。"
+        },
+        {
+          "id": "season/0",
+          "day": 21,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/1",
+          "day": 21,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "书记官依批示办妥：请裁缝检查接缝后再补。"
+        },
+        {
+          "id": "season/2",
+          "day": 21,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/3",
+          "day": 21,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/4",
+          "day": 22,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/5",
+          "day": 22,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "书记官依批示办妥：借一件备用雨披轮换晾干。"
+        },
+        {
+          "id": "season/6",
+          "day": 22,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/7",
+          "day": 22,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/8",
+          "day": 23,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/9",
+          "day": 23,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "书记官依批示办妥：给驿站设一处晾披挂钩。"
+        },
+        {
+          "id": "season/10",
+          "day": 23,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/11",
+          "day": 23,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/12",
+          "day": 24,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/13",
+          "day": 24,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "书记官依批示办妥：请裁缝检查接缝后再补。"
+        },
+        {
+          "id": "season/14",
+          "day": 24,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/15",
+          "day": 24,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/16",
+          "day": 25,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/17",
+          "day": 25,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "书记官依批示办妥：借一件备用雨披轮换晾干。"
+        },
+        {
+          "id": "season/18",
+          "day": 25,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/19",
+          "day": 25,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/20",
+          "day": 26,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/21",
+          "day": 26,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "书记官依批示办妥：给驿站设一处晾披挂钩。"
+        },
+        {
+          "id": "season/22",
+          "day": 26,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/23",
+          "day": 26,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/24",
+          "day": 27,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/25",
+          "day": 27,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "书记官依批示办妥：请裁缝检查接缝后再补。"
+        },
+        {
+          "id": "season/26",
+          "day": 27,
+          "action": "defer",
+          "result": "有关借出陶壶供应午后热水的申请没有收到回复，原物暂留待用。"
+        },
+        {
+          "id": "season/27",
+          "day": 27,
+          "action": "reject",
+          "result": "您正式拒绝制作两只压纸木镇，书记官改以现有物件应付。"
+        },
+        {
+          "id": "season/28",
+          "day": 28,
+          "action": "approve",
+          "result": "您准许换一张结实草垫，书记官已照办。"
+        },
+        {
+          "id": "season/29",
+          "day": 28,
+          "action": "written_reply",
+          "reply": 1,
+          "result": "书记官依批示办妥：借一件备用雨披轮换晾干。"
+        }
+      ],
+      "pending": [],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag",
+        "garden",
+        "well",
+        "post",
+        "wedding",
+        "warmth",
+        "fair"
+      ],
+      "readDaily": [
+        "daily/7",
+        "daily/19",
+        "daily/8",
+        "daily/15",
+        "daily/26",
+        "daily/17",
+        "daily/6",
+        "daily/30",
+        "daily/24",
+        "daily/21",
+        "daily/5",
+        "daily/23",
+        "daily/20",
+        "daily/28",
+        "daily/2",
+        "daily/9",
+        "daily/3",
+        "daily/14",
+        "daily/1",
+        "daily/22",
+        "daily/13",
+        "daily/11",
+        "daily/25",
+        "daily/12",
+        "daily/0",
+        "daily/10",
+        "daily/4",
+        "daily/18",
+        "daily/16",
+        "daily/27",
+        "daily/29",
+        "daily/31"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "approve",
+          "lastResult": "存簿请求未获批准，行会自留原本。",
+          "lastDay": 7
+        },
+        "clock": {
+          "branch": "approve",
+          "lastResult": "固定检修日未获准，阿尔诺继续逐次申请。",
+          "lastDay": 8
+        },
+        "goat": {
+          "branch": "approve",
+          "lastResult": "废纸箱未获准，商户各自保存旧纸待收。",
+          "lastDay": 9
+        },
+        "ducks": {
+          "branch": "approve",
+          "lastResult": "约定未获准，贝拉把经验口头传给同行。",
+          "lastDay": 10
+        },
+        "bread": {
+          "branch": "approve",
+          "lastResult": "登记未获准，彼得继续带艾达练习。",
+          "lastDay": 11
+        },
+        "flag": {
+          "branch": "approve",
+          "lastResult": "交接纸未获准，布鲁诺继续口头教新人。",
+          "lastDay": 12
+        },
+        "garden": {
+          "branch": "approve",
+          "lastResult": "存种没有回音，艾琳把种子收在干燥木盒。",
+          "lastDay": 13
+        },
+        "well": {
+          "branch": "approve",
+          "lastResult": "检查簿没有回音，罗温把记录交同行互看。",
+          "lastDay": 14
+        },
+        "post": {
+          "branch": "approve",
+          "lastResult": "新驿夫随行一旬，认路也学会保守私事。",
+          "lastDay": 15
+        },
+        "wedding": {
+          "branch": "approve",
+          "lastResult": "双方各留半张借条，归还时合在一起。",
+          "lastDay": 16
+        },
+        "warmth": {
+          "branch": "approve",
+          "lastResult": "邻里设了私下取还的保暖物柜，只记物品去向。",
+          "lastDay": 17
+        },
+        "fair": {
+          "branch": "approve",
+          "lastResult": "新版鸣谢按实际工作列名，漏记者可自行补上。",
+          "lastDay": 18
+        }
+      },
+      "seasonal": 31
+    }
+  },
+  {
+    "name": "seed-16-after-20-plan-3",
+    "state": {
+      "version": 1,
+      "day": 6,
+      "inDay": 0,
+      "current": "flag/start",
+      "seed": 16,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "镇里批示先换危板，商队交来木料，危险桥段已加固。"
+        },
+        {
+          "id": "daily/23",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：请木匠制作食品适用的平滑小勺。"
+        },
+        {
+          "id": "daily/31",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：写一张短谢笺并注明不再附礼。"
+        },
+        {
+          "id": "daily/7",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：请认领者描述遗失地点再核实。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "三人依批示听钟，发现第十三响来自乌鸦撞动的小钟锤。"
+        },
+        {
+          "id": "daily/24",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：请实际走过道路的驿夫核对。"
+        },
+        {
+          "id": "daily/2",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：让学徒先辨认实物再贴签。"
+        },
+        {
+          "id": "daily/13",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：让孩子自己写作品名与日期。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "告示挂高，薄荷只在集市外圈吃草。"
+        },
+        {
+          "id": "bridge/reply",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "伊沃和船夫互核记录，渡口消息不再打架。"
+        },
+        {
+          "id": "daily/10",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：请木匠检查固定点是否牢靠。"
+        },
+        {
+          "id": "daily/22",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：请领取者先看过再自由选择。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "卫兵牵绳让鸭群过街，车马停留片刻。"
+        },
+        {
+          "id": "clock/reply",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "书记官删去争功字句，告示短到一张纸就够。"
+        },
+        {
+          "id": "daily/25",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先试装软垫并让邻居试听。"
+        },
+        {
+          "id": "daily/8",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：先检查积尘角落再安排清洁。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "修士当众蘸汤吃面包，承认它也能温柔。"
+        },
+        {
+          "id": "goat/reply",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "孩子画了喂养图，终于把纸放在不可吃一栏。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "小花地避开卸货处，商队也来浇水。"
+        },
+        {
+          "id": "daily/26",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 0,
+          "result": "来信人照批示另作安排：食品单独妥放并尽快通知物主。"
+        }
+      ],
+      "pending": [
+        {
+          "id": "ducks/reply",
+          "due": 6,
+          "order": 13
+        },
+        {
+          "id": "clock/continuation",
+          "due": 6,
+          "order": 14
+        },
+        {
+          "id": "bread/reply",
+          "due": 7,
+          "order": 17
+        },
+        {
+          "id": "goat/continuation",
+          "due": 7,
+          "order": 18
+        },
+        {
+          "id": "bridge/finale",
+          "due": 7,
+          "order": 19
+        }
+      ],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag"
+      ],
+      "readDaily": [
+        "daily/23",
+        "daily/31",
+        "daily/7",
+        "daily/24",
+        "daily/2",
+        "daily/13",
+        "daily/10",
+        "daily/22",
+        "daily/25",
+        "daily/8",
+        "daily/26"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "小花地避开卸货处，商队也来浇水。",
+          "lastDay": 5
+        },
+        "clock": {
+          "branch": "reply",
+          "lastResult": "书记官删去争功字句，告示短到一张纸就够。",
+          "lastDay": 4
+        },
+        "goat": {
+          "branch": "reply",
+          "lastResult": "孩子画了喂养图，终于把纸放在不可吃一栏。",
+          "lastDay": 5
+        },
+        "ducks": {
+          "branch": "reply",
+          "lastResult": "卫兵牵绳让鸭群过街，车马停留片刻。",
+          "lastDay": 4
+        },
+        "bread": {
+          "branch": "reply",
+          "lastResult": "修士当众蘸汤吃面包，承认它也能温柔。",
+          "lastDay": 5
+        }
+      },
+      "seasonal": 0
+    }
+  },
+  {
+    "name": "seed-65535-after-79-plan-5",
+    "state": {
+      "version": 1,
+      "day": 20,
+      "inDay": 3,
+      "current": "daily/8",
+      "seed": 65535,
+      "history": [
+        {
+          "id": "bridge/start",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "修桥获准，旧木留下做学徒的练习料，新桥面已经铺妥。"
+        },
+        {
+          "id": "daily/6",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：让助手画清每根杆的编号位置。"
+        },
+        {
+          "id": "daily/16",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请木匠检查标记与火焰的距离。"
+        },
+        {
+          "id": "daily/7",
+          "day": 1,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：由两名见证人在场完成认领交接。"
+        },
+        {
+          "id": "clock/start",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "阿尔诺按批示查明乌鸦撞锤，暂未全面修钟。"
+        },
+        {
+          "id": "daily/1",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请孩子在课后看一次安全修缮示范。"
+        },
+        {
+          "id": "daily/2",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请识字与不识字的厨工共同确认图文标签。"
+        },
+        {
+          "id": "daily/3",
+          "day": 2,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：把可安全整理的积尘先清理好。"
+        },
+        {
+          "id": "goat/start",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "废纸试用苦浆糊后，薄荷不愿再啃告示。"
+        },
+        {
+          "id": "bridge/reply",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "商队轮流签名巡看，玛塔能回工棚工作。"
+        },
+        {
+          "id": "daily/12",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：只回收空白边角作为练字纸。"
+        },
+        {
+          "id": "daily/19",
+          "day": 3,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：将石头留在镇厅院内另作展示。"
+        },
+        {
+          "id": "ducks/start",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "鸭群改在休摊时过街，摊主不必抬篮让路。"
+        },
+        {
+          "id": "clock/reply",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "彼得在面包店讲清缘由，听众顺手买了早餐。"
+        },
+        {
+          "id": "daily/25",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：另备夜间轻敲木片供访客使用。"
+        },
+        {
+          "id": "daily/30",
+          "day": 4,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：作品是否展示由孩子自己决定。"
+        },
+        {
+          "id": "bread/start",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "彼得补上配汤说明，客人不再直接硬咬。"
+        },
+        {
+          "id": "goat/reply",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "托比独自讲课，薄荷安静待在牧场。"
+        },
+        {
+          "id": "bridge/continuation",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "孩子画下石缝黄花，岸边保留原来的路宽。"
+        },
+        {
+          "id": "daily/29",
+          "day": 5,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：私人餐具由主人自带自收。"
+        },
+        {
+          "id": "flag/start",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "裁缝做了样旗，城门试看确认远处可辨。"
+        },
+        {
+          "id": "ducks/reply",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "鸭群休走三日后学会路线，不再只盯领头鸭。"
+        },
+        {
+          "id": "clock/continuation",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "婚铃随花车走远，没有打乱镇里的报时。"
+        },
+        {
+          "id": "daily/14",
+          "day": 6,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：将必要地标画在小样旁边。"
+        },
+        {
+          "id": "garden/start",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "花地获准暂借一季，邻里约好期满再议。"
+        },
+        {
+          "id": "bread/reply",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "厨娘试做成功，食谱得到了汤锅的证明。"
+        },
+        {
+          "id": "goat/continuation",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "补交免了纸费，事实仍按规矩核查。"
+        },
+        {
+          "id": "bridge/finale",
+          "day": 7,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "伊沃开始教小徒弟读簿，先解释凳腿为何不算桥。"
+        },
+        {
+          "id": "well/start",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "邻里共同筹办检修，期间从邻井取水。"
+        },
+        {
+          "id": "flag/reply",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "公开演练不收礼物，队伍保持正常职责。"
+        },
+        {
+          "id": "ducks/continuation",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "洗衣与鸭群通行错开，衬裙终于干净地垂着。"
+        },
+        {
+          "id": "clock/finale",
+          "day": 8,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "阿尔诺收了学徒，第一课是数十二下并等一等。"
+        },
+        {
+          "id": "post/start",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "收信簿记明井边与磨坊边的蓝门，投递准确了。"
+        },
+        {
+          "id": "garden/reply",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "孩子画了观察册，问题从能否吃变成何时开花。"
+        },
+        {
+          "id": "bread/continuation",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "艾达先学切面，彼得在旁示范揉面。"
+        },
+        {
+          "id": "goat/finale",
+          "day": 9,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "学徒做了旧板箱，托比习惯了随手盖好。"
+        },
+        {
+          "id": "wedding/start",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "婚宴改在庭院，坐凳供需要的人歇脚。"
+        },
+        {
+          "id": "well/reply",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "钟匠用小铃演示，孩子听见不同空间的回响。"
+        },
+        {
+          "id": "flag/continuation",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "新兵先认清同伴，不再对每顶帽子都喊一遍。"
+        },
+        {
+          "id": "ducks/finale",
+          "day": 10,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "两边共同签了让路约定，卫兵只负责见证。"
+        },
+        {
+          "id": "warmth/start",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "木匠先补好窗，干柴按诺拉实际需要送达。"
+        },
+        {
+          "id": "post/reply",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "普通短笺合并送，重要函件仍单独核签。"
+        },
+        {
+          "id": "garden/continuation",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "座位放在屋檐下，晴雨都能稍歇。"
+        },
+        {
+          "id": "bread/finale",
+          "day": 11,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "艾达写下配方，彼得只在末尾签名见证。"
+        },
+        {
+          "id": "fair/start",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "瓜主人收缩货架，把南瓜安置在自己摊内。"
+        },
+        {
+          "id": "wedding/reply",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "祖母坐定后，大家自行选座，反而很快坐齐。"
+        },
+        {
+          "id": "well/continuation",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "木匠做了挂钩，桶洗净后倒置晾干。"
+        },
+        {
+          "id": "flag/finale",
+          "day": 12,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "新兵复述并签名，规矩不再只是抄写。"
+        },
+        {
+          "id": "warmth/reply",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "工具提前备妥，修补没有打乱诺拉整日生活。"
+        },
+        {
+          "id": "post/continuation",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "寄信人先有机会补地址，许多信因此送达。"
+        },
+        {
+          "id": "garden/finale",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "孩子答应将种子传给新同学，花有了更长的故事。"
+        },
+        {
+          "id": "daily/21",
+          "day": 13,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请摊主每次售出时说明用途。"
+        },
+        {
+          "id": "fair/reply",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "按最早订货记录交付，交易有据可依。"
+        },
+        {
+          "id": "wedding/continuation",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "花边装入小袋交还，新裙照常穿用。"
+        },
+        {
+          "id": "well/finale",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "罗温带新井匠逐项检查，经验有了接手的人。"
+        },
+        {
+          "id": "daily/17",
+          "day": 14,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：只作一旬试行再听邻里意见。"
+        },
+        {
+          "id": "warmth/continuation",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "袖口改好，诺拉与少年自己约定借还。"
+        },
+        {
+          "id": "post/finale",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "交接纸只有四条，塞缪尔在路上继续教新人。"
+        },
+        {
+          "id": "daily/13",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请菜贩借一只空框放在学堂内。"
+        },
+        {
+          "id": "daily/10",
+          "day": 15,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：把摊位轻移到不挡路的背风侧。"
+        },
+        {
+          "id": "fair/continuation",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "清扫劳动得到报酬，各摊仍收好自己摊位。"
+        },
+        {
+          "id": "wedding/finale",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "借物人定期核对，米拉不必替大家追着问。"
+        },
+        {
+          "id": "daily/4",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请商会告知游客不要自行触碰蜂箱。"
+        },
+        {
+          "id": "daily/18",
+          "day": 16,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：先示范再让愿意的孩子动手。"
+        },
+        {
+          "id": "warmth/finale",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "物柜试行一季，是否继续由实际借用者说话。"
+        },
+        {
+          "id": "daily/23",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：向客人说明可按需取用无需勉强喝甜茶。"
+        },
+        {
+          "id": "daily/26",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：每次闭馆由管理员检查一次。"
+        },
+        {
+          "id": "daily/11",
+          "day": 17,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：共同订购可单只更换的合用手套。"
+        },
+        {
+          "id": "fair/finale",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "鸣谢存入行会，参与者一起坐下吃了饭。"
+        },
+        {
+          "id": "daily/24",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：在改动处附简短说明避免误抄。"
+        },
+        {
+          "id": "daily/20",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：以现有完好水罐替代另借器具。"
+        },
+        {
+          "id": "daily/31",
+          "day": 18,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：把食谱使用心得留到交流时再说。"
+        },
+        {
+          "id": "daily/28",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：给学徒一份清楚的独立练习谱。"
+        },
+        {
+          "id": "daily/5",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：让学徒下工前清点并收起小物。"
+        },
+        {
+          "id": "daily/27",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：使用可清洗的现有小扇并定期清洁。"
+        },
+        {
+          "id": "daily/0",
+          "day": 19,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：让木匠以边角料做一个稳固猫窝。"
+        },
+        {
+          "id": "daily/22",
+          "day": 20,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：将袜子留作备用而不强作礼物。"
+        },
+        {
+          "id": "daily/15",
+          "day": 20,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：保留一套不同厚度的清洁备用枕。"
+        },
+        {
+          "id": "daily/9",
+          "day": 20,
+          "action": "written_reply",
+          "reply": 2,
+          "result": "来信人照批示另作安排：请学徒为所有誊本做一次逐字复核。"
+        }
+      ],
+      "pending": [],
+      "started": [
+        "bridge",
+        "clock",
+        "goat",
+        "ducks",
+        "bread",
+        "flag",
+        "garden",
+        "well",
+        "post",
+        "wedding",
+        "warmth",
+        "fair"
+      ],
+      "readDaily": [
+        "daily/6",
+        "daily/16",
+        "daily/7",
+        "daily/1",
+        "daily/2",
+        "daily/3",
+        "daily/12",
+        "daily/19",
+        "daily/25",
+        "daily/30",
+        "daily/29",
+        "daily/14",
+        "daily/21",
+        "daily/17",
+        "daily/13",
+        "daily/10",
+        "daily/4",
+        "daily/18",
+        "daily/23",
+        "daily/26",
+        "daily/11",
+        "daily/24",
+        "daily/20",
+        "daily/31",
+        "daily/28",
+        "daily/5",
+        "daily/27",
+        "daily/0",
+        "daily/22",
+        "daily/15",
+        "daily/9",
+        "daily/8"
+      ],
+      "facts": {
+        "bridge": {
+          "branch": "reply",
+          "lastResult": "伊沃开始教小徒弟读簿，先解释凳腿为何不算桥。",
+          "lastDay": 7
+        },
+        "clock": {
+          "branch": "reply",
+          "lastResult": "阿尔诺收了学徒，第一课是数十二下并等一等。",
+          "lastDay": 8
+        },
+        "goat": {
+          "branch": "reply",
+          "lastResult": "学徒做了旧板箱，托比习惯了随手盖好。",
+          "lastDay": 9
+        },
+        "ducks": {
+          "branch": "reply",
+          "lastResult": "两边共同签了让路约定，卫兵只负责见证。",
+          "lastDay": 10
+        },
+        "bread": {
+          "branch": "reply",
+          "lastResult": "艾达写下配方，彼得只在末尾签名见证。",
+          "lastDay": 11
+        },
+        "flag": {
+          "branch": "reply",
+          "lastResult": "新兵复述并签名，规矩不再只是抄写。",
+          "lastDay": 12
+        },
+        "garden": {
+          "branch": "reply",
+          "lastResult": "孩子答应将种子传给新同学，花有了更长的故事。",
+          "lastDay": 13
+        },
+        "well": {
+          "branch": "reply",
+          "lastResult": "罗温带新井匠逐项检查，经验有了接手的人。",
+          "lastDay": 14
+        },
+        "post": {
+          "branch": "reply",
+          "lastResult": "交接纸只有四条，塞缪尔在路上继续教新人。",
+          "lastDay": 15
+        },
+        "wedding": {
+          "branch": "reply",
+          "lastResult": "借物人定期核对，米拉不必替大家追着问。",
+          "lastDay": 16
+        },
+        "warmth": {
+          "branch": "reply",
+          "lastResult": "物柜试行一季，是否继续由实际借用者说话。",
+          "lastDay": 17
+        },
+        "fair": {
+          "branch": "reply",
+          "lastResult": "鸣谢存入行会，参与者一起坐下吃了饭。",
+          "lastDay": 18
+        }
+      },
+      "seasonal": 0
+    }
+  }
+]

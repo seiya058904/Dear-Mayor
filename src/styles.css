@@ -86,7 +86,9 @@ button {
 }
 .letter-date {
   position: absolute;
-  left: 1080px;
+  left: 495px;
+  right: 438px;
+  text-align: right;
   top: 194px;
   font-size: 25px;
   letter-spacing: 4px;
@@ -121,7 +123,7 @@ h1.long-title {
   left: 495px;
   top: 390px;
   width: 735px;
-  max-height: 255px;
+  max-height: 270px;
   overflow: auto;
   overscroll-behavior: contain;
   scrollbar-width: thin;
@@ -139,19 +141,6 @@ h1.long-title {
 .letter-reading .salutation {
   margin-bottom: 8px;
   text-indent: 0;
-}
-.letter-reading.first-letter {
-  width: 745px;
-  max-height: 292px;
-  letter-spacing: 1.5px;
-  font-size: 24px;
-  line-height: 1.68;
-}
-.first-letter p {
-  margin-bottom: 8px;
-}
-.first-letter p:not(.salutation) {
-  margin-left: 25px;
 }
 .signature {
   position: absolute;
@@ -410,24 +399,8 @@ h1.long-title {
   text-decoration: underline;
   margin-left: 15px;
 }
-.letter-reading.first-letter {
-  max-height: 310px;
-}
 .signature {
   top: 674px;
-}
-.reference-line {
-  display: block;
-  text-indent: 0;
-}
-.reference-line:first-child {
-  text-indent: 1em;
-}
-.first-letter p {
-  margin-bottom: 0;
-}
-.first-letter .salutation {
-  margin-bottom: 0;
 }
 @media (max-width: 720px) {
   :root {
@@ -494,8 +467,7 @@ h1.long-title {
     margin: 0 0 20px;
     text-align: center;
   }
-  .letter-reading,
-  .letter-reading.first-letter {
+  .letter-reading {
     position: static;
     width: auto;
     max-height: none;
@@ -504,9 +476,6 @@ h1.long-title {
     line-height: 1.85;
     letter-spacing: 0;
     padding: 0;
-  }
-  .first-letter p:not(.salutation) {
-    margin-left: 0;
   }
   .letter-reading p {
     margin-bottom: 13px;
@@ -620,9 +589,6 @@ h1.long-title {
     padding: 98px 52px 82px;
     min-height: 680px;
   }
-  .letter-reading.first-letter {
-    max-height: none;
-  }
   .letter-date {
     margin-bottom: 20px;
   }
@@ -647,20 +613,8 @@ h1.long-title {
   .reply-options button {
     font-size: 17px;
   }
-  .letter-reading,
-  .letter-reading.first-letter {
+  .letter-reading {
     font-size: 17px;
     line-height: 1.85;
-  }
-}
-@media (max-width: 720px) {
-  .reference-line {
-    display: inline;
-  }
-  .reference-line:first-child {
-    text-indent: 0;
-  }
-  .first-letter p {
-    margin-bottom: 13px;
   }
 }

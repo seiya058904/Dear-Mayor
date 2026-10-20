@@ -1,0 +1,20 @@
+{
+  "description": "Batch 01 working-tree v2 contract, captured before v3 edits",
+  "baselineCommit": "fa76a25c3b31b3c1f4dd69c9d0531cc7ddaef61c",
+  "hashes": {
+    "game/engine.ts": "611bd5c0e5144d97f3bf2515bfdaf973f6cc655186169c4b9c9d0123935504fc",
+    "game/types.ts": "ea9c3cfd1f5be4a5db366717cfc6eb79d5b530c761215d4ad51e4dec9466b79c",
+    "content/index.ts": "36f979872507b345e3aee3da44cc92ce03016806e149301c58319635aeee1c3f",
+    "content/author.ts": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+    "content/daily.ts": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+    "content/chains-a.ts": "121fe7b5840ea29699203c7528378502c68746806fd8d1f0f91d12c9d036ed04",
+    "content/chains-b.ts": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+    "content/chains-c.ts": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+    "content/town-chains-a.ts": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+    "content/town-chains-b.ts": "132e47e3733c1a37cb39ba4641524d050e072d734803f4f8e03a3206e3f265ed",
+    "content/town-chains-c.ts": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+    "content/town-chains-d.ts": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+    "content/town-letters.ts": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+    "content/echoes.ts": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487"
+  }
+}

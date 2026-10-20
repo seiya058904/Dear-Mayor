@@ -1,0 +1,40 @@
+import { writeFileSync } from 'node:fs';
+import { documents } from '../src/content';
+import { documents as previousDocuments } from '../src/legacy/v2/content';
+import { documents as batchTwoDocuments } from '../src/legacy/v3/content';
+import { rank } from '../src/game/engine';
+import {catalogAt} from '../src/game/catalog';
+const seed=Number(process.argv.find(a=>a.startsWith('--seed='))?.split('=')[1]??20261020);
+const count=Number(process.argv.find(a=>a.startsWith('--count='))?.split('=')[1]??32);
+if(!Number.isSafeInteger(seed)||!Number.isInteger(count)||count<20||count>40) throw new Error('Use a safe integer seed and count 20..40');
+const selectors=process.argv.filter(a=>a.startsWith('--batch=')||a.startsWith('--since='));
+if(selectors.length>1)throw new Error('Choose one batch');
+const selector=selectors[0];
+const batch=selector==='--since=v2'?'02':selector==='--since=v3'?'03':selector?.split('=')[1];
+if(batch&&!['02','03','04','05','06','07','08','09','10','11'].includes(batch))throw new Error('Known batches: 02, 03, 04, 05, 06, 07, 08, 09, 10');
+const stageSelector=process.argv.find(a=>a.startsWith('--stage='))?.split('=')[1];
+if(stageSelector&&!['1','2','3','4','standalone'].includes(stageSelector))throw new Error('Stage: 1, 2, 3, 4, standalone');
+if(stageSelector&&batch)throw new Error('Choose stage or batch, not both');
+const ranges:Record<string,[number,number]>={'03':[1,2],'04':[2,3],'05':[3,6],'06':[6,8],'07':[8,9],'08':[9,10],'09':[10,11],'10':[11,12],'11':[12,13]};
+const docs=Object.values(documents).filter(d=>{
+ if(stageSelector)return stageSelector==='standalone'?!d.stage:d.stage===Number(stageSelector);
+ if(!batch)return true;
+ if(batch==='02')return !!batchTwoDocuments[d.id]&&!previousDocuments[d.id];
+ const [before,after]=ranges[batch];return !!catalogAt(after).letters[d.id]&&!catalogAt(before).letters[d.id];
+}).sort((a,b)=>rank(a.id,seed)-rank(b.id,seed));
+if(docs.length<count)throw new Error('Not enough eligible documents for the requested sample count');
+const selected:typeof docs=[];
+const add=(d:typeof docs[number]|undefined)=>{if(d&&!selected.includes(d))selected.push(d);};
+// Stratify by form, stage, history dependency, and recurring speaker before filling.
+for(const kind of ['official','archive','note','letter']) add(docs.find(d=>d.kind===kind));
+for(const stage of [1,2,3,4]) add(docs.find(d=>d.stage===stage));
+add(docs.find(d=>d.requires));
+if(stageSelector==='2')for(const branch of ['approve','reject','defer','reply'])add(docs.find(d=>d.id.endsWith('/'+branch)));
+for(const sender of new Set(docs.map(d=>d.sender))) if(selected.length<count) add(docs.find(d=>d.sender===sender));
+for(const d of docs) if(selected.length<count)add(d);
+const lines=['# 文学审校抽样（自动生成）','',`seed=${seed}；${selected.length} 封；${stageSelector?`阶段${stageSelector}（当前正文）`:batch?`批次${batch}节点（当前正文）`:'全库'}。${stageSelector?'在指定阶段内按形式、分支和发信人取样。':'跨形式、阶段、发信人分层取样。'}`, '',
+ '逐封检查：有无独立可办之事；口吻是否属于此人；三批示是否有实质区别；沉默是否被误当拒绝；前史是否真实；有无出戏术语。自动通过不表示人工审校通过。',''];
+for(const d of selected) lines.push(`## ${d.id} · ${d.title}`,`署名：${d.sender}；形式：${d.kind}；阶段：${d.stage??'独立'}；条件：${JSON.stringify(d.requires??null)}`,'',...d.body,'',`批准：${d.results.approve}`,`拒绝：${d.results.reject}`,`沉默：${d.results.defer}`,...d.replies.map((r,i)=>`${'ABCD'[i]} ${r.text} → ${r.result}`),'');
+const destination=stageSelector?`docs/CONTENT-SAMPLE-STAGE-${stageSelector.toUpperCase()}.md`:batch?`docs/CONTENT-SAMPLE-BATCH-${batch}.md`:'docs/CONTENT-SAMPLE.md';
+writeFileSync(destination,lines.join('\n'));
+console.log(`Wrote ${selected.length} stratified samples, seed=${seed}`);

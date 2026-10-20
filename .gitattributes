@@ -3,3 +3,5 @@
 *.ttf binary
 # Preserve the upstream license verbatim, including its existing whitespace.
 public/fonts/OFL.txt -whitespace
+# Frozen replay contracts have byte hashes; preserve their captured line endings.
+src/legacy/** -text whitespace=cr-at-eol

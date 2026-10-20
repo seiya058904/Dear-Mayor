@@ -1,0 +1,85 @@
+{
+  "note": "Captured before batch09 scheduling performance changes; full 1000-decision states, revision 11, twenty mixed-action seeds.",
+  "rows": [
+    {
+      "seed": 0,
+      "sha256": "b80765d57be25b9bc485d7e690423f2e1aebc86bc9cbe2df05eaf7d5b6cf2367"
+    },
+    {
+      "seed": 1,
+      "sha256": "969e340a8b37555a1383a2146302e432f6919c148464ebd788c7298840608c85"
+    },
+    {
+      "seed": 2,
+      "sha256": "50470d8d3f6af6b733a39839e0296174438771b06dc86d9e5bc22836375c4c6b"
+    },
+    {
+      "seed": 3,
+      "sha256": "f1615a71104ab22e7cfee209fb34f16076b792d1355733b32d76ea8285a1633a"
+    },
+    {
+      "seed": 4,
+      "sha256": "c17a2efbd64dd3e3f61ccbf4edebde306a52ff0ee6499a979cc81e728c9eefed"
+    },
+    {
+      "seed": 5,
+      "sha256": "122cba6be25966f1189ba8095bc3f11fd33fc1607a95f3203d13391b9c3b3eaa"
+    },
+    {
+      "seed": 6,
+      "sha256": "03bf8dc0d39b0bbb83beac46923494434c9d3c637a2c17920af73436fcedf264"
+    },
+    {
+      "seed": 7,
+      "sha256": "842276ce98a9234fb65c73742378bc9f889917ed588cd8909688eee159a4be2b"
+    },
+    {
+      "seed": 8,
+      "sha256": "bc8b01bcd4200d8d96c356e62c41fce29308989bb7ca1960cbb2a9359a06b59d"
+    },
+    {
+      "seed": 9,
+      "sha256": "2e75d86db76aa2891f67eb43b5f5b9fb58da4c05dc76eff70ba2c4e6af0fbd68"
+    },
+    {
+      "seed": 10,
+      "sha256": "259721ff17379a8bb864fdd1287f46a146eba783f8584315cbbd2bb4cef4a71d"
+    },
+    {
+      "seed": 11,
+      "sha256": "123696482abf0f27d8c19b8be138425e1ae8f6b54882d7435f205f5432dcbcf1"
+    },
+    {
+      "seed": 12,
+      "sha256": "c340dfda588baca486b55c4797e996cefa6d4f8c895775cc2a2ac354ba8cb71f"
+    },
+    {
+      "seed": 13,
+      "sha256": "d77da34d3434845cb60de7c6a3dd8ae506b4aeb88422a0d4d083dbe855af108f"
+    },
+    {
+      "seed": 14,
+      "sha256": "18e2851bb7547230ae5a61742566dfbd88aca8b7c3ae612dccfeb7ee99f48e90"
+    },
+    {
+      "seed": 15,
+      "sha256": "2f7c97d5315b1ffa73a8f3a2ef5052783c5acf0a2a9cba0e9b68bff653d9864e"
+    },
+    {
+      "seed": 16,
+      "sha256": "887726322548c57e4a10d94cea0e34fae14e8b667a255ba3267e59764528437b"
+    },
+    {
+      "seed": 17,
+      "sha256": "c0739c10c57f620420d805fed8c0559580e3c2840c23d5b4d44380868dff02e3"
+    },
+    {
+      "seed": 18,
+      "sha256": "bfc90e687bfac13ffb11806139c35165fc3f4963b536bf0be4eddcb5db805385"
+    },
+    {
+      "seed": 19,
+      "sha256": "80799a3dd61dd2c613732f8079d4f9b80cf917853335768f5cab94d376175527"
+    }
+  ]
+}
