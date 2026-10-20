@@ -1,3 +1,4 @@
+import senderAliases from './cast-senders.json';
 /** Author-only reference: not imported by the game UI or used for scores. */
 const firstCast = [
   { name:'萝莎', role:'菜贩', voice:'说话快，先护鹅再讲道理', knows:['赫伯','妮娜','托比'], change:'从独自牵鹅到愿意约帮手；肯承认鹅吃了自家菜', uncertainty:'起初把鹅看篮子当检查，属于人物比喻' },
@@ -83,3 +84,48 @@ const tenthCast = [
  {name:'泊禾',role:'与笙棠共同处理原宴后事的成年人',voice:'倾向只说本次取消，会为亲友仍做点心而为难，也愿把当下共同意思说准确',knows:['笙棠','姨母','原邀乐师'],change:'能与笙棠保留不同措辞，按实际领用归还，不把共同写过歌当作必须继续公开演唱',uncertainty:'一次取消意向不代未来承诺，收回原稿不要求乐师忘记旋律，私人物件与公物分开'},
 ] as const;
 export const newCast = [...firstCast, ...secondCast, ...thirdCast, ...fourthCast, ...fifthCast, ...sixthCast, ...seventhCast, ...eighthCast, ...ninthCast, ...tenthCast] as const;
+/** Names with multiple historical labels: aliases are evidence, never new jobs. */
+export const castIdentityRules = [
+ {name:'伊莎', roles:['药草师'], forbidden:['客栈老板娘','客栈主人'], evidence:['warmth/start','town/herb-taste']},
+ {name:'欧妲', roles:['客栈主人','客栈女主人','客栈老板','客栈老板娘'], forbidden:['药草师'], evidence:['eleventh/council-hall-chairs']},
+ {name:'赛拉', roles:['染匠'], forbidden:['邮差','驿夫'], evidence:['daily/6','bluewash/continuation']},
+ {name:'塞缪尔', roles:['驿夫','邮差'], forbidden:['染匠'], evidence:['post/start']},
+ {name:'布鲁诺', roles:['卫兵队长','守夜卫兵','巡卫'], forbidden:['摊主','菜贩','栗子贩'], evidence:['flag/start','chestnutwatch/start']},
+ {name:'萝莎', roles:['菜贩'], forbidden:['卫兵队长','王室绘图员'], evidence:['goose/start']},
+ {name:'贝拉', roles:['洗衣人'], forbidden:['卖蛋人'], evidence:['ducks/start','bluewash/start']},
+ {name:'薇朵', roles:['栗子贩'], forbidden:['园丁'], evidence:['chestnutwatch/start']},
+ {name:'苔丝', roles:['抄书人'], forbidden:['书记员','书记官'], evidence:['town/borrowed-corner-light']},
+ {name:'苏默', roles:['行商','杂货摊'], forbidden:['商会抄写员'], evidence:['town/merchant-honest']},
+ {name:'艾琳', roles:['寡居居民','照料花园的','养花的','园丁'], forbidden:['客栈老板娘'], evidence:['nightbloom/start']},
+ {name:'琳朵', roles:['面包学徒','面包铺成年学徒','学徒'], forbidden:['孩子','未成年学徒'], evidence:['breadapprentice/start']},
+ {name:'瑟禾', roles:['织工','成年织工'], forbidden:['孩子','未成年帮工'], evidence:['town/helper-hour-end']},
+ {name:'格里特', roles:['磨坊主'], forbidden:['玻璃匠'], evidence:['millerleave/start']},
+ {name:'伊沃', roles:['学徒','木匠学徒','木匠'], forbidden:['船匠'], evidence:['bridge/approve']},
+] as const;
+
+// Prefer the longest known title so “钟匠学徒小蓟” is not split into a different role.
+const identityNames=Object.keys(senderAliases);
+const identityTitles=[...new Set(Object.entries(senderAliases).flatMap(([name,aliases])=>aliases.map(alias=>alias.slice(0,-name.length))).filter(title=>title.length>=2))].sort((a,b)=>b.length-a.length);
+const roleMention=new RegExp(`(${identityTitles.join('|')})(${identityNames.join('|')})`,'g');
+
+/** Bounded lexical guard; cannot prove implicit family facts or an entire narrative. */
+export function castIdentityIssues(doc: {sender:string;title:string;body:string[];replies:{text:string;result:string}[];results:Record<string,string>}):string[]{
+ const text=[doc.sender,doc.title,...doc.body,...Object.values(doc.results),...doc.replies.flatMap(r=>[r.text,r.result])].join('\n');
+ const known=Object.entries(senderAliases).flatMap(([name,aliases])=>doc.sender.endsWith(name)&&!doc.sender.includes('与')&&!doc.sender.includes('、')&&!(aliases as string[]).includes(doc.sender)?[`未登记署名：${doc.sender}`]:[]);
+ const wrongRoles=[...text.matchAll(roleMention)].filter(match=>!(senderAliases[match[2] as keyof typeof senderAliases] as string[]).includes(match[0])).map(match=>`职业称呼待核：${match[0]}`);
+ return [...known,...wrongRoles,...castIdentityRules.flatMap(rule=>{
+  const errors=rule.forbidden.filter(role=>text.includes(role+rule.name)).map(role=>`${role}${rule.name}`);
+  if(doc.sender.endsWith(rule.name)&&!rule.roles.some(role=>doc.sender.endsWith(role+rule.name))&&!doc.sender.includes('与')&&!doc.sender.includes('、'))errors.push(`未登记署名：${doc.sender}`);
+  return errors;
+ })];
+}
+/** Shared with the generated CAST.md so content:report cannot erase review notes. */
+export const castRevisionNotes = [
+ '## v4 本地人物校验（目录19）', '',
+ '`cast-senders.json` 固定83个已有具名人物的已核称呼；castIdentityRules 给出高风险职业及来源ID。测试扫描当前1160文书的署名、标题、正文、选项和结果，注入83人错误职业验证防回归。署名和职业词法不替代语义审稿；冻结源不随新规范改字。完整索引见V4-CAST-INVENTORY.json，13项修正见V4-REVIEW.md。', '',
+ '伊莎是药草师，欧妲是客栈主人；三封客房、钥匙与窗闩信全封改欧妲。赛拉是染匠，塞缪尔是驿夫；两封投递信及空封问询改由塞缪尔承担，没有证据另设同名邮差。', '',
+ '布鲁诺是卫兵队长，两封卖菜场景改回菜贩萝莎；罗莎仍是另一个王室绘图员。苔丝是抄书人，承接抄件不等于任书记员；苏默是行商，参与市场约定不等于任商会抄写员。薇朵是栗子贩，贝拉是洗衣人；晒被单、绕路看树不改变职业。', '',
+ '有依据的旧称继续保留：艾琳寡居与养花、伊沃学徒与木匠、芙嘉跨部门临时誊送；琳朵的“学徒”简称仍指成年面包学徒。阿诺与阿尔诺、斐尔与赛拉不自动合并。', '',
+ 'SUSPECTED：赫伯两封卖鱼与多封种菜正文都明确，未擅自删职业或虚构兼业解释。玛蕾在town/countess-nap-music及town/countess-over-old-picture署“伯爵夫人”，主要设定是“女伯爵”；正文缺乏婚姻或爵位继承说明，现有别称不构成已确认配偶关系。两项待作者裁定。', '',
+ '31项旧pending原稿、署名、选项与结果保留于目录18；新规范只影响目录19。年龄、亲属关系、口吻和长期记忆仍需真人长程阅读。',
+] as const;

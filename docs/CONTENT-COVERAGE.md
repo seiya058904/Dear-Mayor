@@ -17,7 +17,7 @@
 | maxBodyCharacters | 204 |
 | previousBatchNodes | 1160 |
 | newNodesThisBatch | 0 |
-| changedPreviousMachineContractsThisBatch | 32 |
+| changedPreviousMachineContractsThisBatch | 31 |
 | standaloneItems | 586 |
 | unconditionalStandaloneItems | 514 |
 | conditionalEchoItems | 72 |
@@ -26,8 +26,8 @@
 | specialOrUpperLevelItems | 139 |
 | postExhaustionRepeatingVariants | 4 |
 | unionReachable | 1160 |
-| catalogRevision | 18 |
-| catalogCompatibilityFixtureCases | 176 |
+| catalogRevision | 19 |
+| catalogCompatibilityFixtureCases | 207 |
 | migrationFixtureCases | 55 |
 | v1FixtureCases | 16 |
 | v2FixtureCases | 20 |
@@ -533,13 +533,13 @@
 | honeycontest/reply | 同一口蜜，有人先想喝水 | 蜂农岚泽 | letter | 2 | — |
 | honeycontest/continuation | 邻居种的花不是我专用的蜜罐 | 蜂农岚泽 | letter | 3 | — |
 | honeycontest/finale | 铺名想写我的名字，不写第一甜 | 蜂农岚泽 | letter | 4 | — |
-| teanewcomer/start | 茶还没倒，故乡先讲完了 | 新住户蘅岚 | letter | 1 | — |
-| teanewcomer/approve | 第一位客人只说想要热的 | 新住户蘅岚 | letter | 2 | — |
-| teanewcomer/reject | 小台没租成，我先收拾了自家桌 | 新住户蘅岚 | letter | 2 | — |
-| teanewcomer/defer | 回音没来，别人先替茶摊募款了 | 新住户蘅岚 | letter | 2 | — |
-| teanewcomer/reply | 有人想替我的茶多加两勺甜 | 新住户蘅岚 | letter | 2 | — |
-| teanewcomer/continuation | 她们记得我名字时，我愣了一下 | 新住户蘅岚 | letter | 3 | — |
-| teanewcomer/finale | 这回家乡人来，我想借两把凳 | 新住户蘅岚 | letter | 4 | — |
+| teanewcomer/start | 茶凉了，我还没讲到自己名字 | 新住户蘅岚 | letter | 1 | — |
+| teanewcomer/approve | 第一位客人只想喝热的 | 新住户蘅岚 | letter | 2 | — |
+| teanewcomer/reject | 托盘还没端稳，她先叹起气了 | 新住户蘅岚 | letter | 2 | — |
+| teanewcomer/defer | 我的盘缠怎么先上路了 | 新住户蘅岚 | letter | 2 | — |
+| teanewcomer/reply | 糖请留在杯子里 | 新住户蘅岚 | letter | 2 | — |
+| teanewcomer/continuation | 有人在门外叫了我的名字 | 新住户蘅岚 | letter | 3 | — |
+| teanewcomer/finale | 来我家，这三个字写顺手了 | 新住户蘅岚 | letter | 4 | — |
 | oldchess/start | 我先说必胜，才发现不会摆马 | 东巷住户老彭 | letter | 1 | — |
 | oldchess/approve | 棋借到了，我把马认得太亲了 | 东巷住户老彭 | letter | 2 | — |
 | oldchess/reject | 纸上的马也没有比木头的听话 | 东巷住户老彭 | letter | 2 | — |
@@ -555,12 +555,12 @@
 | lampwindow/continuation | 我的帘做好了，灯的事还要照实说 | 巷口守灯人黛芬 | letter | 3 | — |
 | lampwindow/finale | 白天的巷子我也想走一走 | 巷口守灯人黛芬 | letter | 4 | — |
 | nightbloom/start | 花偏在我想睡时开了 | 园丁艾琳 | letter | 1 | — |
-| nightbloom/approve | 灯借来了，花没按我的画张开 | 园丁艾琳 | letter | 2 | — |
-| nightbloom/reject | 没借灯，我反而先看见自己的影子 | 园丁艾琳 | letter | 2 | — |
-| nightbloom/defer | 信没回，孩子先给闭花画了眼睛 | 园丁艾琳 | letter | 2 | — |
-| nightbloom/reply | 有人想替花敲一下开门 | 园丁艾琳 | letter | 2 | — |
-| nightbloom/continuation | 那一朵谢了，不欠下一批客人重开 | 园丁艾琳 | letter | 3 | — |
-| nightbloom/finale | 新叶还小，我先在旁边吃了一顿饭 | 园丁艾琳 | letter | 4 | — |
+| nightbloom/approve | 灯照着半朵，纸上却画了整朵 | 园丁艾琳 | letter | 2 | — |
+| nightbloom/reject | 我的影子倒比花开得大 | 园丁艾琳 | letter | 2 | — |
+| nightbloom/defer | 孩子给花画了眼睛 | 园丁艾琳 | letter | 2 | — |
+| nightbloom/reply | 请别敲我家的花盆 | 园丁艾琳 | letter | 2 | — |
+| nightbloom/continuation | 花谢了，问花的人还没散 | 园丁艾琳 | letter | 3 | — |
+| nightbloom/finale | 花盆占了我的吃饭位置 | 园丁艾琳 | letter | 4 | — |
 | debtorlist/start | 这张欠账单，我想先贴出去 | 商会代表奥斯温 | letter | 1 | — |
 | debtorlist/approve | 上墙的两个字找来了不欠钱的人 | 商会代表奥斯温 | letter | 2 | — |
 | debtorlist/reject | 没贴成，账簿里倒先找到一张回条 | 商会代表奥斯温 | letter | 2 | — |
@@ -710,7 +710,7 @@
 | town/two-apologies | 我们都带了道歉 | 石匠乌戈与清扫人菲恩 | letter | 独立 | — |
 | town/abbey-permission | 没有命令全镇午睡 | 修道院院长索恩 | official | 独立 | — |
 | echo/bridge-clear | 孩子记得那袋面粉 | 学堂教师埃芙 | letter | 独立 | bridge/start: approve +10天 |
-| echo/bridge-detour | 绕路时看见的树 | 卖蛋人贝拉 | letter | 独立 | bridge/start: reject +12天 |
+| echo/bridge-detour | 绕路时看见的树 | 洗衣人贝拉 | letter | 独立 | bridge/start: reject +12天 |
 | echo/bridge-no-answer | 师傅那张修过的凳子 | 木匠学徒伊沃 | letter | 独立 | bridge/start: defer +9天 |
 | echo/bridge-instructions | 批示背面的船影 | 渡船人罗恩 | letter | 独立 | bridge/start: written_reply +11天 |
 | echo/clock-repaired | 钟修好那天的焦面包 | 面包师彼得 | letter | 独立 | clock/start: approve +10天 |
@@ -1071,10 +1071,10 @@
 | echo/lamp-after-curtain | 她量窗时先给我看了一小束光 | 裁缝米拉 | letter | 独立 | lampwindow/start: reject +77天 |
 | echo/lamp-after-wait | 没回的灯信走得比巡夜人还快 | 镇门看门人帕福 | letter | 独立 | lampwindow/start: defer +79天 |
 | echo/lamp-after-directions | 那块小样板想留一面没画线的 | 木匠玛塔 | letter | 独立 | lampwindow/start: written_reply +81天 |
-| echo/tea-after-table | 茶摊让我想起自己第一张小桌 | 花贩莉娅 | letter | 独立 | teanewcomer/start: approve +65天 |
-| echo/tea-after-no-table | 没租到台，纸上的杯子也还热闹 | 造纸人陶恩 | letter | 独立 | teanewcomer/start: reject +67天 |
-| echo/tea-after-unanswered | 她说的是留下来再喝一杯 | 居民珂娅 | letter | 独立 | teanewcomer/start: defer +69天 |
-| echo/tea-after-instruction | 杯下那块布想留一点茶色 | 洗衣人贝拉 | letter | 独立 | teanewcomer/start: written_reply +71天 |
+| echo/tea-after-table | 她收杯子的样子我认得 | 花贩莉娅 | letter | 独立 | teanewcomer/start: approve +65天 |
+| echo/tea-after-no-table | 杯子画得比茶名还大 | 造纸人陶恩 | letter | 独立 | teanewcomer/start: reject +67天 |
+| echo/tea-after-unanswered | 我替她说得太快了 | 居民珂娅 | letter | 独立 | teanewcomer/start: defer +69天 |
+| echo/tea-after-instruction | 这块布她摸了两回 | 洗衣人贝拉 | letter | 独立 | teanewcomer/start: written_reply +71天 |
 | echo/candle-after-trial | 她把两条没走齐的线都画给我了 | 钟匠阿尔诺 | letter | 独立 | candlemarks/start: approve +70天 |
 | echo/candle-after-no-room | 她擦掉的小钟留下一个淡圆圈 | 抄书人苔丝 | letter | 独立 | candlemarks/start: reject +72天 |
 | echo/candle-after-waiting | 等女儿的那碗汤不用跟着烛线跑 | 厨娘妮娜 | letter | 独立 | candlemarks/start: defer +74天 |
@@ -1116,7 +1116,7 @@
 | town/keeper-no-home-tour | 看灯可以，别顺便看我的卧房 | 守灯人黛芬 | letter | 独立 | — |
 | town/rainer-unpaid-poem-copy | 抄得好看，也不能每晚顺手多抄 | 领主府管家雷纳 | note | 独立 | — |
 | town/hollow-tree-whistle | 风吹空树，不是有人偷练笛 | 林边看木人 | letter | 独立 | — |
-| town/moon-drying-cloth | 月亮照得好看，可被单还是湿的 | 园丁薇朵 | letter | 独立 | — |
+| town/moon-drying-cloth | 月亮照得好看，可被单还是湿的 | 栗子贩薇朵 | letter | 独立 | — |
 | town/frog-counting-board | 蛙叫一声，孩子要一起报三声 | 井边住户珂娅 | note | 独立 | — |
 | town/bee-at-painted-flower | 窗上那朵花，只是我画的 | 养蜂人佩拉 | letter | 独立 | — |
 | town/scarecrow-guest-hat | 稻草人穿得太像收门钱的人了 | 农夫赫伯 | letter | 独立 | — |
@@ -1157,10 +1157,10 @@
 | eleventh/bakery-flour-sneeze | 面粉袋上多了一朵白云 | 面包师彼得 | letter | 独立 | — |
 | eleventh/cobbler-boot-tap | 左靴比右靴先到门口 | 鞋匠斐洛 | letter | 独立 | — |
 | eleventh/lamplighter-wick | 灯芯剪下来的小黑卷 | 守灯人黛芬 | letter | 独立 | — |
-| eleventh/post-rain-letter | 这封信被雨点改了一个字 | 邮差赛拉 | letter | 独立 | — |
+| eleventh/post-rain-letter | 这封信被雨点改了一个字 | 驿夫塞缪尔 | letter | 独立 | — |
 | eleventh/tailor-button-jar | 三只蓝扣不是一套 | 裁缝米拉 | note | 独立 | — |
 | eleventh/miller-sack-mark | 两袋麦子都写了“最后一袋” | 磨坊主格里特 | letter | 独立 | — |
-| eleventh/inn-room-number | 七号房其实是窗边那间 | 客栈老板娘伊莎 | letter | 独立 | — |
+| eleventh/inn-room-number | 七号房其实是窗边那间 | 客栈老板娘欧妲 | letter | 独立 | — |
 | eleventh/garden-seed-packet | 种子袋上写着去年 | 园丁艾琳 | note | 独立 | — |
 | eleventh/smith-tongs-rest | 钳子今天需要坐一会儿 | 铁匠达恩 | letter | 独立 | — |
 | eleventh/bridge-ribbon | 桥栏上的红布条不是告示 | 桥边住户阿苔 | letter | 独立 | — |
@@ -1169,7 +1169,7 @@
 | eleventh/porridge-pot-size | 一锅粥够三个人还是四个 | 厨房帮手琵娅 | letter | 独立 | — |
 | eleventh/court-drum-skin | 巡夜鼓今天先别敲 | 巡夜队长温斯 | official | 独立 | — |
 | eleventh/queen-map-fold | 地图要不要把羊圈也画进去 | 王室绘图员罗莎 | official | 独立 | — |
-| eleventh/guild-napkin-contract | 餐巾背面的约定太容易洗掉 | 商会抄写员苏默 | letter | 独立 | — |
+| eleventh/guild-napkin-contract | 餐巾背面的约定太容易洗掉 | 行商苏默 | letter | 独立 | — |
 | eleventh/shepherd-lost-sheepbell | 羊回来了，铃还在山上 | 牧羊人波恩 | letter | 独立 | — |
 | eleventh/painter-window-dry | 窗外的云画得比窗里干 | 画匠莱娜 | letter | 独立 | — |
 | eleventh/mason-stair-count | 台阶数对了，木尺少一格 | 石匠阿诺 | note | 独立 | — |
@@ -1182,15 +1182,15 @@
 | eleventh/bellmaker-soft-clapper | 钟声像吞了一颗糖 | 钟匠阿尔诺 | letter | 独立 | — |
 | eleventh/tailor-patch-stitch | 补丁比洞多了一圈 | 裁缝米拉 | letter | 独立 | — |
 | eleventh/orchard-crate-label | 筐上写苹果，里面是梨 | 果农阿芙 | note | 独立 | — |
-| eleventh/scribe-ink-blot | 印泥里落了一粒面包屑 | 书记员苔丝 | official | 独立 | — |
+| eleventh/scribe-ink-blot | 印泥里落了一粒面包屑 | 抄书人苔丝 | official | 独立 | — |
 | eleventh/cobbler-lace-tangle | 鞋带结没有打在同一边 | 鞋匠斐洛 | note | 独立 | — |
 | eleventh/herald-horse-water | 王室马喝了两桶水 | 王室传令员瑟恩 | official | 独立 | — |
 | eleventh/school-chalk-crumbs | 黑板边掉下一粒蓝粉 | 学堂教师埃芙 | letter | 独立 | — |
-| eleventh/market-hen-shadow | 篷布下面多了个鸡窝 | 摊主布鲁诺 | letter | 独立 | — |
-| eleventh/inn-key-tag | 钥匙牌的数字掉了 | 客栈老板娘伊莎 | letter | 独立 | — |
+| eleventh/market-hen-shadow | 篷布下面多了个鸡窝 | 菜贩萝莎 | letter | 独立 | — |
+| eleventh/inn-key-tag | 钥匙牌的数字掉了 | 客栈老板娘欧妲 | letter | 独立 | — |
 | eleventh/weaver-dye-pot | 蓝布晾干后变成了灰 | 染匠斐尔 | letter | 独立 | — |
 | eleventh/garden-bucket-rim | 桶沿上留下了半圈月亮 | 居民阿满 | letter | 独立 | — |
-| eleventh/scribe-returned-envelope | 退回来的信封里没有信 | 书记员苔丝 | archive | 独立 | — |
+| eleventh/scribe-returned-envelope | 退回来的信封里没有信 | 抄书人苔丝 | archive | 独立 | — |
 | eleventh/smith-lantern-hook | 灯钩比灯更亮 | 铁匠达恩 | note | 独立 | — |
 | eleventh/shepherd-sheep-name | 小羊叫错了名字 | 牧羊人波恩 | letter | 独立 | — |
 | eleventh/royal-tablecloth | 长桌布短了一掌 | 王室宴席侍者露珊 | official | 独立 | — |
@@ -1198,16 +1198,16 @@
 | eleventh/glassworker-sun-chip | 窗上的光斑不是裂纹 | 玻璃匠维珀 | letter | 独立 | — |
 | eleventh/inn-guest-supper | 我想吃热饭，不想再加床 | 客栈旅客缇玛 | letter | 独立 | — |
 | eleventh/school-slate-crack | 石板裂了，字还写得进去 | 孩子栗米 | letter | 独立 | — |
-| eleventh/market-hat-brim | 帽檐挡住了菜价 | 摊主布鲁诺 | note | 独立 | — |
+| eleventh/market-hat-brim | 帽檐挡住了菜价 | 菜贩萝莎 | note | 独立 | — |
 | eleventh/council-hall-chairs | 椅子排齐后少了一把 | 客栈女主人欧妲 | letter | 独立 | — |
 | eleventh/soup-ladle-handle | 木勺柄的影子像一条鱼 | 食堂厨娘妮娜 | letter | 独立 | — |
 | eleventh/tailor-parade-sleeve | 游行袖口不是旗面 | 裁缝米拉 | letter | 独立 | — |
 | eleventh/miller-rain-wheel | 雨水流走了，轮子没转 | 磨坊主格里特 | note | 独立 | — |
 | eleventh/school-ink-stain | 红墨水把值日表变成了花 | 学堂教师埃芙 | letter | 独立 | — |
 | eleventh/garden-bee-box-lid | 蜂箱盖上落了朵花 | 蜂农岚泽 | letter | 独立 | — |
-| eleventh/postbag-wrong-bundle | 两捆信都绑着同一根红线 | 邮差赛拉 | archive | 独立 | — |
+| eleventh/postbag-wrong-bundle | 两捆信都绑着同一根红线 | 驿夫塞缪尔 | archive | 独立 | — |
 | eleventh/forge-bellows-rope | 风箱绳子磨得发白 | 铁匠达恩 | letter | 独立 | — |
-| eleventh/inn-window-latch | 窗闩扣上后还是晃 | 客栈老板娘伊莎 | letter | 独立 | — |
+| eleventh/inn-window-latch | 窗闩扣上后还是晃 | 客栈老板娘欧妲 | letter | 独立 | — |
 | eleventh/ledger-duplicate-mark | 账簿里有两道一样的勾 | 书记官露西安 | official | 独立 | — |
 | eleventh/river-child-boat | 纸船漂到桥下就不算我的了 | 孩子栗米 | letter | 独立 | — |
 | eleventh/laundry-rope-shadow | 这张床单得有两个人收 | 洗衣人贝拉 | note | 独立 | — |
@@ -1224,7 +1224,7 @@
 | eleventh/soup-bowl-rim | 碗边有一道蓝线 | 食堂厨娘妮娜 | letter | 独立 | — |
 | eleventh/town-crier-voice | 我喊到第三遍才听见自己 | 报信人法恩 | note | 独立 | — |
 | eleventh/cobbler-old-last | 旧鞋楦比新脚大半寸 | 鞋匠斐洛 | letter | 独立 | — |
-| eleventh/scribe-dry-ink | 墨水干得像一片小田 | 书记员苔丝 | official | 独立 | — |
+| eleventh/scribe-dry-ink | 墨水干得像一片小田 | 抄书人苔丝 | official | 独立 | — |
 | eleventh/orchard-branch-ladder | 梯子靠着树就像一扇门 | 果农阿芙 | letter | 独立 | — |
 | eleventh/stable-horseshoe-line | 两只马蹄铁排成了一支小船 | 马厩管事尤拉 | letter | 独立 | — |
 | eleventh/royal-ribbon-return | 迎宾绸带忘了收回盒里 | 王室侍从贝洛 | official | 独立 | — |

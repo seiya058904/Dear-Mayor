@@ -1,0 +1,2159 @@
+[
+  {
+    "name": "伊沃",
+    "senders": [
+      "木匠学徒伊沃",
+      "学徒伊沃",
+      "木匠伊沃"
+    ],
+    "mentions": [
+      "bridge/reply",
+      "bridge/finale",
+      "shadowplay/reply",
+      "shoebox/continuation",
+      "clocklesson/reject",
+      "clocklesson/defer",
+      "wrongdoor/start",
+      "wrongdoor/approve",
+      "wrongdoor/reject",
+      "wrongdoor/defer",
+      "wrongdoor/reply",
+      "wrongdoor/continuation",
+      "wrongdoor/finale",
+      "oldchess/continuation",
+      "daily/0",
+      "daily/9",
+      "daily/11",
+      "echo/bridge-no-answer",
+      "echo/bridge-instructions",
+      "echo/clock-repaired",
+      "echo/paperkite-after-class",
+      "echo/miller-after-light-bag",
+      "town/no-free-carry",
+      "town/quiet-cheer",
+      "town/wood-cup-handle",
+      "town/snowless-sled-board",
+      "town/chairs-no-staircase",
+      "town/hero-door-hinge"
+    ]
+  },
+  {
+    "name": "伊莎",
+    "senders": [
+      "药草师伊莎"
+    ],
+    "mentions": [
+      "garden/reply",
+      "warmth/start",
+      "warmth/approve",
+      "warmth/reject",
+      "warmth/defer",
+      "warmth/reply",
+      "warmth/continuation",
+      "warmth/finale",
+      "shoebox/start",
+      "shoebox/defer",
+      "soupbell/defer",
+      "town/quiet-return",
+      "town/herb-taste",
+      "echo/bridge-detour",
+      "town/flower-seed-label",
+      "echo/warmth-still-page",
+      "echo/warmth-split-wood",
+      "echo/warmth-blanket-stitch",
+      "echo/warmth-knock-first",
+      "town/mixed-herb-seeds",
+      "town/doctor-lost-chalk"
+    ]
+  },
+  {
+    "name": "伦诺",
+    "senders": [
+      "王室刻版师伦诺",
+      "刻版师伦诺"
+    ],
+    "mentions": [
+      "mapname/approve",
+      "mapname/defer",
+      "mapname/reply",
+      "mapname/continuation",
+      "mapname/finale",
+      "town/royal-map-fold",
+      "town/map-folded-river"
+    ]
+  },
+  {
+    "name": "埃芙",
+    "senders": [
+      "学堂教师埃芙",
+      "学堂老师埃芙"
+    ],
+    "mentions": [
+      "well/reply",
+      "lanename/reply",
+      "shadowplay/start",
+      "shadowplay/defer",
+      "shadowplay/continuation",
+      "shadowplay/finale",
+      "clocklesson/start",
+      "readaloud/continuation",
+      "paperkite/start",
+      "paperkite/approve",
+      "paperkite/reject",
+      "paperkite/defer",
+      "paperkite/reply",
+      "paperkite/continuation",
+      "paperkite/finale",
+      "basinboats/start",
+      "basinboats/approve",
+      "basinboats/finale",
+      "doorchalk/reject",
+      "stonelion/defer",
+      "tinmoon/continuation",
+      "shadowclock/reject",
+      "daily/1",
+      "daily/13",
+      "daily/18",
+      "daily/20",
+      "daily/30",
+      "town/school-whisper",
+      "echo/bridge-clear",
+      "echo/goose-plan",
+      "town/small-mayor",
+      "town/not-a-seal",
+      "town/rhyme-echo",
+      "town/empty-chair-lesson",
+      "echo/clocklesson-year-class",
+      "town/bean-window",
+      "town/school-door-mat",
+      "town/print-own-leaf",
+      "town/snail-flower-pot",
+      "town/winning-child-speech",
+      "town/classroom-no-window-name",
+      "town/two-teachers-one-map",
+      "town/shadow-lesson-time",
+      "town/teacher-own-misspelling",
+      "echo/chess-two-day-loan",
+      "eleventh/school-quiet-bell",
+      "eleventh/school-chalk-crumbs",
+      "eleventh/school-slate-crack",
+      "eleventh/school-ink-stain"
+    ]
+  },
+  {
+    "name": "塔琳",
+    "senders": [
+      "王室转运队军官塔琳",
+      "转运队军官塔琳"
+    ],
+    "mentions": [
+      "wagonroute/start",
+      "wagonroute/approve",
+      "wagonroute/reject",
+      "wagonroute/defer",
+      "wagonroute/reply",
+      "wagonroute/continuation",
+      "wagonroute/finale",
+      "hollowdrum/approve",
+      "hollowdrum/finale",
+      "town/captain-handkerchief",
+      "town/guard-dog-owner",
+      "town/royal-cart-straw",
+      "town/royal-small-chair-letter"
+    ]
+  },
+  {
+    "name": "塞缪尔",
+    "senders": [
+      "驿夫塞缪尔"
+    ],
+    "mentions": [
+      "post/start",
+      "post/approve",
+      "post/reject",
+      "post/defer",
+      "post/reply",
+      "post/continuation",
+      "post/finale",
+      "lanename/start",
+      "lanename/reject",
+      "shadowplay/continuation",
+      "shoebox/approve",
+      "halfnotice/approve",
+      "halfnotice/reply",
+      "millerleave/approve",
+      "foreignstones/start",
+      "foreignstones/reject",
+      "foreignstones/defer",
+      "ferrydaughter/reject",
+      "nightferry/reply",
+      "daily/14",
+      "daily/24",
+      "town/empty-gift",
+      "town/washline-letter",
+      "town/wrong-wedding",
+      "town/garlic-parcel",
+      "town/map-fold-stream",
+      "echo/bread-recipe-listener",
+      "echo/post-sign-shadow",
+      "echo/post-tree-change",
+      "echo/post-private-slip",
+      "town/wrong-sleeper",
+      "town/dry-socks-stop",
+      "town/royal-map-fold",
+      "echo/granary-after-unanswered",
+      "town/courier-hollow-parcel",
+      "town/pigeon-empty-envelope",
+      "town/night-mail-no-song",
+      "town/postman-wait-at-gate",
+      "eleventh/post-rain-letter",
+      "eleventh/scribe-returned-envelope",
+      "eleventh/postbag-wrong-bundle"
+    ]
+  },
+  {
+    "name": "奎因",
+    "senders": [
+      "王室巡察处书记奎因",
+      "王室书记奎因",
+      "巡察处书记奎因"
+    ],
+    "mentions": [
+      "inspection/start",
+      "inspection/approve",
+      "inspection/reject",
+      "inspection/defer",
+      "inspection/reply",
+      "inspection/continuation",
+      "inspection/finale",
+      "town/seal-on-bread-wrapper",
+      "town/rain-festival-title",
+      "town/royal-visit-no-line",
+      "town/ribbon-not-summons",
+      "town/daughter-handwriting-contest"
+    ]
+  },
+  {
+    "name": "奥斯丁",
+    "senders": [
+      "巡游戏班领班奥斯丁",
+      "戏班领班奥斯丁",
+      "戏班管事奥斯丁"
+    ],
+    "mentions": [
+      "actorspurse/start",
+      "actorspurse/approve",
+      "actorspurse/reject",
+      "actorspurse/defer",
+      "actorspurse/reply",
+      "actorspurse/continuation",
+      "actorspurse/finale",
+      "playvillain/approve",
+      "playvillain/reject",
+      "playvillain/continuation",
+      "town/prop-empty-bowls",
+      "town/rented-stage-mirror",
+      "town/snow-in-stage-bag"
+    ]
+  },
+  {
+    "name": "奥斯温",
+    "senders": [
+      "商会代表奥斯温"
+    ],
+    "mentions": [
+      "fair/start",
+      "fair/approve",
+      "fair/reject",
+      "fair/defer",
+      "fair/reply",
+      "fair/continuation",
+      "fair/finale",
+      "quietchoir/reply",
+      "lanternmarket/start",
+      "lanternmarket/approve",
+      "lanternmarket/reject",
+      "lanternmarket/defer",
+      "lanternmarket/reply",
+      "lanternmarket/continuation",
+      "lanternmarket/finale",
+      "emptylikeness/start",
+      "emptylikeness/approve",
+      "emptylikeness/reject",
+      "debtorlist/start",
+      "debtorlist/approve",
+      "debtorlist/reject",
+      "debtorlist/defer",
+      "debtorlist/reply",
+      "debtorlist/continuation",
+      "debtorlist/finale",
+      "daily/4",
+      "daily/11",
+      "daily/24",
+      "town/guild-apology",
+      "town/mirror-shop",
+      "town/sour-bean-vote",
+      "town/nearest-gate-stall",
+      "town/crooked-brass-weight",
+      "town/merchant-best-corner",
+      "town/merchant-unloading-corner",
+      "eleventh/ledger-duplicate-mark"
+    ]
+  },
+  {
+    "name": "奥黛",
+    "senders": [
+      "图书管理员奥黛",
+      "书馆照管人奥黛"
+    ],
+    "mentions": [
+      "shoebox/approve",
+      "shoebox/defer",
+      "clocklesson/approve",
+      "readaloud/start",
+      "readaloud/approve",
+      "readaloud/reject",
+      "readaloud/defer",
+      "readaloud/reply",
+      "readaloud/continuation",
+      "readaloud/finale",
+      "royalbook/approve",
+      "royalbook/continuation",
+      "daily/0",
+      "daily/26",
+      "town/school-whisper",
+      "town/librarian-blank",
+      "town/missing-page-two",
+      "town/librarian-reserved-page",
+      "echo/post-near-letter",
+      "town/cat-key",
+      "town/cat-window-wages",
+      "town/book-spine-rest",
+      "town/book-return-leaf",
+      "town/library-borrow-index",
+      "echo/chess-rule-letter",
+      "eleventh/book-damp-corner",
+      "eleventh/library-window-seat"
+    ]
+  },
+  {
+    "name": "妮娜",
+    "senders": [
+      "食堂厨娘妮娜",
+      "厨娘妮娜"
+    ],
+    "mentions": [
+      "bread/approve",
+      "bread/continuation",
+      "fair/reject",
+      "fair/reply",
+      "fair/finale",
+      "goose/defer",
+      "goose/reply",
+      "soupbell/start",
+      "soupbell/approve",
+      "soupbell/reject",
+      "soupbell/defer",
+      "soupbell/reply",
+      "soupbell/continuation",
+      "soupbell/finale",
+      "halfnotice/start",
+      "halfnotice/reject",
+      "halfnotice/defer",
+      "borderpear/continuation",
+      "wrongpie/continuation",
+      "kilnclay/approve",
+      "kilnclay/reply",
+      "kilnclay/finale",
+      "turnipgiant/reply",
+      "sharedoven/start",
+      "sharedoven/approve",
+      "sharedoven/reject",
+      "sharedoven/defer",
+      "sharedoven/reply",
+      "sharedoven/continuation",
+      "sharedoven/finale",
+      "lampwindow/reply",
+      "soupbyname/start",
+      "soupbyname/approve",
+      "soupbyname/reject",
+      "soupbyname/defer",
+      "soupbyname/reply",
+      "soupbyname/continuation",
+      "soupbyname/finale",
+      "daily/2",
+      "daily/8",
+      "daily/29",
+      "town/unsigned-mittens",
+      "town/pot-lid-witness",
+      "town/bishop-beans",
+      "town/bread-end",
+      "echo/goose-home",
+      "town/royal-cold-soup",
+      "town/soup-name",
+      "echo/bread-soup-cups",
+      "echo/bread-recipe-listener",
+      "town/soup-three-signatures",
+      "town/sour-bean-vote",
+      "town/saint-of-soup",
+      "town/unwanted-family-recipe",
+      "town/low-stirring-seat",
+      "town/extra-arm-apron",
+      "town/stew-without-speech",
+      "town/three-lids-one-pot",
+      "echo/flour-after-talk",
+      "town/kitchen-window-steam",
+      "town/knife-not-for-ribbon",
+      "town/crooked-soup-name",
+      "echo/lamp-after-look",
+      "echo/candle-after-waiting",
+      "echo/honey-table-open",
+      "eleventh/soup-ladle-handle",
+      "eleventh/soup-bowl-rim"
+    ]
+  },
+  {
+    "name": "小素",
+    "senders": [
+      "珂娅的女儿小素",
+      "学堂孩子小素"
+    ],
+    "mentions": [
+      "doorchalk/start",
+      "doorchalk/approve",
+      "doorchalk/reject",
+      "doorchalk/defer",
+      "doorchalk/reply",
+      "doorchalk/continuation",
+      "doorchalk/finale",
+      "wrongdoor/reply",
+      "echo/paperkite-after-silence",
+      "town/school-bell-bird",
+      "town/grandma-drawing-map",
+      "eleventh/school-quiet-bell"
+    ]
+  },
+  {
+    "name": "小蓟",
+    "senders": [
+      "钟匠学徒小蓟",
+      "钟楼学徒小蓟",
+      "守钟学徒小蓟"
+    ],
+    "mentions": [
+      "clocklesson/start",
+      "clocklesson/approve",
+      "clocklesson/reject",
+      "clocklesson/defer",
+      "clocklesson/reply",
+      "clocklesson/continuation",
+      "clocklesson/finale",
+      "town/clock-ears",
+      "echo/clock-refused",
+      "echo/clock-replied",
+      "town/clock-ribbon-door",
+      "town/clock-signature",
+      "town/half-bell-hat",
+      "echo/clocklesson-year-class",
+      "echo/clocklesson-year-shop",
+      "echo/clocklesson-year-wait",
+      "echo/clocklesson-year-reply",
+      "town/river-stone-pocket",
+      "town/bell-rope-knot"
+    ]
+  },
+  {
+    "name": "尤恩",
+    "senders": [
+      "在邻镇学艺的尤恩"
+    ],
+    "mentions": [
+      "millerleave/start",
+      "millerleave/approve",
+      "millerleave/reject",
+      "millerleave/defer",
+      "millerleave/reply",
+      "millerleave/continuation",
+      "millerleave/finale",
+      "foreignstones/start",
+      "foreignstones/approve",
+      "foreignstones/reject",
+      "foreignstones/defer",
+      "foreignstones/reply",
+      "foreignstones/continuation",
+      "foreignstones/finale",
+      "town/miller-name-bag",
+      "echo/miller-after-cart",
+      "echo/miller-after-light-bag",
+      "echo/miller-after-unanswered",
+      "echo/miller-after-plan",
+      "town/cup-from-far-town",
+      "town/miller-nephew-first-stone"
+    ]
+  },
+  {
+    "name": "岑恩",
+    "senders": [],
+    "mentions": [
+      "basinboats/start",
+      "basinboats/approve",
+      "basinboats/reject",
+      "basinboats/defer",
+      "basinboats/reply",
+      "basinboats/continuation",
+      "basinboats/finale"
+    ]
+  },
+  {
+    "name": "岚泽",
+    "senders": [
+      "蜂农岚泽"
+    ],
+    "mentions": [
+      "honeycontest/start",
+      "honeycontest/approve",
+      "honeycontest/reject",
+      "honeycontest/defer",
+      "honeycontest/reply",
+      "honeycontest/continuation",
+      "honeycontest/finale",
+      "town/honey-jar-last-drop",
+      "echo/honey-table-open",
+      "echo/honey-table-closed",
+      "echo/honey-table-wait",
+      "echo/honey-table-letter",
+      "eleventh/garden-bee-box-lid"
+    ]
+  },
+  {
+    "name": "岚珂",
+    "senders": [
+      "画师岚珂"
+    ],
+    "mentions": [
+      "emptylikeness/start",
+      "emptylikeness/approve",
+      "emptylikeness/reject",
+      "emptylikeness/defer",
+      "emptylikeness/reply",
+      "emptylikeness/continuation",
+      "emptylikeness/finale",
+      "town/closed-eye-portrait",
+      "town/empty-garden-paint",
+      "town/pond-reflection-seat",
+      "town/painter-own-exhibition",
+      "town/self-portrait-not-town"
+    ]
+  },
+  {
+    "name": "布鲁诺",
+    "senders": [
+      "卫兵队长布鲁诺",
+      "守夜卫兵布鲁诺",
+      "巡卫布鲁诺"
+    ],
+    "mentions": [
+      "flag/start",
+      "flag/approve",
+      "flag/reject",
+      "flag/defer",
+      "flag/reply",
+      "flag/continuation",
+      "flag/finale",
+      "goose/start",
+      "goose/reply",
+      "chestnutwatch/start",
+      "chestnutwatch/approve",
+      "chestnutwatch/reject",
+      "chestnutwatch/defer",
+      "chestnutwatch/reply",
+      "chestnutwatch/continuation",
+      "chestnutwatch/finale",
+      "town/night-pigeon",
+      "echo/goose-wait",
+      "town/flour-footprints",
+      "town/bathhouse-banner",
+      "town/hat-of-night",
+      "town/one-black-glove",
+      "town/guard-hat-doorway",
+      "town/watch-whistle-private-test",
+      "town/guard-portrait-sitting"
+    ]
+  },
+  {
+    "name": "希铎",
+    "senders": [
+      "王室阅书官希铎"
+    ],
+    "mentions": [
+      "royalbook/start",
+      "royalbook/approve",
+      "royalbook/reject",
+      "royalbook/defer",
+      "royalbook/reply",
+      "royalbook/continuation",
+      "royalbook/finale",
+      "town/ordinary-seat-reader"
+    ]
+  },
+  {
+    "name": "帕福",
+    "senders": [
+      "门房帕福",
+      "镇门看门人帕福"
+    ],
+    "mentions": [
+      "stonelion/start",
+      "stonelion/approve",
+      "stonelion/reject",
+      "stonelion/defer",
+      "stonelion/reply",
+      "stonelion/continuation",
+      "stonelion/finale",
+      "town/one-more-curtain",
+      "echo/granary-after-instruction",
+      "echo/lamp-after-wait"
+    ]
+  },
+  {
+    "name": "延栖",
+    "senders": [
+      "制绳人延栖"
+    ],
+    "mentions": [
+      "shortrope/start",
+      "shortrope/approve",
+      "shortrope/reject",
+      "shortrope/defer",
+      "shortrope/reply",
+      "shortrope/continuation",
+      "shortrope/finale",
+      "town/rope-wish-knot"
+    ]
+  },
+  {
+    "name": "弦芽",
+    "senders": [
+      "笛手弦芽"
+    ],
+    "mentions": [
+      "duettempo/start",
+      "duettempo/approve",
+      "duettempo/reject",
+      "duettempo/defer",
+      "duettempo/reply",
+      "duettempo/continuation",
+      "town/clapping-during-flute"
+    ]
+  },
+  {
+    "name": "彼得",
+    "senders": [
+      "面包师彼得"
+    ],
+    "mentions": [
+      "clock/start",
+      "clock/approve",
+      "clock/reject",
+      "clock/reply",
+      "clock/continuation",
+      "clock/finale",
+      "bread/start",
+      "bread/approve",
+      "bread/reject",
+      "bread/defer",
+      "bread/reply",
+      "bread/continuation",
+      "bread/finale",
+      "lanename/reject",
+      "flouroath/start",
+      "flouroath/approve",
+      "flouroath/reject",
+      "flouroath/defer",
+      "flouroath/reply",
+      "flouroath/continuation",
+      "flouroath/finale",
+      "breadapprentice/start",
+      "breadapprentice/approve",
+      "breadapprentice/reject",
+      "breadapprentice/defer",
+      "breadapprentice/reply",
+      "breadapprentice/continuation",
+      "breadapprentice/finale",
+      "town/bread-end",
+      "echo/clock-repaired",
+      "echo/bread-soup-cups",
+      "echo/bread-doorstop",
+      "echo/bread-paper-envelope",
+      "echo/bread-recipe-listener",
+      "town/apprentice-order",
+      "town/bread-for-hens",
+      "echo/flour-after-talk",
+      "echo/flour-after-own-visit",
+      "echo/flour-after-unanswered",
+      "town/blue-bread-cloth",
+      "town/apology-without-cake",
+      "town/bread-smell-fee",
+      "town/wrong-flour-message",
+      "town/baker-bread-handle",
+      "town/bird-foot-flour",
+      "echo/apprentice-main-bake",
+      "echo/apprentice-original-order",
+      "echo/apprentice-specific-reply",
+      "eleventh/bakery-flour-sneeze"
+    ]
+  },
+  {
+    "name": "德伊",
+    "senders": [
+      "巡卫新兵德伊",
+      "新兵德伊"
+    ],
+    "mentions": [
+      "town/wet-broom-flag",
+      "town/father-first-dance",
+      "town/soldier-private-portrait"
+    ]
+  },
+  {
+    "name": "托文",
+    "senders": [
+      "公仓守仓人托文"
+    ],
+    "mentions": [
+      "granaryrain/start",
+      "granaryrain/approve",
+      "granaryrain/reject",
+      "granaryrain/defer",
+      "granaryrain/reply",
+      "granaryrain/continuation",
+      "granaryrain/finale",
+      "echo/granary-after-visit",
+      "echo/granary-after-small-room",
+      "echo/granary-after-unanswered",
+      "echo/granary-after-instruction"
+    ]
+  },
+  {
+    "name": "托比",
+    "senders": [
+      "羊倌托比"
+    ],
+    "mentions": [
+      "goat/start",
+      "goat/approve",
+      "goat/reject",
+      "goat/defer",
+      "goat/reply",
+      "goat/continuation",
+      "goat/finale",
+      "goose/reject",
+      "goose/defer",
+      "goose/reply",
+      "doorchalk/reject",
+      "hillpasture/reject",
+      "daily/18",
+      "town/lost-signature",
+      "echo/goose-plan",
+      "town/goat-court",
+      "town/lamb-picture-board"
+    ]
+  },
+  {
+    "name": "斐尔",
+    "senders": [
+      "染匠斐尔"
+    ],
+    "mentions": [
+      "unevencolor/start",
+      "unevencolor/approve",
+      "unevencolor/reject",
+      "unevencolor/defer",
+      "unevencolor/reply",
+      "unevencolor/continuation",
+      "unevencolor/finale",
+      "town/red-dye-apron",
+      "town/green-dyer-hands",
+      "eleventh/weaver-dye-pot"
+    ]
+  },
+  {
+    "name": "斐拉",
+    "senders": [
+      "澡屋主人斐拉"
+    ],
+    "mentions": [
+      "bathhearth/start",
+      "bathhearth/approve",
+      "bathhearth/reject",
+      "bathhearth/defer",
+      "bathhearth/reply",
+      "bathhearth/continuation",
+      "bathhearth/finale",
+      "town/bathhouse-banner",
+      "town/soap-not-a-prize"
+    ]
+  },
+  {
+    "name": "柏恩",
+    "senders": [
+      "主教府助理修士柏恩",
+      "修士柏恩"
+    ],
+    "mentions": [
+      "town/bishop-beans",
+      "town/saint-of-soup"
+    ]
+  },
+  {
+    "name": "柚宁",
+    "senders": [
+      "制烛人柚宁"
+    ],
+    "mentions": [
+      "candlemarks/start",
+      "candlemarks/approve",
+      "candlemarks/reject",
+      "candlemarks/defer",
+      "candlemarks/reply",
+      "candlemarks/continuation",
+      "candlemarks/finale",
+      "echo/candle-after-trial",
+      "echo/candle-after-no-room",
+      "echo/candle-after-waiting",
+      "echo/candle-after-reply",
+      "eleventh/candle-drip-table"
+    ]
+  },
+  {
+    "name": "柯尔",
+    "senders": [
+      "关卡书记柯尔"
+    ],
+    "mentions": [
+      "town/messenger-boot-toll"
+    ]
+  },
+  {
+    "name": "栗米",
+    "senders": [
+      "学堂孩子栗米",
+      "孩子栗米"
+    ],
+    "mentions": [
+      "paperkite/start",
+      "paperkite/reject",
+      "paperkite/defer",
+      "paperkite/reply",
+      "town/small-mayor",
+      "echo/paperkite-after-class",
+      "echo/paperkite-after-private",
+      "echo/paperkite-after-silence",
+      "echo/paperkite-after-instructions",
+      "town/not-a-trophy",
+      "town/odd-bead-game",
+      "town/winning-child-speech",
+      "town/prize-last-apple",
+      "town/school-prize-big-name",
+      "town/riddle-paper-back",
+      "town/practice-letter-return",
+      "town/snail-letter-race",
+      "echo/chess-paper-horse",
+      "eleventh/school-slate-crack",
+      "eleventh/river-child-boat",
+      "eleventh/library-window-seat"
+    ]
+  },
+  {
+    "name": "格登",
+    "senders": [
+      "退伍鼓匠格登"
+    ],
+    "mentions": [
+      "hollowdrum/start",
+      "hollowdrum/approve",
+      "hollowdrum/reject",
+      "hollowdrum/defer",
+      "hollowdrum/reply",
+      "hollowdrum/continuation",
+      "hollowdrum/finale",
+      "town/market-drum-lunch",
+      "town/hollow-log-drum",
+      "town/drummer-tiny-job",
+      "town/drum-case-personal-message"
+    ]
+  },
+  {
+    "name": "格里特",
+    "senders": [
+      "磨坊主格里特"
+    ],
+    "mentions": [
+      "millerleave/start",
+      "millerleave/approve",
+      "millerleave/reject",
+      "millerleave/defer",
+      "millerleave/reply",
+      "millerleave/continuation",
+      "millerleave/finale",
+      "foreignstones/start",
+      "foreignstones/defer",
+      "foreignstones/continuation",
+      "daily/3",
+      "daily/20",
+      "town/miller-name-bag",
+      "echo/miller-after-cart",
+      "echo/miller-after-light-bag",
+      "echo/miller-after-unanswered",
+      "echo/miller-after-plan",
+      "town/mill-funnel",
+      "town/long-rope-short-truth",
+      "town/cup-from-far-town",
+      "town/mill-extra-chair",
+      "town/miller-dust-portrait",
+      "town/miller-nephew-first-stone",
+      "eleventh/miller-sack-mark",
+      "eleventh/miller-rain-wheel",
+      "eleventh/grain-scale-weight"
+    ]
+  },
+  {
+    "name": "檐朵",
+    "senders": [
+      "制伞人檐朵"
+    ],
+    "mentions": [
+      "wideumbrella/start",
+      "wideumbrella/approve",
+      "wideumbrella/reject",
+      "wideumbrella/defer",
+      "wideumbrella/reply",
+      "wideumbrella/continuation",
+      "wideumbrella/finale",
+      "town/umbrella-mended-map"
+    ]
+  },
+  {
+    "name": "欧妲",
+    "senders": [
+      "客栈老板欧妲",
+      "客栈主人欧妲",
+      "客栈老板娘欧妲",
+      "客栈女主人欧妲"
+    ],
+    "mentions": [
+      "inspection/defer",
+      "shadowplay/reject",
+      "shadowplay/finale",
+      "readaloud/reject",
+      "cellarmusic/start",
+      "cellarmusic/approve",
+      "cellarmusic/reject",
+      "cellarmusic/defer",
+      "cellarmusic/reply",
+      "cellarmusic/continuation",
+      "cellarmusic/finale",
+      "countesswalk/reply",
+      "nightlodging/start",
+      "nightlodging/approve",
+      "nightlodging/reject",
+      "nightlodging/defer",
+      "nightlodging/reply",
+      "nightlodging/continuation",
+      "nightlodging/finale",
+      "twolabeltrunk/start",
+      "twolabeltrunk/approve",
+      "twolabeltrunk/reject",
+      "twolabeltrunk/defer",
+      "twolabeltrunk/reply",
+      "twolabeltrunk/continuation",
+      "twolabeltrunk/finale",
+      "daily/15",
+      "daily/23",
+      "town/empty-gift",
+      "town/inn-snore",
+      "town/short-toast",
+      "town/full-inn-sign",
+      "town/quiet-remembrance",
+      "town/wine-list-empty",
+      "town/pretend-invitation",
+      "town/earring-under-floor",
+      "town/wind-dry-sheets",
+      "town/borrow-name-for-song",
+      "town/visitor-wants-to-leave",
+      "town/hat-rack-too-polite",
+      "town/room-snore-question",
+      "town/quiet-guest-shoes",
+      "town/bed-head-name",
+      "town/rainbarrel-sky",
+      "eleventh/inn-room-number",
+      "eleventh/inn-key-tag",
+      "eleventh/council-hall-chairs",
+      "eleventh/inn-window-latch"
+    ]
+  },
+  {
+    "name": "泊禾",
+    "senders": [],
+    "mentions": [
+      "quietbetrothal/start",
+      "quietbetrothal/approve",
+      "quietbetrothal/reject",
+      "quietbetrothal/defer",
+      "quietbetrothal/reply",
+      "quietbetrothal/continuation",
+      "quietbetrothal/finale"
+    ]
+  },
+  {
+    "name": "洛洛",
+    "senders": [
+      "巡游戏班学徒洛洛",
+      "戏班学徒洛洛"
+    ],
+    "mentions": [
+      "shadowplay/start",
+      "shadowplay/approve",
+      "shadowplay/reject",
+      "shadowplay/defer",
+      "shadowplay/reply",
+      "shadowplay/continuation",
+      "shadowplay/finale",
+      "actorspurse/start",
+      "actorspurse/approve",
+      "actorspurse/reject",
+      "actorspurse/defer",
+      "actorspurse/reply",
+      "actorspurse/finale",
+      "playvillain/start",
+      "playvillain/approve",
+      "playvillain/reject",
+      "playvillain/defer",
+      "playvillain/reply",
+      "playvillain/continuation",
+      "playvillain/finale",
+      "town/dance-shoe-silence",
+      "town/pretend-invitation",
+      "town/prop-empty-bowls",
+      "town/left-foot-dancer",
+      "town/rented-stage-mirror",
+      "town/audience-knows-ending",
+      "town/apprentice-own-tips"
+    ]
+  },
+  {
+    "name": "涅尔",
+    "senders": [
+      "旧船匠涅尔"
+    ],
+    "mentions": [
+      "readaloud/start",
+      "readaloud/approve",
+      "readaloud/reject",
+      "readaloud/defer",
+      "readaloud/reply",
+      "readaloud/continuation",
+      "readaloud/finale",
+      "basinboats/start",
+      "basinboats/approve",
+      "basinboats/reject",
+      "basinboats/defer",
+      "basinboats/reply",
+      "basinboats/continuation",
+      "basinboats/finale",
+      "town/cobbler-mud-map",
+      "town/librarian-reserved-page",
+      "town/farewell-first",
+      "town/father-old-oars",
+      "town/old-boatman-not-hero"
+    ]
+  },
+  {
+    "name": "玛塔",
+    "senders": [
+      "木匠玛塔"
+    ],
+    "mentions": [
+      "bridge/start",
+      "bridge/approve",
+      "bridge/reply",
+      "inspection/start",
+      "inspection/approve",
+      "inspection/defer",
+      "inspection/reply",
+      "lanename/approve",
+      "lanename/finale",
+      "shoebox/continuation",
+      "clocklesson/approve",
+      "millerleave/reject",
+      "lanternmarket/continuation",
+      "lastloom/defer",
+      "granaryrain/start",
+      "bathhearth/continuation",
+      "dancefloor/continuation",
+      "wrongdoor/start",
+      "wrongdoor/approve",
+      "wrongdoor/reject",
+      "rockingseat/start",
+      "rockingseat/approve",
+      "rockingseat/reject",
+      "rockingseat/defer",
+      "rockingseat/reply",
+      "rockingseat/continuation",
+      "rockingseat/finale",
+      "sweepstakes/reply",
+      "daily/0",
+      "daily/1",
+      "daily/3",
+      "daily/10",
+      "daily/11",
+      "daily/16",
+      "daily/23",
+      "town/inn-snore",
+      "town/snow-wood",
+      "echo/bridge-clear",
+      "echo/bridge-no-answer",
+      "echo/clock-repaired",
+      "echo/clock-refused",
+      "echo/goose-fence",
+      "echo/goose-wait",
+      "town/cobbler-mud-map",
+      "town/smith-silent-hammer",
+      "town/mirror-shop",
+      "echo/bread-doorstop",
+      "echo/warmth-split-wood",
+      "town/crooked-table-vote",
+      "echo/paperkite-after-class",
+      "town/quiet-cheer",
+      "town/windy-stall-cloth",
+      "town/two-sides-of-bench",
+      "echo/granary-after-visit",
+      "echo/loom-after-ten-days",
+      "echo/loom-after-wait",
+      "echo/lamp-after-directions",
+      "town/bed-head-name"
+    ]
+  },
+  {
+    "name": "玛蕾",
+    "senders": [
+      "女伯爵玛蕾",
+      "伯爵夫人玛蕾"
+    ],
+    "mentions": [
+      "countesswalk/start",
+      "countesswalk/approve",
+      "countesswalk/reject",
+      "countesswalk/defer",
+      "countesswalk/reply",
+      "countesswalk/continuation",
+      "countesswalk/finale",
+      "countesspoem/start",
+      "countesspoem/approve",
+      "countesspoem/reject",
+      "countesspoem/defer",
+      "countesspoem/reply",
+      "countesspoem/continuation",
+      "countesspoem/finale",
+      "town/private-repair-royal",
+      "town/countess-no-special-ladle",
+      "town/countess-small-umbrella",
+      "town/countess-dog-cushion",
+      "town/countess-nap-music",
+      "town/countess-over-old-picture"
+    ]
+  },
+  {
+    "name": "珂娅",
+    "senders": [
+      "送水人珂娅",
+      "居民珂娅",
+      "井边住户珂娅"
+    ],
+    "mentions": [
+      "waterturn/reject",
+      "waterturn/defer",
+      "waterturn/continuation",
+      "waterturn/finale",
+      "doorchalk/start",
+      "doorchalk/approve",
+      "doorchalk/reject",
+      "doorchalk/defer",
+      "doorchalk/reply",
+      "doorchalk/continuation",
+      "doorchalk/finale",
+      "wrongdoor/reply",
+      "echo/paperkite-after-silence",
+      "town/mothers-reservation",
+      "town/grandma-old-song",
+      "town/own-map-shortcut",
+      "town/garden-gate-two-knocks",
+      "echo/tea-after-unanswered",
+      "town/frog-counting-board"
+    ]
+  },
+  {
+    "name": "琳朵",
+    "senders": [
+      "面包学徒琳朵",
+      "面包铺成年学徒琳朵"
+    ],
+    "mentions": [
+      "breadapprentice/start",
+      "breadapprentice/approve",
+      "breadapprentice/reject",
+      "breadapprentice/defer",
+      "breadapprentice/reply",
+      "breadapprentice/continuation",
+      "breadapprentice/finale",
+      "town/bird-foot-flour",
+      "echo/apprentice-main-bake",
+      "echo/apprentice-original-order",
+      "echo/apprentice-no-answer",
+      "echo/apprentice-specific-reply",
+      "eleventh/bakery-flour-sneeze",
+      "eleventh/baker-doorstep-crumbs"
+    ]
+  },
+  {
+    "name": "瑟禾",
+    "senders": [
+      "成年织工瑟禾",
+      "织工瑟禾"
+    ],
+    "mentions": [
+      "threadwage/start",
+      "threadwage/approve",
+      "threadwage/reject",
+      "threadwage/defer",
+      "threadwage/reply",
+      "threadwage/continuation",
+      "threadwage/finale",
+      "town/helper-hour-end",
+      "eleventh/weaver-thread-sample",
+      "eleventh/weaver-dog-hair"
+    ]
+  },
+  {
+    "name": "砚舟",
+    "senders": [],
+    "mentions": [
+      "twolabeltrunk/reply",
+      "twolabeltrunk/continuation",
+      "twolabeltrunk/finale"
+    ]
+  },
+  {
+    "name": "笙棠",
+    "senders": [],
+    "mentions": [
+      "quietbetrothal/start",
+      "quietbetrothal/approve",
+      "quietbetrothal/reject",
+      "quietbetrothal/defer",
+      "quietbetrothal/reply",
+      "quietbetrothal/continuation",
+      "quietbetrothal/finale"
+    ]
+  },
+  {
+    "name": "米拉",
+    "senders": [
+      "裁缝米拉"
+    ],
+    "mentions": [
+      "wedding/start",
+      "wedding/approve",
+      "wedding/reject",
+      "wedding/defer",
+      "wedding/reply",
+      "wedding/continuation",
+      "wedding/finale",
+      "warmth/continuation",
+      "fair/approve",
+      "inspection/finale",
+      "lanename/continuation",
+      "shoebox/reject",
+      "shoebox/reply",
+      "shoebox/finale",
+      "halfnotice/approve",
+      "bluewash/continuation",
+      "bluewash/finale",
+      "millerleave/finale",
+      "lampwindow/reject",
+      "daily/5",
+      "daily/10",
+      "daily/11",
+      "daily/15",
+      "daily/22",
+      "town/duke-button",
+      "town/unsigned-mittens",
+      "town/inn-snore",
+      "town/tailor-pocket",
+      "town/misdelivered-birthcloth",
+      "echo/warmth-blanket-stitch",
+      "echo/post-private-slip",
+      "town/sleeve-check",
+      "echo/miller-after-unanswered",
+      "town/not-my-ribbon",
+      "town/short-coat-tall-boy",
+      "town/extra-arm-apron",
+      "town/sisters-same-ribbon",
+      "town/son-old-coat",
+      "town/tailor-sample-button",
+      "town/mended-doll-eye",
+      "echo/lamp-after-curtain",
+      "town/two-sided-apron-name",
+      "eleventh/lamplighter-wick",
+      "eleventh/tailor-button-jar",
+      "eleventh/tailor-patch-stitch",
+      "eleventh/market-hat-brim",
+      "eleventh/tailor-parade-sleeve",
+      "eleventh/laundry-window-light"
+    ]
+  },
+  {
+    "name": "索恩",
+    "senders": [
+      "修道院院长索恩",
+      "院长索恩"
+    ],
+    "mentions": [
+      "town/abbey-permission",
+      "town/abbot-empty-seat",
+      "town/do-not-bless-hat",
+      "town/abbot-travel-hour",
+      "town/abbot-borrowed-saucepan",
+      "town/abbot-extra-quiet",
+      "town/abbot-brother-letter"
+    ]
+  },
+  {
+    "name": "绪恩",
+    "senders": [
+      "观星人绪恩"
+    ],
+    "mentions": [
+      "tinmoon/start",
+      "tinmoon/approve",
+      "tinmoon/reject",
+      "tinmoon/defer",
+      "tinmoon/reply",
+      "tinmoon/continuation",
+      "tinmoon/finale",
+      "shadowclock/start",
+      "shadowclock/approve",
+      "shadowclock/reject",
+      "shadowclock/defer",
+      "shadowclock/reply",
+      "shadowclock/continuation",
+      "shadowclock/finale"
+    ]
+  },
+  {
+    "name": "绮蔻",
+    "senders": [
+      "织工绮蔻",
+      "行会织工绮蔻"
+    ],
+    "mentions": [
+      "lastloom/start",
+      "lastloom/approve",
+      "lastloom/reject",
+      "lastloom/defer",
+      "lastloom/reply",
+      "lastloom/continuation",
+      "lastloom/finale",
+      "threadwage/start",
+      "threadwage/approve",
+      "threadwage/reject",
+      "threadwage/defer",
+      "threadwage/reply",
+      "threadwage/continuation",
+      "threadwage/finale",
+      "echo/loom-after-ten-days",
+      "echo/loom-after-no-delay",
+      "town/mother-chest-pattern",
+      "town/unfinished-weave-edge",
+      "echo/apprentice-original-order",
+      "eleventh/weaver-dog-hair",
+      "eleventh/basket-maker-handle"
+    ]
+  },
+  {
+    "name": "维珀",
+    "senders": [
+      "玻璃匠维珀"
+    ],
+    "mentions": [
+      "glassfish/start",
+      "glassfish/approve",
+      "glassfish/reject",
+      "glassfish/defer",
+      "glassfish/reply",
+      "glassfish/continuation",
+      "glassfish/finale",
+      "town/window-small-repair",
+      "town/glass-packaging-music",
+      "eleventh/glassworker-sun-chip"
+    ]
+  },
+  {
+    "name": "缇玛",
+    "senders": [
+      "旅客缇玛",
+      "客栈旅客缇玛"
+    ],
+    "mentions": [
+      "nightlodging/start",
+      "nightlodging/approve",
+      "nightlodging/defer",
+      "nightlodging/reply",
+      "nightlodging/finale",
+      "town/bed-curtain-light",
+      "town/return-red-scarf",
+      "town/untraveled-travel-note",
+      "eleventh/inn-guest-supper"
+    ]
+  },
+  {
+    "name": "罗恩",
+    "senders": [
+      "渡船人罗恩",
+      "船夫罗恩"
+    ],
+    "mentions": [
+      "basinboats/defer",
+      "ferrydaughter/start",
+      "ferrydaughter/approve",
+      "ferrydaughter/reject",
+      "ferrydaughter/defer",
+      "ferrydaughter/reply",
+      "ferrydaughter/continuation",
+      "ferrydaughter/finale",
+      "nightferry/start",
+      "nightferry/approve",
+      "nightferry/reject",
+      "nightferry/defer",
+      "nightferry/reply",
+      "nightferry/continuation",
+      "nightferry/finale",
+      "town/ferry-dog",
+      "echo/bridge-clear",
+      "echo/bridge-instructions",
+      "town/borrowed-flute-breath",
+      "town/quiet-letter-father",
+      "town/willow-boat-shadow",
+      "town/ferry-wave-no-passenger",
+      "town/ferryman-private-wait"
+    ]
+  },
+  {
+    "name": "罗温",
+    "senders": [
+      "井匠罗温"
+    ],
+    "mentions": [
+      "well/start",
+      "well/approve",
+      "well/reject",
+      "well/defer",
+      "well/reply",
+      "well/continuation",
+      "well/finale",
+      "waterturn/start",
+      "waterturn/approve",
+      "waterturn/reject",
+      "waterturn/defer",
+      "waterturn/reply",
+      "waterturn/continuation",
+      "waterturn/finale",
+      "lostdonkey/reject"
+    ]
+  },
+  {
+    "name": "老彭",
+    "senders": [
+      "老彭",
+      "东巷住户老彭"
+    ],
+    "mentions": [
+      "lanename/start",
+      "lanename/approve",
+      "lanename/reject",
+      "lanename/reply",
+      "lanename/continuation",
+      "lanename/finale",
+      "lostdonkey/start",
+      "lostdonkey/approve",
+      "lostdonkey/reject",
+      "lostdonkey/defer",
+      "lostdonkey/reply",
+      "lostdonkey/continuation",
+      "lostdonkey/finale",
+      "oldchess/start",
+      "oldchess/approve",
+      "oldchess/reject",
+      "oldchess/defer",
+      "oldchess/reply",
+      "oldchess/continuation",
+      "oldchess/finale",
+      "town/two-old-united",
+      "town/crooked-table-vote",
+      "town/chess-king-wait",
+      "town/letter-to-monday",
+      "town/blank-birthday",
+      "town/steps-for-slow-friend",
+      "town/two-sweet-potatoes",
+      "town/apology-without-cake",
+      "town/old-peng-shoe-gift",
+      "town/two-neighbors-no-reunion-show",
+      "echo/chess-two-day-loan",
+      "echo/chess-paper-horse",
+      "echo/chess-waiting-hands",
+      "echo/chess-rule-letter"
+    ]
+  },
+  {
+    "name": "艾琳",
+    "senders": [
+      "寡居居民艾琳",
+      "园丁艾琳",
+      "照料花园的艾琳",
+      "养花的艾琳"
+    ],
+    "mentions": [
+      "garden/start",
+      "garden/approve",
+      "garden/reject",
+      "garden/defer",
+      "garden/reply",
+      "garden/continuation",
+      "garden/finale",
+      "nightbloom/start",
+      "nightbloom/approve",
+      "nightbloom/reject",
+      "nightbloom/defer",
+      "nightbloom/reply",
+      "nightbloom/continuation",
+      "nightbloom/finale",
+      "town/garden-chair",
+      "echo/bridge-detour",
+      "town/flower-seed-label",
+      "town/garden-worm-title",
+      "echo/post-tree-change",
+      "town/two-sides-of-bench",
+      "town/little-door-to-sun",
+      "town/mole-soft-path",
+      "town/seed-label-washed",
+      "town/two-versions-lullaby",
+      "town/garden-chair-facing-away",
+      "town/courtyard-no-honors",
+      "eleventh/garden-seed-packet"
+    ]
+  },
+  {
+    "name": "艾铎",
+    "senders": [
+      "旗匠艾铎"
+    ],
+    "mentions": [
+      "town/mended-flag-colors",
+      "town/small-mirror-wedding"
+    ]
+  },
+  {
+    "name": "芙嘉",
+    "senders": [
+      "王室地图刻版处芙嘉",
+      "王室誊写处助理芙嘉",
+      "王室节庆处芙嘉",
+      "王室礼仪处芙嘉",
+      "王室誊送员芙嘉",
+      "书记员芙嘉"
+    ],
+    "mentions": [
+      "mapname/start",
+      "mapname/approve",
+      "mapname/reject",
+      "mapname/defer",
+      "mapname/reply",
+      "mapname/continuation",
+      "mapname/finale",
+      "town/red-margin",
+      "town/returned-festival-date",
+      "town/royal-smile",
+      "town/royal-empty-box",
+      "town/queen-two-chairs",
+      "town/clerk-lunch-seat",
+      "town/clerk-wrong-tea-invite"
+    ]
+  },
+  {
+    "name": "苏默",
+    "senders": [
+      "行商苏默"
+    ],
+    "mentions": [
+      "wrongpie/start",
+      "wrongpie/approve",
+      "wrongpie/reject",
+      "wrongpie/defer",
+      "wrongpie/reply",
+      "wrongpie/continuation",
+      "wrongpie/finale",
+      "town/merchant-honest",
+      "town/traveler-unasked-riddle",
+      "town/badger-banner",
+      "town/merchant-of-weather",
+      "town/hats-look-tall",
+      "town/candle-no-whole-wick",
+      "town/cheese-wax-window",
+      "town/silent-bell-price",
+      "town/mismatched-tin-lids",
+      "town/two-lids-joint-record",
+      "town/merchant-no-good-luck-fee",
+      "town/wool-socks-own-price",
+      "echo/honey-table-closed",
+      "eleventh/guild-napkin-contract",
+      "eleventh/market-umbrella-drip"
+    ]
+  },
+  {
+    "name": "苔丝",
+    "senders": [
+      "抄书人苔丝"
+    ],
+    "mentions": [
+      "royalbook/reply",
+      "countesspoem/finale",
+      "town/missing-page-two",
+      "town/stamp-on-wax",
+      "town/borrowed-corner-light",
+      "town/goose-feather-quill",
+      "town/borrowed-dry-ink",
+      "echo/candle-after-no-room",
+      "town/frost-window-copy",
+      "town/copyist-quote-not-free-copy",
+      "echo/honey-table-wait",
+      "eleventh/scribe-ink-blot",
+      "eleventh/scribe-returned-envelope",
+      "eleventh/postbag-wrong-bundle",
+      "eleventh/scribe-dry-ink"
+    ]
+  },
+  {
+    "name": "苔默",
+    "senders": [
+      "屋顶修补人苔默"
+    ],
+    "mentions": [
+      "town/withdrawn-ladder",
+      "town/roof-rain-race",
+      "town/small-roof-nest",
+      "town/repairman-no-story"
+    ]
+  },
+  {
+    "name": "莓可",
+    "senders": [
+      "羊倌莓可",
+      "放牧人莓可"
+    ],
+    "mentions": [
+      "hillpasture/start",
+      "hillpasture/approve",
+      "hillpasture/reject",
+      "hillpasture/defer",
+      "hillpasture/reply",
+      "hillpasture/continuation",
+      "hillpasture/finale",
+      "town/wool-not-a-cloud",
+      "town/old-hedge-gap"
+    ]
+  },
+  {
+    "name": "莫温",
+    "senders": [
+      "王室税务员莫温",
+      "税务员莫温"
+    ],
+    "mentions": [
+      "town/hen-exemption",
+      "town/tax-smudge",
+      "town/tax-apples",
+      "town/taxman-no-companions",
+      "town/taxman-ink-sleeve",
+      "town/taxman-one-bean",
+      "town/cat-on-pay-paper"
+    ]
+  },
+  {
+    "name": "萝莎",
+    "senders": [
+      "菜贩萝莎"
+    ],
+    "mentions": [
+      "goose/start",
+      "goose/approve",
+      "goose/reject",
+      "goose/defer",
+      "goose/reply",
+      "goose/continuation",
+      "goose/finale",
+      "echo/goose-fence",
+      "echo/goose-home",
+      "echo/goose-wait",
+      "echo/goose-plan",
+      "town/goose-quill",
+      "town/windy-stall-cloth",
+      "town/goose-no-tickets",
+      "town/goose-feather-quill",
+      "town/hens-dust-bath",
+      "town/goose-shadow-statue",
+      "town/fair-stall-shut-early",
+      "eleventh/market-hen-shadow",
+      "eleventh/market-hat-brim"
+    ]
+  },
+  {
+    "name": "萨瓦",
+    "senders": [
+      "邻镇磨石匠萨瓦",
+      "磨石匠萨瓦"
+    ],
+    "mentions": [
+      "foreignstones/start",
+      "foreignstones/approve",
+      "foreignstones/reject",
+      "foreignstones/continuation",
+      "foreignstones/finale",
+      "town/stone-cube",
+      "town/apple-stone-letter",
+      "town/cup-from-far-town"
+    ]
+  },
+  {
+    "name": "葵诺",
+    "senders": [
+      "面具匠葵诺"
+    ],
+    "mentions": [
+      "maskthanks/start",
+      "maskthanks/approve",
+      "maskthanks/reject",
+      "maskthanks/defer",
+      "maskthanks/reply",
+      "maskthanks/continuation",
+      "maskthanks/finale"
+    ]
+  },
+  {
+    "name": "蓓姬",
+    "senders": [
+      "邻镇果农蓓姬"
+    ],
+    "mentions": [
+      "borderpear/start",
+      "borderpear/approve",
+      "borderpear/reject",
+      "borderpear/defer",
+      "borderpear/reply",
+      "borderpear/continuation",
+      "borderpear/finale",
+      "pearboundary/start",
+      "pearboundary/approve",
+      "pearboundary/reject",
+      "pearboundary/defer",
+      "pearboundary/reply",
+      "pearboundary/continuation",
+      "pearboundary/finale",
+      "sharedoven/start",
+      "sharedoven/reject",
+      "town/pear-tree-ladder",
+      "town/one-rake-two-gardens",
+      "town/garden-stone-ear"
+    ]
+  },
+  {
+    "name": "薇朵",
+    "senders": [
+      "栗子贩薇朵"
+    ],
+    "mentions": [
+      "chestnutwatch/start",
+      "chestnutwatch/approve",
+      "chestnutwatch/reject",
+      "chestnutwatch/defer",
+      "chestnutwatch/reply",
+      "chestnutwatch/continuation",
+      "chestnutwatch/finale",
+      "doorchalk/reject",
+      "town/chestnut-song",
+      "town/chestnut-ladle",
+      "town/soup-three-signatures",
+      "town/no-joke-retelling",
+      "town/do-not-count-gifts",
+      "town/chestnut-green-shell",
+      "town/sweet-song-wrong-seller",
+      "town/last-day-fair-seat",
+      "town/moon-drying-cloth"
+    ]
+  },
+  {
+    "name": "蘅岚",
+    "senders": [
+      "新住户蘅岚"
+    ],
+    "mentions": [
+      "teanewcomer/start",
+      "teanewcomer/approve",
+      "teanewcomer/reject",
+      "teanewcomer/defer",
+      "teanewcomer/reply",
+      "teanewcomer/continuation",
+      "teanewcomer/finale",
+      "echo/tea-after-table",
+      "echo/tea-after-no-table",
+      "echo/tea-after-unanswered",
+      "echo/tea-after-instruction",
+      "echo/candle-after-reply",
+      "town/tea-accent-invitation",
+      "echo/honey-table-letter"
+    ]
+  },
+  {
+    "name": "贝拉",
+    "senders": [
+      "洗衣人贝拉"
+    ],
+    "mentions": [
+      "bridge/reject",
+      "bridge/continuation",
+      "ducks/start",
+      "ducks/approve",
+      "ducks/reject",
+      "ducks/defer",
+      "ducks/reply",
+      "ducks/continuation",
+      "ducks/finale",
+      "bluewash/start",
+      "bluewash/approve",
+      "bluewash/reject",
+      "bluewash/defer",
+      "bluewash/reply",
+      "bluewash/continuation",
+      "bluewash/finale",
+      "hillpasture/start",
+      "hillpasture/approve",
+      "hillpasture/reply",
+      "hillpasture/continuation",
+      "hillpasture/finale",
+      "town/hen-exemption",
+      "echo/bridge-detour",
+      "town/dyer-no-flower-smell",
+      "town/laundry-wind-note",
+      "echo/tea-after-instruction",
+      "eleventh/laundry-rope-shadow",
+      "eleventh/laundry-window-light"
+    ]
+  },
+  {
+    "name": "赛拉",
+    "senders": [
+      "染匠赛拉"
+    ],
+    "mentions": [
+      "bluewash/start",
+      "bluewash/reject",
+      "bluewash/defer",
+      "bluewash/reply",
+      "bluewash/continuation",
+      "bluewash/finale",
+      "daily/6",
+      "town/washline-letter",
+      "echo/post-sign-shadow"
+    ]
+  },
+  {
+    "name": "赫伯",
+    "senders": [
+      "菜贩赫伯",
+      "鱼贩赫伯",
+      "农夫赫伯",
+      "菜商赫伯"
+    ],
+    "mentions": [
+      "goose/approve",
+      "goose/continuation",
+      "goose/finale",
+      "turnipgiant/start",
+      "turnipgiant/approve",
+      "turnipgiant/reject",
+      "turnipgiant/defer",
+      "turnipgiant/reply",
+      "turnipgiant/continuation",
+      "turnipgiant/finale",
+      "daily/10",
+      "town/guild-apology",
+      "echo/goose-fence",
+      "town/three-baskets",
+      "town/goose-quill",
+      "town/soup-three-signatures",
+      "town/turnip-too-late",
+      "town/scarecrow-guest-hat",
+      "eleventh/market-pea-measure"
+    ]
+  },
+  {
+    "name": "赫敏",
+    "senders": [
+      "邻镇书记官赫敏",
+      "邻镇抄写员赫敏",
+      "书记员赫敏"
+    ],
+    "mentions": [
+      "halfnotice/start",
+      "borderpear/start",
+      "borderpear/approve",
+      "borderpear/reject",
+      "borderpear/reply",
+      "borderpear/continuation",
+      "borderpear/finale",
+      "daily/31",
+      "town/empty-gift",
+      "town/winter-neighbor-hat",
+      "echo/warmth-knock-first",
+      "town/wrong-town-award",
+      "town/welcome-without-song",
+      "town/bell-two-towns",
+      "town/three-empty-drawers",
+      "town/no-toast-needed"
+    ]
+  },
+  {
+    "name": "赫达",
+    "senders": [
+      "王室花园管事赫达",
+      "花园管事赫达"
+    ],
+    "mentions": [
+      "countesswalk/start",
+      "countesswalk/defer",
+      "countesswalk/continuation",
+      "countesswalk/finale",
+      "town/countess-peacock",
+      "town/bird-on-royal-window",
+      "town/sleeping-cat-royal-name"
+    ]
+  },
+  {
+    "name": "阿尔诺",
+    "senders": [
+      "钟楼钟匠阿尔诺",
+      "钟匠阿尔诺"
+    ],
+    "mentions": [
+      "clock/start",
+      "clock/approve",
+      "clock/reject",
+      "clock/defer",
+      "clock/reply",
+      "clock/continuation",
+      "clock/finale",
+      "soupbell/start",
+      "soupbell/approve",
+      "soupbell/continuation",
+      "clocklesson/start",
+      "clocklesson/reject",
+      "clocklesson/reply",
+      "clocklesson/continuation",
+      "clocklesson/finale",
+      "daily/6",
+      "town/clock-ears",
+      "echo/clock-refused",
+      "echo/clock-unanswered",
+      "echo/clock-replied",
+      "town/clock-signature",
+      "echo/clocklesson-year-class",
+      "echo/clocklesson-year-wait",
+      "town/old-bell-anger",
+      "town/public-clock-tune",
+      "echo/candle-after-trial",
+      "eleventh/bellmaker-soft-clapper"
+    ]
+  },
+  {
+    "name": "阿满",
+    "senders": [
+      "客栈洗碗人阿满",
+      "洗碗人阿满",
+      "居民阿满"
+    ],
+    "mentions": [
+      "quietchoir/start",
+      "quietchoir/defer",
+      "quietchoir/continuation",
+      "cellarmusic/start",
+      "cellarmusic/approve",
+      "cellarmusic/reject",
+      "cellarmusic/defer",
+      "cellarmusic/reply",
+      "cellarmusic/continuation",
+      "cellarmusic/finale",
+      "bathhearth/reject",
+      "town/inn-half-song",
+      "town/teacup-left-handle",
+      "echo/post-near-letter",
+      "town/brush-at-door",
+      "town/bent-spoon-song",
+      "town/borrow-name-for-song",
+      "town/two-versions-lullaby",
+      "town/dishwasher-one-song",
+      "eleventh/garden-bucket-rim"
+    ]
+  },
+  {
+    "name": "阿苔",
+    "senders": [
+      "住在东巷的阿苔",
+      "阿苔",
+      "东巷住户阿苔",
+      "桥边住户阿苔"
+    ],
+    "mentions": [
+      "lanename/start",
+      "lanename/approve",
+      "lanename/reject",
+      "lanename/defer",
+      "lanename/reply",
+      "lanename/continuation",
+      "lanename/finale",
+      "lostdonkey/start",
+      "lostdonkey/continuation",
+      "lostdonkey/finale",
+      "oldchess/start",
+      "oldchess/approve",
+      "oldchess/reject",
+      "oldchess/defer",
+      "oldchess/reply",
+      "oldchess/continuation",
+      "oldchess/finale",
+      "debtorlist/approve",
+      "town/two-old-united",
+      "town/crooked-table-vote",
+      "town/blank-birthday",
+      "town/steps-for-slow-friend",
+      "town/two-sweet-potatoes",
+      "town/dog-not-night-watch",
+      "town/two-neighbors-no-reunion-show",
+      "echo/chess-waiting-hands",
+      "eleventh/bridge-ribbon"
+    ]
+  },
+  {
+    "name": "雷纳",
+    "senders": [
+      "领主府管家雷纳",
+      "管家雷纳"
+    ],
+    "mentions": [
+      "countesspoem/approve",
+      "countesspoem/reject",
+      "countesspoem/reply",
+      "countesspoem/continuation",
+      "town/duke-button",
+      "town/duke-back-portrait",
+      "town/baron-petition-time",
+      "town/royal-empty-gift-box",
+      "town/guestbook-praise",
+      "town/rainer-unpaid-poem-copy"
+    ]
+  },
+  {
+    "name": "马丁",
+    "senders": [
+      "鞋匠马丁"
+    ],
+    "mentions": [
+      "shoebox/start",
+      "shoebox/approve",
+      "shoebox/reject",
+      "shoebox/defer",
+      "shoebox/reply",
+      "shoebox/continuation",
+      "shoebox/finale",
+      "playvillain/continuation",
+      "town/cobbler-mud-map",
+      "town/dance-shoe-silence",
+      "town/father-not-a-post",
+      "town/shoe-seam-outside",
+      "town/left-foot-dancer",
+      "town/quiet-shop-opening",
+      "town/squeaking-shoe-display"
+    ]
+  },
+  {
+    "name": "鲁缇",
+    "senders": [
+      "王室膳房誊写员鲁缇"
+    ],
+    "mentions": [
+      "town/royal-cold-soup"
+    ]
+  },
+  {
+    "name": "麦森",
+    "senders": [
+      "车夫麦森"
+    ],
+    "mentions": [
+      "weddingday/start",
+      "weddingday/approve",
+      "weddingday/reject",
+      "weddingday/defer",
+      "weddingday/reply",
+      "weddingday/continuation",
+      "weddingday/finale",
+      "town/cart-wheel-song"
+    ]
+  },
+  {
+    "name": "黛禾",
+    "senders": [
+      "罗恩的女儿黛禾"
+    ],
+    "mentions": [
+      "ferrydaughter/start",
+      "ferrydaughter/approve",
+      "ferrydaughter/defer",
+      "ferrydaughter/reply",
+      "ferrydaughter/finale",
+      "town/borrowed-flute-breath",
+      "town/quiet-letter-father"
+    ]
+  },
+  {
+    "name": "黛芬",
+    "senders": [
+      "巷口守灯人黛芬",
+      "守灯人黛芬"
+    ],
+    "mentions": [
+      "lampwindow/start",
+      "lampwindow/approve",
+      "lampwindow/reject",
+      "lampwindow/defer",
+      "lampwindow/reply",
+      "lampwindow/continuation",
+      "lampwindow/finale",
+      "echo/lamp-after-look",
+      "echo/lamp-after-curtain",
+      "echo/lamp-after-wait",
+      "echo/lamp-after-directions",
+      "town/keeper-no-home-tour",
+      "town/winter-leaf-message",
+      "eleventh/lamplighter-wick"
+    ]
+  }
+]

@@ -1,0 +1,360 @@
+{
+  "status": "DESIGN_ONLY",
+  "runtimeEnabled": false,
+  "minimumCatalogRevision": 20,
+  "rules": "Require actual source decision and exact reply index. Missing source, unmarked legacy boundary, or old pending: use original text. No new node or scheduling gate.",
+  "cases": [
+    {
+      "chain": "clock",
+      "source": "clock/continuation",
+      "target": "clock/finale",
+      "contact": "阿尔诺—彼得",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "婚礼获准在正午后敲小铃，大钟照常报时。",
+          "draft": "彼得听过那场午后的婚铃，问我这回告示是不是也该写清敲哪一只。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "婚礼借铃未获准，新人改在门口拍手致意。",
+          "draft": "彼得说那天门口的掌声倒很好认，至少没人来问他是不是午饭又晚了。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "婚礼没有收到答复，只带了一串不会响的丝带。",
+          "draft": "彼得看见那串没响的丝带，问我下次能不能先把回话送到。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "住户提前得知婚铃安排，没有误认又多了一响。",
+          "draft": "彼得记得事先收到的婚铃说明，拿笔把这回告示的时辰圈了出来。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "乐师吹了一小段婚曲，大钟无需参与。",
+          "draft": "彼得哼了两句那天的笛声，我差点跟着敲起桌子。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "婚铃随花车走远，没有打乱镇里的报时。",
+          "draft": "彼得说花车走远后就听不见小铃了，报时还得留给我们这口大钟。"
+        }
+      ]
+    },
+    {
+      "chain": "bluewash",
+      "source": "bluewash/continuation",
+      "target": "bluewash/finale",
+      "contact": "贝拉—赛拉",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "共用晾夹另存小抽屉，两家的私人衣物保持分开。",
+          "draft": "赛拉去抽屉取夹子，连我总爱藏的那两只也数出来了。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "借抽屉未准，两家分别收夹，需要时当面借还。",
+          "draft": "赛拉来当面借夹子，我递完才想起还没给自己留两只。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有答复，赛拉把借来的旧夹按数还给贝拉。",
+          "draft": "赛拉上回把旧夹按数送回来，数得比我收工时还仔细。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "共用夹有了清晰记号，收在双方约好的现有盒里。",
+          "draft": "赛拉打开我们约好的盒子，说这回总算认得哪只夹子是谁刻的。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "少量晾夹试用，双方找到方便的取还位置。",
+          "draft": "试借的那十只夹子放哪儿，我们现在都能说清，不必喊过半条院子。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "米拉教会两家学徒，旧束带留在各自主人的柜中。",
+          "draft": "米拉教过两家的学徒束带结，如今我打慢一点，就有人伸手要教我。"
+        }
+      ]
+    },
+    {
+      "chain": "readaloud",
+      "source": "readaloud/continuation",
+      "target": "readaloud/finale",
+      "contact": "奥黛—涅尔",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "大纸借出，涅尔画下自己的经验并与原故事分开保存。",
+          "draft": "涅尔把那张大纸卷来，进门先问帽子要不要也画上去。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "借纸没准，涅尔用作坊旧纸背面画简图。",
+          "draft": "涅尔带着画在旧纸背面的船舱，翻面还露出半行作坊的旧账。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有回话，奥黛先听涅尔口述，没有替他改公用书。",
+          "draft": "上回只听他口述船舱，我的手跟着比了半天，桌子差点成了船。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "图上注明作者与经历范围，没人把它当所有船的准图。",
+          "draft": "他在图上写了自己的名字，写到“所见”两字时还特意停了一下。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "图随谈话使用，原书仍保持原样。",
+          "draft": "那张图上回只在听书时摊开，涅尔讲完亲手收了回去。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "涅尔只讲熟悉的一件东西，孩子知道故事也可以被认真问问题。",
+          "draft": "孩子上回认了一个船上的部件，今天问他帽子该钉在哪一个上。"
+        }
+      ]
+    },
+    {
+      "chain": "millerleave",
+      "source": "millerleave/continuation",
+      "target": "millerleave/finale",
+      "contact": "格里特—尤恩",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "石料小册借给格里特，他先读自己不懂的一页再回家信。",
+          "draft": "那册石料小书还夹着我读不懂的一页，给尤恩的回信倒比以前短了。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "借书没获安排，格里特只写家里近况，没有假装懂磨石。",
+          "draft": "书没借到，我给尤恩只写了家里的事，他回信没有问我为何不谈石头。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有回话，叔父先回了天气与面包，没有催交学艺成果。",
+          "draft": "我先回了天气和面包，如今想起漏写磨坊屋檐又来了一只鸟。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "尤恩选择讲石面纹路，叔父认真问了一处不懂的地方。",
+          "draft": "尤恩写来的石纹我问过一处，回头看自己那句问话，像个刚入门的学徒。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "家信讲了磨坊的小事，尤恩不必每次证明自己值得出门。",
+          "draft": "上回家信只说磨坊，他也回了一件住处的小事，没有交一张学艺单。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "格里特读懂基础图，回信少了一段自己编的道理。",
+          "draft": "同行给的基础图我看懂了一点，给尤恩写信时终于少用了两个“大概”。"
+        }
+      ]
+    },
+    {
+      "chain": "cellarmusic",
+      "source": "cellarmusic/continuation",
+      "target": "cellarmusic/finale",
+      "contact": "欧妲—阿满",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "原约副本交双方查看，工时与私人学习分开商谈。",
+          "draft": "我和阿满看过原约副本，他指着休息那一行，我这回没有忙着接话。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "调副本未获安排，双方核各自保留的记录。",
+          "draft": "副本没调来，我们翻各自留的记录，阿满那张的折角比我的多。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有回复，欧妲没有临时增加洗碗作为练琴条件。",
+          "draft": "调副本还没回音，阿满照原约洗碗，练琴的事没有换来一摞额外的盘子。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "真实用时被说清，不只看纸上好听的安排。",
+          "draft": "核过实际时辰，我才知道自己常说的“马上洗完”有多长。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "他选择熟人陪同，不必独自应对老板的长话。",
+          "draft": "阿满带了自己信任的人来谈，我说长了，那人就看一眼阿满。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "双方看同一份约定，不为找纸拖延商谈。",
+          "draft": "我们直接翻了店里的原件，纸明明一直在柜里，我却找过许多别的理由。"
+        }
+      ]
+    },
+    {
+      "chain": "breadapprentice",
+      "source": "breadapprentice/continuation",
+      "target": "breadapprentice/finale",
+      "contact": "彼得—琳朵",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "普通看样条件转达，新样与原供货单分开。",
+          "draft": "看样条件转到手里，琳朵先读了一遍，我把伸过去的手收了回来。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "代问被拒，琳朵可自行了解看样规则，彼得不代许展示。",
+          "draft": "代问没办成，琳朵说规则自己也能去问，我先把炉门看好。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有回话，自选练习没有被算成镇厅已订的新货。",
+          "draft": "问看样还没回话，她做自己的练习，我没把那只硬面包塞进镇厅的货篮。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "用途有真实来客，不把硬或软天然判作一方更高明。",
+          "draft": "听过真想买的人怎么说，我才发现自己一直只问它够不够软。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "练习由本人承担，不用第一炉证明已经能稳定供货。",
+          "draft": "那回先留自用试吃，琳朵掰给我一块，我咬得慢，也没催她接单。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "帮助依实际愿意，不以教过她便永久代答。",
+          "draft": "她要自己去问，需不需要我陪同也由她说；我把围裙系回去了。"
+        }
+      ]
+    },
+    {
+      "chain": "duettempo",
+      "source": "duettempo/continuation",
+      "target": "duettempo/finale",
+      "contact": "维奥—弦芽",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "听场问询按普通条件接收，不预留合演身份。",
+          "draft": "听场的问询收下了，弦芽还没定演出，我已经提醒自己别带着领拍的架势去。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "代询被拒，维奥自行了解本场实际规则。",
+          "draft": "代询没办成，我自己去问规则，才发现光当听众也有要先弄清的事。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有回复，弦芽没有被记成已承诺给维奥单独演奏。",
+          "draft": "听场还没回话，弦芽没为我另排演奏，我只好先把自己那段练顺。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "表演意愿先确认，不因有人想听就成了她的任务。",
+          "draft": "先问过她愿不愿办小场，我现在说“想听”时，知道要停下来等答话。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "私人听奏不冒称公开场次，不占新公地。",
+          "draft": "我们约的是私下试奏，我没把它写成公开演目，连报幕都省了。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "搭档有休息选择，合作不等于随叫随演。",
+          "draft": "她那天可以休息，我去练自己的曲子，才听出自己也有接不上的地方。"
+        }
+      ]
+    },
+    {
+      "chain": "ferrydaughter",
+      "source": "ferrydaughter/continuation",
+      "target": "ferrydaughter/finale",
+      "contact": "罗恩—黛禾",
+      "variants": [
+        {
+          "action": "approve",
+          "reply": null,
+          "sourceResult": "渡口按实际人手说明班次，不把女儿当固定帮工。",
+          "draft": "渡口旁添了实际班次，黛禾回来时先看那张纸，没再被我喊着去扶船。"
+        },
+        {
+          "action": "reject",
+          "reply": null,
+          "sourceResult": "添说明未获准，罗恩向乘客当面告知实际可接趟次。",
+          "draft": "告示没添成，我逐个向乘客解释能接几趟，没把女儿名字算进船工里。"
+        },
+        {
+          "action": "defer",
+          "reply": null,
+          "sourceResult": "没有回信，罗恩未接超出自己能办的载运。",
+          "draft": "告示的信还没回，我没接忙不过来的载运，黛禾进门时桌上留着她的碗。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 0,
+          "sourceResult": "需要的人手按实际约定，不靠亲属关系补缺。",
+          "draft": "需要帮手得另谈报酬，我这回问的是愿做的人，没先把女儿半天许出去。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 1,
+          "sourceResult": "安排依据真实需要，没有把全部工作都写成紧急。",
+          "draft": "核过哪些趟次真要第二人，我才知道自己过去喊急喊得多勤。"
+        },
+        {
+          "action": "written_reply",
+          "reply": 2,
+          "sourceResult": "罗恩拒接多余行程，没有把已收的钱变成女儿的义务。",
+          "draft": "多出来的行程我已婉拒，黛禾回来吃饭，没有替我偿一笔先收下的船钱。"
+        }
+      ]
+    }
+  ]
+}

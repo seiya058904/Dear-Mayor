@@ -9,7 +9,13 @@ const paths = files.map(
 const hash = createHash("sha256");
 for (const file of paths.sort()) hash.update(await readFile(file));
 const version = hash.digest("hex").slice(0, 12);
-const urls = paths.map((p) => "./" + p.replace(/^dist\//, ""));
+// Original PNG artwork stays available for reference, but the UI uses the
+// pixel-identical WebP copies. Do not download both sets on first install.
+const originalArt = new Set(['background','note','paper','paper-mobile','approve','reject','defer','written_reply'].map(name => `dist/art/${name}.png`));
+for (const png of originalArt) {
+  if (!paths.includes(png.replace(/\.png$/, '.webp'))) throw new Error(`Missing lossless alternative for ${png}`);
+}
+const urls = paths.filter(p => !originalArt.has(p)).map((p) => "./" + p.replace(/^dist\//, ""));
 await writeFile(
   "dist/build-info.json",
   JSON.stringify({ version, commit: process.env.GITHUB_SHA ?? "local" }),

@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs';
 import { chains, documents, standaloneIds } from '../src/content';
 import { auditCatalog } from '../src/content/audit';
-import { newCast } from '../src/content/cast';
+import { newCast, castRevisionNotes } from '../src/content/cast';
 import { newGame, decide } from '../src/game/engine';
 import type { Action } from '../src/game/types';
 import fixtures from '../tests/fixtures/v1-saves.json';
@@ -23,12 +23,13 @@ import catalogFourteenFixtures from '../tests/fixtures/catalog-14-saves.json';
 import catalogFifteenFixtures from '../tests/fixtures/catalog-15-saves.json';
 import catalogSixteenFixtures from '../tests/fixtures/catalog-16-saves.json';
 import catalogSeventeenFixtures from '../tests/fixtures/catalog-17-saves.json';
+import catalogEighteenFixtures from '../tests/fixtures/catalog-18-review-saves.json';
 import {catalogAt,latestCatalogRevision,letterContract} from '../src/game/catalog';
 import { documents as legacyDocuments } from '../src/legacy/v1/content';
 const actions:Action[]=['approve','reject','defer','written_reply'];
 const audit=auditCatalog(documents);
 const docs=Object.values(documents);
-const previousDocuments=catalogAt(17).letters;
+const previousDocuments=catalogAt(Math.max(1,latestCatalogRevision-1)).letters;
 const simulations=[];
 for(let seed=0;seed<20;seed++) {
  let s=newGame(seed);
@@ -47,7 +48,7 @@ const count=chains.length*4+plain+sourceGroups;
 const before=Object.keys(legacyDocuments).length;
 const prose=(d:typeof docs[number])=>JSON.stringify([d.body,d.replies,d.results]);
 const rewritten=docs.filter(d=>legacyDocuments[d.id]&&prose(d)!==prose(legacyDocuments[d.id])).length;
-const report={status:docs.length>=before*10?'TARGET_REACHED':'PARTIAL',target:before*10,before,uniqueAuthoredNodes:docs.length,newAuthoredNodes:docs.filter(d=>!legacyDocuments[d.id]).length,rewrittenLegacyNodes:rewritten,remainingToTarget:before*10-docs.length,reachableInOneRun:count,distinctStorylines:chains.length,newCharacters:newCast.length,minBodyCharacters:Math.min(...docs.map(d=>d.body.join('').length)),maxBodyCharacters:Math.max(...docs.map(d=>d.body.join('').length)),previousBatchNodes:Object.keys(previousDocuments).length,newNodesThisBatch:docs.filter(d=>!previousDocuments[d.id]).length,changedPreviousMachineContractsThisBatch:docs.filter(d=>previousDocuments[d.id]&&JSON.stringify(letterContract(d))!==JSON.stringify(previousDocuments[d.id])).length,standaloneItems:standaloneIds.length,unconditionalStandaloneItems:plain,conditionalEchoItems:gated,gatedChainOpenings:docs.filter(d=>d.chain&&d.requires).length,echoesPerRun:sourceGroups,specialOrUpperLevelItems:docs.filter(d=>d.kind==='official'||d.kind==='archive').length,postExhaustionRepeatingVariants:4,unionReachable:visited.size,missingReachable:docs.filter(d=>!visited.has(d.id)).map(d=>d.id),catalogRevision:latestCatalogRevision,catalogCompatibilityFixtureCases:catalogFixtures.length+catalogTwoFixtures.length+catalogThreeFixtures.length+catalogFourFixtures.length+catalogSixFixtures.length+catalogSevenFixtures.length+catalogEightFixtures.length+catalogNineFixtures.length+catalogTenFixtures.length+catalogElevenFixtures.length+catalogTwelveFixtures.length+catalogThirteenFixtures.length+catalogFourteenFixtures.length+catalogFifteenFixtures.length+catalogSixteenFixtures.length+catalogSeventeenFixtures.length,migrationFixtureCases:fixtures.length+v2Fixtures.length+v3Fixtures.length,v1FixtureCases:fixtures.length,v2FixtureCases:v2Fixtures.length,v3FixtureCases:v3Fixtures.length,migrationFixtureKind:'Synthetic saves produced with exact baseline engine; not collected player browser data',audit,simulations};
+const report={status:docs.length>=before*10?'TARGET_REACHED':'PARTIAL',target:before*10,before,uniqueAuthoredNodes:docs.length,newAuthoredNodes:docs.filter(d=>!legacyDocuments[d.id]).length,rewrittenLegacyNodes:rewritten,remainingToTarget:before*10-docs.length,reachableInOneRun:count,distinctStorylines:chains.length,newCharacters:newCast.length,minBodyCharacters:Math.min(...docs.map(d=>d.body.join('').length)),maxBodyCharacters:Math.max(...docs.map(d=>d.body.join('').length)),previousBatchNodes:Object.keys(previousDocuments).length,newNodesThisBatch:docs.filter(d=>!previousDocuments[d.id]).length,changedPreviousMachineContractsThisBatch:docs.filter(d=>previousDocuments[d.id]&&JSON.stringify(letterContract(d))!==JSON.stringify(letterContract(previousDocuments[d.id] as typeof docs[number]))).length,standaloneItems:standaloneIds.length,unconditionalStandaloneItems:plain,conditionalEchoItems:gated,gatedChainOpenings:docs.filter(d=>d.chain&&d.requires).length,echoesPerRun:sourceGroups,specialOrUpperLevelItems:docs.filter(d=>d.kind==='official'||d.kind==='archive').length,postExhaustionRepeatingVariants:4,unionReachable:visited.size,missingReachable:docs.filter(d=>!visited.has(d.id)).map(d=>d.id),catalogRevision:latestCatalogRevision,catalogCompatibilityFixtureCases:catalogFixtures.length+catalogTwoFixtures.length+catalogThreeFixtures.length+catalogFourFixtures.length+catalogSixFixtures.length+catalogSevenFixtures.length+catalogEightFixtures.length+catalogNineFixtures.length+catalogTenFixtures.length+catalogElevenFixtures.length+catalogTwelveFixtures.length+catalogThirteenFixtures.length+catalogFourteenFixtures.length+catalogFifteenFixtures.length+catalogSixteenFixtures.length+catalogSeventeenFixtures.length+catalogEighteenFixtures.length,migrationFixtureCases:fixtures.length+v2Fixtures.length+v3Fixtures.length,v1FixtureCases:fixtures.length,v2FixtureCases:v2Fixtures.length,v3FixtureCases:v3Fixtures.length,migrationFixtureKind:'Synthetic saves produced with exact baseline engine; not collected player browser data',audit,simulations};
 writeFileSync('docs/CONTENT-COVERAGE.json',JSON.stringify(report,null,2)+'\n');
 const md=[
  '# 内容库存与覆盖（自动生成）','',
@@ -79,4 +80,5 @@ castLines.push('第八批：斐尔的试布、维珀的彩片均为自有余料�
 castLines.push('第十批：葵诺代领前先问瑞恩、未经署名须纠；砚舟只按回条认领，欧妲对开验差错说明；笙棠、泊禾均为成年人，取消宴不由镇厅判两人关系，演出意向另征双方本人。','');
 castLines.push('第十一批：沿用已有镇民的熟悉口吻写出新日常，不新增具名角色；尤拉先停用松柄钳与黛芬分清灯芯，苔丝区分退回空封与未读信，托恩不把一声桥板响直接判作坏桥。','');
 castLines.push('第九批：奥斯温未核名单可能伤到阿苔，只有批准张贴路径才写上墙后果；彼得改分工仍担原供货责任，琳朵为成年学徒。维奥与弦芽可不再合奏，玛塔自有旧直脚椅与新试样分开。檐朵的半日试位结束再询，延栖校自己的记尺而不改借量具。清扫比试不替代菲恩原工，玛蕾诗稿的身份与采用分开。新增灯、茶摊、刻纹烛三组四选一回声，只依真实首轮行动。','');
+castLines.push(...castRevisionNotes,'');
 writeFileSync('docs/CAST.md',castLines.join('\n'));

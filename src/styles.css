@@ -63,7 +63,7 @@ button {
 .desk-background {
   position: absolute;
   inset: 0;
-  background: url("/art/background.png") center/100% 100% no-repeat;
+  background: url("/art/background.webp") center/100% 100% no-repeat;
   z-index: -2;
 }
 .game-table {
@@ -294,7 +294,7 @@ h1.long-title {
   width: 880px;
   min-height: 520px;
   padding: 100px 110px 85px;
-  background: url("/art/note.png") center/100% 100% no-repeat;
+  background: url("/art/note.webp") center/100% 100% no-repeat;
   animation: note-in 220ms ease-out both;
   color: var(--ink);
 }
@@ -410,7 +410,7 @@ h1.long-title {
     display: block;
     overflow: visible;
     padding: 45px 12px 24px;
-    background: url("/art/background.png") center top/auto 100svh fixed
+    background: url("/art/background.webp") center top/auto 100svh fixed
       no-repeat;
     min-height: 100svh;
   }
@@ -604,7 +604,7 @@ h1.long-title {
     padding-right: 0;
   }
   .reply-note {
-    background-image: url("/art/paper-mobile.png");
+    background-image: url("/art/paper-mobile.webp");
     padding: 65px 52px;
   }
   .reply-note h2 {

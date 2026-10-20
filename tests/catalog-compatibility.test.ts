@@ -195,3 +195,49 @@ test('pending migration engine identifiers reject invalid versions and incompati
  for(const migrationVersion of [0,4,'1',null])assert.throws(()=>restore(JSON.stringify({...s,migrationVersion})));
  assert.throws(()=>restore(JSON.stringify({...s,legacyLength:0})));
 });
+import review18 from './fixtures/catalog-18-review-saves.json';
+import {castIdentityIssues,castIdentityRules} from '../src/content/cast';
+test('v4 identity guard covers all authored fields and rejects known role swaps',()=>{
+ for(const d of Object.values(documents))assert.deepEqual(castIdentityIssues(d),[],d.id);
+ const aliases=JSON.parse(readFileSync('src/content/cast-senders.json','utf8')) as Record<string,string[]>;
+ for(const [name,allowed] of Object.entries(aliases)){
+  const wrong=['药草师','卫兵队长'].map(role=>role+name).find(label=>!allowed.includes(label))!;
+  for(const patch of [{sender:wrong},{title:wrong},{body:[wrong]},{replies:[{text:wrong,result:wrong}]},{results:{approve:wrong,reject:'拒绝',defer:'未回'}}])
+   assert.ok(castIdentityIssues({...documents['bridge/start'],...patch}).length>0,wrong);
+ }
+ for(const rule of castIdentityRules){
+  for(const id of rule.evidence)assert.ok(documents[id],id);
+  for(const role of rule.forbidden){
+   const bad=role+rule.name;
+   for(const patch of [{sender:bad},{title:bad},{body:[bad]},{results:{approve:bad,reject:'拒绝',defer:'未回'}},{replies:[{text:bad,result:bad}]}])
+    assert.ok(castIdentityIssues({...documents['bridge/start'],...patch}).includes(bad),bad);
+  }
+ }
+});
+for(const fixture of review18)test(`v4 catalog18 pending keeps all visible fields and six outcomes: ${fixture.name}`,()=>{
+ const raw=JSON.stringify(fixture.state),s=restore(raw);
+ assert.deepEqual(currentDocument(s),fixture.document);
+ assert.deepEqual(restore(JSON.stringify(s)),s);
+ for(const [action,reply] of [['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const){
+  const n=decide(s,s.current,action,reply);
+  assert.equal(n.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);
+  assert.deepEqual(n.history.slice(0,s.history.length),s.history);
+  assert.equal(n.catalogRevision,latestCatalogRevision);
+  assert.deepEqual(restore(JSON.stringify(n)),n);
+ }
+});
+
+test('v4 design-only causal pilot has 8 reachable stage-three sources and distinguishes all six outcomes',()=>{
+ const pilot=JSON.parse(readFileSync('docs/V4-CAUSAL-PILOT.json','utf8')) as {runtimeEnabled:boolean;cases:{source:string;target:string;variants:{action:Action;reply:number|null;sourceResult:string;draft:string}[]}[]};
+ assert.equal(pilot.runtimeEnabled,false);assert.equal(pilot.cases.length,8);
+ for(const c of pilot.cases){assert.equal(documents[c.source].stage,3);assert.equal(documents[c.target].stage,4);assert.equal(c.variants.length,6);assert.equal(new Set(c.variants.map(v=>v.draft)).size,6);}
+ for(let variant=0;variant<6;variant++){
+  const action:Action=variant<3?actions[variant]:'written_reply';let s=newGame(10531);const seen=new Set();
+  for(let i=0;i<860;i++){
+   const c=pilot.cases.find(c=>c.target===s.current);
+   if(c){const v=c.variants[variant],h=s.history.find(h=>h.id===c.source);assert.ok(h);assert.equal(h.action,v.action);assert.equal(h.reply??null,v.reply);assert.equal(h.result,v.sourceResult);assert.ok(s.day>=h.day);assert.deepEqual(restore(JSON.stringify(s)),s);seen.add(c.target);}
+   s=decide(s,s.current,action,variant<3?undefined:variant-3);
+  }
+  assert.equal(seen.size,8);
+ }
+});

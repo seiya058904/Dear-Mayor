@@ -15,11 +15,11 @@ export const Petition = forwardRef<
       <picture>
         <source
           media="(max-width: 720px)"
-          srcSet={`${import.meta.env.BASE_URL}art/paper-mobile.png`}
+          srcSet={`${import.meta.env.BASE_URL}art/paper-mobile.webp`}
         />
         <img
           className="paper-art"
-          src={`${import.meta.env.BASE_URL}art/paper.png`}
+          src={`${import.meta.env.BASE_URL}art/paper.webp`}
           alt=""
           draggable="false"
         />

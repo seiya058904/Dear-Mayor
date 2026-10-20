@@ -1,0 +1,737 @@
+{
+  "date": "2026-10-20",
+  "url": "http://127.0.0.1:4180/",
+  "method": "One cold isolated Chromium context per profile; browser disk cache disabled, Service Worker enabled. Interactive = open reply dialog and observe first choice. CacheReady = fonts.ready + serviceWorker.ready. Restore = reload to visible article after one-decision save / legal catalog18 860-decision save. Times are one sample per profile, not percentiles. Android is viewport/touch/4x CPU/4 Mbps emulation, not hardware. Baseline/after include the 31 editorial snapshot additions (+38.73 kB JS), not a claim of CPU improvement.",
+  "baseline": [
+    {
+      "profile": {
+        "name": "desktop-normal",
+        "cpu": 1
+      },
+      "interactiveMs": 203,
+      "cacheReadyMs": 578,
+      "restore1Ms": 161,
+      "restore860Ms": 159,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 13
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Lt9FNUIS.css",
+          "bytes": 2891,
+          "decoded": 8224,
+          "duration": 2.599999999627471
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-DyVkzNbQ.js",
+          "bytes": 1073995,
+          "decoded": 2768387,
+          "duration": 52.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.png",
+          "bytes": 3447419,
+          "decoded": 3447119,
+          "duration": 26.09999999962747
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.png",
+          "bytes": 120997,
+          "decoded": 120697,
+          "duration": 4.099999999627471
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.png",
+          "bytes": 118772,
+          "decoded": 118472,
+          "duration": 4.200000001117587
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper.png",
+          "bytes": 1925365,
+          "decoded": 1925065,
+          "duration": 9.099999999627471
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.png",
+          "bytes": 119275,
+          "decoded": 118975,
+          "duration": 4.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.png",
+          "bytes": 123136,
+          "decoded": 122836,
+          "duration": 4.799999998882413
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/note.png",
+          "bytes": 2298327,
+          "decoded": 2298027,
+          "duration": 13.099999999627471
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "desktop-slow4g",
+        "cpu": 1,
+        "mbps": 1.6,
+        "latency": 150
+      },
+      "interactiveMs": 11264,
+      "cacheReadyMs": 73376,
+      "restore1Ms": 161,
+      "restore860Ms": 163,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 72927.60000000149
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Lt9FNUIS.css",
+          "bytes": 2891,
+          "decoded": 8224,
+          "duration": 199.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-DyVkzNbQ.js",
+          "bytes": 1073995,
+          "decoded": 2768387,
+          "duration": 10969.199999999255
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.png",
+          "bytes": 3447419,
+          "decoded": 3447119,
+          "duration": 58197.300000000745
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper.png",
+          "bytes": 1925365,
+          "decoded": 1925065,
+          "duration": 40449.800000000745
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.png",
+          "bytes": 118772,
+          "decoded": 118472,
+          "duration": 3738.800000000745
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.png",
+          "bytes": 119275,
+          "decoded": 118975,
+          "duration": 3753.9000000003725
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.png",
+          "bytes": 120997,
+          "decoded": 120697,
+          "duration": 3785.60000000149
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.png",
+          "bytes": 123136,
+          "decoded": 122836,
+          "duration": 7013.300000000745
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/note.png",
+          "bytes": 2298327,
+          "decoded": 2298027,
+          "duration": 47927.300000000745
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "desktop-cpu6",
+        "cpu": 6
+      },
+      "interactiveMs": 710,
+      "cacheReadyMs": 990,
+      "restore1Ms": 400,
+      "restore860Ms": 643,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 11.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-DyVkzNbQ.js",
+          "bytes": 1073995,
+          "decoded": 2768387,
+          "duration": 52.90000000037253
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Lt9FNUIS.css",
+          "bytes": 2891,
+          "decoded": 8224,
+          "duration": 2.099999999627471
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.png",
+          "bytes": 3447419,
+          "decoded": 3447119,
+          "duration": 34
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper.png",
+          "bytes": 1925365,
+          "decoded": 1925065,
+          "duration": 6.099999999627471
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.png",
+          "bytes": 120997,
+          "decoded": 120697,
+          "duration": 2.900000000372529
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.png",
+          "bytes": 118772,
+          "decoded": 118472,
+          "duration": 3.299999998882413
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.png",
+          "bytes": 119275,
+          "decoded": 118975,
+          "duration": 3.200000001117587
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.png",
+          "bytes": 123136,
+          "decoded": 122836,
+          "duration": 2.800000000745058
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/note.png",
+          "bytes": 0,
+          "decoded": 2298027,
+          "duration": 47.19999999925494
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "android-mid-emulated",
+        "cpu": 4,
+        "mbps": 4,
+        "latency": 80,
+        "mobile": true
+      },
+      "interactiveMs": 4844,
+      "cacheReadyMs": 25363,
+      "restore1Ms": 249,
+      "restore860Ms": 426,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 24953.199999999255
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-DyVkzNbQ.js",
+          "bytes": 1073995,
+          "decoded": 2768387,
+          "duration": 4401.9000000003725
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Lt9FNUIS.css",
+          "bytes": 2891,
+          "decoded": 8224,
+          "duration": 97.30000000074506
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.png",
+          "bytes": 3447419,
+          "decoded": 3447119,
+          "duration": 19052
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper-mobile.png",
+          "bytes": 2085505,
+          "decoded": 2085205,
+          "duration": 13605.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.png",
+          "bytes": 120997,
+          "decoded": 120697,
+          "duration": 1545.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.png",
+          "bytes": 118772,
+          "decoded": 118472,
+          "duration": 1529.7999999988824
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.png",
+          "bytes": 119275,
+          "decoded": 118975,
+          "duration": 1529.7000000011176
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.png",
+          "bytes": 123136,
+          "decoded": 122836,
+          "duration": 2620.800000000745
+        }
+      ]
+    }
+  ],
+  "optimized": [
+    {
+      "profile": {
+        "name": "desktop-normal",
+        "cpu": 1
+      },
+      "interactiveMs": 201,
+      "cacheReadyMs": 592,
+      "restore1Ms": 166,
+      "restore860Ms": 178,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 17.099999997764826
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Dj9-6o77.js",
+          "bytes": 1088617,
+          "decoded": 2807110,
+          "duration": 59.19999999925494
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-2zhiNblP.css",
+          "bytes": 2891,
+          "decoded": 8228,
+          "duration": 4.300000000745058
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.webp",
+          "bytes": 1739626,
+          "decoded": 1739326,
+          "duration": 9.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.webp",
+          "bytes": 88408,
+          "decoded": 88108,
+          "duration": 4.199999999254942
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.webp",
+          "bytes": 90268,
+          "decoded": 89968,
+          "duration": 4.400000002235174
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper.webp",
+          "bytes": 1163906,
+          "decoded": 1163606,
+          "duration": 7.800000000745058
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.webp",
+          "bytes": 85738,
+          "decoded": 85438,
+          "duration": 4.399999998509884
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.webp",
+          "bytes": 91102,
+          "decoded": 90802,
+          "duration": 4.699999999254942
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/note.webp",
+          "bytes": 1313242,
+          "decoded": 1312942,
+          "duration": 4.199999999254942
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "desktop-slow4g",
+        "cpu": 1,
+        "mbps": 1.6,
+        "latency": 150
+      },
+      "interactiveMs": 11404,
+      "cacheReadyMs": 55602,
+      "restore1Ms": 177,
+      "restore860Ms": 175,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 55161.099999997765
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-2zhiNblP.css",
+          "bytes": 2891,
+          "decoded": 8228,
+          "duration": 201.10000000149012
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Dj9-6o77.js",
+          "bytes": 1088617,
+          "decoded": 2807110,
+          "duration": 11121.70000000298
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.webp",
+          "bytes": 1739626,
+          "decoded": 1739326,
+          "duration": 31729.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.webp",
+          "bytes": 88408,
+          "decoded": 88108,
+          "duration": 2782
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.webp",
+          "bytes": 90268,
+          "decoded": 89968,
+          "duration": 2859.699999999255
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper.webp",
+          "bytes": 1163906,
+          "decoded": 1163606,
+          "duration": 24736.199999999255
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.webp",
+          "bytes": 85738,
+          "decoded": 85438,
+          "duration": 2766.2000000029802
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.webp",
+          "bytes": 91102,
+          "decoded": 90802,
+          "duration": 5229.10000000149
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/note.webp",
+          "bytes": 1313242,
+          "decoded": 1312942,
+          "duration": 28360.60000000149
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "desktop-cpu6",
+        "cpu": 6
+      },
+      "interactiveMs": 824,
+      "cacheReadyMs": 1109,
+      "restore1Ms": 449,
+      "restore860Ms": 815,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 13
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Dj9-6o77.js",
+          "bytes": 1088617,
+          "decoded": 2807110,
+          "duration": 68.89999999850988
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-2zhiNblP.css",
+          "bytes": 2891,
+          "decoded": 8228,
+          "duration": 2.199999999254942
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.webp",
+          "bytes": 1739626,
+          "decoded": 1739326,
+          "duration": 8.399999998509884
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper.webp",
+          "bytes": 1163906,
+          "decoded": 1163606,
+          "duration": 8.199999999254942
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.webp",
+          "bytes": 88408,
+          "decoded": 88108,
+          "duration": 6.899999998509884
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.webp",
+          "bytes": 90268,
+          "decoded": 89968,
+          "duration": 7
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.webp",
+          "bytes": 85738,
+          "decoded": 85438,
+          "duration": 7
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.webp",
+          "bytes": 91102,
+          "decoded": 90802,
+          "duration": 7.400000002235174
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/note.webp",
+          "bytes": 0,
+          "decoded": 1312942,
+          "duration": 2.100000001490116
+        }
+      ]
+    },
+    {
+      "profile": {
+        "name": "android-mid-emulated",
+        "cpu": 4,
+        "mbps": 4,
+        "latency": 80,
+        "mobile": true
+      },
+      "interactiveMs": 5020,
+      "cacheReadyMs": 20138,
+      "restore1Ms": 253,
+      "restore860Ms": 450,
+      "errors": [],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4180/fonts/wenkai.woff2",
+          "bytes": 5305968,
+          "decoded": 5305668,
+          "duration": 19724.800000000745
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-Dj9-6o77.js",
+          "bytes": 1088617,
+          "decoded": 2807110,
+          "duration": 4476.699999999255
+        },
+        {
+          "name": "http://127.0.0.1:4180/assets/index-2zhiNblP.css",
+          "bytes": 2891,
+          "decoded": 8228,
+          "duration": 111.90000000223517
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/background.webp",
+          "bytes": 1739626,
+          "decoded": 1739326,
+          "duration": 10381
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/paper-mobile.webp",
+          "bytes": 1290428,
+          "decoded": 1290128,
+          "duration": 8552.39999999851
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/approve.webp",
+          "bytes": 88408,
+          "decoded": 88108,
+          "duration": 1142.4000000022352
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/reject.webp",
+          "bytes": 90268,
+          "decoded": 89968,
+          "duration": 1172.199999999255
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/defer.webp",
+          "bytes": 85738,
+          "decoded": 85438,
+          "duration": 1141.5
+        },
+        {
+          "name": "http://127.0.0.1:4180/art/written_reply.webp",
+          "bytes": 91102,
+          "decoded": 90802,
+          "duration": 1973.6000000014901
+        }
+      ]
+    }
+  ],
+  "art": [
+    {
+      "name": "background",
+      "pngBytes": 3447119,
+      "webpBytes": 1739326,
+      "pngSHA256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928",
+      "webpSHA256": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb",
+      "rgbaEqual": true
+    },
+    {
+      "name": "note",
+      "pngBytes": 2298027,
+      "webpBytes": 1312942,
+      "pngSHA256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179",
+      "webpSHA256": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f",
+      "rgbaEqual": true
+    },
+    {
+      "name": "paper",
+      "pngBytes": 1925065,
+      "webpBytes": 1163606,
+      "pngSHA256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01",
+      "webpSHA256": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8",
+      "rgbaEqual": true
+    },
+    {
+      "name": "paper-mobile",
+      "pngBytes": 2085205,
+      "webpBytes": 1290128,
+      "pngSHA256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b",
+      "webpSHA256": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841",
+      "rgbaEqual": true
+    },
+    {
+      "name": "approve",
+      "pngBytes": 120697,
+      "webpBytes": 88108,
+      "pngSHA256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4",
+      "webpSHA256": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44",
+      "rgbaEqual": true
+    },
+    {
+      "name": "reject",
+      "pngBytes": 118472,
+      "webpBytes": 89968,
+      "pngSHA256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb",
+      "webpSHA256": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05",
+      "rgbaEqual": true
+    },
+    {
+      "name": "defer",
+      "pngBytes": 118975,
+      "webpBytes": 85438,
+      "pngSHA256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2",
+      "webpSHA256": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48",
+      "rgbaEqual": true
+    },
+    {
+      "name": "written_reply",
+      "pngBytes": 122836,
+      "webpBytes": 90802,
+      "pngSHA256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343",
+      "webpSHA256": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab",
+      "rgbaEqual": true
+    }
+  ],
+  "networkScope": "Local HTTP server plus CDP network shaping. The production smoke separately used real internet; these local timings are not CDN or real mobile measurements.",
+  "productionRealNetwork": {
+    "url": "https://seiya058904.github.io/Dear-Mayor/",
+    "commit": "7a89bba65e1f562d5e6ed46e57bf25eb6324aa9c",
+    "measurements": [
+      {
+        "profile": {
+          "name": "desktop-normal",
+          "cpu": 1
+        },
+        "interactiveMs": 3033,
+        "cacheReadyMs": 5009,
+        "restore1Ms": 163,
+        "restore860Ms": 159,
+        "errors": [],
+        "resources": [
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/fonts/wenkai.woff2",
+            "bytes": 5305968,
+            "decoded": 5305668,
+            "duration": 1656.800000000745
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/assets/index-DyVkzNbQ.js",
+            "bytes": 1088185,
+            "decoded": 2768387,
+            "duration": 1093.800000000745
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/assets/index-Lt9FNUIS.css",
+            "bytes": 2890,
+            "decoded": 8224,
+            "duration": 324.6000000014901
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/background.png",
+            "bytes": 3447419,
+            "decoded": 3447119,
+            "duration": 687
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/paper.png",
+            "bytes": 1925365,
+            "decoded": 1925065,
+            "duration": 579.1999999992549
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/approve.png",
+            "bytes": 120997,
+            "decoded": 120697,
+            "duration": 525.6000000014901
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/defer.png",
+            "bytes": 119275,
+            "decoded": 118975,
+            "duration": 529.3000000007451
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/reject.png",
+            "bytes": 118772,
+            "decoded": 118472,
+            "duration": 532.7000000029802
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/written_reply.png",
+            "bytes": 123136,
+            "decoded": 122836,
+            "duration": 876.7000000029802
+          },
+          {
+            "name": "https://seiya058904.github.io/Dear-Mayor/art/note.png",
+            "bytes": 2298327,
+            "decoded": 2298027,
+            "duration": 569.3000000007451
+          }
+        ]
+      }
+    ]
+  }
+}

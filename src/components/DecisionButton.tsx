@@ -34,7 +34,7 @@ export function DecisionButton({
       aria-controls={id === "written_reply" ? "reply-note" : undefined}
     >
       <img
-        src={`${import.meta.env.BASE_URL}art/${id}.png`}
+        src={`${import.meta.env.BASE_URL}art/${id}.webp`}
         alt=""
         draggable="false"
       />

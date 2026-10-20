@@ -1,0 +1,66 @@
+[
+  {
+    "name": "background",
+    "pngBytes": 3447119,
+    "webpBytes": 1739326,
+    "pngSHA256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928",
+    "webpSHA256": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb",
+    "rgbaEqual": true
+  },
+  {
+    "name": "note",
+    "pngBytes": 2298027,
+    "webpBytes": 1312942,
+    "pngSHA256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179",
+    "webpSHA256": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f",
+    "rgbaEqual": true
+  },
+  {
+    "name": "paper",
+    "pngBytes": 1925065,
+    "webpBytes": 1163606,
+    "pngSHA256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01",
+    "webpSHA256": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8",
+    "rgbaEqual": true
+  },
+  {
+    "name": "paper-mobile",
+    "pngBytes": 2085205,
+    "webpBytes": 1290128,
+    "pngSHA256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b",
+    "webpSHA256": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841",
+    "rgbaEqual": true
+  },
+  {
+    "name": "approve",
+    "pngBytes": 120697,
+    "webpBytes": 88108,
+    "pngSHA256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4",
+    "webpSHA256": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44",
+    "rgbaEqual": true
+  },
+  {
+    "name": "reject",
+    "pngBytes": 118472,
+    "webpBytes": 89968,
+    "pngSHA256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb",
+    "webpSHA256": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05",
+    "rgbaEqual": true
+  },
+  {
+    "name": "defer",
+    "pngBytes": 118975,
+    "webpBytes": 85438,
+    "pngSHA256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2",
+    "webpSHA256": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48",
+    "rgbaEqual": true
+  },
+  {
+    "name": "written_reply",
+    "pngBytes": 122836,
+    "webpBytes": 90802,
+    "pngSHA256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343",
+    "webpSHA256": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab",
+    "rgbaEqual": true
+  }
+]
