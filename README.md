@@ -106,6 +106,15 @@ Approval, rejection, silence, and specific instructions are tracked separately. 
       <img src="docs/screenshots/reply.png" alt="Actual desktop screenshot showing the expanded instruction note" />
       <br />
       <sub>Make the decision your own with a letter-specific instruction.</sub>
+      <div align="left">
+        <h4>✒️ Inside the Reply</h4>
+        <p><strong>01 · Make it specific.</strong><br />
+        Open the note to reveal three responses written for the current letter—not a generic dialogue menu.</p>
+        <p><strong>02 · Decide when you're ready.</strong><br />
+        Read the options or close the note without committing. The decision is recorded only when you select a response.</p>
+        <p><strong>03 · Let the town answer back.</strong><br />
+        Your instruction becomes part of the story. Later letters can reflect what happened because of it.</p>
+      </div>
     </td>
     <td width="35%" align="center" valign="top">
       <img src="docs/screenshots/mobile.png" alt="Actual mobile screenshot showing a portrait letter and touch-friendly decision cards" />
