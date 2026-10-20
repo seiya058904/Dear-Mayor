@@ -65,7 +65,7 @@ const md=[
  ...docs.map(d=>`| ${d.id} | ${d.title} | ${d.sender} | ${d.kind??'letter'} | ${d.stage??'独立'} | ${d.requires?`${d.requires.id}: ${d.requires.actions.join('/')} +${d.requires.days}天`:'—'} |`),
  '', '## 可疑重复句（需作者判断）','',...audit.repeatedSentences.map(p=>`- ${p.text}：${p.ids.join(', ')}`), '',
 ];
-writeFileSync('docs/CONTENT-COVERAGE.md',md.join('\n'));
+writeFileSync('docs/CONTENT-COVERAGE.md',md.join('\n').trimEnd()+'\n');
 console.log(JSON.stringify(report,null,2));
 if(audit.errors.length||report.missingReachable.length||simulations.some(s=>s.authored!==count||s.unique!==s.decisions||s.pending!==0)) process.exitCode=1;
 

@@ -44,6 +44,8 @@ export type GameState = {
   version: 2;
   contentVersion: 4;
   v3Length: number;
+  /** Frozen engine for the pending letter at the initial migration boundary. */
+  migrationVersion?: 1 | 2 | 3;
   initialCatalogRevision: number;
   catalogRevision: number;
   /** Boundary replayed with the frozen v2 engine, including any v1 prefix. */

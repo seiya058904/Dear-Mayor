@@ -32,22 +32,25 @@ function replayV3(seed:number,history:Decision[],v1Length:number,v2Length:number
  const s=v2Length?v2ToV3(replayV2(seed,history.slice(0,v2Length),v1Length)):newGameV3(seed);
  return replay(s,history.slice(v2Length),decideV3);
 }
-function migrateV3(s:V3State,revision=latestCatalogRevision):GameState{
+function migrateV3(s:V3State,revision=latestCatalogRevision,migrationVersion?:1|2|3):GameState{
  catalogAt(revision);
- return {...s,contentVersion:4,v3Length:s.history.length,initialCatalogRevision:revision,catalogRevision:revision};
+ return {...s,contentVersion:4,v3Length:s.history.length,initialCatalogRevision:revision,catalogRevision:revision,...(migrationVersion?{migrationVersion}:{})};
 }
-export function migrateV1(s:V1State):GameState{return migrateV3(v2ToV3(v1ToV2(s)));}
+export function migrateV1(s:V1State):GameState{return migrateV3(v2ToV3(v1ToV2(s)),latestCatalogRevision,1);}
 export function restore(raw:string):GameState{
  const p=JSON.parse(raw);
  if(!p||![1,2].includes(p.version)||!Number.isSafeInteger(p.seed)||!Array.isArray(p.history)||p.history.length>50000)throw new Error('Invalid save');
  let s:GameState;
  if(p.version===1)s=migrateV1(replay(newGameV1(p.seed),p.history,decideV1));
- else if(p.contentVersion===2)s=migrateV3(v2ToV3(replayV2(p.seed,p.history,p.legacyLength)));
- else if(p.contentVersion===3)s=migrateV3(replayV3(p.seed,p.history,p.legacyLength,p.v2Length));
+ else if(p.contentVersion===2)s=migrateV3(v2ToV3(replayV2(p.seed,p.history,p.legacyLength)),latestCatalogRevision,2);
+ else if(p.contentVersion===3)s=migrateV3(replayV3(p.seed,p.history,p.legacyLength,p.v2Length),latestCatalogRevision,3);
  else if(p.contentVersion===4){
   if(!validBoundary(p.v3Length,p.history.length)||!validBoundary(p.v2Length,p.v3Length)||!validBoundary(p.legacyLength,p.v2Length))throw new Error('Invalid version boundary');
   catalogAt(p.initialCatalogRevision);
-  s=p.v3Length?migrateV3(replayV3(p.seed,p.history.slice(0,p.v3Length),p.legacyLength,p.v2Length),p.initialCatalogRevision):newGame(p.seed,p.initialCatalogRevision);
+  if(p.migrationVersion!==undefined&&(![1,2,3].includes(p.migrationVersion)||
+   (p.migrationVersion===1&&p.legacyLength!==p.v3Length)||
+   (p.migrationVersion<=2&&p.v2Length!==p.v3Length)))throw new Error('Invalid pending migration version');
+  s=p.v3Length||p.migrationVersion?migrateV3(replayV3(p.seed,p.history.slice(0,p.v3Length),p.legacyLength,p.v2Length),p.initialCatalogRevision,p.migrationVersion):newGame(p.seed,p.initialCatalogRevision);
   for(const h of p.history.slice(p.v3Length)){
    if(!h||h.id!==s.current||h.day!==s.day||!Number.isInteger(h.nextCatalogRevision)||h.nextCatalogRevision<s.catalogRevision)throw new Error('Invalid catalog history');
    catalogAt(h.nextCatalogRevision);

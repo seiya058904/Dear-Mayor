@@ -1,3 +1,6 @@
+import { currentDocument as currentV1 } from '../legacy/v1/game/engine';
+import { currentDocument as currentV2 } from '../legacy/v2/game/engine';
+import { currentDocument as currentV3 } from '../legacy/v3/game/engine';
 import { documents } from "../content";
 import { catalogAt, latestCatalogRevision } from "./catalog";
 import type { Action, Branch, Document, GameState } from "./types";
@@ -61,6 +64,11 @@ const seasonalRequests = [
 ];
 
 export function currentDocument(state: GameState): Document {
+  if (state.history.length === state.v3Length) {
+    if (state.migrationVersion === 1) return currentV1({ ...state, version: 1 });
+    if (state.migrationVersion === 2) return currentV2({ ...state, contentVersion: 2 });
+    if (state.migrationVersion === 3) return currentV3({ ...state, contentVersion: 3 });
+  }
   if (state.current.startsWith("season/")) {
     const n = Number(state.current.split("/")[1]);
     const [title, body, request, a, b, c] =

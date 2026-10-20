@@ -1,3 +1,8 @@
+import { currentDocument as currentV1 } from '../src/legacy/v1/game/engine';
+import { currentDocument as currentV2 } from '../src/legacy/v2/game/engine';
+import { currentDocument as currentV3 } from '../src/legacy/v3/game/engine';
+import v1Pending from './fixtures/v1-saves.json';
+import v2Pending from './fixtures/v2-saves.json';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -167,4 +172,26 @@ test(`catalog ${revision} preserves a rewritten pending request: ${id}`,()=>{
   assert.equal(advanced.catalogRevision,latestCatalogRevision);
   assert.deepEqual(restore(JSON.stringify(advanced)),advanced);
  }
+});
+
+for (const version of [1,2,3] as const) test(`v${version} pending letters retain frozen prose, all choices and outcomes until a real decision`,()=>{
+ const cases=version===1?v1Pending:version===2?v2Pending:fixtures;
+ for(const fixture of cases){
+  const raw=JSON.stringify(fixture.state);
+  const expected=version===1?currentV1(fixture.state as unknown as Parameters<typeof currentV1>[0]):version===2?currentV2(fixture.state as unknown as Parameters<typeof currentV2>[0]):currentV3(fixture.state as unknown as Parameters<typeof currentV3>[0]);
+  const s=restore(raw);
+  assert.deepEqual(currentDocument(s),expected,fixture.name);
+  assert.deepEqual(restore(JSON.stringify(s)),s,'migration boundary survives saving before deciding');
+  for(const [action,reply] of [['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const){
+   const next=decide(s,s.current,action,reply);
+   assert.equal(next.history.at(-1)!.result,action==='written_reply'?expected.replies[reply!].result:expected.results[action]);
+   assert.deepEqual(next.history.slice(0,s.history.length),s.history);
+   assert.deepEqual(restore(JSON.stringify(next)),next);
+  }
+ }
+});
+test('pending migration engine identifiers reject invalid versions and incompatible replay boundaries',()=>{
+ const s=restore(JSON.stringify(v1Pending.find(f=>f.state.history.length===20)!.state));
+ for(const migrationVersion of [0,4,'1',null])assert.throws(()=>restore(JSON.stringify({...s,migrationVersion})));
+ assert.throws(()=>restore(JSON.stringify({...s,legacyLength:0})));
 });

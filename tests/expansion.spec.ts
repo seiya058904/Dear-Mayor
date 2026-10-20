@@ -1,3 +1,6 @@
+import { currentDocument as currentV1 } from '../src/legacy/v1/game/engine';
+import { currentDocument as currentV2 } from '../src/legacy/v2/game/engine';
+import { currentDocument as currentV3 } from '../src/legacy/v3/game/engine';
 import { test, expect } from '@playwright/test';
 import path from 'node:path';
 import { mkdirSync } from 'node:fs';
@@ -225,5 +228,29 @@ test(`catalog ${revision}: ${catalogFixtures.length} saves upgrade after a real 
   expect(stored.history.slice(0,fixture.state.history.length)).toEqual(fixture.state.history);
   await page.reload();
   await expect(page.locator('article')).toHaveAttribute('data-letter-id',stored.current);
+ }
+});
+
+test('v1 v2 v3 pending letters keep original prose and reply choices across cancel, reload and selection',async({page})=>{
+ await page.emulateMedia({reducedMotion:'reduce'});
+ for(const version of [1,2,3] as const){
+  const cases=version===1?fixtures:version===2?v2Fixtures:v3Fixtures;
+  const fixture=cases.find(f=>f.state.history.length===0)??cases[0];
+  const expected=version===1?currentV1(fixture.state as unknown as Parameters<typeof currentV1>[0]):version===2?currentV2(fixture.state as unknown as Parameters<typeof currentV2>[0]):currentV3(fixture.state as unknown as Parameters<typeof currentV3>[0]);
+  const raw=JSON.stringify(fixture.state);
+  await page.goto('./');await page.evaluate(({key,raw})=>{localStorage.clear();localStorage.setItem(key,raw);},{key,raw});
+  await page.reload();
+  for(const text of expected.body)await expect(page.locator('.letter-reading')).toContainText(text);
+  await page.getByRole('button',{name:'批示回复',exact:true}).click();
+  for(let i=0;i<expected.replies.length;i++)await expect(page.locator('[data-choice]').nth(i)).toContainText(expected.replies[i].text);
+  await page.keyboard.press('Escape');await page.reload();
+  for(const text of expected.body)await expect(page.locator('.letter-reading')).toContainText(text);
+  expect(await page.evaluate(key=>localStorage.getItem(key),key)).toBe(raw);
+  await page.getByRole('button',{name:'批示回复',exact:true}).click();await page.locator('[data-choice]').nth(2).click();
+  await expect(page.locator('article')).not.toHaveAttribute('data-letter-id',fixture.state.current);
+  const saved=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key);
+  expect(saved.history.at(-1).result).toBe(expected.replies[2].result);
+  expect(saved.history.slice(0,fixture.state.history.length)).toEqual(fixture.state.history);
+  await page.reload();await expect(page.locator('article')).toHaveAttribute('data-letter-id',saved.current);
  }
 });
