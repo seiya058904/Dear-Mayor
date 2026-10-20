@@ -1,0 +1,201 @@
+{
+  "status": "TARGET_REACHED",
+  "target": 1160,
+  "before": 116,
+  "uniqueAuthoredNodes": 1160,
+  "newAuthoredNodes": 1044,
+  "rewrittenLegacyNodes": 116,
+  "remainingToTarget": 0,
+  "reachableInOneRun": 860,
+  "distinctStorylines": 82,
+  "newCharacters": 62,
+  "minBodyCharacters": 28,
+  "maxBodyCharacters": 204,
+  "previousBatchNodes": 1160,
+  "newNodesThisBatch": 0,
+  "changedPreviousMachineContractsThisBatch": 32,
+  "standaloneItems": 586,
+  "unconditionalStandaloneItems": 514,
+  "conditionalEchoItems": 72,
+  "gatedChainOpenings": 1,
+  "echoesPerRun": 18,
+  "specialOrUpperLevelItems": 139,
+  "postExhaustionRepeatingVariants": 4,
+  "unionReachable": 1160,
+  "missingReachable": [],
+  "catalogRevision": 18,
+  "catalogCompatibilityFixtureCases": 176,
+  "migrationFixtureCases": 55,
+  "v1FixtureCases": 16,
+  "v2FixtureCases": 20,
+  "v3FixtureCases": 19,
+  "migrationFixtureKind": "Synthetic saves produced with exact baseline engine; not collected player browser data",
+  "audit": {
+    "errors": [],
+    "suspicious": [],
+    "repeatedSentences": [],
+    "exactDuplicateBodies": 0
+  },
+  "simulations": [
+    {
+      "seed": 0,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 1,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 2,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 3,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 4,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 5,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 6,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 7,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 8,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 9,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 10,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 11,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 12,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 13,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 14,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 15,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 16,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 17,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 18,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    },
+    {
+      "seed": 19,
+      "decisions": 1000,
+      "authored": 860,
+      "days": 251,
+      "pending": 0,
+      "unique": 1000
+    }
+  ]
+}

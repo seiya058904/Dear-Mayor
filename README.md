@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <sub>116 UNIQUE LETTERS &nbsp;·&nbsp; 12 STORYLINES &nbsp;·&nbsp; 20 IN-GAME DAYS &nbsp;·&nbsp; NO SCORE TO CHASE</sub>
+  <sub>1,160 AUTHORED NODES &nbsp;·&nbsp; 82 STORYLINES &nbsp;·&nbsp; 860 LETTERS PER RUN &nbsp;·&nbsp; NO SCORE TO CHASE</sub>
 </p>
 
 <p align="center">
@@ -67,8 +67,8 @@ Approval, rejection, silence, and specific instructions are tracked separately. 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>📜 116 Authored Letters</h3>
-      <p>Twelve branching storylines and 32 standalone everyday letters. The writing is authored and bundled with the game, not generated on demand.</p>
+      <h3>📜 1,160 Authored Nodes</h3>
+      <p>Eighty-two branching storylines, 514 unconditional standalone letters, and 72 conditional echo nodes. The writing is authored and bundled with the game, not generated on demand.</p>
     </td>
     <td width="50%" valign="top">
       <h3>🧩 Consequences That Return</h3>
@@ -78,11 +78,11 @@ Approval, rejection, silence, and specific instructions are tracked separately. 
   <tr>
     <td width="50%" valign="top">
       <h3>🕰️ A Complete Season of Decisions</h3>
-      <p>A full run contains 80 non-repeating letters across 20 in-game days. After the main collection ends, four recurring letter types continue with limited memory of earlier handling.</p>
+      <p>A full run contains 860 distinct authored letters, with four decisions per in-game day and date jumps when the next letter is due. After the main collection ends, four recurring letter types continue; these are excluded from the authored count.</p>
     </td>
     <td width="50%" valign="top">
       <h3>👥 Familiar Names, New Problems</h3>
-      <p>Eighteen recurring senders or organizations, alongside occasional townspeople, give each response a chance to matter later.</p>
+      <p>Recurring senders and organizations, alongside occasional townspeople, give each response a chance to matter later.</p>
     </td>
   </tr>
   <tr>
@@ -145,6 +145,8 @@ npm run dev
 ~~~
 
 Open **http://127.0.0.1:5173/**.
+
+> **Expanded catalog:** the source contains **1,160 authored nodes**, with **860 distinct letters reachable in one run**. Check the workflow for deployment status; source synchronization alone does not confirm the live site is updated. See the [expansion progress](docs/EXPANSION-PROGRESS.md), [content inventory](docs/CONTENT-COVERAGE.md), and [QA evidence](docs/QA.md).
 
 <details>
 <summary><strong>Build, verification, and technical details</strong></summary>

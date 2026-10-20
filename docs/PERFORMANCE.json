@@ -1,0 +1,33 @@
+{
+  "environment": "Node v24.15.0, win32 x64",
+  "method": "Local Node timings; in-memory StorageLike, 20 saves, 10 restores, not a slow phone benchmark",
+  "rows": [
+    {
+      "count": 200,
+      "legacyDecisionsMs": 45.51809999999932,
+      "decisionsMs": 29.389799999999923,
+      "averageDecisionMs": 0.1469489999999996,
+      "saveMs": 0.09666999999999462,
+      "restoreMs": 25.05514999999996,
+      "bytes": 40672
+    },
+    {
+      "count": 500,
+      "legacyDecisionsMs": 167.46489999999994,
+      "decisionsMs": 89.8090000000002,
+      "averageDecisionMs": 0.1796180000000004,
+      "saveMs": 2.5585949999999684,
+      "restoreMs": 83.03696999999993,
+      "bytes": 95378
+    },
+    {
+      "count": 1000,
+      "legacyDecisionsMs": 987.2214999999997,
+      "decisionsMs": 187.10919999999987,
+      "averageDecisionMs": 0.18710919999999986,
+      "saveMs": 0.7321750000000066,
+      "restoreMs": 165.57879000000003,
+      "bytes": 182610
+    }
+  ]
+}

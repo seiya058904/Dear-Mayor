@@ -1,0 +1,739 @@
+{
+  "date": "2026-10-20",
+  "reviewer": "Single development agent, separate review phase; not independent human editing or playtesting",
+  "authored": 1160,
+  "sampleSize": 77,
+  "selection": "Four complete chains (28), two four-way echo groups (8), edited batch-11 A/B (32), first standalone in batches 1-9 (9); targeted, not statistically random",
+  "sample": [
+    {
+      "id": "bridge/start",
+      "sha256": "0b1f111a3218dfdf64f0ed9be251817c47e8d744c16c86cb534415613092fc83",
+      "sourceCondition": null
+    },
+    {
+      "id": "bridge/approve",
+      "sha256": "2844ac579897f9e1cc70431ad865d1d3fe1e338a647983ab3220afea47abb92b",
+      "sourceCondition": null
+    },
+    {
+      "id": "bridge/reject",
+      "sha256": "049eeca83df15072bca22f5bf2160c958cd19716941af7274a43f480a05f30d1",
+      "sourceCondition": null
+    },
+    {
+      "id": "bridge/defer",
+      "sha256": "752b68037aa1043d03f528eb63fad93c0c6e3a96718fc70f05944ffa8e043082",
+      "sourceCondition": null
+    },
+    {
+      "id": "bridge/reply",
+      "sha256": "588930079576d07849a4d1d9f35083f0f35f29fd3571dad34791d8af7c0daf8b",
+      "sourceCondition": null
+    },
+    {
+      "id": "bridge/continuation",
+      "sha256": "52af19ce414ff8e3f2053646728143c448a2f713065a2a99d039ce4610572f1e",
+      "sourceCondition": null
+    },
+    {
+      "id": "bridge/finale",
+      "sha256": "c88877f3ffdc2abe2d1b2f74b9d8945d40ab01011f7d08c6c465cbc3fed7977e",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/start",
+      "sha256": "08e32aef1ab0b7d8c5f8d4a725a37d019d80fb891bb8baa663507fb49eb1cffe",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/approve",
+      "sha256": "c8edf492721376d80a81c74fee4499d8b063ced6a37f94c2b862fb83ef394ef3",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/reject",
+      "sha256": "693cd8ad243c2e325db1c41b5ebdd30b31ac6de9dd6630cc9badc675f3616bd3",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/defer",
+      "sha256": "de781774275c31bd287921b7476ce6c61030047febe1591e73f307b1af55dab4",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/reply",
+      "sha256": "13d809c51080c86744b5d858e6205e8848557f148a76ac83a2c817509217cdfe",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/continuation",
+      "sha256": "1846b5cf3226ce393cfc24e9c5ab1d77a79046eab5c833aba01dde946017d13c",
+      "sourceCondition": null
+    },
+    {
+      "id": "lastloom/finale",
+      "sha256": "29afaf103e6cdce7e2b84dc87ced8c8339d75bdfbcd7ad98d15edb819f5c2244",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/start",
+      "sha256": "9fe1272f78635dd0f40eae00f34aab6823b5a37ec4caa6ff5db586ccc7848053",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/approve",
+      "sha256": "15a8ffa89c61c8a30ce8da35299576abeb004611985c7fea574392372412ef4d",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/reject",
+      "sha256": "51d79a5ac3ccefcb4c92e6c199a37331566474998545ded45dd99ac86dc3f827",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/defer",
+      "sha256": "dc00b11f65d53d4dae49d6c2b976111d25c9360e0a281ec627487f9f464a2787",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/reply",
+      "sha256": "56826c4dad688f79f6420969f6d164ebc343fd50028f015548b174d21c135892",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/continuation",
+      "sha256": "57e896c761adb6895b2e959557afb997d4604ae3d9607781c275dab57e9d5531",
+      "sourceCondition": null
+    },
+    {
+      "id": "lampwindow/finale",
+      "sha256": "4e39c4a72351c561185f2be384ef51cf3f1de2f50d2374d3bdf4668c7ac24a98",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/start",
+      "sha256": "47ff9ca708c05f364c740f5b49daea2489812af8e574543cfb9e4cf098644ece",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/approve",
+      "sha256": "1876d423e5c6b696647d2109edc1e78d790792591232e696073a325d92bbebaa",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/reject",
+      "sha256": "22b7747b35aad53e8c0a08078daf96d56fbf29d8b4515c1b9553046a562732d2",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/defer",
+      "sha256": "cf0e6f321ed3ad3c36a79928b07b0e25fbe4f41845deed71e0653f2756df42c3",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/reply",
+      "sha256": "28d8fe80041677415949885008360e1247c836ef8bfa1303a93433128398b2fb",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/continuation",
+      "sha256": "b967633220ee2ad6bea7c9b0ac2bee6b091746b882e0d0417bb865e1b989ff3b",
+      "sourceCondition": null
+    },
+    {
+      "id": "maskthanks/finale",
+      "sha256": "c720d72fb65fe5c9c2bdccefb78588ba6621496e17aa5cf49e4504ef5c8af24e",
+      "sourceCondition": null
+    },
+    {
+      "id": "echo/clocklesson-year-class",
+      "sha256": "0e56e8631074c4c023867a4bc283acde255fcb66a7cf0034acb610869d9870f4",
+      "sourceCondition": {
+        "id": "clocklesson/start",
+        "actions": [
+          "approve"
+        ],
+        "days": 190
+      }
+    },
+    {
+      "id": "echo/clocklesson-year-shop",
+      "sha256": "b71e3fd69d62c1edea86f9e112848f6c0a6b78dd11151af215638c0308929e76",
+      "sourceCondition": {
+        "id": "clocklesson/start",
+        "actions": [
+          "reject"
+        ],
+        "days": 190
+      }
+    },
+    {
+      "id": "echo/clocklesson-year-wait",
+      "sha256": "fc7353f5c087bda420f500f3eac132503fe88291e0221ab20109dd884198ceed",
+      "sourceCondition": {
+        "id": "clocklesson/start",
+        "actions": [
+          "defer"
+        ],
+        "days": 190
+      }
+    },
+    {
+      "id": "echo/clocklesson-year-reply",
+      "sha256": "4ef280137f140dada81fa9b3ed8f4c51e6a61057b1116d5e41dc93f74ad96b8c",
+      "sourceCondition": {
+        "id": "clocklesson/start",
+        "actions": [
+          "written_reply"
+        ],
+        "days": 190
+      }
+    },
+    {
+      "id": "echo/lamp-after-look",
+      "sha256": "57c0edf4fce4c2ddc39f2620802419d4cba6a2f46fb3a4eada90d2c54c9b038c",
+      "sourceCondition": {
+        "id": "lampwindow/start",
+        "actions": [
+          "approve"
+        ],
+        "days": 75
+      }
+    },
+    {
+      "id": "echo/lamp-after-curtain",
+      "sha256": "ae995c40b27a112c0482288ff221d48fc6bdec25af782a09a0178eb1ce6741c4",
+      "sourceCondition": {
+        "id": "lampwindow/start",
+        "actions": [
+          "reject"
+        ],
+        "days": 77
+      }
+    },
+    {
+      "id": "echo/lamp-after-wait",
+      "sha256": "9c6acc3c0557f82b56035747632e17bb676f780fba99d11b33eae0d951683732",
+      "sourceCondition": {
+        "id": "lampwindow/start",
+        "actions": [
+          "defer"
+        ],
+        "days": 79
+      }
+    },
+    {
+      "id": "echo/lamp-after-directions",
+      "sha256": "43b676682c54ba8dcc27eb4533303550a0fcb033489292b6c8a78af7bda46feb",
+      "sourceCondition": {
+        "id": "lampwindow/start",
+        "actions": [
+          "written_reply"
+        ],
+        "days": 81
+      }
+    },
+    {
+      "id": "eleventh/book-damp-corner",
+      "sha256": "555501d0c4218aa2d392fa2358b77b620a8a37f2b0148598e06e079ddc1b2c14",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/market-pea-measure",
+      "sha256": "3030bb94a2589bc2d19040464977821aa8cf88c12a8bf2ffbc2af8dc7a340c14",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/school-quiet-bell",
+      "sha256": "14c7023a80344c493e1e526deb377cafeb80a905abf51b52e0419a0d6c88c943",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/bakery-flour-sneeze",
+      "sha256": "8e3f518cb2dcf6e67a492302156f67ff63cc54edf3bde48a01b63807772858df",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/cobbler-boot-tap",
+      "sha256": "79102081ab5bb8a7cf227c631d7762d8b64f2245bf11f2f6423bad66286fbb99",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/lamplighter-wick",
+      "sha256": "6aca2296c7b03a957c0564338d7272a6df3644129a4b2047ebc3c4efb5944558",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/post-rain-letter",
+      "sha256": "2c099177c7d33514938719a84bcf012651f1101acc8473148087d4cba4288d4b",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/tailor-button-jar",
+      "sha256": "e0817f9cd02c75b495678bd80e0de7d2c45ba61ec7ea9d67804bd61f7f88299a",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/miller-sack-mark",
+      "sha256": "2bbf6623aa8f54fc21cfcc942c106ee8715352ca87c7e15ef1abccb9487753ec",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/inn-room-number",
+      "sha256": "6a9946a6f83101fc376ddf15b840e5a754509681dffe33771a85ab96f03c2344",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/garden-seed-packet",
+      "sha256": "4d4df56a3b7869e3d228a62ed909c7158a84aad4a4f4e8fd3d12ac7eb21c1791",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/smith-tongs-rest",
+      "sha256": "55a0647c2e1ce94e45bcbe145e92c4fdbdf56c1a63d46737d5a450da58dfd67c",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/bridge-ribbon",
+      "sha256": "0a0ce01966fa07263e8a67f2c4ec9f62685d7ba6a1e4f77cd6b9c52757eebd92",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/candle-drip-table",
+      "sha256": "6daca42f185d46d326aece8b72ce8de42fd1dcd2ed997828e1b409e667dfc0c4",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/fisher-basket-shadow",
+      "sha256": "b055900d0341e2adb9dfa954242b7737b226ba59b5930b03415ab5d16f557a90",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/porridge-pot-size",
+      "sha256": "b2ccb790fb5da70eb09de784420bd5f9c94168dc6156c32dfd44a760eccb2d7e",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/court-drum-skin",
+      "sha256": "7abba8efd14d1feaf245cdbb0915c48e2bac8c05128a5fc3c39ad87aa62237de",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/queen-map-fold",
+      "sha256": "504cbb81f8241bbc8e9c839125a5a6601476c77ae9c64f02fabc2ac93dd4a1f4",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/guild-napkin-contract",
+      "sha256": "d6807786b20ed563d341d93704e69991a464fb863caa11bc761b46b4591d324a",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/shepherd-lost-sheepbell",
+      "sha256": "609845e5a8c4787290bc9e060e2417ca5bab7a71df3a3b01adcca287103516f3",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/painter-window-dry",
+      "sha256": "7383cb7cbb1af2fd3f5fcb310c45c249067cb27b57ee737dff7b86f723d9163d",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/mason-stair-count",
+      "sha256": "4602725dd74bb43c4f91065826bf3dce7110f79a2c2a2a4a3dc82f253e5de819",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/widow-warm-bread",
+      "sha256": "ab4226c8d54b8d921200274265e94db0f43db0cd9de8369b8a0d16e6a958d739",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/stable-brush-return",
+      "sha256": "149616fef5aa34de3d64625fee84169a8b5d150ea9c890de2541840af781e9e9",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/herald-wrong-title",
+      "sha256": "38ac7a890b8268338ec578a97c23e3620d248f3c0a44779d9894ecc78d7b29f1",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/weaver-thread-sample",
+      "sha256": "8db98ba0472c2e023f27d31bc5d48b5617b4da5287e6df091b04a2ab575dad27",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/herbalist-pestle",
+      "sha256": "b311039e19186e6136f0466c334fb0d63b94507606b6738a2b41fe142f75973b",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/baker-doorstep-crumbs",
+      "sha256": "79fd2a8e5b275f2985aa805f11125f8c84ddaefbae97c6dd60167468f8cad435",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/bellmaker-soft-clapper",
+      "sha256": "1f5744f763a1e9a1f6b8d3ea21531049ff72e1638c5f71dd6a0a4008c0c7bc75",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/tailor-patch-stitch",
+      "sha256": "78f8de18916001ac47c555c6e7f130926cf502f3de41dc41a225b8264b9914de",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/orchard-crate-label",
+      "sha256": "ca2199e6d7683fd918735931936deff28cee12a691b71580c56d5f3256e84ebf",
+      "sourceCondition": null
+    },
+    {
+      "id": "eleventh/scribe-ink-blot",
+      "sha256": "1b3e2ce467f83e417f26604bc1ee366e9f2927527218b1e7fc618df5aa1d7377",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/duke-button",
+      "sha256": "10fad7bf4bbabcb847c3f5677ab836474b5f1400626bc24fc049dab1e2498942",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/red-margin",
+      "sha256": "7a824fcc7fe73697dde2d81f8ce6867948c8986f7769e96f56bf252aa767723e",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/eaves-two-shadows",
+      "sha256": "75bcf4d5ee01ce8d09f217f8181486986e9be2e10703b09e9750dda221dd2fbb",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/rose-with-thorns",
+      "sha256": "5925b27d0f4c14b424eb92d20cfd5385cc4e416ade483c03691502fe769ba027",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/dry-socks-stop",
+      "sha256": "583fde43ac19b75945b28bac89fcc301073ce0a05c8891623fe1d134bcd35747",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/nearest-gate-stall",
+      "sha256": "5cd46e7de8d2a390220203c4761ec4ef9a689ad47150c325adaca207b65496a8",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/blue-bread-cloth",
+      "sha256": "eea3cb975017d993c0fc952125b201ad3cee7ba9ca9ce1a179db51390814f53a",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/knife-not-for-ribbon",
+      "sha256": "5055ede7aa9d953a6b76fc32c316106f36f2f430f4118007a550081620b4aa0e",
+      "sourceCondition": null
+    },
+    {
+      "id": "town/audience-knows-ending",
+      "sha256": "8901068e6e6bd1b5e9797a79de535b95f149432679684f0c2623f06e276c6584",
+      "sourceCondition": null
+    }
+  ],
+  "changedBodies": [
+    {
+      "id": "eleventh/book-damp-corner",
+      "before": [
+        "窗沿漏进一滴雨，旧地图角上鼓了个小包。读者没弄坏它，是我把书放得太靠窗。我想借一块干净木板压平这页，可借阅室那块正晾着孩子们的画。能另借一夜吗？我会先夹吸水纸，不拿石头压字。"
+      ],
+      "after": [
+        "旧地图的海湾一夜鼓成了小山，我还以为祖先漏画了一座岛。原来窗沿漏雨，湿的是纸角。借阅室的木板正在晾孩子们的画，能另借一块干净板压一夜吗？我会先夹吸水纸；明早要是平了，那座岛就悄悄退回海里。"
+      ]
+    },
+    {
+      "id": "eleventh/market-pea-measure",
+      "before": [
+        "我卖豌豆用的小木勺裂开了，裂口正好卡住最后几粒。客人以为我少给，我也不想每次把勺子敲三下。能请木匠看一眼是补还是换吗？旧勺我先放柜台后，不再拿来量。"
+      ],
+      "after": [
+        "最后三粒豌豆老赖在勺缝里，客人盯着它们，我也盯着它们。再敲下去，倒像我拿木勺卖唱。能请木匠看看这道裂口还能不能补吗？勺子已收起来，豌豆暂且上秤，它们在秤盘里倒很老实。"
+      ]
+    },
+    {
+      "id": "eleventh/school-quiet-bell",
+      "before": [
+        "今日钟匠试过钟绳，钟没坏，是我把午后课表记快了半刻。孩子们听见钟声冲出门，只有一个还在慢慢系鞋带。能把明日的试钟安排挪到散学后吗？我会先把课表改正，不让钟替我认错。"
+      ],
+      "after": [
+        "试钟一响，孩子们抱起书就跑，只剩小素还在系鞋带。我翻开课表才发现自己抄快了半刻，恰好撞上钟匠试绳的时辰。明日能把试钟挪到散学后吗？错字我来改；小素问今天没跑掉的半刻能不能存到明天，我还没想好怎么答。"
+      ]
+    },
+    {
+      "id": "eleventh/bakery-flour-sneeze",
+      "before": [
+        "搬面粉时袋口漏了一线粉，我打了三个喷嚏，最后一个落进空篮子里。琳朵把篮子拿去晒，说这样也算给面包添了雪。我想请库房借个夹子封袋，可别把这点粉又扫回袋里。"
+      ],
+      "after": [
+        "面粉袋漏了，我连打三个喷嚏，最后一个响在空篮子里，还有点回声。琳朵说今早的面包还没出炉，雪倒先下了。库房能借个封袋夹吗？落地的粉已经扫走，袋子先搁在一边；我现在每经过它，都忍不住屏住气。"
+      ]
+    },
+    {
+      "id": "eleventh/cobbler-boot-tap",
+      "before": [
+        "一双新靴走起来左边总先敲地。我本来以为是客人鞋跟不齐，试穿才知道木钉长了半分。能让原买家回来试修一次吗？若他不方便，我会把两只都量清，再按原约处理。"
+      ],
+      "after": [
+        "客人说新靴一走路就像身后跟着个跛脚鼓手。我穿上绕了半圈，左脚果然比右脚多说一句，是木钉长了。能替我约他回来试修吗？不方便来就另按原约处理。两只靴子眼下排在桌边，谁也别急着先出门。"
+      ]
+    },
+    {
+      "id": "eleventh/lamplighter-wick",
+      "before": [
+        "我修灯芯时剪下一小卷焦头，扫进灰盘才发现里面夹着一段还干净的线。能借个带盖小盒收灯具零件吗？我不想下次把好线和焦灰一块倒掉。窗边那个旧盒还装着别人借我的纽扣。"
+      ],
+      "after": [
+        "我在灰盘里捡出半截好灯芯，才想起昨晚把剪下的焦头和备用线堆到了一起。今早差点连它们一起倒掉。能借个带盖小盒装零件吗？窗边的旧盒还盛着米拉借我的纽扣；灯芯和纽扣若再住一处，我怕哪晚提着一串衣扣去点灯。"
+      ]
+    },
+    {
+      "id": "eleventh/post-rain-letter",
+      "before": [
+        "雨路上我护住了信封，落款旁还是洇开一小滴。收信人看成另一位邻居的名字，已经拆开才发现不是给他的。能让我带一张说明和封口纸过去吗？正文没丢，我会先问两家是否愿意把信交回原收件人。"
+      ],
+      "after": [
+        "这场雨把信封上的名字洇得像另一家，害我送错了门。邻居拆开才来找我，两家都知道了，信还在误收那家。我想带说明和封口纸过去，先问双方怎么交还，能准吗？再走这段路，我会把名字看清楚，不靠记得哪扇门养着花。"
+      ]
+    },
+    {
+      "id": "eleventh/tailor-button-jar",
+      "before": [
+        "我从旧衣篮里找出三只蓝扣，颜色很像，孔眼却有大有小。有人把它们摆成一套，想补给同一件外衣。能让领衣的人先试扣吗？缝得上不等于扣得牢，我不愿他走到门口才掉下一颗。"
+      ],
+      "after": [
+        "衣篮里滚出三只蓝扣，远看像一家人，凑近却一个孔大、一个肚厚、一个薄得透光。衣主想都缝在外衣上，我怕上面一颗扣住了，下面一颗又溜出去。能约她来试扣吗？我先拿碎布缝给她看，总比她站在风里跟扣子较劲好。"
+      ]
+    },
+    {
+      "id": "eleventh/miller-sack-mark",
+      "before": [
+        "我在两只麦袋上都写了最后一袋，结果自己也不知哪只是准备送去邻村的。麦子没有少，错的是我的字。能借一支红粉笔做醒目标记吗？用完我会擦掉，不在袋上添一个新账目。"
+      ],
+      "after": [
+        "两袋麦子都被我写成了最后一袋，搬运人问先搬谁，我说先搬最后的，自己也听笑了。送邻村那袋还得照单重认。能借支红粉笔标清去向吗？用过就擦掉。两袋这会儿并排靠墙，倒像都在等另一袋先走。"
+      ]
+    },
+    {
+      "id": "eleventh/inn-room-number",
+      "before": [
+        "客人说预订单写着七号房，门上却钉着六号。查了半天，是我把窗边房从草图六改成七，却没换门牌。能请木匠在客人回来前修正吗？若赶不上，我会亲自带路，不让他跟数字吵一架。"
+      ],
+      "after": [
+        "客人拿着七号房的订单，在六号门前来回走了三趟。是我改了草图，忘改木牌；窗边那间始终是同一间。能请木匠在他回来前改好吗？赶不及我就亲自带路。他说住哪间都行，只求明早别从八号房醒来。"
+      ]
+    },
+    {
+      "id": "eleventh/garden-seed-packet",
+      "before": [
+        "我翻出一袋花籽，外面写着去年秋天，里面却夹着今年的收据。我不记得有没有播过这袋。能请花圃帮手只试种一小行吗？不发给邻居，也不把旧种子写成可靠新货。"
+      ],
+      "after": [
+        "旧花籽袋里夹着今年的收据，我越想越记不起哪次换过袋子。籽粒倒一点也不肯帮我回忆。能请花圃帮手试种一小行吗？先别分给邻居，等它们自己长出来说话。若只冒草，我也认，省得明年又夸这是稀罕花。"
+      ]
+    },
+    {
+      "id": "eleventh/smith-tongs-rest",
+      "before": [
+        "夹铁的长钳把手松了，我收工时才发现。它没有掉下来，只是晃得让人不放心。能借铁匠铺旁那把备用钳一天吗？旧钳我会卸下把手修，绝不用来夹热铁。"
+      ],
+      "after": [
+        "长钳的把手松了，收工时一晃，像在朝我点头。我可不敢让它夹着热铁再点一次。旁边那把备用钳能借一天吗？旧钳已经搁凉，等我卸柄修好。明日若借不成，这项活就停一停；让铁等我，总比让我追着铁跑强。"
+      ]
+    },
+    {
+      "id": "eleventh/bridge-ribbon",
+      "before": [
+        "有人把红布系在桥栏，说这是新路标。其实是我晾的围巾被风刮来，另一头还连着衣篮。能请守桥人把它取下送还吗？我不想让外地人照着一块衣料转进河边小路。"
+      ],
+      "after": [
+        "阿苔家的围巾成路标了——这话是我自己听见的。它被风吹上桥栏，尾端还勾着衣篮，旅人已经照着红布往河边拐。能请守桥人取下来送还吗？我正从院子绕过去，想先喊住那位旅人；围巾要认路，也该先认回我家。"
+      ]
+    },
+    {
+      "id": "eleventh/candle-drip-table",
+      "before": [
+        "我试的新烛有一滴蜡流到桌边，客人还以为那是封信留下的印。我想借一块耐热托盘做下一次试烧，能登记一晚吗？桌布我会先洗净，蜡烛不放在纸边上。"
+      ],
+      "after": [
+        "新烛滴下一块蜡，客人凑近找了半天，说看不出是哪家的封印。我说是我桌布家的，已经洗去了。下一次试烧能借块耐热托盘一晚吗？纸都搬开了，我也守着；这批蜡烛若还爱流泪，好歹让它哭在盘里。"
+      ]
+    },
+    {
+      "id": "eleventh/fisher-basket-shadow",
+      "before": [
+        "傍晚我看见水面一片黑，以为网破了，急着把船划回去。后来才知道是桥影。我想请老船工陪我再看一次水位线，能约在日落前吗？这回先带灯，也不让乘客跟我一起猜。"
+      ],
+      "after": [
+        "傍晚水上黑了一片，我以为旁边的网散了，赶紧把船掉头，才看出是桥影。网主人还问我是不是见了会游泳的桥。能约老船工在日落前陪看一次水位线吗？我带灯过去，趁没载客把这段看明白，省得明晚又向一座桥赔不是。"
+      ]
+    },
+    {
+      "id": "eleventh/porridge-pot-size",
+      "before": [
+        "我用小锅煮粥，盛给三位搬柴人后还剩一碗。明天又有四人来，我不知道要不要换大锅。能借大锅试一回吗？我会先照实际人数备料，不把剩下的一碗算作第四个人已经答应来。"
+      ],
+      "after": [
+        "三位搬柴人吃过粥，锅里还剩一碗，我刚想说明日四人也够，最壮那位就回来问还有没有。他一口气喝完了。明日说好来的有四位，我还得挨个问准，能先借大锅试一回吗？分量我重新算，不能只看锅底有多少地方露着。"
+      ]
+    },
+    {
+      "id": "eleventh/court-drum-skin",
+      "before": [
+        "鼓皮有一道细裂，不影响说话，却会把敲击声拖得像一只打哈欠的羊。今晚换岗要点名，能准许我改用口头报到吗？我不想拿坏鼓试一镇人的耳朵。裂口我已贴签，没有继续拉紧。"
+      ],
+      "after": [
+        "巡夜鼓裂了一道细口，敲起来像羊困得不想回圈。今晚换岗能改用口头报到吗？鼓已搁下，裂口贴了纸签。队里有人说他学这声羊叫也能叫醒半条街，我让他先留着嗓子，等会儿报自己的名字。"
+      ]
+    },
+    {
+      "id": "eleventh/queen-map-fold",
+      "before": [
+        "王室送来的镇图漏了东坡羊圈，测绘员说面积小不必标。我每天从那儿走，知道羊一挤会把小路堵成毛团。能准许附一张简图补上吗？我只求路能看清，不在图上添房屋归属。"
+      ],
+      "after": [
+        "王室镇图把东坡羊圈漏了，说地方太小。画图的人若在放羊时来走一遭，就知道这条小路能挤出多厚一团毛。能附张简图补上吗？我每天从那儿经过，想把能走的路画清；羊圈究竟到谁家的地界，仍得另问。"
+      ]
+    },
+    {
+      "id": "eleventh/guild-napkin-contract",
+      "before": [
+        "两位摊主在餐巾背面写了轮用桌子的日子，洗完只剩半个“周”。双方都来问我谁先用。我想请他们各自确认现有约定，再写到一张干燥纸上，可代约吗？不替任何一人补上丢掉的日期。"
+      ],
+      "after": [
+        "两位摊主把轮用桌子的日子写在餐巾背面，洗过只剩半个周字。一个说是本周，一个说是下周，我看着像一只没画完的耳朵。能代约他们各自核对，再把记得清的写到干纸上吗？记不清的先留空，我的笔可不会替人想起来。"
+      ]
+    },
+    {
+      "id": "eleventh/shepherd-lost-sheepbell",
+      "before": [
+        "我找到走散的小羊时，颈铃挂在低枝上，没伤着它。铃是邻家借我的，天黑前要归还。能请巡山人陪我走旧路取吗？我不会一个人追着铃下陡坡。"
+      ],
+      "after": [
+        "羊找回来了，铃却挂在山上低枝，风一吹还响，像那儿另养着一只透明羊。铃是邻家借的，今晚得还。能请巡山人陪我沿旧路取吗？羊已经关好，我在缓坡口等；天黑还取不回，就先去跟借主说一声。"
+      ]
+    },
+    {
+      "id": "eleventh/painter-window-dry",
+      "before": [
+        "我给学堂画的窗景还没干，孩子伸手摸了一下，留下一个指印。我没生气，那个指印倒很像一只小鸟。能借一块隔板挡到明早吗？不必罚孩子，也别让画当成已完成的展品。"
+      ],
+      "after": [
+        "学堂的窗景没干，一个孩子伸手摸云，留下一只鸟似的指印。我还挺喜欢，可第二个已经举着手想再添一只。能借块隔板挡到明早吗？我先把画往里挪，等干透再同孩子商量那只鸟；今晚就别让整群飞进来了。"
+      ]
+    },
+    {
+      "id": "eleventh/mason-stair-count",
+      "before": [
+        "修路台阶我数过七级，木尺上刻的七却隔得太宽。工程没开始，我想先拿一把标准尺复量，可借半日吗？这会儿木料还在车上，量错了就得把车再推回去。"
+      ],
+      "after": [
+        "台阶明明七级，我那把木尺量来量去，总像多出一截。细看才发现第七格刻宽了，幸好还没下料。能借标准尺半日复量吗？材料仍在车上。伙计说可以把第七格画窄，我怕他连台阶也打算拿炭笔修。"
+      ]
+    },
+    {
+      "id": "eleventh/widow-warm-bread",
+      "before": [
+        "隔壁送来的面包很暖，我晚些才知道她家炉子熄了。她说只是借我灶烤完晚饭，没说要镇里送柴。能替我问问她愿不愿借用公共炉灶吗？她若不想让人知道，我就不把这件小事传开。"
+      ],
+      "after": [
+        "邻居还来烤盘，顺手塞给我一块温面包，我才知道她家炉火灭了，方才借我的灶烤完晚饭。她说有得吃，让我别忙，可我明日要出门。能替我私下问问她愿不愿用公共炉灶吗？她若嫌不方便，我再想办法；这块面包先等我抹点黄油。"
+      ]
+    },
+    {
+      "id": "eleventh/stable-brush-return",
+      "before": [
+        "我拿错了硬刷，刷到一半才听见马打了个很不赞成的响鼻。软刷在隔壁栏，标记掉了。能请马夫把两把刷子并排认一遍吗？今早停刷的那匹马还好，我不让它因为我的眼花多忍一次。"
+      ],
+      "after": [
+        "马把鼻子重重一喷，我才发现手里是硬刷，软刷还在隔壁栏躺着，两块旧牌都掉了。今早这匹已经停刷，瞧着还好，就是不大肯看我。能请马夫认一认刷子，再看看它吗？等分清楚再接着来，我宁愿多挨一个响鼻。"
+      ]
+    },
+    {
+      "id": "eleventh/herald-wrong-title",
+      "before": [
+        "邻镇回函抬头写我“城主大人”，我只是替他们送信的传令员。内容是请两镇共修路标，我愿意转达，但不该替城主答应。能准许我把原信送回改抬头吗？信封没拆，我在门口等过一阵，怕把礼貌等成了授权。"
+      ],
+      "after": [
+        "邻镇这封回函把我写成了城主大人。我只是传令员，城主的椅子都没坐过。来意是两镇共修路标，先前他们口头交代过，信封还没拆。能把原信送回改抬头吗？我在门口等了一阵，已经有人问我治下有几座城，我只好说先让我把这一封送对。"
+      ]
+    },
+    {
+      "id": "eleventh/weaver-thread-sample",
+      "before": [
+        "我练的新花样用掉一团余线，刚好够织袖口，不够成一整件衣服。摊主看了说可先挂一件完整样衣招客。我不想让人以为我已经织完。能撤回这张样衣意向吗？我愿意带袖片去给人看手法。"
+      ],
+      "after": [
+        "余线只够织一个袖口，摊主却说不如挂整件样衣，客人看着气派。我把袖片举起来，实在想不出余下那件怎么凭空长出来。能撤回整衣展示的意向吗？我愿带这小片去给人看花样。手艺还在练，线也得一团一团买。"
+      ]
+    },
+    {
+      "id": "eleventh/herbalist-pestle",
+      "before": [
+        "我把石杵借给邻居捣坚果，杵回来了，原来装薄荷粉的小纸包却空了。她说没打开过，我也相信她。能一起找找是否换了包吗？我不想先问责，药香很容易粘在不同纸上。"
+      ],
+      "after": [
+        "邻居还来捣坚果的石杵，我收拾时发现薄荷粉纸包空了。她说没碰过，我信她，我自己也常把小包换来换去。能一起找找是不是装错了地方吗？屋里哪张纸都有薄荷香，鼻子今天只肯告诉我：这里到处都是。"
+      ]
+    },
+    {
+      "id": "eleventh/baker-doorstep-crumbs",
+      "before": [
+        "清早门阶全是面包屑，我怀疑谁把昨晚的碎料倒了出去。后来看见一只小孩追着风筝跑过，风筝尾绳拖过面包篮。能请人看看篮子放在门外是否挡路吗？我不想为几粒屑去追一群鸟。"
+      ],
+      "after": [
+        "门阶上一地面包屑，我蹲着找了半天鸟脚印，却见一个孩子追风筝跑过，尾绳正从门外篮沿拖下去。能请人看看这篮子是不是挡路吗？我先把碎屑扫了。那只一直盯着我的麻雀，白白听我念叨了好久。"
+      ]
+    },
+    {
+      "id": "eleventh/bellmaker-soft-clapper",
+      "before": [
+        "大钟今日比平常闷，拆开才见钟舌上绕着一截软布，没伤钟。可能是上次擦拭时落进去的。能先让钟楼关闭一刻钟检查吗？我不会趁机调音，钟声本来就不必像每个人的耳朵一样尖。"
+      ],
+      "after": [
+        "大钟听起来像含着一颗糖，闷闷的。我凑近一看，钟舌绕了截擦拭用的软布，钟本身没伤。能关钟楼一刻钟检查吗？我先从楼梯退下，等围好入口再进去。布取下来就洗净，没准它还觉得自己是条围巾。"
+      ]
+    },
+    {
+      "id": "eleventh/tailor-patch-stitch",
+      "before": [
+        "我给旧裤子补洞，发现布边比我记得的松，缝线绕了一大圈。衣主说穿着舒服，不想拆。我想请她试坐一会儿再定要不要改，能代问吗？衣服是她的，补丁长得像云朵也不能替她做主。"
+      ],
+      "after": [
+        "裤子补丁绕得比原来的洞大一圈，像朵坐在膝头的云。衣主说舒服，不想拆，我却怕坐下时边线绷腿。能代约她试坐一会儿吗？她说好就留着。我桌边有凳子，真要改也只动那几针，不必让她再把裤子留一夜。"
+      ]
+    },
+    {
+      "id": "eleventh/orchard-crate-label",
+      "before": [
+        "我在果筐上写错了字，送货前自己发现，梨还在自家院子。能借一张新标签纸吗？旧字我会划掉，不能让收货人拆开一筐才发现名字不对。"
+      ],
+      "after": [
+        "筐里明明是梨，我提笔写了苹果，刚放下笔就被自己看笑了。幸好还在自家院子。能借张新标签纸吗？旧字我划掉，交货前再对一遍。那几个梨躺得很安稳，倒是我被一个苹果叫得满院找纸。"
+      ]
+    },
+    {
+      "id": "eleventh/scribe-ink-blot",
+      "before": [
+        "我盖章前发现印泥盒里有一小粒面包屑，印出来像多了一颗小岛。纸上还没落正式印。能请送餐人换一盒干净印泥吗？我不想把这枚岛印当作公章旁的装饰。"
+      ],
+      "after": [
+        "试印旁边多出一粒小岛，我找了半天，是面包屑掉进了印泥盒。正式纸还干净，饭却已吃完，没法叫面包把它领回去。能请送餐人捎来一盒干净印泥吗？这一盒我收起慢慢清理，先别让下一封公文又长一座岛。"
+      ]
+    }
+  ],
+  "changedMachineContracts": [
+    "eleventh/painter-window-dry"
+  ],
+  "catalogRevision": 16,
+  "latestDeltaIds": [
+    "eleventh/painter-window-dry"
+  ]
+}

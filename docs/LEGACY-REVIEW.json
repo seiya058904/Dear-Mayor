@@ -1,0 +1,515 @@
+{
+  "reviewedNodes": 83,
+  "reviewer": "development agent; not independent human editing",
+  "auditedPreviouslyUnloggedNodes": 33,
+  "auditedNoChange": 30,
+  "revisedThisAudit": ["daily/12", "daily/14", "daily/18"],
+  "auditReport": "STYLE-REVIEW-LEGACY-REMAINDER.md",
+  "review": [
+    {
+      "id": "bridge/approve",
+      "before": "d107b3f5305b1a467c0f3f967448d516a9617b57327d9a43c3165085bfc5c1ef",
+      "after": "0f052ec991ca2a9fb631fdcb9c9d494549eef47c9242f4a4d2f3cf33a57e9f8e",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bridge/reject",
+      "before": "ebaf598a0dff354831e417a4e1232de0aef54f5999cc731fabec868d7b20057d",
+      "after": "f4e6eb795e6c6b7affbfd86e0930902b5ba9fb49d34485926999421b8bc1904f",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bridge/defer",
+      "before": "41814b1ef5e7840b1e13acaab1d3d134451bb63a539b9edb023dbc982fbd5342",
+      "after": "20d639cfa7db253d1d591f59d677408e8b0cdefb3900906f2a428d5b0634f958",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bridge/reply",
+      "before": "83f6b54f48cbe0fece82d719df035d11eb8fa5a4bc7fbe5815243cbdc98829c6",
+      "after": "bd0962ea7fd20c2cda49b9934cef6550c112fdf9cd0023c958718be567ad103d",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bridge/continuation",
+      "before": "ffebdfc45a1cd3c27cf5d5d64150f38212c98836e1c164fdd804a684b226535f",
+      "after": "6e0ccc3b1b21e642933c5ccf7bbfd5f4bb77f961c20e0a7ca471e535fa62882c",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bridge/finale",
+      "before": "6547c8981c2db1e723b124a21885e8051db043cab29f62c35d1a6693aec1b7fb",
+      "after": "573cbc4b7920213b7d8dde0bbe7643e86d09499f1dd9a34c0eb529c4d2a1457d",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/start",
+      "before": "bdb6d4a5ad2439d6850135e5231d5584b40975db4f156fa12564f7ba91d90abe",
+      "after": "33568dd5efcfc01645ba699d97d73dd47283b696f7ff5384b5cbf19d88bfb0bd",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/approve",
+      "before": "1b386188a6909f86db943f360da327985b9d5f483ce8f2d8ae94625d57ca98f9",
+      "after": "1a7c66b60ac80767559a40760b3721c8de80f1438dfa52f55a6a8e4e2bf29124",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/reject",
+      "before": "afa9ff1deda043d587dd351ae2de00a54ae0bc24f6d3cd2eecbc6dd2e123fb96",
+      "after": "cb432cbdac239f1dbeb99418458e2c4abe0e762925f63fd96b8c760d61f456d5",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/defer",
+      "before": "66867e602078acf5a5aab5f2a8c68d8f6d69537f612745a1b3d7de2f7d09d581",
+      "after": "d71ab3069a21143e4a18f39bd55f14109da09b8c61a55abf2400cd8d58018ce7",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/reply",
+      "before": "878fa40074dac6da56b39688b89ca4a06c8138b3d45daf07d1f87beca48cab65",
+      "after": "9ee05521d2af71fab07172b48c01fa044ce40d5e98bc61df2cc1e01a6f212261",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/continuation",
+      "before": "4f7e6b9f265ea69e6d70ac4d4d4a1e4bc4b976242a11c6c474b4f37d0ab8dba6",
+      "after": "b938a77be7ebd64e62a7208a113d8acf72c5ddb1442b6c0495753cf6502396d6",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "clock/finale",
+      "before": "e02ac9b6f3657519c97017db7012b82222464ce474304e7f86155ab3d37eb25d",
+      "after": "4b65916f5bbd3f7d138c1ac7cbf4508e6ca5f06122ac2aea2cfd120f3f7c06ac",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/start",
+      "before": "9975f98b7256a1bc8beaffb6246958ddad904d57c727dcd612b20b1533cb1052",
+      "after": "27f9b4dea117c3abe15ed4ff3722debdba9e8f6720fa80d040f745885740d89f",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/approve",
+      "before": "c9e187b722887ebad735d19abd2b045395dd3d309aeaa3d7dc84c46e1b9394ec",
+      "after": "ed735436c048e1d59e1343dc1ecafca3e07759ca7471554bbac4b3b49795a0c7",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/reject",
+      "before": "64865948daac14f0801d48e2a2b9a8b285d9aa4a4a46a6e7064bbf91a69838a8",
+      "after": "95b66f1ab3e5d762cb7166e0086fe865c4fc607a21080ca5abfe27cefdab0b55",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/defer",
+      "before": "7b71ee7b5309f7749ae8fd37d9159dca20d3b57881cc55558060f477d7afd52e",
+      "after": "3db40f98254499c7bfdd5a0449ef6c5f205f8642146fb37801678f17474e6846",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/reply",
+      "before": "3177239fe07b3d24dc2108975fd79692be380932e5a101f5c29aeb0a2fee2943",
+      "after": "421270805b25ac6502ae43751286de224a24af2e3340fdbb27c7a711c89890dd",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/continuation",
+      "before": "ab42c0593e01a466b9c6e6ae4c3d1b25d837cbe204cee66958d67fc217a1fb2f",
+      "after": "7fc5069e08d9c0608a1e9ab931703baa30f2b09f78554f18e1707f50a418d592",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "goat/finale",
+      "before": "5575cb01b33853b8ec49eda918a15b8000aaf6386e39e439ae86cabfbf448f3b",
+      "after": "4a19db51bdfded3078104358d50e8a2bc97ef1ac18695887fdbad7c937244da7",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/start",
+      "before": "f8a50330cd75936eb46283fecbb1f1119eebf9e9e0a9ce0334ea1067d5676d7b",
+      "after": "bd3edd917591fbf43dcd80036a7ee94495e5584d52581d0513d1f66c738584b4",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/approve",
+      "before": "c426f896e545f97cfe42ce2b4478f33b5f14cfb71d492274461a2ddf4460a098",
+      "after": "0f3bcec54308d9cc79749ae27d0b308651e17add3ef39458836d703a999acc0e",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/reject",
+      "before": "b14782f9d286731b34fa67491acf6b5316135165fc9226127c96ba24ff9f5a85",
+      "after": "6327ecc3473e4a40e2c314a676d78a7f26af2633d2ad4139a74103543bbc59f7",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/defer",
+      "before": "7d7726e49cee53f9a0efb1ea1504893ccdac21809ed2d14ab13eeefc0336988b",
+      "after": "a488b7a272753cc0bd55500bad4a43c141727b199d8e1328a107c4241b625ac9",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/reply",
+      "before": "fa7d193857d71bd07256b1317c1ca897e2d89277ec21ef6129556e30e760bff2",
+      "after": "54c0e6f7d77a11101d748c668b44bbd413f47873677924b99a83b38d638069c3",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/continuation",
+      "before": "7d831d7742b0bfeccc892d41e24c094068964908baf1ac390b847ac0971314c6",
+      "after": "fe9e8156b678e670d6b2bd6a4d155636fa6473b701ba21c982c99216505a3fe5",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "ducks/finale",
+      "before": "468fcc850d71dbca049f1ad3b089a9657fa79b07308284b5fe47e2e3b722c737",
+      "after": "80e5a6f3af736ea98d02bda83fbf2a69b015f1476b879142c2db576d37ce3c8d",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/start",
+      "before": "ce465af7e5767b348d74902999b09629378cdf363535350703f6ebf1b9d42903",
+      "after": "61b37be93066212a238698b62c2b5e02ddaf835a555569125c77bdc53cd7782b",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/approve",
+      "before": "96004f4839f969e1393e8e1389dbc4023282b09d6c915f1938736740c1280523",
+      "after": "1e5dd8d891709e78f07199ae827df302ec7909dcfbaa9dd619a47a43f00d0766",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/reject",
+      "before": "00fcec6bfb613d98f131b86b9a9342b1559d162827f571e533c0d73c57e56d16",
+      "after": "97897b90d723a1ef11a13544f530a966ab8d53e527eddfc296c34c3c9465021a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/defer",
+      "before": "ea7075d13f7eb839b8df15ec4554ab80f1a21a644c03b89142ae9a7b2838ecf7",
+      "after": "ad0c752b83028006cecc688d8555f9c66ad5a420f743903a758883cd823a4ead",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/reply",
+      "before": "23af3585204e33561af307767412b06ff4167b972b961469071f77453bbd053c",
+      "after": "4080f8934addb3783d12ebbdac525b6ca1a7e58d047cadb5947334876f84fe6a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/continuation",
+      "before": "3dc83562f2abf294c3361588ca8fb53b5483a8466096a0111fadd46f960b6652",
+      "after": "a7adc8951d73d2e040b6c6c3275acece17829524f3081a1f147221b781ac5236",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "bread/finale",
+      "before": "a20afb9e78b2b656d74739f70d9779d04fadf3169f2f4dc3a9b72508af6ec07f",
+      "after": "ccd5538c8a881a61a260b340ead5bf6d8929d3da85ad716abb6cbb1be0630ecc",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/start",
+      "before": "ea7e614aa748494f38659b6885079c1a1d246ff93b9166a8f303e32dc3c43de3",
+      "after": "a2b6c115147787435f515fcfcd48935d6329bed814dfbe8655976a709df11d4a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/approve",
+      "before": "9a8e2418dda8bc5e78ca0dbf764ee186b87b877c80b1042dcf1613e3589292dd",
+      "after": "4ddb67e98e20e2119ad0d40079e18f3263e26d02f3ff45cd5ed78dd8ed81fa0a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/reject",
+      "before": "54dce41709ba1c5b4ac257da73fb15cb81f36fe5ce55135d5e124fa70178afff",
+      "after": "0443e31f1cfa6c30ae2eac1c6bde1f749d90561b236002951203c7fd66c80855",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/defer",
+      "before": "a7bcdc3cda1a39ac6d9b2e4835cf9045d61625c4784d8934d8ea6b767373e979",
+      "after": "453b199ce02a76cec7774eb3a633697af04d027693d57ebca446f3083d4cf31f",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/reply",
+      "before": "5efab595532956a68a10caf1a36e019a2c010035b3c701b8e7b287b0890a93b4",
+      "after": "42e69e9df69388abed856032a9c2ea4ca3e5ba43a6926891eb5a5b73c3511218",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/continuation",
+      "before": "549a4af2b00fc9938a73ea147fe1d63f59aa7c103f1e66dbcb84982c379e1e20",
+      "after": "8f42618b50ce914c401244ad69e2bee812329af4feefd01245689ccba21ed9cd",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "flag/finale",
+      "before": "203702f058db3b545fbdbfcd2ac651a5dd7171f51f22167b8eb30512ae4b0d32",
+      "after": "4901313e088dbf31ce992f049024f2b574cac7377d468e113f0422524d36a7c9",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/start",
+      "before": "0c5693815167d809a7461f316da4d4cb2a51a6f93c1f7ced59b0987d87bee763",
+      "after": "759f07737af5a394d858d2420587a083f5de6383e01ba38e200f4cfc67eb18d3",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/approve",
+      "before": "20c7b2d91f92d981e2c844840038b05db796794079fb9ad6b6fda3257fd6c70e",
+      "after": "9adfa2dc99dfe58e7286b9986f0936773db3d66460843121a469a7d0e8314472",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/reject",
+      "before": "6e2b3a901e2f4ed6e809bf7f1aa1e11e2cc86180e19426d4291adb6ae69ee41a",
+      "after": "1fda9bc3b5c237d6e0c69443ee1b2b234558ea1749ff879c9c2f29a46d28077b",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/defer",
+      "before": "6aa601a3607e956b0ee501ca2549df5a07cb80dcdef2c35ad77db2182282d43c",
+      "after": "76075f5fa9208dfb1327d8fdb356a8460c57eb0cb495ba5b6de3e35138df6bd7",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/reply",
+      "before": "2ea7b7083faabdca1e269a443767cbb9446a7586e0c2959a90f654580581a13d",
+      "after": "5f284a692ee601153b771faf235a4ab75f68a3e8d96ab1e996706b522331c9b6",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/continuation",
+      "before": "e7aa80abe2e0e07ab0a63fd2f5d37a119e19e5494e03090a0ac0230795cdc8c8",
+      "after": "079014e75b1d8ae173aad7231717f15a73f3c39b0d105156d15dbbe15b985842",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "garden/finale",
+      "before": "4c4412901f5d8562e575449311e396b41b5f1cd7e0844d27b7a79d5b9198b5df",
+      "after": "c97e990044c89ab56e43769d58230cc3a669ccfe3298b1e207c7263f6130ddf5",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/start",
+      "before": "79edcf20e96f8fa9a9fff42066e285e82997426b13bfb71fa411e820c2383510",
+      "after": "a4155415a1f6795320481256369f17dad6931f0fa967b9894bde8298a2b65203",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/approve",
+      "before": "7e3f9beecd164e0fb9a1507153248ea636005240ff1121a02cb5296553fd7a8a",
+      "after": "65167347d16cbff683c012b48b0e089b771dbaf9e9a5ffaccf04cb0f4e5a2218",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/reject",
+      "before": "b76c08c57c494787976b6b3c2f5470bcb93b50aab7c73bba23f6234eeefba245",
+      "after": "0d1c2544159597c5ca783c2f0381493a6760c285a288103f7cd0ffafef64bbda",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/defer",
+      "before": "dfc13f4d52d90b43eb92d1a2fb8079234007517fab400fa894aa9b36b504eb01",
+      "after": "048fa6247aa7530859714327bb49c64b3a8da70f5d264a3112431033eea9d139",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/reply",
+      "before": "55bc5527ac23b202b6b9d7104b2ce19bd435eb50064a8bf167b8aa3c86b50ecf",
+      "after": "acc07314cc0c2995fb06f446d34f7a08904f424ee36ef3d632574fd16276823a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/continuation",
+      "before": "e32d8bcdff539a5f16bb27363ee7235210c28e23cbbb12caabcca9fb57ee4811",
+      "after": "0c76f219ca65a80bdb40d853c00820c6fc503e2804fcb1b9ae525282adb55702",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "well/finale",
+      "before": "deddcb51e8754fd1cd7054b01ab4023eb638504b88472346eb8c5eff52fc01d6",
+      "after": "419675b5a8f700253baf891539faf3f02f6babcf79c661479b301a2132658293",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/start",
+      "before": "d95c888d95de131c7edc90e30ddac24ebc8467653f0806cd62b1896c7b517e9e",
+      "after": "c6d031f1f3e97248e060e581b81d71dcbee39df84f7848e29c3b0c6b7c74b021",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/approve",
+      "before": "eb6a854f5d73c7b2c6ed7ebd950cc829d64d980455a6751e2adf0f116c8eabe9",
+      "after": "80d6485b345f2d727f4df07e0c021173f83fe501ef35aed4e2de52dfb59035ef",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/reject",
+      "before": "941726061ae816157f12164dc67b5c59782112f688bf8deb907b49bfd634d72b",
+      "after": "bb2568866ea1d6924b6eac9a40963e9f91b3f7f53b166a0e1bdabbae054022a4",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/defer",
+      "before": "84aa1989c6bcd0edad459de063cd1aeeb802f2fdd4da28dfc14434811bcd642c",
+      "after": "dbc01d57938c02257104dd0cb73e5bc6d9a6e5796768855129cc01645f609dff",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/reply",
+      "before": "9d649575b5f61a1ccded5e963a5c18dff22af48c2f49085d187a3763fcefa4d0",
+      "after": "fcd4985a10abfdcc723a26104c928ea571ac7be73547099ac9875afd4a038551",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/continuation",
+      "before": "a0f75de1355f3e2fd3e7f4fa12e4db6382fd43b91e3c210dfc7e8dbac00837cd",
+      "after": "dfa9b1d6da5907093f4f9a9c74b01f5140c3fc8db7f7536623ee09cfdf0ef54f",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "post/finale",
+      "before": "4703df5e16353093d9de4d50cc7d8c5d4e5f95f7d2d03824b4ce9f8ae3da6e9d",
+      "after": "0a76e3ec9a3e75e6ac62ba3abf4ae726a653ea467831a2aacfa4bd4de44b6f6b",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/start",
+      "before": "1db1b58c42a963bd9f13a3b89a426d7d7b09859ef1d0a1bd09eb241c1fc64c5c",
+      "after": "987a49d3b90d3f985a904c0f3963551399384728942fc7ed1c5e5d7ad969bb01",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/approve",
+      "before": "2ee5420b88e418e672fa7a3b686fc08133f6ef3baf137fd31cbc7f51068a8a7c",
+      "after": "0af2f03617204258c7fa24f46ee7c6d6c7e533cbf6678ebc60aa8fd1495525e1",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/reject",
+      "before": "a96cf7686452ffe056bdd36ab221703ba1e1b63c76c2bf7d4185a9e1ca6b69fc",
+      "after": "a4af4b018a2c82c300b2df74a8ba30a437b3137cd5a89ad22b5ac79aaf30620b",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/defer",
+      "before": "b0a06112c775d976628d27e86fdd78a504c08f1f692f2307acc47b13a66dd6ab",
+      "after": "d8b77154e919c0d9efd71638aaa668b9baef57c715ca42e2447870211720f11a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/reply",
+      "before": "77b8a13e4b35ecd40be96e67cc59ae510ef8ef9993fc830b78970d10cb50708f",
+      "after": "817ed720459cc51c3722a306851e50313a4e1248b1dbd6d328511e255bf28e1f",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/continuation",
+      "before": "00343b72568426d2da346451a4fe2da3882b33d187de82bb15672fb16535489b",
+      "after": "bd3979a2a03ba35535c64d9430a71ef4a6e88f8a9d085c071ec483008f5bc987",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "wedding/finale",
+      "before": "04f2ad8dfd6c052b77a43c0d5c1ed845cf7565985938bd71bdec1fd5e498978a",
+      "after": "8625ec8dc548ace5eb8c5a6de5ad7fdf973a1214ff14a337398e336978ee4d00",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/start",
+      "before": "b62ad8d6cd1531ff8b703edc7638f6dbac7ba201085dbd8d504356d9a17c76f0",
+      "after": "e8448edc107260d5b72bc551a5738291a3020f32f84fc0c4caaf9ba45e2e4cd8",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/approve",
+      "before": "395a64fab033504f782a5c76f847ab87983fbc135ed7d107f743dd8ec41b7de6",
+      "after": "af272f1b7d8a350eac87d91f813418a8249fadb115d039f3699ce2207a444486",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/reject",
+      "before": "dfadb2c859ff7d1594f73b8fd380e77d0571bbda4dd9166739e5d8f31ea9cab4",
+      "after": "5d92038f08607c41cc77eaa9b3f112ed9e1f788e8d0902f94b92f99a12d7e6a4",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/defer",
+      "before": "4baf38b394d99e3f4582a9ab9d9d3a14b3d75be15bd3fc991789fcd558534a33",
+      "after": "53bd1067b434d753b97f70ea59348473ffb328a0bd8c6e862f69c7150d4c8e0e",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/reply",
+      "before": "6a3cfa2a62977a812666a298413d36f5c84af7ff6219688a0954c2eecc6acc50",
+      "after": "1c47f1e2d68b29b72e86a233107bae1f9a897bd08d6579e6625610dd561dfe8f",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/continuation",
+      "before": "b733b9ed7c1b51375625db9856d836f202fd54c911ff049807a43b43e6de897b",
+      "after": "98dd5b85df2a81798bc54ece703a0fa29b4a142ffe71cc6a4b8a68f6e3d6317c",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "warmth/finale",
+      "before": "2a168e9d3189ea5a9b0f946631ecf6637ebe52f726edee7adf4d5604157bfbfc",
+      "after": "954f75f37d235b97d38c2d6db68efc1191c4629a514c8292535c4ad2fb765de4",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/start",
+      "before": "4d089a423cdd785c1b47dd3bbb24b216cc8d03078e1dfbf32cc9f0e7710d3759",
+      "after": "dfe286394d9352342f5bcd5ce19305cdc5de9c939af65acbde21896b20d6b756",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/approve",
+      "before": "06c8971c9fab2d76d23f31aa5cc52c78e6164e60f126f29b4e9f6ed2db91e26a",
+      "after": "29b8268dbc243c17e9e36a4d2a12d5955dbfff369dbf88c5b748c64469474854",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/reject",
+      "before": "eb0ddc206d9b3e5c453bca5e82ad1e84989b7e800983cd578c7d356aa18921fa",
+      "after": "abced5ced145ecfb63d5531a9d19464bfb14a1d30eca9f0ea7192fbe832f3e0c",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/defer",
+      "before": "bd139aacd360933553b36924b7875e6e09c9dd1e59fa4fa56a6dd220722bf26b",
+      "after": "24bea9ee15a2e569c2f007ff881ee48467fc16597611bbe00f921e712ed70530",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/reply",
+      "before": "81d241523b882530dbd5e48c8a314385f9ae43afb0893f608c08b5737e5dae21",
+      "after": "9c7e99c5d6d8a60835ccdcaf53aee017b96d21c2733536c3fb664850c8220328",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/continuation",
+      "before": "1b8c61d1cc363d096126d88b764571a5f2847dac514ca89170b37fc6b06d32d1",
+      "after": "af0427e1ad3f3a86314b792444066f9c1340387f94d07793ee3fb438b27c827a",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    },
+    {
+      "id": "fair/finale",
+      "before": "fb6a43c0cc5c706c92044a9ade364dc4aac2a84fd1808ec21a7b49eaae79aebc",
+      "after": "4644716923c73748187b2bcdd5b3af7f5f0b24dd88fc629eb27a21886456d8e0",
+      "review": "逐封改为本人写信的白话，保留原请求；检查拒绝/沉默与汇合前情"
+    }
+  ],
+  "findings": [
+    "保暖收尾不再于数日内突然到春天",
+    "批示后新修补明确为门闩而非重复修窗",
+    "不以苦浆糊诱导动物接触纸张",
+    "拒绝开鸭门不自动把绕路任务交给孩子",
+    "后续与收尾不拼贴上一决策结果，旧链批示回信仍保留真实选择"
+  ]
+}
