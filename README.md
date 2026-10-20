@@ -5,185 +5,192 @@
 </p>
 
 <p align="center">
-  《小镇，请批示》——在一张洒满阳光的书桌前，读信、批示，然后等待小镇寄来后续。
+  A quiet, illustrated town-hall game about reading letters, making decisions,<br />
+  and discovering what those decisions mean to the people who wrote them.
 </p>
 
 <p align="center">
-  <a href="https://seiya058904.github.io/Dear-Mayor/"><strong>▶ 在线游玩</strong></a>
+  <a href="https://seiya058904.github.io/Dear-Mayor/"><strong>▶ Play in Your Browser</strong></a>
   &nbsp;·&nbsp;
-  <a href="#how-it-works">✒️ 玩法介绍</a>
+  <a href="#how-it-works">✒️ How It Works</a>
   &nbsp;·&nbsp;
-  <a href="#game-preview">🖼️ 游戏画面</a>
+  <a href="#a-closer-look">🖼️ Screenshots</a>
   &nbsp;·&nbsp;
-  <a href="#quick-start">⚙️ 本地运行</a>
+  <a href="#play-or-run-locally">⚙️ Run Locally</a>
 </p>
 
 <p align="center">
-  <sub>116 封不同来函 &nbsp;·&nbsp; 12 条故事线 &nbsp;·&nbsp; 一局 20 个游戏日 &nbsp;·&nbsp; 无账号、无计分</sub>
+  <sub>116 UNIQUE LETTERS &nbsp;·&nbsp; 12 STORYLINES &nbsp;·&nbsp; 20 IN-GAME DAYS &nbsp;·&nbsp; NO SCORE TO CHASE</sub>
 </p>
 
 <p align="center">
   <a href="https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml">
-    <img src="https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml/badge.svg" alt="Verify and publish workflow status" />
+    <img src="https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml/badge.svg" alt="Build and deployment status" />
   </a>
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/desktop.png" width="840" alt="Dear Mayor 游戏实机桌面截图：阳光下的书桌、来函与四张决定卡片" />
+  <img src="docs/screenshots/desktop.png" width="840" alt="Actual Dear Mayor desktop gameplay: an illustrated wooden desk, a letter, and four decision cards" />
 </p>
 
 ---
 
-> **你是镇长，但这不是一款追求完美数值的经营游戏。**
+> **You are the mayor. But this is not a game about maximizing numbers.**
 >
-> 每天送到桌上的，是修桥的申请、钟匠的抱怨、邻里的误会，以及看似不重要的小事。你只能根据手头的信件作出判断。答案不会立刻出现；过几天，写信的人会再来告诉你发生了什么。
+> A bridge needs repairs. The clockmaker has a complaint. Two neighbors cannot agree on what happened. Each morning brings another stack of letters, each written by someone who expects you to do something.
+>
+> You have limited information, no perfect answer, and no immediate score. Sometimes, days later, the same person writes back.
 
 <a id="how-it-works"></a>
-## ✒️ One Letter at a Time · 一封信，一次决定
+## ✒️ One Letter at a Time
 
-<p align="center"><code>READ THE LETTER → MAKE A DECISION → TURN THE DAY → SEE WHAT FOLLOWS</code></p>
+<p align="center"><code>READ THE LETTER &nbsp;→&nbsp; MAKE A DECISION &nbsp;→&nbsp; TURN THE DAY &nbsp;→&nbsp; SEE WHAT FOLLOWS</code></p>
 
-1. **阅读来函。** 留意发信人、诉求和那些没有说出口的细节。
-2. **作出处理。** 直接批准、正式驳回、搁置不复，或展开便笺选择一条具体批示。
-3. **继续处理下一封。** 每一天有新的事务；系统会记住你的决定。
-4. **收到后续。** 同一个人可能带着新的问题回来，而此前的处理方式会改变来信的内容。
+1. **Read.** Pay attention to the sender, their request, and what they might be leaving unsaid.
+2. **Decide.** Approve, reject, leave the letter unanswered, or write a specific instruction.
+3. **Move on.** New correspondence arrives as the days advance. Your earlier decisions remain part of the town's history.
+4. **See the consequences.** Familiar people return with follow-up letters shaped by what you chose.
 
-四种处理并非换皮按钮：
+### Four Ways to Respond
 
-| 处理方式 | 在游戏中意味着什么 |
+| Decision | What it actually does |
 | :--- | :--- |
-| **批准** | 同意来函中的请求 |
-| **不批准** | 明确拒绝；对方知道你的态度 |
-| **搁置** | 不回复、不办理；**不是**将原信延后排队 |
-| **批示** | 从三条针对当前信件的具体方案中选择其一 |
+| **Approve** | Grant the request in the letter. |
+| **Reject** | Formally refuse the request. The sender receives a clear answer. |
+| **Set Aside** | Take no action and send no reply. This is **not** a postponed item that returns to your inbox. |
+| **Write an Instruction** | Choose one of three responses tailored to the current letter. |
 
-没有资源面板、任务清单、道德分数或即时公布的正确答案。这里最重要的，是**一次决定如何变成另一封信**。
+Approval, rejection, silence, and specific instructions are tracked separately. The game does not display resource meters, moral ratings, quest logs, or a single "correct" choice.
 
-## ✨ What's Inside · 小镇里有什么
+## ✨ What Makes the Town Feel Alive
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>📜 116 封不同文书</h3>
-      <p>12 条故事线与 32 封独立日常来函；人物、请求与结果由手工编写，不依赖在线生成。</p>
+      <h3>📜 116 Authored Letters</h3>
+      <p>Twelve branching storylines and 32 standalone everyday letters. The writing is authored and bundled with the game, not generated on demand.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>🧩 有回响的故事</h3>
-      <p>每条主线按起始、决策、后续、收尾四个阶段推进，彼此冲突的结果不会在同一局里同时出现。</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🕰️ 一段完整任期</h3>
-      <p>一局处理 80 封不重复文书，跨越 20 个游戏日。主体结束后仍有带处理记忆的循环日常来函。</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>👥 会再次来信的人</h3>
-      <p>18 个重复出现的人物或机构署名，加上其他镇民，让前一次会面成为下一次判断的背景。</p>
+      <h3>🧩 Consequences That Return</h3>
+      <p>Each storyline unfolds through four experienced stages: an opening request, a decision branch, a follow-up, and a resolution.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🎨 手绘绘本书桌</h3>
-      <p>暖色木桌、旧纸、墨迹与印章构成主要界面。文书文字是真实可排版文本，而不是写死在整张图片里。</p>
+      <h3>🕰️ A Complete Season of Decisions</h3>
+      <p>A full run contains 80 non-repeating letters across 20 in-game days. After the main collection ends, four recurring letter types continue with limited memory of earlier handling.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>💾 自动保存与离线继续</h3>
-      <p>处理后自动保存；生产版在首次完成资源缓存后可离线继续。没有登录、云存档或在线 AI。</p>
+      <h3>👥 Familiar Names, New Problems</h3>
+      <p>Eighteen recurring senders or organizations, alongside occasional townspeople, give each response a chance to matter later.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎨 An Illustrated Writing Desk</h3>
+      <p>Warm daylight, layered paper, ink, and hand-drawn details frame the experience. Letter content is real, selectable browser text rather than text baked into a screenshot.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💾 Save and Continue Offline</h3>
+      <p>Progress is saved locally as you play. After the production site has fully cached its resources, the same browser can continue offline.</p>
     </td>
   </tr>
 </table>
 
-<a id="game-preview"></a>
-## 🖼️ A Closer Look · 游戏画面
+<a id="a-closer-look"></a>
+## 🖼️ A Closer Look
 
 <table>
   <tr>
     <td width="65%" align="center" valign="top">
-      <img src="docs/screenshots/reply.png" alt="展开批示便笺后的桌面游戏画面" />
+      <img src="docs/screenshots/reply.png" alt="Actual desktop screenshot showing the expanded instruction note" />
       <br />
-      <sub>提笔批示 · 按当前来函选择具体方案</sub>
+      <sub>Make the decision your own with a letter-specific instruction.</sub>
     </td>
     <td width="35%" align="center" valign="top">
-      <img src="docs/screenshots/mobile.png" alt="Dear Mayor 手机竖屏布局截图" />
+      <img src="docs/screenshots/mobile.png" alt="Actual mobile screenshot showing a portrait letter and touch-friendly decision cards" />
       <br />
-      <sub>竖屏阅读 · 文书自然换行与双列决定卡片</sub>
+      <sub>Read and respond on a smaller screen.</sub>
     </td>
   </tr>
 </table>
 
-原始参考以 1672 × 941 桌面画面为基线；手机布局是为阅读与触摸操作另外设计的适配版本，并非参考图的逐像素复制。
+The desktop composition is based on a 1672 × 941 reference layout. The portrait interface is an additional mobile adaptation, not a claim of pixel-perfect reproduction.
 
-<a id="quick-start"></a>
-## 🚀 Play Online or Run Locally
+<a id="play-or-run-locally"></a>
+## 🚀 Play or Run Locally
 
-### 🌐 在线游玩
+### 🌐 Play Online
 
-**[打开 Dear Mayor →](https://seiya058904.github.io/Dear-Mayor/)**
+**[Open Dear Mayor →](https://seiya058904.github.io/Dear-Mayor/)**
 
-游戏通过 GitHub Pages 发布，无须安装或注册。页面部署状态可在上方的 GitHub Actions 徽章中查看。
+The game is published through GitHub Pages. No account, installation, online AI service, or external game server is required. The game interface and letters are currently in **Simplified Chinese**; this README is in English for repository visitors.
 
-### 💻 本地运行
+### 💻 Run from Source
 
-需要 **Node.js 24** 和 npm。克隆仓库后，在项目根目录执行：
+Requires **Node.js 24** and npm. From the repository root:
 
-```bash
+~~~bash
 npm ci
 npm run dev
-```
+~~~
 
-在浏览器中打开 **http://127.0.0.1:5173/**。
+Open **http://127.0.0.1:5173/**.
 
 <details>
-<summary><strong>开发验证与生产构建</strong></summary>
+<summary><strong>Build, verification, and technical details</strong></summary>
 
-```bash
-npm run check          # TypeScript 检查 + 引擎回归测试
-npm run build          # 生成 dist/，包括生产离线缓存
+~~~bash
+npm run check                # TypeScript and engine regression tests
+npm run build                # Production build, including the offline service worker
 npx playwright install chromium
-npm run test:e2e       # Chromium 浏览器测试
-npm run preview        # 预览生产构建
-```
+npm run test:e2e             # Browser interaction and offline tests
+npm run preview              # Preview the production build
+~~~
 
-技术栈为 **React 19 · TypeScript · Vite 8**。文书、人物、调度与存档都在仓库内运行；没有服务端游戏逻辑、分析 SDK 或运行时外部字体依赖。
+**React 19 · TypeScript · Vite 8 · Playwright**
+
+The production build is written to `dist/`. Runtime content, fonts, and artwork ship with the game. There is no authentication backend, analytics SDK, or runtime CDN dependency.
+
+Pushing to `main` triggers the [verification and GitHub Pages workflow](https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml). Check the workflow for current deployment status.
 
 </details>
 
-## 💾 Progress Belongs to Your Browser · 存档说明
+## 💾 Your Progress Stays in Your Browser
 
-- 进度仅保存在**当前浏览器与当前站点**。GitHub Pages、本地开发站点和不同浏览器之间不会自动同步。
-- 清理网站数据可能删除进度；当前没有云同步、跨设备迁移或多标签页并发编辑。
-- 右下角的「重启一季」会在确认后替换本局存档；取消操作不会重开。
-- 离线游玩以**生产版首次联网并完整缓存**为前提；开发服务器不会启用同样的离线缓存。
+Progress is stored locally for the **current browser and site origin**. The hosted game, the local development server, and different browser profiles do not share saves automatically.
 
-## 🛠️ For Developers · 项目结构
+- Clearing site data may erase your progress. There is no cloud sync or cross-device save transfer.
+- **Restart Season** replaces the current run only after confirmation.
+- Offline continuation requires a successful initial load and complete resource caching in the production build.
+- Editing the same run in multiple tabs at once is not supported.
 
-```text
-src/content/      文书、人物口吻、故事分支与后续
-src/game/         调度、决策、存档与校验
-src/components/   书桌交互、来函、批示与按钮
-public/art/       书桌与纸张美术资源
-public/fonts/     本地字体与许可证
-tests/            引擎、存档、交互及离线测试
-docs/             内容规范、设计取舍、素材来源与验收
-```
+## 🛠️ Repository Guide
 
-继续开发或修改文书前，请先阅读：
+~~~text
+src/content/       Letters, recurring characters, branching stories, outcomes
+src/game/          Scheduling, decisions, saving, and validation
+src/components/    Desk presentation, letter UI, and instruction notes
+public/art/        Illustrated interface assets
+public/fonts/      Locally bundled typeface and license
+tests/             Engine, persistence, browser, and offline coverage
+docs/              Content rules, design decisions, assets, and QA evidence
+~~~
 
-- [内容与存档约定](docs/CONTENT.md) · [设计取舍](docs/DECISIONS.md) · [协作规则](AGENTS.md)
-- [美术素材与来源](docs/ASSETS.md) · [测试及发布验收记录](docs/QA.md)
+For contributors and future iterations:
 
-推送至 `main` 会触发检查与 GitHub Pages 部署；自动化状态请以 [工作流记录](https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml) 为准。
+- [Content and save contracts](docs/CONTENT.md) · [Design decisions](docs/DECISIONS.md) · [Repository guidance](AGENTS.md)
+- [Art and asset provenance](docs/ASSETS.md) · [Test and release evidence](docs/QA.md)
 
-## 📖 Art, Type & Usage · 素材与使用边界
+## 📖 Assets and Usage
 
-界面使用项目内附带的美术素材及衍生纸面。中文字体采用 [LXGW WenKai Lite](https://github.com/lxgw/LxgwWenKai-Lite)，字体许可证见 [SIL OFL](public/fonts/OFL.txt)。
+The illustrated interface uses supplied artwork and derivative paper assets. The bundled typeface is [LXGW WenKai Lite](https://github.com/lxgw/LxgwWenKai-Lite), distributed under the accompanying [SIL Open Font License](public/fonts/OFL.txt).
 
-本仓库公开可浏览，但**未附带统一的代码或素材再许可声明**；请勿仅因源码公开就推定所有插画、文本及其他资源可以自由再分发。更详细的来源与处理方式见 [ASSETS.md](docs/ASSETS.md)。
+This repository does **not** declare a blanket license covering its code, writing, and visual assets. Public access alone should not be interpreted as permission to redistribute or relicense them. Refer to the [asset documentation](docs/ASSETS.md) for provenance and details.
 
 ---
 
 <p align="center">
   <sub>THE TOWN DOESN'T SEND YOU A SCORE. IT SENDS ANOTHER LETTER.</sub><br />
-  <sub>《小镇，请批示》 · 一张书桌，一座小镇，无数等待回信的小事。</sub>
+  <sub>Dear Mayor — a writing desk, a small town, and the consequences of a reply.</sub>
 </p>
