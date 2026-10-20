@@ -116,8 +116,8 @@ export default function App() {
   }
   return (
     <main className="game-viewport" ref={frame}>
+      <div className="viewport-background" aria-hidden="true" />
       <div className="scene" aria-label="小镇，请批示">
-        <div className="desk-background" aria-hidden="true" />
         <div className="game-table" inert={replyOpen || restartOpen}>
           <Petition
             key={doc.id}

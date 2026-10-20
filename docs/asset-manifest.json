@@ -1,8 +1,18 @@
 [
   {
+    "path": "public/apple-touch-icon.png",
+    "bytes": 10488,
+    "sha256": "41ba70e015b12003bc167f251fd5771bf931cbcf02a52a1f2ec940f886a3198d"
+  },
+  {
     "path": "public/art/approve.png",
     "bytes": 120697,
     "sha256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4"
+  },
+  {
+    "path": "public/art/background-wide.webp",
+    "bytes": 1886514,
+    "sha256": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2"
   },
   {
     "path": "public/art/background.png",
@@ -40,6 +50,16 @@
     "sha256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343"
   },
   {
+    "path": "public/favicon.ico",
+    "bytes": 6024,
+    "sha256": "7c69c15763ee4f17091ee7c14198aae555fead630eaaee187a96bf861f55d57d"
+  },
+  {
+    "path": "public/favicon.svg",
+    "bytes": 727,
+    "sha256": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6"
+  },
+  {
     "path": "public/fonts/OFL.txt",
     "bytes": 5176,
     "sha256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e"
@@ -48,5 +68,20 @@
     "path": "public/fonts/wenkai.woff2",
     "bytes": 5305668,
     "sha256": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe"
+  },
+  {
+    "path": "public/icon-192.png",
+    "bytes": 10790,
+    "sha256": "fbd56110ec5b371389169a0a4d38a7d265ff2d2d87d445693bb546abbed83320"
+  },
+  {
+    "path": "public/icon-512.png",
+    "bytes": 30724,
+    "sha256": "6406b96f604508fedad1c5057c9ced32036da92c8016332234cd131924466357"
+  },
+  {
+    "path": "public/site.webmanifest",
+    "bytes": 280,
+    "sha256": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8"
   }
 ]

@@ -51,6 +51,12 @@ button {
   overflow: hidden;
   position: relative;
 }
+.viewport-background {
+  position: absolute;
+  inset: 0;
+  background: url("/art/background-wide.webp") center center / cover no-repeat;
+  pointer-events: none;
+}
 .scene {
   width: 1672px;
   height: 941px;
@@ -59,12 +65,6 @@ button {
   top: 50%;
   transform: translate(-50%, -50%) scale(var(--scene-scale));
   isolation: isolate;
-}
-.desk-background {
-  position: absolute;
-  inset: 0;
-  background: url("/art/background.webp") center/100% 100% no-repeat;
-  z-index: -2;
 }
 .game-table {
   position: absolute;
@@ -423,7 +423,7 @@ h1.long-title {
     height: auto;
     min-height: calc(100svh - 70px);
   }
-  .desk-background {
+  .viewport-background {
     display: none;
   }
   .game-table {

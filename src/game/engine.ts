@@ -3,6 +3,7 @@ import { currentDocument as currentV2 } from '../legacy/v2/game/engine';
 import { currentDocument as currentV3 } from '../legacy/v3/game/engine';
 import { documents } from "../content";
 import { catalogAt, latestCatalogRevision } from "./catalog";
+import { withCausalPilot } from './causal-pilot';
 import type { Action, Branch, Document, GameState } from "./types";
 
 export function newGame(seed = 6271, revision = latestCatalogRevision): GameState {
@@ -99,7 +100,7 @@ export function currentDocument(state: GameState): Document {
       state.current.endsWith("/reply")) {
     return { ...doc, body: [previous.lastResult, ...doc.body] };
   }
-  return doc;
+  return withCausalPilot(state, doc);
 }
 
 /** Stable ID ranking: inserting an unrelated item does not reshuffle every candidate. */

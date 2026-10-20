@@ -1,0 +1,86 @@
+[
+  {
+    "source": "clock/continuation",
+    "target": "clock/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "婚礼获准在正午后敲小铃，大钟照常报时。",
+        "draft": "彼得听过那场午后的婚铃，问我这回告示是不是也该写清敲哪一只。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "婚礼借铃未获准，新人改在门口拍手致意。",
+        "draft": "彼得说那天门口的掌声倒很好认，至少没人来问他是不是午饭又晚了。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "婚礼没有收到答复，只带了一串不会响的丝带。",
+        "draft": "彼得看见那串没响的丝带，问我下次能不能先把回话送到。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "住户提前得知婚铃安排，没有误认又多了一响。",
+        "draft": "彼得记得事先收到的婚铃说明，拿笔把这回告示的时辰圈了出来。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "乐师吹了一小段婚曲，大钟无需参与。",
+        "draft": "彼得哼了两句那天的笛声，我差点跟着敲起桌子。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "婚铃随花车走远，没有打乱镇里的报时。",
+        "draft": "彼得说花车走远后就听不见小铃了，报时还得留给我们这口大钟。"
+      }
+    ]
+  },
+  {
+    "source": "cellarmusic/continuation",
+    "target": "cellarmusic/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "原约副本交双方查看，工时与私人学习分开商谈。",
+        "draft": "我和阿满看过原约副本，他指着休息那一行，我这回没有忙着接话。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "调副本未获安排，双方核各自保留的记录。",
+        "draft": "副本没调来，我们翻各自留的记录，阿满那张的折角比我的多。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有回复，欧妲没有临时增加洗碗作为练琴条件。",
+        "draft": "调副本还没回音，阿满照原约洗碗，练琴的事没有换来一摞额外的盘子。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "真实用时被说清，不只看纸上好听的安排。",
+        "draft": "核过实际时辰，我才知道自己常说的“马上洗完”有多长。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "他选择熟人陪同，不必独自应对老板的长话。",
+        "draft": "阿满带了自己信任的人来谈，我说长了，那人就看一眼阿满。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "双方看同一份约定，不为找纸拖延商谈。",
+        "draft": "我们直接翻了店里的原件，纸明明一直在柜里，我却找过许多别的理由。"
+      }
+    ]
+  }
+]
