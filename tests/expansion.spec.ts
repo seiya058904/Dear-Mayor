@@ -212,9 +212,9 @@ test('nineteen v3 fixtures preserve history and raw backup in the current UI',as
 });
 
 for(const [revision,catalogFixtures] of [[1,catalogOne],[2,catalogTwo],[3,catalogThree],[4,catalogFour],[6,catalogSix],[7,catalogSeven],[8,catalogEight],[9,catalogNine],[10,catalogTen],[11,catalogEleven],[12,catalogTwelve],[13,catalogThirteen],[14,catalogFourteen],[15,catalogFifteen],[16,catalogSixteen],[17,catalogSeventeen]] as const)
-test(`catalog ${revision}: ${catalogFixtures.length} saves upgrade after a real decision, keeping the visible letter`,async({page})=>{
+for(const [index,fixture] of catalogFixtures.entries())
+test(`catalog ${revision}, save ${index+1}: upgrades after a real decision, keeping the visible letter`,async({page})=>{
  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');
- for(const fixture of catalogFixtures){
   const raw=JSON.stringify(fixture.state);
   await page.evaluate(({key,raw})=>{localStorage.clear();localStorage.setItem(key,raw);},{key,raw});
   await page.reload();
@@ -228,7 +228,6 @@ test(`catalog ${revision}: ${catalogFixtures.length} saves upgrade after a real 
   expect(stored.history.slice(0,fixture.state.history.length)).toEqual(fixture.state.history);
   await page.reload();
   await expect(page.locator('article')).toHaveAttribute('data-letter-id',stored.current);
- }
 });
 
 test('v1 v2 v3 pending letters keep original prose and reply choices across cancel, reload and selection',async({page})=>{
