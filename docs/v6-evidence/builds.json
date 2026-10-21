@@ -1,0 +1,379 @@
+{
+  "V5": {
+    "buildInfo": {
+      "version": "7460dadc04d0",
+      "commit": "local"
+    },
+    "files": [
+      {
+        "path": "apple-touch-icon.png",
+        "bytes": 10488,
+        "gzipBytesLevel6": 10511,
+        "sha256": "41ba70e015b12003bc167f251fd5771bf931cbcf02a52a1f2ec940f886a3198d"
+      },
+      {
+        "path": "art/approve.png",
+        "bytes": 120697,
+        "gzipBytesLevel6": 120742,
+        "sha256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4"
+      },
+      {
+        "path": "art/approve.webp",
+        "bytes": 88108,
+        "gzipBytesLevel6": 88097,
+        "sha256": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44"
+      },
+      {
+        "path": "art/background-wide.webp",
+        "bytes": 1886514,
+        "gzipBytesLevel6": 1887064,
+        "sha256": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2"
+      },
+      {
+        "path": "art/background.png",
+        "bytes": 3447119,
+        "gzipBytesLevel6": 3448156,
+        "sha256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928"
+      },
+      {
+        "path": "art/background.webp",
+        "bytes": 1739326,
+        "gzipBytesLevel6": 1739836,
+        "sha256": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb"
+      },
+      {
+        "path": "art/defer.png",
+        "bytes": 118975,
+        "gzipBytesLevel6": 118986,
+        "sha256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2"
+      },
+      {
+        "path": "art/defer.webp",
+        "bytes": 85438,
+        "gzipBytesLevel6": 85365,
+        "sha256": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48"
+      },
+      {
+        "path": "art/note.png",
+        "bytes": 2298027,
+        "gzipBytesLevel6": 2295070,
+        "sha256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179"
+      },
+      {
+        "path": "art/note.webp",
+        "bytes": 1312942,
+        "gzipBytesLevel6": 1308305,
+        "sha256": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f"
+      },
+      {
+        "path": "art/paper-mobile.png",
+        "bytes": 2085205,
+        "gzipBytesLevel6": 1846326,
+        "sha256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b"
+      },
+      {
+        "path": "art/paper-mobile.webp",
+        "bytes": 1290128,
+        "gzipBytesLevel6": 1290528,
+        "sha256": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841"
+      },
+      {
+        "path": "art/paper.png",
+        "bytes": 1925065,
+        "gzipBytesLevel6": 1695064,
+        "sha256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01"
+      },
+      {
+        "path": "art/paper.webp",
+        "bytes": 1163606,
+        "gzipBytesLevel6": 1163964,
+        "sha256": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8"
+      },
+      {
+        "path": "art/reject.png",
+        "bytes": 118472,
+        "gzipBytesLevel6": 118496,
+        "sha256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb"
+      },
+      {
+        "path": "art/reject.webp",
+        "bytes": 89968,
+        "gzipBytesLevel6": 89934,
+        "sha256": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05"
+      },
+      {
+        "path": "art/written_reply.png",
+        "bytes": 122836,
+        "gzipBytesLevel6": 122864,
+        "sha256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343"
+      },
+      {
+        "path": "art/written_reply.webp",
+        "bytes": 90802,
+        "gzipBytesLevel6": 90841,
+        "sha256": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab"
+      },
+      {
+        "path": "assets/index-Bh6APcJn.css",
+        "bytes": 8246,
+        "gzipBytesLevel6": 2597,
+        "sha256": "f5f23ad7581e53b890771fea32761a65824faa35f3d6b2c2414d75987140bc10"
+      },
+      {
+        "path": "assets/index-DwA4GrAF.js",
+        "bytes": 2811091,
+        "gzipBytesLevel6": 1088470,
+        "sha256": "a112c45faebe5d7af32cdcd7ddd78e7255854d5af22051c6b21d070c5060d939"
+      },
+      {
+        "path": "build-info.json",
+        "bytes": 43,
+        "gzipBytesLevel6": 62,
+        "sha256": "62449606f22741756e3927d75eab2675fde93b0a4a6406f3bbe2aa5faceb0e0a"
+      },
+      {
+        "path": "favicon.ico",
+        "bytes": 6024,
+        "gzipBytesLevel6": 6013,
+        "sha256": "7c69c15763ee4f17091ee7c14198aae555fead630eaaee187a96bf861f55d57d"
+      },
+      {
+        "path": "favicon.svg",
+        "bytes": 727,
+        "gzipBytesLevel6": 348,
+        "sha256": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6"
+      },
+      {
+        "path": "fonts/OFL.txt",
+        "bytes": 5176,
+        "gzipBytesLevel6": 2295,
+        "sha256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e"
+      },
+      {
+        "path": "fonts/wenkai.woff2",
+        "bytes": 5305668,
+        "gzipBytesLevel6": 5291130,
+        "sha256": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe"
+      },
+      {
+        "path": "icon-192.png",
+        "bytes": 10790,
+        "gzipBytesLevel6": 10813,
+        "sha256": "fbd56110ec5b371389169a0a4d38a7d265ff2d2d87d445693bb546abbed83320"
+      },
+      {
+        "path": "icon-512.png",
+        "bytes": 30724,
+        "gzipBytesLevel6": 30522,
+        "sha256": "6406b96f604508fedad1c5057c9ced32036da92c8016332234cd131924466357"
+      },
+      {
+        "path": "index.html",
+        "bytes": 997,
+        "gzipBytesLevel6": 598,
+        "sha256": "30417859e882686f8e93d07e7fec784c5024e0c494714c9dab2ea86836c99ad4"
+      },
+      {
+        "path": "site.webmanifest",
+        "bytes": 280,
+        "gzipBytesLevel6": 210,
+        "sha256": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8"
+      },
+      {
+        "path": "sw.js",
+        "bytes": 1573,
+        "gzipBytesLevel6": 763,
+        "sha256": "d207223d4b0ee9f6dbfe6adbac2c3a6b7fc8a8867f69d7bff9a2144a49f8ddf2"
+      }
+    ]
+  },
+  "V6": {
+    "buildInfo": {
+      "version": "2f4a230150fa",
+      "commit": "local"
+    },
+    "files": [
+      {
+        "path": "apple-touch-icon.png",
+        "bytes": 10488,
+        "gzipBytesLevel6": 10511,
+        "sha256": "41ba70e015b12003bc167f251fd5771bf931cbcf02a52a1f2ec940f886a3198d"
+      },
+      {
+        "path": "art/approve.png",
+        "bytes": 120697,
+        "gzipBytesLevel6": 120742,
+        "sha256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4"
+      },
+      {
+        "path": "art/approve.webp",
+        "bytes": 88108,
+        "gzipBytesLevel6": 88097,
+        "sha256": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44"
+      },
+      {
+        "path": "art/background-wide.webp",
+        "bytes": 1886514,
+        "gzipBytesLevel6": 1887064,
+        "sha256": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2"
+      },
+      {
+        "path": "art/background.png",
+        "bytes": 3447119,
+        "gzipBytesLevel6": 3448156,
+        "sha256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928"
+      },
+      {
+        "path": "art/background.webp",
+        "bytes": 1739326,
+        "gzipBytesLevel6": 1739836,
+        "sha256": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb"
+      },
+      {
+        "path": "art/defer.png",
+        "bytes": 118975,
+        "gzipBytesLevel6": 118986,
+        "sha256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2"
+      },
+      {
+        "path": "art/defer.webp",
+        "bytes": 85438,
+        "gzipBytesLevel6": 85365,
+        "sha256": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48"
+      },
+      {
+        "path": "art/note.png",
+        "bytes": 2298027,
+        "gzipBytesLevel6": 2295070,
+        "sha256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179"
+      },
+      {
+        "path": "art/note.webp",
+        "bytes": 1312942,
+        "gzipBytesLevel6": 1308305,
+        "sha256": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f"
+      },
+      {
+        "path": "art/paper-mobile.png",
+        "bytes": 2085205,
+        "gzipBytesLevel6": 1846326,
+        "sha256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b"
+      },
+      {
+        "path": "art/paper-mobile.webp",
+        "bytes": 1290128,
+        "gzipBytesLevel6": 1290528,
+        "sha256": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841"
+      },
+      {
+        "path": "art/paper.png",
+        "bytes": 1925065,
+        "gzipBytesLevel6": 1695064,
+        "sha256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01"
+      },
+      {
+        "path": "art/paper.webp",
+        "bytes": 1163606,
+        "gzipBytesLevel6": 1163964,
+        "sha256": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8"
+      },
+      {
+        "path": "art/reject.png",
+        "bytes": 118472,
+        "gzipBytesLevel6": 118496,
+        "sha256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb"
+      },
+      {
+        "path": "art/reject.webp",
+        "bytes": 89968,
+        "gzipBytesLevel6": 89934,
+        "sha256": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05"
+      },
+      {
+        "path": "art/written_reply.png",
+        "bytes": 122836,
+        "gzipBytesLevel6": 122864,
+        "sha256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343"
+      },
+      {
+        "path": "art/written_reply.webp",
+        "bytes": 90802,
+        "gzipBytesLevel6": 90841,
+        "sha256": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab"
+      },
+      {
+        "path": "assets/index-Bh6APcJn.css",
+        "bytes": 8246,
+        "gzipBytesLevel6": 2597,
+        "sha256": "f5f23ad7581e53b890771fea32761a65824faa35f3d6b2c2414d75987140bc10"
+      },
+      {
+        "path": "assets/index-CtYPR7b8.js",
+        "bytes": 2814135,
+        "gzipBytesLevel6": 1089449,
+        "sha256": "d72296418fb720b499443132ea12d5c369a9a8b4f975dec3f10737488a224c90"
+      },
+      {
+        "path": "build-info.json",
+        "bytes": 43,
+        "gzipBytesLevel6": 62,
+        "sha256": "a491e6063b65e3eed7adc3301922ebdf7addb404e61bcc335349cff404165498"
+      },
+      {
+        "path": "favicon.ico",
+        "bytes": 6024,
+        "gzipBytesLevel6": 6013,
+        "sha256": "7c69c15763ee4f17091ee7c14198aae555fead630eaaee187a96bf861f55d57d"
+      },
+      {
+        "path": "favicon.svg",
+        "bytes": 727,
+        "gzipBytesLevel6": 348,
+        "sha256": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6"
+      },
+      {
+        "path": "fonts/OFL.txt",
+        "bytes": 5176,
+        "gzipBytesLevel6": 2295,
+        "sha256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e"
+      },
+      {
+        "path": "fonts/wenkai.woff2",
+        "bytes": 5305668,
+        "gzipBytesLevel6": 5291130,
+        "sha256": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe"
+      },
+      {
+        "path": "icon-192.png",
+        "bytes": 10790,
+        "gzipBytesLevel6": 10813,
+        "sha256": "fbd56110ec5b371389169a0a4d38a7d265ff2d2d87d445693bb546abbed83320"
+      },
+      {
+        "path": "icon-512.png",
+        "bytes": 30724,
+        "gzipBytesLevel6": 30522,
+        "sha256": "6406b96f604508fedad1c5057c9ced32036da92c8016332234cd131924466357"
+      },
+      {
+        "path": "index.html",
+        "bytes": 997,
+        "gzipBytesLevel6": 599,
+        "sha256": "d9b146fb164264e2a829a274ca3ffb316d5ca8c373eff79c82ffa701cd4d6e15"
+      },
+      {
+        "path": "site.webmanifest",
+        "bytes": 280,
+        "gzipBytesLevel6": 210,
+        "sha256": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8"
+      },
+      {
+        "path": "sw.js",
+        "bytes": 1573,
+        "gzipBytesLevel6": 761,
+        "sha256": "fbbb2a852b80177b7b6703033a57fedb8e955e6c7f411ae9ba39c03d68538374"
+      }
+    ]
+  },
+  "note": "V5 built from clean specified HEAD before edits; V6 built after runtime edits. Same installed dependencies, no dependency changes. Gzip sizes in this manifest use Python level6; performance server uses Node default gzip; Vite displayed gzip is recorded separately."
+}

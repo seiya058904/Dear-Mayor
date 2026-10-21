@@ -11,6 +11,7 @@ import {newGame as newV2,decide as decideV2} from '../src/legacy/v2/game/engine'
 import {restore,loadGame,saveGame,SAVE_KEY} from '../src/game/persistence';
 import {documents as frozenDocuments} from '../src/legacy/v2/content';
 import type {Action,Decision} from '../src/game/types';
+import pilot from '../src/game/causal-pilot.json';
 const actions:Action[]=['approve','reject','defer','written_reply'];
 
 test('frozen v2 source matches first-batch SHA-256 contract',()=>{
@@ -83,7 +84,7 @@ test('remaining 83 legacy reviews match real source; ordinary follow-ups do not 
  let s=newGame();
  for(let i=0;i<Object.keys(documents).length&&!s.current.startsWith('season/');i++) {
   const d=currentDocument(s);
-  if(d.stage&&d.stage>=3&&!['clock/finale','cellarmusic/finale'].includes(d.id)) assert.deepEqual(d.body,documents[d.id].body,d.id);
+  if(d.stage&&d.stage>=3&&!pilot.some(rule=>rule.target===d.id)) assert.deepEqual(d.body,documents[d.id].body,d.id);
   s=decide(s,s.current,actions[i%4],i%3);
  }
 });

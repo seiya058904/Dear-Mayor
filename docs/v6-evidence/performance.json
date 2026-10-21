@@ -1,0 +1,2835 @@
+{
+  "environment": {
+    "node": "v24.15.0",
+    "os": "win32 10.0.22631",
+    "cpu": "AMD Ryzen 7 9700X 8-Core Processor             ",
+    "browser": "156.0.8078.4"
+  },
+  "method": "One cold sample per version/device/profile, three warm reloads per save size. Gzip HTTP on localhost, aggregate server shaping includes worker traffic. Simulated Android, not hardware. Reload includes replay, cached assets and rendering. Heap after explicit GC is a snapshot, not a leak test. Body and header bytes counted by server; excludes TCP/TLS overhead. Initial unthrottled clicks predated FCP and were discarded; four unthrottled profiles retaken after awaiting FCP plus two animation frames. All retained slow profiles have recorded FCP earlier than the real click. Network rate is a nominal cap per 50ms tick; Windows timer scheduling attained about 160000 bytes/s, not a calibrated 1.6Mbps network. Single samples; do not infer acceleration.",
+  "rows": [
+    {
+      "version": "V5",
+      "viewport": "1920x1080 desktop",
+      "cpuRate": 1,
+      "network": "unthrottled localhost",
+      "cold": {
+        "document": 75.89999999850988,
+        "fonts": 180.59999999776483,
+        "offline": 281.5,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 168
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 168
+          }
+        ],
+        "interactiveMs": 228.69999999925494,
+        "bodyTransferBytes": 23979797,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 759,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 85185779.75133216
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-DwA4GrAF.js",
+          "decodedBytes": 2811091
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            161.32039999999984,
+            169.25549999999998,
+            159.2152000000001
+          ],
+          "heapUsedBytes": 6746688,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            174.78849999999966,
+            162.23439999999982,
+            165.63689999999997
+          ],
+          "heapUsedBytes": 6686764,
+          "heapTotalBytes": 8200192
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            162.61850000000004,
+            163.11529999999993,
+            160.4753999999998
+          ],
+          "heapUsedBytes": 6717380,
+          "heapTotalBytes": 8200192
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Unthrottled retake: await FCP then two animation frames before actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V5",
+      "viewport": "1920x1080 desktop",
+      "cpuRate": 4,
+      "network": "nominal shared cap 200000 bytes/s, 150ms response latency; Windows timer scheduling reduces attained throughput",
+      "cold": {
+        "document": 40291.79999999702,
+        "fonts": 40372.89999999851,
+        "offline": 150494.69999999925,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 40140
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 40368
+          }
+        ],
+        "interactiveMs": 40413.39999999851,
+        "bodyTransferBytes": 23979797,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 759,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 159339.8106378505
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-DwA4GrAF.js",
+          "decodedBytes": 2811091
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            560.4023999999918,
+            374.4327999999805,
+            297.46609999999055
+          ],
+          "heapUsedBytes": 6746380,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            405.63829999999143,
+            304.62730000002193,
+            272.64649999997346
+          ],
+          "heapUsedBytes": 6673112,
+          "heapTotalBytes": 7938048
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            584.8630000000121,
+            493.2569000000076,
+            452.8241000000271
+          ],
+          "heapUsedBytes": 6708528,
+          "heapTotalBytes": 7938048
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Initial throttled run: recorded FCP already precedes actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V5",
+      "viewport": "390x844 simulated Android",
+      "cpuRate": 1,
+      "network": "unthrottled localhost",
+      "cold": {
+        "document": 74.5,
+        "fonts": 171.89999999850988,
+        "offline": 280.3999999985099,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 156
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 156
+          }
+        ],
+        "interactiveMs": 219.89999999850988,
+        "bodyTransferBytes": 23959150,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 759,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 85446326.67663097
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-DwA4GrAF.js",
+          "decodedBytes": 2811091
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            157.36220000000003,
+            163.78340000000026,
+            169.90229999999974
+          ],
+          "heapUsedBytes": 6788052,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            169.3757999999998,
+            160.61929999999938,
+            158.3793999999998
+          ],
+          "heapUsedBytes": 6726264,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            165.95449999999983,
+            162.95169999999962,
+            158.8086000000003
+          ],
+          "heapUsedBytes": 6757364,
+          "heapTotalBytes": 8200192
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Unthrottled retake: await FCP then two animation frames before actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V5",
+      "viewport": "390x844 simulated Android",
+      "cpuRate": 4,
+      "network": "nominal shared cap 200000 bytes/s, 150ms response latency; Windows timer scheduling reduces attained throughput",
+      "cold": {
+        "document": 40321,
+        "fonts": 40396.699999999255,
+        "offline": 150281.5,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 40164
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 40392
+          }
+        ],
+        "interactiveMs": 40432.60000000149,
+        "bodyTransferBytes": 23959150,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 759,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-DwA4GrAF.js",
+            "bodyBytes": 1089862,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 608,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 159428.47256648357
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-DwA4GrAF.js",
+          "decodedBytes": 2811091
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            263.99680000002263,
+            270.3111000000499,
+            262.3078000000096
+          ],
+          "heapUsedBytes": 6786204,
+          "heapTotalBytes": 8462336
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            328.1671999999671,
+            258.67739999998594,
+            248.67809999996098
+          ],
+          "heapUsedBytes": 6683232,
+          "heapTotalBytes": 8462336
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            524.1735000000335,
+            427.94250000000466,
+            397.61209999996936
+          ],
+          "heapUsedBytes": 6749208,
+          "heapTotalBytes": 8200192
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Initial throttled run: recorded FCP already precedes actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V6",
+      "viewport": "1920x1080 desktop",
+      "cpuRate": 1,
+      "network": "unthrottled localhost",
+      "cold": {
+        "document": 70.69999999925494,
+        "fonts": 174.29999999701977,
+        "offline": 273.3999999985099,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 156
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 156
+          }
+        ],
+        "interactiveMs": 205.09999999776483,
+        "bodyTransferBytes": 23981871,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 758,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 87717158.0107195
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-CtYPR7b8.js",
+          "decodedBytes": 2814135
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            157.9302000000007,
+            160.85620000000017,
+            168.41309999999976
+          ],
+          "heapUsedBytes": 6751104,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            164.66520000000037,
+            163.7515999999996,
+            166.33550000000014
+          ],
+          "heapUsedBytes": 6690304,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            160.15189999999984,
+            170.66340000000037,
+            161.3177000000005
+          ],
+          "heapUsedBytes": 6719944,
+          "heapTotalBytes": 8200192
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Unthrottled retake: await FCP then two animation frames before actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V6",
+      "viewport": "1920x1080 desktop",
+      "cpuRate": 4,
+      "network": "nominal shared cap 200000 bytes/s, 150ms response latency; Windows timer scheduling reduces attained throughput",
+      "cold": {
+        "document": 40275,
+        "fonts": 40350.199999999255,
+        "offline": 150359.5,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 40124
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 40348
+          }
+        ],
+        "interactiveMs": 40387.699999999255,
+        "bodyTransferBytes": 23981871,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 758,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 159496.87914631268
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-CtYPR7b8.js",
+          "decodedBytes": 2814135
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            260.99890000000596,
+            264.6626000000397,
+            260.43780000001425
+          ],
+          "heapUsedBytes": 6749368,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            320.8550999999861,
+            249.06629999994766,
+            246.34879999997793
+          ],
+          "heapUsedBytes": 6685980,
+          "heapTotalBytes": 7938048
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            508.92680000001565,
+            429.06709999998566,
+            402.3545999999624
+          ],
+          "heapUsedBytes": 6712428,
+          "heapTotalBytes": 7938048
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Initial throttled run: recorded FCP already precedes actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V6",
+      "viewport": "390x844 simulated Android",
+      "cpuRate": 1,
+      "network": "unthrottled localhost",
+      "cold": {
+        "document": 72,
+        "fonts": 173.69999999925494,
+        "offline": 273,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 160
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 160
+          }
+        ],
+        "interactiveMs": 224.09999999776483,
+        "bodyTransferBytes": 23961224,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 758,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 87770051.28205128
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-CtYPR7b8.js",
+          "decodedBytes": 2814135
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            159.59789999999975,
+            159.27729999999974,
+            161.53589999999895
+          ],
+          "heapUsedBytes": 6790916,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            153.65649999999914,
+            162.58389999999963,
+            161.07639999999992
+          ],
+          "heapUsedBytes": 6731520,
+          "heapTotalBytes": 7675904
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            156.2469000000001,
+            165.89480000000003,
+            157.4452000000001
+          ],
+          "heapUsedBytes": 6761588,
+          "heapTotalBytes": 8724480
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Unthrottled retake: await FCP then two animation frames before actual choice",
+      "paintBeforeChoice": true
+    },
+    {
+      "version": "V6",
+      "viewport": "390x844 simulated Android",
+      "cpuRate": 4,
+      "network": "nominal shared cap 200000 bytes/s, 150ms response latency; Windows timer scheduling reduces attained throughput",
+      "cold": {
+        "document": 40365.79999999702,
+        "fonts": 40438.39999999851,
+        "offline": 150270.3999999985,
+        "paints": [
+          {
+            "name": "first-paint",
+            "startTime": 40224
+          },
+          {
+            "name": "first-contentful-paint",
+            "startTime": 40436
+          }
+        ],
+        "interactiveMs": 40471.79999999702,
+        "bodyTransferBytes": 23961224,
+        "headerTransferBytes": 6681,
+        "requests": [
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/sw.js",
+            "bodyBytes": 758,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/apple-touch-icon.png",
+            "bodyBytes": 10511,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background-wide.webp",
+            "bodyBytes": 1887068,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/approve.webp",
+            "bodyBytes": 88084,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/background.webp",
+            "bodyBytes": 1739842,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/defer.webp",
+            "bodyBytes": 85349,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/note.webp",
+            "bodyBytes": 1307836,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper-mobile.webp",
+            "bodyBytes": 1290539,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/paper.webp",
+            "bodyBytes": 1163960,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/reject.webp",
+            "bodyBytes": 89925,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/art/written_reply.webp",
+            "bodyBytes": 90835,
+            "headerBytes": 201,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-Bh6APcJn.css",
+            "bodyBytes": 2600,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/assets/index-CtYPR7b8.js",
+            "bodyBytes": 1090898,
+            "headerBytes": 208,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.ico",
+            "bodyBytes": 6017,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/favicon.svg",
+            "bodyBytes": 351,
+            "headerBytes": 202,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/OFL.txt",
+            "bodyBytes": 2314,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/fonts/wenkai.woff2",
+            "bodyBytes": 5291372,
+            "headerBytes": 203,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-192.png",
+            "bodyBytes": 10813,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/icon-512.png",
+            "bodyBytes": 30600,
+            "headerBytes": 200,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/index.html",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/site.webmanifest",
+            "bodyBytes": 218,
+            "headerBytes": 214,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/",
+            "bodyBytes": 609,
+            "headerBytes": 198,
+            "encoding": "gzip"
+          },
+          {
+            "url": "/build-info.json",
+            "bodyBytes": 63,
+            "headerBytes": 204,
+            "encoding": "gzip"
+          }
+        ],
+        "observedAverageBodyBytesPerSecond": 159454.05083103682
+      },
+      "cache": [
+        {
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 10488
+        },
+        {
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "url": "/assets/index-Bh6APcJn.css",
+          "decodedBytes": 8246
+        },
+        {
+          "url": "/assets/index-CtYPR7b8.js",
+          "decodedBytes": 2814135
+        },
+        {
+          "url": "/favicon.ico",
+          "decodedBytes": 6024
+        },
+        {
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "url": "/icon-192.png",
+          "decodedBytes": 10790
+        },
+        {
+          "url": "/icon-512.png",
+          "decodedBytes": 30724
+        },
+        {
+          "url": "/index.html",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "url": "/",
+          "decodedBytes": 997
+        },
+        {
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "samples": [
+        {
+          "decisions": 0,
+          "saveBytes": 265,
+          "warmReloadMs": [
+            253.2603999999119,
+            275.73420000006445,
+            262.72219999996014
+          ],
+          "heapUsedBytes": 6790168,
+          "heapTotalBytes": 8200192
+        },
+        {
+          "decisions": 100,
+          "saveBytes": 20050,
+          "warmReloadMs": [
+            333.79429999995045,
+            261.5195999999996,
+            259.3338999999687
+          ],
+          "heapUsedBytes": 6689304,
+          "heapTotalBytes": 7413760
+        },
+        {
+          "decisions": 860,
+          "saveBytes": 162849,
+          "warmReloadMs": [
+            508.7726000000257,
+            430.33970000001136,
+            397.59410000010394
+          ],
+          "heapUsedBytes": 6752960,
+          "heapTotalBytes": 8200192
+        }
+      ],
+      "offlineNext": true,
+      "capture": "Initial throttled run: recorded FCP already precedes actual choice",
+      "paintBeforeChoice": true
+    }
+  ]
+}

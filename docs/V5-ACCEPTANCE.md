@@ -1,5 +1,7 @@
 # V5 本地候选验收
 
+> 已发布事实补记（2026-10-20）：V5 正式提交为 `39fda12e86b52084db36654e9311105a8ae4b367`；[Actions 39440810562](https://github.com/seiya058904/Dear-Mayor/actions/runs/39440810562) 已 completed / success，headSha 与该提交相同。本轮通过 GitHub 只读查询核实。以下保留发布前候选日志的原时间、原数据与当时视角。
+
 日期：2026-10-20。正式站仍是已发布 V4；以下仅为本地构建 `build-info.json` 的候选验收，没有推送、发布或部署。
 
 | 验收项 | 结果 | 证据与范围 |

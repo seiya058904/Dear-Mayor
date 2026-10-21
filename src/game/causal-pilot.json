@@ -39,7 +39,9 @@
         "sourceResult": "婚铃随花车走远，没有打乱镇里的报时。",
         "draft": "彼得说花车走远后就听不见小铃了，报时还得留给我们这口大钟。"
       }
-    ]
+    ],
+    "introducedRevision": 20,
+    "anchor": "彼得添一句别一边修钟一边烤三炉，我让他写在角上了。"
   },
   {
     "source": "cellarmusic/continuation",
@@ -81,6 +83,96 @@
         "sourceResult": "双方看同一份约定，不为找纸拖延商谈。",
         "draft": "我们直接翻了店里的原件，纸明明一直在柜里，我却找过许多别的理由。"
       }
-    ]
+    ],
+    "introducedRevision": 20,
+    "anchor": "琴归阿满，酒窖归酒桶。"
+  },
+  {
+    "source": "bluewash/continuation",
+    "target": "bluewash/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "共用晾夹另存小抽屉，两家的私人衣物保持分开。",
+        "draft": "赛拉去抽屉取夹子，连我总爱藏的那两只也数出来了。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "借抽屉未准，两家分别收夹，需要时当面借还。",
+        "draft": "赛拉来当面借夹子，我递完才想起还没给自己留两只。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有答复，赛拉把借来的旧夹按数还给贝拉。",
+        "draft": "赛拉上回把旧夹按数送回来，数得比我收工时还仔细。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "共用夹有了清晰记号，收在双方约好的现有盒里。",
+        "draft": "赛拉打开我们约好的盒子，说这回总算认得哪只夹子是谁刻的。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "少量晾夹试用，双方找到方便的取还位置。",
+        "draft": "试借的那十只夹子放哪儿，我们现在都能说清，不必喊过半条院子。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "米拉教会两家学徒，旧束带留在各自主人的柜中。",
+        "draft": "米拉教过两家的学徒束带结，如今我打慢一点，就有人伸手要教我。"
+      }
+    ],
+    "introducedRevision": 21,
+    "anchor": "我和赛拉想在收工后喝一杯水，不谈谁的蓝更蓝。"
+  },
+  {
+    "source": "readaloud/continuation",
+    "target": "readaloud/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "大纸借出，涅尔画下自己的经验并与原故事分开保存。",
+        "draft": "涅尔把那张大纸卷来，进门先问帽子要不要也画上去。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "借纸没准，涅尔用作坊旧纸背面画简图。",
+        "draft": "涅尔带着画在旧纸背面的船舱，翻面还露出半行作坊的旧账。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有回话，奥黛先听涅尔口述，没有替他改公用书。",
+        "draft": "上回只听他口述船舱，我的手跟着比了半天，桌子差点成了船。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "图上注明作者与经历范围，没人把它当所有船的准图。",
+        "draft": "他在图上写了自己的名字，写到“所见”两字时还特意停了一下。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "图随谈话使用，原书仍保持原样。",
+        "draft": "那张图上回只在听书时摊开，涅尔讲完亲手收了回去。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "涅尔只讲熟悉的一件东西，孩子知道故事也可以被认真问问题。",
+        "draft": "孩子上回认了一个船上的部件，今天问他帽子该钉在哪一个上。"
+      }
+    ],
+    "introducedRevision": 21,
+    "anchor": "涅尔说自己没有书可回赠，倒记得一回把帽子钉进船板的事。"
   }
 ]

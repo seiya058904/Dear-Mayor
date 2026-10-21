@@ -1,0 +1,923 @@
+{
+  "baseline": "39fda12e86b52084db36654e9311105a8ae4b367",
+  "initialWorktree": "clean, HEAD == origin/main after fetch",
+  "protectedFiles": [
+    {
+      "path": "README.md",
+      "baselineSHA256": "66b4d574b69470d695f0f0e1db3c40b494644143603e34bfaa7004ef7892f3dc",
+      "candidateSHA256": "66b4d574b69470d695f0f0e1db3c40b494644143603e34bfaa7004ef7892f3dc",
+      "identical": true
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "baselineSHA256": "41ba70e015b12003bc167f251fd5771bf931cbcf02a52a1f2ec940f886a3198d",
+      "candidateSHA256": "41ba70e015b12003bc167f251fd5771bf931cbcf02a52a1f2ec940f886a3198d",
+      "identical": true
+    },
+    {
+      "path": "public/art/approve.png",
+      "baselineSHA256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4",
+      "candidateSHA256": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4",
+      "identical": true
+    },
+    {
+      "path": "public/art/approve.webp",
+      "baselineSHA256": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44",
+      "candidateSHA256": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44",
+      "identical": true
+    },
+    {
+      "path": "public/art/background-wide.webp",
+      "baselineSHA256": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2",
+      "candidateSHA256": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2",
+      "identical": true
+    },
+    {
+      "path": "public/art/background.png",
+      "baselineSHA256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928",
+      "candidateSHA256": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928",
+      "identical": true
+    },
+    {
+      "path": "public/art/background.webp",
+      "baselineSHA256": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb",
+      "candidateSHA256": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb",
+      "identical": true
+    },
+    {
+      "path": "public/art/defer.png",
+      "baselineSHA256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2",
+      "candidateSHA256": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2",
+      "identical": true
+    },
+    {
+      "path": "public/art/defer.webp",
+      "baselineSHA256": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48",
+      "candidateSHA256": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48",
+      "identical": true
+    },
+    {
+      "path": "public/art/note.png",
+      "baselineSHA256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179",
+      "candidateSHA256": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179",
+      "identical": true
+    },
+    {
+      "path": "public/art/note.webp",
+      "baselineSHA256": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f",
+      "candidateSHA256": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f",
+      "identical": true
+    },
+    {
+      "path": "public/art/paper-mobile.png",
+      "baselineSHA256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b",
+      "candidateSHA256": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b",
+      "identical": true
+    },
+    {
+      "path": "public/art/paper-mobile.webp",
+      "baselineSHA256": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841",
+      "candidateSHA256": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841",
+      "identical": true
+    },
+    {
+      "path": "public/art/paper.png",
+      "baselineSHA256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01",
+      "candidateSHA256": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01",
+      "identical": true
+    },
+    {
+      "path": "public/art/paper.webp",
+      "baselineSHA256": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8",
+      "candidateSHA256": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8",
+      "identical": true
+    },
+    {
+      "path": "public/art/reject.png",
+      "baselineSHA256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb",
+      "candidateSHA256": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb",
+      "identical": true
+    },
+    {
+      "path": "public/art/reject.webp",
+      "baselineSHA256": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05",
+      "candidateSHA256": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05",
+      "identical": true
+    },
+    {
+      "path": "public/art/written_reply.png",
+      "baselineSHA256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343",
+      "candidateSHA256": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343",
+      "identical": true
+    },
+    {
+      "path": "public/art/written_reply.webp",
+      "baselineSHA256": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab",
+      "candidateSHA256": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab",
+      "identical": true
+    },
+    {
+      "path": "public/favicon.ico",
+      "baselineSHA256": "7c69c15763ee4f17091ee7c14198aae555fead630eaaee187a96bf861f55d57d",
+      "candidateSHA256": "7c69c15763ee4f17091ee7c14198aae555fead630eaaee187a96bf861f55d57d",
+      "identical": true
+    },
+    {
+      "path": "public/favicon.svg",
+      "baselineSHA256": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6",
+      "candidateSHA256": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6",
+      "identical": true
+    },
+    {
+      "path": "public/fonts/OFL.txt",
+      "baselineSHA256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e",
+      "candidateSHA256": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e",
+      "identical": true
+    },
+    {
+      "path": "public/fonts/wenkai.woff2",
+      "baselineSHA256": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe",
+      "candidateSHA256": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe",
+      "identical": true
+    },
+    {
+      "path": "public/icon-192.png",
+      "baselineSHA256": "fbd56110ec5b371389169a0a4d38a7d265ff2d2d87d445693bb546abbed83320",
+      "candidateSHA256": "fbd56110ec5b371389169a0a4d38a7d265ff2d2d87d445693bb546abbed83320",
+      "identical": true
+    },
+    {
+      "path": "public/icon-512.png",
+      "baselineSHA256": "6406b96f604508fedad1c5057c9ced32036da92c8016332234cd131924466357",
+      "candidateSHA256": "6406b96f604508fedad1c5057c9ced32036da92c8016332234cd131924466357",
+      "identical": true
+    },
+    {
+      "path": "public/site.webmanifest",
+      "baselineSHA256": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8",
+      "candidateSHA256": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8",
+      "identical": true
+    },
+    {
+      "path": "src/App.tsx",
+      "baselineSHA256": "f33620207eb999d2e3f444309d9a7e421a04e4bffd4cfe9215b059cdfe2bcb8d",
+      "candidateSHA256": "f33620207eb999d2e3f444309d9a7e421a04e4bffd4cfe9215b059cdfe2bcb8d",
+      "identical": true
+    },
+    {
+      "path": "src/content/audit.ts",
+      "baselineSHA256": "648fbe0eb7e0225e8735d7b01781b12941dd8edc6fa4f2e7122f7692c116cea9",
+      "candidateSHA256": "648fbe0eb7e0225e8735d7b01781b12941dd8edc6fa4f2e7122f7692c116cea9",
+      "identical": true
+    },
+    {
+      "path": "src/content/author.ts",
+      "baselineSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "candidateSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "identical": true
+    },
+    {
+      "path": "src/content/cast-senders.json",
+      "baselineSHA256": "875d5bc7c9bc737da5f5d32ef8eed370770e67fe3d5a95a93f3158c75f6230c4",
+      "candidateSHA256": "3ed67c05bfc24425ebb1f4d33ff1cecb60e8d395dd36c3a6a1a9ca3145691378",
+      "identical": false,
+      "normalizedIdentical": true
+    },
+    {
+      "path": "src/content/cast.ts",
+      "baselineSHA256": "5cc38d95e8882ccab244ef2d65e144a0e328319e6199381543fcdd46c3ee443d",
+      "candidateSHA256": "d7071a52551d3a1d5cf4a05d98914f3e166534cf099ed9497062fe7910bba9e3",
+      "identical": false,
+      "normalizedIdentical": true
+    },
+    {
+      "path": "src/content/chains-a.ts",
+      "baselineSHA256": "80706f2f66995977e6e34557ac9164abf733d760372deb78517ccd3a5e1a0eb1",
+      "candidateSHA256": "80706f2f66995977e6e34557ac9164abf733d760372deb78517ccd3a5e1a0eb1",
+      "identical": true
+    },
+    {
+      "path": "src/content/chains-b.ts",
+      "baselineSHA256": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+      "candidateSHA256": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+      "identical": true
+    },
+    {
+      "path": "src/content/chains-c.ts",
+      "baselineSHA256": "2ab55c2b88c67f83e45977f23bf34f6005b38a98b6f0a26ab5efc4a779230742",
+      "candidateSHA256": "2ab55c2b88c67f83e45977f23bf34f6005b38a98b6f0a26ab5efc4a779230742",
+      "identical": true
+    },
+    {
+      "path": "src/content/daily.ts",
+      "baselineSHA256": "251a1d85dda4b263a25cec9c1cd429ae27c3815f7219d50d9288f5202ac4f1a6",
+      "candidateSHA256": "251a1d85dda4b263a25cec9c1cd429ae27c3815f7219d50d9288f5202ac4f1a6",
+      "identical": true
+    },
+    {
+      "path": "src/content/echoes.ts",
+      "baselineSHA256": "1e605f37582c1f77d556569469369af6e694771202e2dbcb9a89b85cca77b0df",
+      "candidateSHA256": "1e605f37582c1f77d556569469369af6e694771202e2dbcb9a89b85cca77b0df",
+      "identical": true
+    },
+    {
+      "path": "src/content/eighth-chains-a.ts",
+      "baselineSHA256": "6b256dc6e23b9a3c3b8430f8860bbe0847e82d33b5cebefce00c3915a9e85061",
+      "candidateSHA256": "6b256dc6e23b9a3c3b8430f8860bbe0847e82d33b5cebefce00c3915a9e85061",
+      "identical": true
+    },
+    {
+      "path": "src/content/eighth-chains-b.ts",
+      "baselineSHA256": "215b013a0c2322a382e2d84e5c911f0711f929ae061c37ed28946665591ac34a",
+      "candidateSHA256": "215b013a0c2322a382e2d84e5c911f0711f929ae061c37ed28946665591ac34a",
+      "identical": true
+    },
+    {
+      "path": "src/content/eighth-chains-c.ts",
+      "baselineSHA256": "7512125ee7955a9db71b0b6771e600987ca5ad61c35a56540a708bc75b2feac4",
+      "candidateSHA256": "7512125ee7955a9db71b0b6771e600987ca5ad61c35a56540a708bc75b2feac4",
+      "identical": true
+    },
+    {
+      "path": "src/content/eighth-chains-d.ts",
+      "baselineSHA256": "ae2d146fbc76aad3f1fb9496c2212336852a662b82c24ebee188fcb0018fde2f",
+      "candidateSHA256": "f0e9b497ad581adf0c72315652260a397ba345977950f69e54038dd5eab88bc0",
+      "identical": false,
+      "normalizedIdentical": true
+    },
+    {
+      "path": "src/content/eighth-letters-a.ts",
+      "baselineSHA256": "2fab7683975b5599f5d17f1cc855c7ab4c4a80c2cf46e0984722086d02aafb43",
+      "candidateSHA256": "2fab7683975b5599f5d17f1cc855c7ab4c4a80c2cf46e0984722086d02aafb43",
+      "identical": true
+    },
+    {
+      "path": "src/content/eighth-letters-b.ts",
+      "baselineSHA256": "dbc4ae74f42029ddfc111ecffd30672b7cfc308a2505cbf13189a0e16e8bc255",
+      "candidateSHA256": "dbc4ae74f42029ddfc111ecffd30672b7cfc308a2505cbf13189a0e16e8bc255",
+      "identical": true
+    },
+    {
+      "path": "src/content/eighth-letters-c.ts",
+      "baselineSHA256": "774239d874d6630582cc027cc6ba8870bcb1c5d118bbb387e3d1c6c6b04c5c4d",
+      "candidateSHA256": "774239d874d6630582cc027cc6ba8870bcb1c5d118bbb387e3d1c6c6b04c5c4d",
+      "identical": true
+    },
+    {
+      "path": "src/content/eleventh-letters-a.ts",
+      "baselineSHA256": "c4fcf97b4f9d7c255a17d885addfff98e05ce53a3ebeced8d0aab4aa27fb10dc",
+      "candidateSHA256": "c4fcf97b4f9d7c255a17d885addfff98e05ce53a3ebeced8d0aab4aa27fb10dc",
+      "identical": true
+    },
+    {
+      "path": "src/content/eleventh-letters-b.ts",
+      "baselineSHA256": "70b01d19c198ca0775d7ce33f1b4fb545ca509d6e3c7ee746ebfe8f0054ff590",
+      "candidateSHA256": "70b01d19c198ca0775d7ce33f1b4fb545ca509d6e3c7ee746ebfe8f0054ff590",
+      "identical": true
+    },
+    {
+      "path": "src/content/eleventh-letters-c.ts",
+      "baselineSHA256": "bc53c3e34ff1d04980a0e416ef3a41140af211f25f3508b18cdea04781bd5823",
+      "candidateSHA256": "bc53c3e34ff1d04980a0e416ef3a41140af211f25f3508b18cdea04781bd5823",
+      "identical": true
+    },
+    {
+      "path": "src/content/eleventh-letters-d.ts",
+      "baselineSHA256": "14629aee4e0d0f32dbd3be5eac3a8e4ef3a4cbe8ccbca104a8fefac73b45b1a8",
+      "candidateSHA256": "14629aee4e0d0f32dbd3be5eac3a8e4ef3a4cbe8ccbca104a8fefac73b45b1a8",
+      "identical": true
+    },
+    {
+      "path": "src/content/eleventh-letters-e.ts",
+      "baselineSHA256": "2a127f25ca1728c6f85807ff2bb309d16af82be206542a8cbf2d8a0bfe52741a",
+      "candidateSHA256": "2a127f25ca1728c6f85807ff2bb309d16af82be206542a8cbf2d8a0bfe52741a",
+      "identical": true
+    },
+    {
+      "path": "src/content/fifth-chains-a.ts",
+      "baselineSHA256": "2bdba9a3e6a96a6bba980c232749f9e504aa2008fbcfb91c3c23a6071051974a",
+      "candidateSHA256": "2bdba9a3e6a96a6bba980c232749f9e504aa2008fbcfb91c3c23a6071051974a",
+      "identical": true
+    },
+    {
+      "path": "src/content/fifth-chains-b.ts",
+      "baselineSHA256": "b7568d18ad46297c0560ed3be690cd5ad2f0f3157e4d8d43b88aa37d91402d64",
+      "candidateSHA256": "b7568d18ad46297c0560ed3be690cd5ad2f0f3157e4d8d43b88aa37d91402d64",
+      "identical": true
+    },
+    {
+      "path": "src/content/fifth-chains-c.ts",
+      "baselineSHA256": "ba697586a428d51057076bc664dd6a3c4c14f179d70a37da9f50a4ad49b1d69d",
+      "candidateSHA256": "ba697586a428d51057076bc664dd6a3c4c14f179d70a37da9f50a4ad49b1d69d",
+      "identical": true
+    },
+    {
+      "path": "src/content/fifth-chains-d.ts",
+      "baselineSHA256": "3b9197e1049f82ef7d855486fb3d9384df1be1364eb852c2d8040f0b30824b5b",
+      "candidateSHA256": "3b9197e1049f82ef7d855486fb3d9384df1be1364eb852c2d8040f0b30824b5b",
+      "identical": true
+    },
+    {
+      "path": "src/content/fifth-letters-a.ts",
+      "baselineSHA256": "a9531444d206bb099a618d660e437cfd5d5c21695722d632571c81c6539711af",
+      "candidateSHA256": "a9531444d206bb099a618d660e437cfd5d5c21695722d632571c81c6539711af",
+      "identical": true
+    },
+    {
+      "path": "src/content/fifth-letters-b.ts",
+      "baselineSHA256": "9f358820a70818598c13cc4a52c220f6b10c731c6ad8a2649a3b1643f5d5a163",
+      "candidateSHA256": "9f358820a70818598c13cc4a52c220f6b10c731c6ad8a2649a3b1643f5d5a163",
+      "identical": true
+    },
+    {
+      "path": "src/content/fourth-chains-a.ts",
+      "baselineSHA256": "fd7efd57dd8d159e06412b547ee44eff73a83d909e6e6d949d2fc96f4a5b9a04",
+      "candidateSHA256": "fd7efd57dd8d159e06412b547ee44eff73a83d909e6e6d949d2fc96f4a5b9a04",
+      "identical": true
+    },
+    {
+      "path": "src/content/fourth-chains-b.ts",
+      "baselineSHA256": "a2011638c2e10e85806f5be2dbd25b42f35fb22734abdb5f7ca998c48c6c68ee",
+      "candidateSHA256": "a2011638c2e10e85806f5be2dbd25b42f35fb22734abdb5f7ca998c48c6c68ee",
+      "identical": true
+    },
+    {
+      "path": "src/content/fourth-chains-c.ts",
+      "baselineSHA256": "367bfd362c19414446a221e90a345d7fb39311be3f14ad3f552ff1c7afac8ef1",
+      "candidateSHA256": "367bfd362c19414446a221e90a345d7fb39311be3f14ad3f552ff1c7afac8ef1",
+      "identical": true
+    },
+    {
+      "path": "src/content/fourth-chains-d.ts",
+      "baselineSHA256": "eff0badcabd93e0e0ee5f7465aa28ccb5bf6d28e8bd6ef6384834fd5441e0153",
+      "candidateSHA256": "eff0badcabd93e0e0ee5f7465aa28ccb5bf6d28e8bd6ef6384834fd5441e0153",
+      "identical": true
+    },
+    {
+      "path": "src/content/fourth-chains-e.ts",
+      "baselineSHA256": "0b14afbef83db0f51a93166ce793f462c21ef782834bf5284c7070333006c55c",
+      "candidateSHA256": "0b14afbef83db0f51a93166ce793f462c21ef782834bf5284c7070333006c55c",
+      "identical": true
+    },
+    {
+      "path": "src/content/fourth-letters.ts",
+      "baselineSHA256": "ea2731e403da2884603ff9570843abde3734ab074af3b3d16c2fe7adec2a8e57",
+      "candidateSHA256": "ea2731e403da2884603ff9570843abde3734ab074af3b3d16c2fe7adec2a8e57",
+      "identical": true
+    },
+    {
+      "path": "src/content/index.ts",
+      "baselineSHA256": "78f39b88df24134524034e3145bc8f72f9a2fab9f859a43933f8adceef7654e9",
+      "candidateSHA256": "78f39b88df24134524034e3145bc8f72f9a2fab9f859a43933f8adceef7654e9",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-chains-a.ts",
+      "baselineSHA256": "77f36af1f99fbdf7d3a5387d84b40607f51fdff60f790277b856ea45c77d722a",
+      "candidateSHA256": "77f36af1f99fbdf7d3a5387d84b40607f51fdff60f790277b856ea45c77d722a",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-chains-b.ts",
+      "baselineSHA256": "721380516491c2722eef044b90a9a7ca8f7cc2d4335aa5a4ebaf8d1c30b4a014",
+      "candidateSHA256": "721380516491c2722eef044b90a9a7ca8f7cc2d4335aa5a4ebaf8d1c30b4a014",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-chains-c.ts",
+      "baselineSHA256": "3b05b35bb01725503d388474d7d609576104748ef11e9187a61978e46748885f",
+      "candidateSHA256": "3b05b35bb01725503d388474d7d609576104748ef11e9187a61978e46748885f",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-chains-d.ts",
+      "baselineSHA256": "5dfddc3d6e993f7551cfcdbfaff33b681128b4cb56224020ae4560104d667a55",
+      "candidateSHA256": "5dfddc3d6e993f7551cfcdbfaff33b681128b4cb56224020ae4560104d667a55",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-echoes.ts",
+      "baselineSHA256": "78cb7a8fe9a8d6278c79156645c5914dbf643356db9bb112d4538a41062e3677",
+      "candidateSHA256": "78cb7a8fe9a8d6278c79156645c5914dbf643356db9bb112d4538a41062e3677",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-letters-a.ts",
+      "baselineSHA256": "bac04a8e530a52dc5ecaed457bed6755e4862a3435f0ad56e54285a36249285f",
+      "candidateSHA256": "bac04a8e530a52dc5ecaed457bed6755e4862a3435f0ad56e54285a36249285f",
+      "identical": true
+    },
+    {
+      "path": "src/content/ninth-letters-b.ts",
+      "baselineSHA256": "7bc78c6b22e0770f6eef35219c61b994a1e52ace272b873caee1f48fff0e4480",
+      "candidateSHA256": "7bc78c6b22e0770f6eef35219c61b994a1e52ace272b873caee1f48fff0e4480",
+      "identical": true
+    },
+    {
+      "path": "src/content/second-chains-a.ts",
+      "baselineSHA256": "cad64c989ec13a615b350bfddce2b16b4da15db9048c88d22b2714341d051555",
+      "candidateSHA256": "cad64c989ec13a615b350bfddce2b16b4da15db9048c88d22b2714341d051555",
+      "identical": true
+    },
+    {
+      "path": "src/content/second-chains-b.ts",
+      "baselineSHA256": "9746d966ab3a879aa676b8e461320f86a92d814523898f06aca0703626ecb94d",
+      "candidateSHA256": "9746d966ab3a879aa676b8e461320f86a92d814523898f06aca0703626ecb94d",
+      "identical": true
+    },
+    {
+      "path": "src/content/second-chains-c.ts",
+      "baselineSHA256": "eeeb2e2fe18ab3016253e916d2d5e605195c753b407794ee0ad28bd4c1902a11",
+      "candidateSHA256": "eeeb2e2fe18ab3016253e916d2d5e605195c753b407794ee0ad28bd4c1902a11",
+      "identical": true
+    },
+    {
+      "path": "src/content/second-chains-d.ts",
+      "baselineSHA256": "2d7def79d823650add9611edd8f451442262a502bfdcfecb2afb65cbb0440c34",
+      "candidateSHA256": "2d7def79d823650add9611edd8f451442262a502bfdcfecb2afb65cbb0440c34",
+      "identical": true
+    },
+    {
+      "path": "src/content/second-echoes.ts",
+      "baselineSHA256": "09cf7956a5405cd61e153f59cdf38fcb0535f41297a38e6a4cf5821e2b7737a5",
+      "candidateSHA256": "09cf7956a5405cd61e153f59cdf38fcb0535f41297a38e6a4cf5821e2b7737a5",
+      "identical": true
+    },
+    {
+      "path": "src/content/second-letters.ts",
+      "baselineSHA256": "baf82581d062604b3e8d7c86f8fea09535efca9b74cd47c259b946f0870b249a",
+      "candidateSHA256": "baf82581d062604b3e8d7c86f8fea09535efca9b74cd47c259b946f0870b249a",
+      "identical": true
+    },
+    {
+      "path": "src/content/seventh-letters-a.ts",
+      "baselineSHA256": "19723865d675e3334f5dbb95b057d9f3c9fa2abd1ea3a55c9e43824f8b4fba4e",
+      "candidateSHA256": "19723865d675e3334f5dbb95b057d9f3c9fa2abd1ea3a55c9e43824f8b4fba4e",
+      "identical": true
+    },
+    {
+      "path": "src/content/seventh-letters-b.ts",
+      "baselineSHA256": "9fe115f373eafc99ea37e1b0860ec53357a188543a392cbd991018fddfc7c83f",
+      "candidateSHA256": "9fe115f373eafc99ea37e1b0860ec53357a188543a392cbd991018fddfc7c83f",
+      "identical": true
+    },
+    {
+      "path": "src/content/seventh-letters-c.ts",
+      "baselineSHA256": "a4e14561997da820b4942388c796c7447165db19bdaa4d38263f997bb0b8908e",
+      "candidateSHA256": "a4e14561997da820b4942388c796c7447165db19bdaa4d38263f997bb0b8908e",
+      "identical": true
+    },
+    {
+      "path": "src/content/seventh-letters-d.ts",
+      "baselineSHA256": "d324aacddca846593980a1b633c8348f4d5ad7634b6596ef54adc4c808fcd5e1",
+      "candidateSHA256": "d324aacddca846593980a1b633c8348f4d5ad7634b6596ef54adc4c808fcd5e1",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-chains-a.ts",
+      "baselineSHA256": "cb6dc913391dc89d070d35aec170c328379bf5eff576e488b653a1b33b76b5ef",
+      "candidateSHA256": "cb6dc913391dc89d070d35aec170c328379bf5eff576e488b653a1b33b76b5ef",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-chains-b.ts",
+      "baselineSHA256": "5af9b95055a0aa74c4ecd05081fe3556f420d20285f45a751c19213ace91b020",
+      "candidateSHA256": "5af9b95055a0aa74c4ecd05081fe3556f420d20285f45a751c19213ace91b020",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-chains-c.ts",
+      "baselineSHA256": "9adfc55eaed83335a1f1e7d8ceedbec5ec9e3fc5892bd7d58a53468fb970d783",
+      "candidateSHA256": "9adfc55eaed83335a1f1e7d8ceedbec5ec9e3fc5892bd7d58a53468fb970d783",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-chains-d.ts",
+      "baselineSHA256": "512af52ca1fc6ce6d738a722402f2b2c6b00a9336e8254ad53dbe2d6a3179e9f",
+      "candidateSHA256": "512af52ca1fc6ce6d738a722402f2b2c6b00a9336e8254ad53dbe2d6a3179e9f",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-echoes.ts",
+      "baselineSHA256": "c8ed70c941f96599e9c7d3fce5759817a809f2b81e49bfbb2e7e90ef3e022e59",
+      "candidateSHA256": "c8ed70c941f96599e9c7d3fce5759817a809f2b81e49bfbb2e7e90ef3e022e59",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-letters-a.ts",
+      "baselineSHA256": "f8b3f46b2cb3b7120f641c701fb11f50f7265e28f93b25a902c441c9f4124716",
+      "candidateSHA256": "f8b3f46b2cb3b7120f641c701fb11f50f7265e28f93b25a902c441c9f4124716",
+      "identical": true
+    },
+    {
+      "path": "src/content/sixth-letters-b.ts",
+      "baselineSHA256": "ee39c4fd5d3137f4e1b5f6233026b6699391c345d46dc2c7eaec5a06c2da71ae",
+      "candidateSHA256": "ee39c4fd5d3137f4e1b5f6233026b6699391c345d46dc2c7eaec5a06c2da71ae",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-chains-a.ts",
+      "baselineSHA256": "947d742a704b81868617816ce053f3d0c324c312c22dc6404bd7e42e5539d7cc",
+      "candidateSHA256": "947d742a704b81868617816ce053f3d0c324c312c22dc6404bd7e42e5539d7cc",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-chains-b.ts",
+      "baselineSHA256": "d77cbf3e0dd5ae2724695cf2ea4919b9787ed7c8bb349e90e360cafd35e18746",
+      "candidateSHA256": "d77cbf3e0dd5ae2724695cf2ea4919b9787ed7c8bb349e90e360cafd35e18746",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-echoes.ts",
+      "baselineSHA256": "4f70ad773dc8c68dc6328c66c2fe311ac118fe649b65294f3d6c22b5a784066c",
+      "candidateSHA256": "4f70ad773dc8c68dc6328c66c2fe311ac118fe649b65294f3d6c22b5a784066c",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-letters-a.ts",
+      "baselineSHA256": "2d59448830aafe6b1597fffdf263508a4a99ea7c37c3aea59bad3cc55ed81e9a",
+      "candidateSHA256": "2d59448830aafe6b1597fffdf263508a4a99ea7c37c3aea59bad3cc55ed81e9a",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-letters-b.ts",
+      "baselineSHA256": "cdd14a6391d3af603995c7a3d2ff345fbb9988831318a794df59f85ee17937e4",
+      "candidateSHA256": "cdd14a6391d3af603995c7a3d2ff345fbb9988831318a794df59f85ee17937e4",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-letters-c.ts",
+      "baselineSHA256": "d46301e102fb4b4c6f785863f30930e0d744267b2ee6c0658bc6408c5c490ea2",
+      "candidateSHA256": "d46301e102fb4b4c6f785863f30930e0d744267b2ee6c0658bc6408c5c490ea2",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-letters-d.ts",
+      "baselineSHA256": "4f4c453dcd15f1b5cbe9011cebddc247820f0f084d07f376235d306add539e5c",
+      "candidateSHA256": "4f4c453dcd15f1b5cbe9011cebddc247820f0f084d07f376235d306add539e5c",
+      "identical": true
+    },
+    {
+      "path": "src/content/tenth-letters-e.ts",
+      "baselineSHA256": "e219cab646879a7192ccb869f1642e16004e43b3ffeae78c8348935d50fe9880",
+      "candidateSHA256": "e219cab646879a7192ccb869f1642e16004e43b3ffeae78c8348935d50fe9880",
+      "identical": true
+    },
+    {
+      "path": "src/content/third-chains-a.ts",
+      "baselineSHA256": "807c23c690ce547b6baa9212e22963a214e0b3a80155034b6c9ab1ab0f676f98",
+      "candidateSHA256": "807c23c690ce547b6baa9212e22963a214e0b3a80155034b6c9ab1ab0f676f98",
+      "identical": true
+    },
+    {
+      "path": "src/content/third-chains-b.ts",
+      "baselineSHA256": "7ddb1724029b58c7bce585aabccfd1c1e804f8155e80818bc7304a687f2732a3",
+      "candidateSHA256": "7ddb1724029b58c7bce585aabccfd1c1e804f8155e80818bc7304a687f2732a3",
+      "identical": true
+    },
+    {
+      "path": "src/content/third-chains-c.ts",
+      "baselineSHA256": "9164f2d65d89523bf8345ecada07107da1dd4d6b88c13fb4f0591661d9bdc996",
+      "candidateSHA256": "9164f2d65d89523bf8345ecada07107da1dd4d6b88c13fb4f0591661d9bdc996",
+      "identical": true
+    },
+    {
+      "path": "src/content/third-chains-d.ts",
+      "baselineSHA256": "a50ba99ff2b1510c2096180ec1bb562254c9e4c195c06f2ea440057fd9140202",
+      "candidateSHA256": "a50ba99ff2b1510c2096180ec1bb562254c9e4c195c06f2ea440057fd9140202",
+      "identical": true
+    },
+    {
+      "path": "src/content/third-echoes.ts",
+      "baselineSHA256": "74eca1d1a2fcaced5ed988c9e7d1dc0b3b0a4ba4de8bfd685a5dd6b83f1fd4a1",
+      "candidateSHA256": "74eca1d1a2fcaced5ed988c9e7d1dc0b3b0a4ba4de8bfd685a5dd6b83f1fd4a1",
+      "identical": true
+    },
+    {
+      "path": "src/content/third-letters.ts",
+      "baselineSHA256": "b0264cb964ba664a067ddbd5724527d75645380210b648d1b3a1da8d6bda36ac",
+      "candidateSHA256": "b0264cb964ba664a067ddbd5724527d75645380210b648d1b3a1da8d6bda36ac",
+      "identical": true
+    },
+    {
+      "path": "src/content/town-chains-a.ts",
+      "baselineSHA256": "9d316c23e21de0938363ec7f0796a218a7cbfc4cfc928481a70b46f9a25d63a5",
+      "candidateSHA256": "9d316c23e21de0938363ec7f0796a218a7cbfc4cfc928481a70b46f9a25d63a5",
+      "identical": true
+    },
+    {
+      "path": "src/content/town-chains-b.ts",
+      "baselineSHA256": "de58a75ddc5a900c64bc33d7ad08d0f065143d1aa424dedd0acbdf5f07f1ad70",
+      "candidateSHA256": "de58a75ddc5a900c64bc33d7ad08d0f065143d1aa424dedd0acbdf5f07f1ad70",
+      "identical": true
+    },
+    {
+      "path": "src/content/town-chains-c.ts",
+      "baselineSHA256": "a8723ca8476df0167d2499b3ee4d2c3a93e55b8c39c63ca53e62da672eebcdaa",
+      "candidateSHA256": "a8723ca8476df0167d2499b3ee4d2c3a93e55b8c39c63ca53e62da672eebcdaa",
+      "identical": true
+    },
+    {
+      "path": "src/content/town-chains-d.ts",
+      "baselineSHA256": "4d20ab0d9555bac1aced8ba547e76dea231d1ec6c208cf16a31f9159157cc3d3",
+      "candidateSHA256": "4d20ab0d9555bac1aced8ba547e76dea231d1ec6c208cf16a31f9159157cc3d3",
+      "identical": true
+    },
+    {
+      "path": "src/content/town-letters.ts",
+      "baselineSHA256": "9113a01ee43f18eaaa50ad4e5fab0837b26ccab2a60913eea747977213d600f0",
+      "candidateSHA256": "9113a01ee43f18eaaa50ad4e5fab0837b26ccab2a60913eea747977213d600f0",
+      "identical": true
+    },
+    {
+      "path": "src/game/catalog-prose.json",
+      "baselineSHA256": "81563b69e77677a4bda9379e25785c63267b4055c284563dca972defd0ca9f88",
+      "candidateSHA256": "81563b69e77677a4bda9379e25785c63267b4055c284563dca972defd0ca9f88",
+      "identical": true
+    },
+    {
+      "path": "src/game/engine.ts",
+      "baselineSHA256": "f86c11d522ceb4e67028a9404f144a83ed96d98076b43b1b8d6d00a226456f0d",
+      "candidateSHA256": "f86c11d522ceb4e67028a9404f144a83ed96d98076b43b1b8d6d00a226456f0d",
+      "identical": true
+    },
+    {
+      "path": "src/game/persistence.ts",
+      "baselineSHA256": "b0fdc41dc0aaf5b81283380accf9068b2c9000cd7502e7a8dfb2f2b4ef6936c1",
+      "candidateSHA256": "b0fdc41dc0aaf5b81283380accf9068b2c9000cd7502e7a8dfb2f2b4ef6936c1",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/content/author.ts",
+      "baselineSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "candidateSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/content/chains-a.ts",
+      "baselineSHA256": "dbc0683442bfe1f0a0040400329f410ece9d171052f510fdbe852dadeb599ab2",
+      "candidateSHA256": "dbc0683442bfe1f0a0040400329f410ece9d171052f510fdbe852dadeb599ab2",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/content/chains-b.ts",
+      "baselineSHA256": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "candidateSHA256": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/content/chains-c.ts",
+      "baselineSHA256": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "candidateSHA256": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/content/daily.ts",
+      "baselineSHA256": "521319769c1c2f6f7f94b7e3552c40afc83db941b58bd1cacdc7f2029a91bb87",
+      "candidateSHA256": "521319769c1c2f6f7f94b7e3552c40afc83db941b58bd1cacdc7f2029a91bb87",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/content/index.ts",
+      "baselineSHA256": "28fe4dcd37610dca7fcc6da320243dcce631743f85dfb7d0e99cecef3499b4e5",
+      "candidateSHA256": "28fe4dcd37610dca7fcc6da320243dcce631743f85dfb7d0e99cecef3499b4e5",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/game/engine.ts",
+      "baselineSHA256": "f7b2b1a616323736684c1e107b59578721151f31c12c912143b15bb6906cc40d",
+      "candidateSHA256": "f7b2b1a616323736684c1e107b59578721151f31c12c912143b15bb6906cc40d",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v1/game/types.ts",
+      "baselineSHA256": "24c76d89bfb1488e7c48785afaf496a1176ff77575048b7adfeb4c13a88a9461",
+      "candidateSHA256": "24c76d89bfb1488e7c48785afaf496a1176ff77575048b7adfeb4c13a88a9461",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/author.ts",
+      "baselineSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "candidateSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/chains-a.ts",
+      "baselineSHA256": "121fe7b5840ea29699203c7528378502c68746806fd8d1f0f91d12c9d036ed04",
+      "candidateSHA256": "121fe7b5840ea29699203c7528378502c68746806fd8d1f0f91d12c9d036ed04",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/chains-b.ts",
+      "baselineSHA256": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "candidateSHA256": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/chains-c.ts",
+      "baselineSHA256": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "candidateSHA256": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/daily.ts",
+      "baselineSHA256": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "candidateSHA256": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/echoes.ts",
+      "baselineSHA256": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "candidateSHA256": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/index.ts",
+      "baselineSHA256": "36f979872507b345e3aee3da44cc92ce03016806e149301c58319635aeee1c3f",
+      "candidateSHA256": "36f979872507b345e3aee3da44cc92ce03016806e149301c58319635aeee1c3f",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-a.ts",
+      "baselineSHA256": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "candidateSHA256": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-b.ts",
+      "baselineSHA256": "132e47e3733c1a37cb39ba4641524d050e072d734803f4f8e03a3206e3f265ed",
+      "candidateSHA256": "132e47e3733c1a37cb39ba4641524d050e072d734803f4f8e03a3206e3f265ed",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-c.ts",
+      "baselineSHA256": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "candidateSHA256": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-d.ts",
+      "baselineSHA256": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "candidateSHA256": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-letters.ts",
+      "baselineSHA256": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "candidateSHA256": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/game/engine.ts",
+      "baselineSHA256": "611bd5c0e5144d97f3bf2515bfdaf973f6cc655186169c4b9c9d0123935504fc",
+      "candidateSHA256": "611bd5c0e5144d97f3bf2515bfdaf973f6cc655186169c4b9c9d0123935504fc",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v2/game/types.ts",
+      "baselineSHA256": "ea9c3cfd1f5be4a5db366717cfc6eb79d5b530c761215d4ad51e4dec9466b79c",
+      "candidateSHA256": "ea9c3cfd1f5be4a5db366717cfc6eb79d5b530c761215d4ad51e4dec9466b79c",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/author.ts",
+      "baselineSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "candidateSHA256": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/chains-a.ts",
+      "baselineSHA256": "a1e22d69c66c1a3de94ab403ad277cc1b57e90ddc35cd595d21e3b7468fb06df",
+      "candidateSHA256": "a1e22d69c66c1a3de94ab403ad277cc1b57e90ddc35cd595d21e3b7468fb06df",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/chains-b.ts",
+      "baselineSHA256": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+      "candidateSHA256": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/chains-c.ts",
+      "baselineSHA256": "645e65221ea5827176ac52235570f505aa0242faf188e3421bcdff2df6e35e24",
+      "candidateSHA256": "645e65221ea5827176ac52235570f505aa0242faf188e3421bcdff2df6e35e24",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/daily.ts",
+      "baselineSHA256": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "candidateSHA256": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/echoes.ts",
+      "baselineSHA256": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "candidateSHA256": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/index.ts",
+      "baselineSHA256": "fc9cd42d42415af3a8471588ee0d0f2cacd7cea35084ba146f8393bbae1ba905",
+      "candidateSHA256": "fc9cd42d42415af3a8471588ee0d0f2cacd7cea35084ba146f8393bbae1ba905",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-a.ts",
+      "baselineSHA256": "7b2a247a849fe0d2bde9db4fdcc278c3b06875d81f304956077039c574fc0d0b",
+      "candidateSHA256": "7b2a247a849fe0d2bde9db4fdcc278c3b06875d81f304956077039c574fc0d0b",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-b.ts",
+      "baselineSHA256": "e3fdbf7f9a4999c93fef2824ff0e50fc5ec536033d471e5e34bd57abb13dca53",
+      "candidateSHA256": "e3fdbf7f9a4999c93fef2824ff0e50fc5ec536033d471e5e34bd57abb13dca53",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-c.ts",
+      "baselineSHA256": "16e4ad4ddc473e68fc1665d64be6fdc6bd967f0e3134342d2cbf61d79624b0d6",
+      "candidateSHA256": "16e4ad4ddc473e68fc1665d64be6fdc6bd967f0e3134342d2cbf61d79624b0d6",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-d.ts",
+      "baselineSHA256": "cd61eb825687945e18da3f8c4ea1ed2ac7720b16632c5792a5d034617d5d7361",
+      "candidateSHA256": "cd61eb825687945e18da3f8c4ea1ed2ac7720b16632c5792a5d034617d5d7361",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-echoes.ts",
+      "baselineSHA256": "512fb4f9011e47527a90c23630dc87dda98cc2df50944d528239b129d3ff35e0",
+      "candidateSHA256": "512fb4f9011e47527a90c23630dc87dda98cc2df50944d528239b129d3ff35e0",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-letters.ts",
+      "baselineSHA256": "1ff60b8634d03406af10890212838a292fdb78e349bba24507e796514b898b9a",
+      "candidateSHA256": "1ff60b8634d03406af10890212838a292fdb78e349bba24507e796514b898b9a",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-a.ts",
+      "baselineSHA256": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "candidateSHA256": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-b.ts",
+      "baselineSHA256": "6eb44f335a5639699bf8a5049c8feab3c97c0deba49fb7e98c7d983fa1ef0caf",
+      "candidateSHA256": "6eb44f335a5639699bf8a5049c8feab3c97c0deba49fb7e98c7d983fa1ef0caf",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-c.ts",
+      "baselineSHA256": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "candidateSHA256": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-d.ts",
+      "baselineSHA256": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "candidateSHA256": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-letters.ts",
+      "baselineSHA256": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "candidateSHA256": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/game/engine.ts",
+      "baselineSHA256": "77b4dd3fc6a7a7c835a77e44cb3896c056925b766f8223b8e3cdc654532d1cf3",
+      "candidateSHA256": "77b4dd3fc6a7a7c835a77e44cb3896c056925b766f8223b8e3cdc654532d1cf3",
+      "identical": true
+    },
+    {
+      "path": "src/legacy/v3/game/types.ts",
+      "baselineSHA256": "701ff594ef2f2303a1733f71474a8a469646db38e6fd6fb40d64e687effc39c0",
+      "candidateSHA256": "701ff594ef2f2303a1733f71474a8a469646db38e6fd6fb40d64e687effc39c0",
+      "identical": true
+    },
+    {
+      "path": "src/styles.css",
+      "baselineSHA256": "ffc262ee02631289530addc3f939803092bb2b54a6de2aa0e3ccfe2417bd10d6",
+      "candidateSHA256": "ffc262ee02631289530addc3f939803092bb2b54a6de2aa0e3ccfe2417bd10d6",
+      "identical": true
+    },
+    {
+      "path": "tests/fixtures/catalog-prose-contracts.json",
+      "baselineSHA256": "efbfb978477f2e7591806c893f78061f8d18ea50f0c741e10d1324b4cb206a6a",
+      "candidateSHA256": "efbfb978477f2e7591806c893f78061f8d18ea50f0c741e10d1324b4cb206a6a",
+      "identical": true
+    }
+  ],
+  "catalog1to20Unchanged": true,
+  "historicalHashesUnchanged": true,
+  "newDelta": {
+    "revision": 21,
+    "chains": [],
+    "letters": {}
+  },
+  "note": "Three pre-existing checkout CRLF differences from Git blob; initial git status clean. All other protected files exact bytes. No writes to any protected path; compare source text after Git line-ending normalization for these three."
+}
