@@ -9,7 +9,7 @@ const files=JSON.parse(sw.match(/const FILES = (.*);/)![1]) as {url:string;integ
 const mime:Record<string,string>={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.woff2':'font/woff2','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon','.svg':'image/svg+xml','.webmanifest':'application/manifest+json'};
 async function server(prefix:string,upgrade=false){
  const requests:string[]=[],counts=new Map<string,number>();let current=!upgrade;
- let releaseNote:()=>void=()=>{};let hold=false;
+ const heldNotes=new Set<()=>void>();let hold=false;
  const v6=`const CACHE='dear-mayor-v6-protocol-fixture';const FILES=${JSON.stringify(files.map(f=>f.url))};
  self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
  self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
@@ -20,7 +20,7 @@ async function server(prefix:string,upgrade=false){
   const relative=pathname.replace(/^\/Dear-Mayor(?=\/)/,'').replace(/^\//,'')||'index.html';
   const file=resolve(root,relative);
   if(!pathname.startsWith(prefix)||!file.startsWith(root+sep)){res.writeHead(404).end();return;}
-  if(hold&&relative==='art/note.webp')await new Promise<void>(r=>{releaseNote=r;});
+  if(hold&&relative==='art/note.webp')await new Promise<void>(r=>{heldNotes.add(r);});
   if(!upgrade&&relative==='art/note.webp'&&counts.get(pathname)===1){res.writeHead(200,{'Content-Type':'image/webp','Cache-Control':'max-age=86400'}).end('stale response');return;}
   if(!upgrade&&relative==='art/paper-mobile.webp'&&counts.get(pathname)===1){res.writeHead(503).end('temporary');return;}
   try{
@@ -32,7 +32,7 @@ async function server(prefix:string,upgrade=false){
  });
  await new Promise<void>(r=>app.listen(0,'127.0.0.1',511,r));
  const port=(app.address() as {port:number}).port;
- return {url:`http://127.0.0.1:${port}${prefix}`,requests,counts,upgrade:()=>{current=true;},hold:()=>{hold=true;},release:()=>{hold=false;releaseNote();},close:()=>new Promise<void>(r=>app.close(()=>r()))};
+ return {url:`http://127.0.0.1:${port}${prefix}`,requests,counts,upgrade:()=>{current=true;},hold:()=>{hold=true;},release:()=>{hold=false;for(const resume of heldNotes)resume();heldNotes.clear();},close:()=>new Promise<void>(r=>{app.close(()=>r());app.closeAllConnections();})};
 }
 test('post-V6 complete offline cache verifies every byte, retries stale/failed resources and survives viewport/reply changes',async({page,context},info)=>{
  const prefix=new URL(info.project.use.baseURL!).pathname;
@@ -73,12 +73,23 @@ test('post-V6 root and Pages workers keep independent complete caches on the sam
 });
 test('post-V6 incomplete install stays inactive until every offline resource is ready',async({page},info)=>{
  const prefix=new URL(info.project.use.baseURL!).pathname,host=await server(prefix);host.hold();
+ let stage='navigation';
  try{
   await page.goto(host.url);await expect.poll(()=>host.counts.get(prefix+'art/note.webp')??0).toBe(1);
   expect(await page.evaluate(async()=>{const r=await navigator.serviceWorker.getRegistration();return !!r?.active;})).toBe(false);
   expect(await page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(false);
-  host.release();await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await page.reload();
+  // A simultaneous consumer must not replace the worker's held response. The
+  // old single resolver lost the first request and could hang install/teardown.
+  stage='concurrent held resource';
+  const consumer=fetch(new URL('art/note.webp',host.url)).then(async response=>{expect(response.ok).toBe(true);await response.arrayBuffer();});
+  await expect.poll(()=>host.counts.get(prefix+'art/note.webp')??0).toBe(2);
+  expect(await page.evaluate(async()=>!!(await navigator.serviceWorker.getRegistration())?.active)).toBe(false);
+  expect(await page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(false);
+  stage='release and activation';
+  host.release();await consumer;
+  await page.evaluate(async()=>{await navigator.serviceWorker.ready;});stage='reload';await page.reload();
   await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
+ }catch(error){console.error('Incomplete install diagnostics',JSON.stringify({stage,requests:host.requests,counts:[...host.counts]}));throw error;
  }finally{host.release();await page.goto('about:blank');await host.close();}
 });
 test('post-V6 conservative worker update keeps two old tabs offline, preserves catalog21 pending, then activates after they close',async({context,page},info)=>{

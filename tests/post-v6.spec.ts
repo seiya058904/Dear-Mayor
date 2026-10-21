@@ -38,6 +38,11 @@ for(const rule of rules)for(let v=0;v<6;v++)test(`post-V6 exact six-way offline 
  await expect(page.locator('.letter-reading')).toContainText(rule.variants[v].draft);
  await page.setViewportSize({width:v%2?768:390,height:1024});
  await page.evaluate(()=>document.fonts.ready);
+ // fonts.ready does not wait for the <picture> source selected by the new
+ // viewport. Require that real offline image to decode before inspecting it.
+ await page.locator('.paper-art').evaluate(async(e:HTMLImageElement)=>{
+  await new Promise<void>(done=>requestAnimationFrame(()=>done()));await e.decode();
+ });
  expect(await page.locator('.paper-art').evaluate((e:HTMLImageElement)=>e.complete&&e.naturalWidth>0)).toBe(true);
  await screenshot(page,`return-${rule.target.replace('/','-')}-${v}`);
  await page.getByRole('button',{name:'批示回复',exact:true}).click();await page.locator('[data-choice="2"]').click();
