@@ -29,7 +29,11 @@ export function DecisionButton({
       title={description}
       aria-description={description}
       disabled={disabled}
-      onClick={onClick}
+      onClick={(event) => {
+        // Reduced motion changes letters before a native double click finishes.
+        // Its later clicks belong to the same gesture, not the next letter.
+        if (event.detail <= 1) onClick();
+      }}
       aria-expanded={id === "written_reply" ? expanded : undefined}
       aria-controls={id === "written_reply" ? "reply-note" : undefined}
     >

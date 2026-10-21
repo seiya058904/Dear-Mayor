@@ -7,6 +7,25 @@ import pilot from '../src/game/causal-pilot.json' with {type:'json'};
 import fixtures from './fixtures/catalog-21-audit-saves.json' with {type:'json'};
 const key='dear-mayor:save:v1',rules=pilot.filter(r=>r.introducedRevision===22);
 const choices=[['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const;
+for(const motion of ['reduce','no-preference'] as const)
+for(const [action,label] of [['approve','批准'],['reject','不批准'],['defer','搁置']] as const)
+test(`post-V6 native double click commits one letter ${motion}/${action}`,async({page})=>{
+ await page.emulateMedia({reducedMotion:motion});await page.goto('./');
+ await page.getByRole('button',{name:label,exact:true}).dblclick({delay:30});
+ await expect(page.locator('article')).not.toHaveAttribute('data-letter-id','bridge/start');
+ const state=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),key);
+ expect(state.history).toHaveLength(1);expect(state.history[0].action).toBe(action);
+ await page.reload();await expect(page.locator('article')).toHaveAttribute('data-letter-id',state.current);
+});
+
+test('post-V6 held Enter follows focus to the new heading without deciding another letter',async({page})=>{
+ await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');
+ await page.getByRole('button',{name:'批准',exact:true}).focus();await page.keyboard.down('Enter');
+ await expect(page.locator('article')).not.toHaveAttribute('data-letter-id','bridge/start');
+ await expect(page.locator('h1')).toBeFocused();await page.keyboard.down('Enter');await page.keyboard.up('Enter');
+ expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.length,key)).toBe(1);
+});
+
 test('post-V6 choir silence branch keeps Aman identity through refresh and a real decision',async({page})=>{
  let state=newGame();
  while(state.current!=='quietchoir/defer')state=decide(state,state.current,state.current==='quietchoir/start'?'defer':'approve');

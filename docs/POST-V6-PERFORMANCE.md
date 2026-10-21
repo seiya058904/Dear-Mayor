@@ -35,3 +35,5 @@ DOM=首封article和决策DOM出现；FCP=Paint Timing；可选择=FCP后两帧�
 原始每轮请求、缓存清单和时钟见 [before](post-v6-evidence/performance-before.json)、[after](post-v6-evidence/performance-after.json) 与 [summary](post-v6-evidence/performance-summary.json)。复现：保留开工dist到`.local/post-v6-20261021/baseline-dist`，当前构建写dist；分别设置`PERF_PHASE=before/after`运行`npx tsx scripts/post-v6-performance.ts`，再运行`npx tsx scripts/post-v6-summary.ts`。端口53532须空闲，测量期间停止其他测试。
 
 实体安卓、Safari/Firefox、生产慢网和CDN边缘冷缓存、完整进程内存/长期泄漏为NOT_RUN。此报告不把localhost模型当作线上等待时间。
+
+2026-10-22正式站补核说明：上表采样对应已验证的缓存方案候选（本机worker版本fcefdc414870），早于减少动态效果的原生多击修复。后续只为DecisionButton增加事件序号过滤，构建主JS为2832.34kB / Vite gzip1102.94kB，比采样版本分别多0.02/0.01kB；worker算法、字体、艺术和内容均不变。未为这个输入事件补丁重跑12份慢网采样，不能把上表毫秒数冒称最终提交重新实测的结果。

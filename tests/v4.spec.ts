@@ -32,6 +32,7 @@ for(const viewport of [{width:1672,height:941},{width:1366,height:768},{width:39
   for(const text of documents[id].body)await expect(page.locator('.letter-reading')).toContainText(text);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   expect(await page.locator('.letter-reading').evaluate(e=>e.scrollHeight<=e.clientHeight+2)).toBe(true);
+  await page.locator('.paper-art').evaluate((image:HTMLImageElement)=>image.decode());
   expect(await page.locator('.paper-art').evaluate((e:HTMLImageElement)=>e.complete&&e.naturalWidth>0&&e.currentSrc.endsWith('.webp'))).toBe(true);
   if(process.env.QA_SCREENSHOTS)await page.screenshot({path:path.join(process.env.QA_SCREENSHOTS,`v4-${id.replaceAll('/','-')}-${viewport.width}.png`),fullPage:true});
   await page.getByRole('button',{name:'批示回复',exact:true}).click();await expect(page.locator('[data-choice]')).toHaveCount(3);await page.keyboard.press('Escape');
