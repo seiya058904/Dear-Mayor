@@ -30,10 +30,14 @@ for (const viewport of [
     paper: document.querySelector('.paper-art')!.getBoundingClientRect().toJSON(),
   }));
   expect(geometry.scroll).toBeLessThanOrEqual(geometry.inner);
-  if (viewport.width > 720) {
+  if (viewport.width >= 1200 && viewport.height >= 680) {
     expect(geometry.background).toContain('background-wide.webp');
     expect(geometry.scene.width / geometry.scene.height).toBeCloseTo(1672 / 941, 2);
     expect(geometry.paper.width / geometry.paper.height).toBeCloseTo(1155 / 721, 2);
+  } else {
+    expect(geometry.scene.width).toBeLessThanOrEqual(720);
+    expect(await page.locator('.paper-art').evaluate((e:HTMLImageElement)=>e.currentSrc)).toContain('paper-mobile.webp');
+    expect(await page.locator('.letter-reading').evaluate(e=>parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(17);
   }
   if (process.env.QA_SCREENSHOTS) {
     mkdirSync(process.env.QA_SCREENSHOTS, { recursive: true });

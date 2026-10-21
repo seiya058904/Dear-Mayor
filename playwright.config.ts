@@ -10,7 +10,7 @@ export default defineConfig({
     { name: "performance", grep: /sixfold CPU/, dependencies: ["functional"], workers: 1 },
   ],
   use: {
-    baseURL: process.env.GAME_URL ?? "http://127.0.0.1:4173",
+    baseURL: process.env.GAME_URL ?? `http://127.0.0.1:4173${process.env.GAME_PATH ?? "/"}`,
     viewport: { width: 1672, height: 941 },
     browserName: "chromium",
     screenshot: "only-on-failure",
@@ -19,7 +19,8 @@ export default defineConfig({
   webServer: process.env.GAME_URL
     ? undefined
     : {
-        command: "npm run preview -- --port 4173 --strictPort",
+        command: "node scripts/serve-production.mjs",
+        env: { PORT: "4173" },
         port: 4173,
         reuseExistingServer: !process.env.CI,
       },

@@ -9,6 +9,17 @@ import type {Action,Decision,GameState} from './types';
 import {catalogAt,latestCatalogRevision} from './catalog';
 export const SAVE_KEY='dear-mayor:save:v1';
 export type StorageLike=Pick<Storage,'getItem'|'setItem'|'removeItem'>;
+export type DamagedSave={raw:string;backedUp:boolean};
+// Avoid replaying a long, already validated transcript on every ordinary save.
+const verifiedRaw=new WeakMap<StorageLike,string>();
+function preserveDamaged(storage:StorageLike,raw:string):boolean{
+ try{
+  const key=`${SAVE_KEY}:recovery`,existing=storage.getItem(key);
+  if(existing!==null&&existing!==raw)return false;
+  if(existing!==raw)storage.setItem(key,raw);
+  return storage.getItem(key)===raw;
+ }catch{return false;}
+}
 type Cursor={current:string;day:number;history:Decision[]};
 function replay<T extends Cursor>(state:T,history:Decision[],step:(s:T,id:string,action:Action,reply?:number)=>T):T{
  for(const h of history){
@@ -40,6 +51,8 @@ export function migrateV1(s:V1State):GameState{return migrateV3(v2ToV3(v1ToV2(s)
 export function restore(raw:string):GameState{
  const p=JSON.parse(raw);
  if(!p||![1,2].includes(p.version)||!Number.isSafeInteger(p.seed)||!Array.isArray(p.history)||p.history.length>50000)throw new Error('Invalid save');
+ for(const h of p.history)if(!h||!['approve','reject','defer','written_reply'].includes(h.action)||
+  (h.action==='written_reply'? !Number.isInteger(h.reply)||h.reply<0||h.reply>2 : h.reply!==undefined))throw new Error('Invalid action/reply');
  let s:GameState;
  if(p.version===1)s=migrateV1(replay(newGameV1(p.seed),p.history,decideV1));
  else if(p.contentVersion===2)s=migrateV3(v2ToV3(replayV2(p.seed,p.history,p.legacyLength)),latestCatalogRevision,2);
@@ -63,24 +76,37 @@ export function restore(raw:string):GameState{
  if(s.current!==p.current||s.day!==p.day)throw new Error('Invalid cursor');
  return s;
 }
-export function loadGame(storage:StorageLike):{state:GameState;warning:string}{
+export function loadGame(storage:StorageLike):{state:GameState;warning:string;recovery:DamagedSave|null}{
  let raw:string|null=null;
- try{raw=storage.getItem(SAVE_KEY);return {state:raw?restore(raw):newGame(),warning:''};}
+ try{
+  raw=storage.getItem(SAVE_KEY);
+  const state=raw!==null?restore(raw):newGame();
+  if(raw!==null)verifiedRaw.set(storage,raw);
+  return {state,warning:'',recovery:null};
+ }
  catch{
-  try{if(raw)storage.setItem(`${SAVE_KEY}:recovery`,raw);}catch{/* Keep original if backup fails. */}
-  return {state:newGame(),warning:raw?'旧存档暂时无法读取，已尝试留存备份。继续批阅将开始新的一局。':'此浏览器暂不能保存进度；关闭页面后可能无法继续。'};
+  const backedUp=raw!==null&&preserveDamaged(storage,raw);
+  return {state:newGame(),recovery:raw!==null?{raw,backedUp}:null,warning:raw!==null?
+   backedUp?'旧存档暂时无法读取，原文已留在恢复副本中。继续批阅将开始新的一局。':'旧存档暂时无法读取，恢复副本未能写入。原文仍保留；可先导出，再决定是否舍弃并重开。':
+   '此浏览器暂不能保存进度；关闭页面后可能无法继续。'};
  }
 }
-export function saveGame(storage:StorageLike,state:GameState):boolean{
+export function saveGame(storage:StorageLike,state:GameState,discardRaw?:string):boolean{
  try{
   const original=storage.getItem(SAVE_KEY);
-  if(original){
-   try{
-    const old=JSON.parse(original);
-    const version=old?.version===1?1:old?.version===2&&[2,3].includes(old.contentVersion)?old.contentVersion:null;
+  if(discardRaw!==undefined&&original!==discardRaw)return false;
+  if(original!==null&&discardRaw===undefined){
+   if(verifiedRaw.get(storage)!==original){
+    try{restore(original);verifiedRaw.set(storage,original);}
+    catch{if(!preserveDamaged(storage,original))return false;}
+   }
+   {
+    let old:{version?:number;contentVersion?:number}|null=null;
+    try{old=JSON.parse(original);}catch{/* Safely preserved malformed JSON. */}
+    const version=old?.version===1?1:old?.version===2&&[2,3].includes(old.contentVersion??0)?old.contentVersion:null;
     if(version){const key=`${SAVE_KEY}:v${version}-backup`;if(!storage.getItem(key))storage.setItem(key,original);}
-   }catch(error){if(!(error instanceof SyntaxError))throw error;}
+   }
   }
-  storage.setItem(SAVE_KEY,JSON.stringify(state));return true;
+  const raw=JSON.stringify(state);storage.setItem(SAVE_KEY,raw);verifiedRaw.set(storage,raw);return true;
  }catch{return false;}
 }

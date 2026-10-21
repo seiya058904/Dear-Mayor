@@ -1,0 +1,637 @@
+{
+  "baseline": "804d09a45601db416843f5994ec5580ee5a0271c",
+  "rows": [
+    {
+      "path": "src/legacy/v1/content/author.ts",
+      "before": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "after": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/content/chains-a.ts",
+      "before": "dbc0683442bfe1f0a0040400329f410ece9d171052f510fdbe852dadeb599ab2",
+      "after": "dbc0683442bfe1f0a0040400329f410ece9d171052f510fdbe852dadeb599ab2",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/content/chains-b.ts",
+      "before": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "after": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/content/chains-c.ts",
+      "before": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "after": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/content/daily.ts",
+      "before": "521319769c1c2f6f7f94b7e3552c40afc83db941b58bd1cacdc7f2029a91bb87",
+      "after": "521319769c1c2f6f7f94b7e3552c40afc83db941b58bd1cacdc7f2029a91bb87",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/content/index.ts",
+      "before": "28fe4dcd37610dca7fcc6da320243dcce631743f85dfb7d0e99cecef3499b4e5",
+      "after": "28fe4dcd37610dca7fcc6da320243dcce631743f85dfb7d0e99cecef3499b4e5",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/game/engine.ts",
+      "before": "f7b2b1a616323736684c1e107b59578721151f31c12c912143b15bb6906cc40d",
+      "after": "f7b2b1a616323736684c1e107b59578721151f31c12c912143b15bb6906cc40d",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v1/game/types.ts",
+      "before": "24c76d89bfb1488e7c48785afaf496a1176ff77575048b7adfeb4c13a88a9461",
+      "after": "24c76d89bfb1488e7c48785afaf496a1176ff77575048b7adfeb4c13a88a9461",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/author.ts",
+      "before": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "after": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/chains-a.ts",
+      "before": "121fe7b5840ea29699203c7528378502c68746806fd8d1f0f91d12c9d036ed04",
+      "after": "121fe7b5840ea29699203c7528378502c68746806fd8d1f0f91d12c9d036ed04",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/chains-b.ts",
+      "before": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "after": "9b5aa120cbe2a23a2a93e9f5984f67842dc91554dd11a6c6324101cefcdf7c94",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/chains-c.ts",
+      "before": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "after": "bc1de3704d02c58c19dfba1f64152af9bed4f60bcb2d30d4b5ed7c83295fa47e",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/daily.ts",
+      "before": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "after": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/echoes.ts",
+      "before": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "after": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/index.ts",
+      "before": "36f979872507b345e3aee3da44cc92ce03016806e149301c58319635aeee1c3f",
+      "after": "36f979872507b345e3aee3da44cc92ce03016806e149301c58319635aeee1c3f",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-a.ts",
+      "before": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "after": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-b.ts",
+      "before": "132e47e3733c1a37cb39ba4641524d050e072d734803f4f8e03a3206e3f265ed",
+      "after": "132e47e3733c1a37cb39ba4641524d050e072d734803f4f8e03a3206e3f265ed",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-c.ts",
+      "before": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "after": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-chains-d.ts",
+      "before": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "after": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/content/town-letters.ts",
+      "before": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "after": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/game/engine.ts",
+      "before": "611bd5c0e5144d97f3bf2515bfdaf973f6cc655186169c4b9c9d0123935504fc",
+      "after": "611bd5c0e5144d97f3bf2515bfdaf973f6cc655186169c4b9c9d0123935504fc",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v2/game/types.ts",
+      "before": "ea9c3cfd1f5be4a5db366717cfc6eb79d5b530c761215d4ad51e4dec9466b79c",
+      "after": "ea9c3cfd1f5be4a5db366717cfc6eb79d5b530c761215d4ad51e4dec9466b79c",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/author.ts",
+      "before": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "after": "9cd38a3501148ae3161af15b19e6553e0caf98110ff7c8612a44243b900e06e8",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/chains-a.ts",
+      "before": "a1e22d69c66c1a3de94ab403ad277cc1b57e90ddc35cd595d21e3b7468fb06df",
+      "after": "a1e22d69c66c1a3de94ab403ad277cc1b57e90ddc35cd595d21e3b7468fb06df",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/chains-b.ts",
+      "before": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+      "after": "28203caaf1ca47b1145427df845731004bb357912792df2274b30770bd6d0f1d",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/chains-c.ts",
+      "before": "645e65221ea5827176ac52235570f505aa0242faf188e3421bcdff2df6e35e24",
+      "after": "645e65221ea5827176ac52235570f505aa0242faf188e3421bcdff2df6e35e24",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/daily.ts",
+      "before": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "after": "0797ceb33e3d11f5c90d602ff2d478576137d9bfa361e6c7fa2ecf7ef57f557a",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/echoes.ts",
+      "before": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "after": "09e915f6c5f49d0c3e820f1d0bd5bc7fb3dd8250e72a852d9357a33627223487",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/index.ts",
+      "before": "fc9cd42d42415af3a8471588ee0d0f2cacd7cea35084ba146f8393bbae1ba905",
+      "after": "fc9cd42d42415af3a8471588ee0d0f2cacd7cea35084ba146f8393bbae1ba905",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-a.ts",
+      "before": "7b2a247a849fe0d2bde9db4fdcc278c3b06875d81f304956077039c574fc0d0b",
+      "after": "7b2a247a849fe0d2bde9db4fdcc278c3b06875d81f304956077039c574fc0d0b",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-b.ts",
+      "before": "e3fdbf7f9a4999c93fef2824ff0e50fc5ec536033d471e5e34bd57abb13dca53",
+      "after": "e3fdbf7f9a4999c93fef2824ff0e50fc5ec536033d471e5e34bd57abb13dca53",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-c.ts",
+      "before": "16e4ad4ddc473e68fc1665d64be6fdc6bd967f0e3134342d2cbf61d79624b0d6",
+      "after": "16e4ad4ddc473e68fc1665d64be6fdc6bd967f0e3134342d2cbf61d79624b0d6",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-chains-d.ts",
+      "before": "cd61eb825687945e18da3f8c4ea1ed2ac7720b16632c5792a5d034617d5d7361",
+      "after": "cd61eb825687945e18da3f8c4ea1ed2ac7720b16632c5792a5d034617d5d7361",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-echoes.ts",
+      "before": "512fb4f9011e47527a90c23630dc87dda98cc2df50944d528239b129d3ff35e0",
+      "after": "512fb4f9011e47527a90c23630dc87dda98cc2df50944d528239b129d3ff35e0",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/second-letters.ts",
+      "before": "1ff60b8634d03406af10890212838a292fdb78e349bba24507e796514b898b9a",
+      "after": "1ff60b8634d03406af10890212838a292fdb78e349bba24507e796514b898b9a",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-a.ts",
+      "before": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "after": "01693187185703186aa7fd4b3a241201420a3a8ab6717899d8109112a8d18af9",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-b.ts",
+      "before": "6eb44f335a5639699bf8a5049c8feab3c97c0deba49fb7e98c7d983fa1ef0caf",
+      "after": "6eb44f335a5639699bf8a5049c8feab3c97c0deba49fb7e98c7d983fa1ef0caf",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-c.ts",
+      "before": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "after": "337721225ca5d1d8fe67bf61e17cee5ab01b4c081d4a71747b71b6044abb6b9d",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-chains-d.ts",
+      "before": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "after": "4c53614cf69c7499fb680bb8fd1c5e14b87708a19056b8ffd227a9b107583156",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/content/town-letters.ts",
+      "before": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "after": "955d7db0b9b6eb65be643c98c48a144f75a9275f334dc4756a28520fd87d6f1d",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/game/engine.ts",
+      "before": "77b4dd3fc6a7a7c835a77e44cb3896c056925b766f8223b8e3cdc654532d1cf3",
+      "after": "77b4dd3fc6a7a7c835a77e44cb3896c056925b766f8223b8e3cdc654532d1cf3",
+      "equal": true
+    },
+    {
+      "path": "src/legacy/v3/game/types.ts",
+      "before": "701ff594ef2f2303a1733f71474a8a469646db38e6fd6fb40d64e687effc39c0",
+      "after": "701ff594ef2f2303a1733f71474a8a469646db38e6fd6fb40d64e687effc39c0",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-1-saves.json",
+      "before": "ab1e7d5d5cf54a12e51443648bffb07cc6f7a14a0aebbef33de7a98440a07c74",
+      "after": "ab1e7d5d5cf54a12e51443648bffb07cc6f7a14a0aebbef33de7a98440a07c74",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-10-saves.json",
+      "before": "825251b5de67abca02719e68932484170eee5a6721d204849524ec0aea2fed92",
+      "after": "825251b5de67abca02719e68932484170eee5a6721d204849524ec0aea2fed92",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-11-saves.json",
+      "before": "4c9cf943e602d92d0688e313435aa7a678f1ab2482d9a8f02506c970b194af0e",
+      "after": "4c9cf943e602d92d0688e313435aa7a678f1ab2482d9a8f02506c970b194af0e",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-12-saves.json",
+      "before": "aae5c343da9088a2e4d73bd8919e32b4bbc10dec80d788d0abd42ece2a38d8e4",
+      "after": "aae5c343da9088a2e4d73bd8919e32b4bbc10dec80d788d0abd42ece2a38d8e4",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-13-saves.json",
+      "before": "db01c00e76d3085734fee5e5aff293fbba888132116895d5eb95b39f32a3204c",
+      "after": "db01c00e76d3085734fee5e5aff293fbba888132116895d5eb95b39f32a3204c",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-14-saves.json",
+      "before": "0317eea50244165badcff23579693eb8046ad2e3c0db998c1fda3397893db389",
+      "after": "0317eea50244165badcff23579693eb8046ad2e3c0db998c1fda3397893db389",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-15-saves.json",
+      "before": "a20d5183778576abd539ecc7f12a3b84f97b4348386e516031765f5feb3558ae",
+      "after": "a20d5183778576abd539ecc7f12a3b84f97b4348386e516031765f5feb3558ae",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-16-saves.json",
+      "before": "af8da7647f97f6a95df39b8b1e8061b153349cb5c9dcd12fd738e81d7bf83ffa",
+      "after": "af8da7647f97f6a95df39b8b1e8061b153349cb5c9dcd12fd738e81d7bf83ffa",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-17-saves.json",
+      "before": "6c194372ed386783466d308d93fcfaa157fb7f6eec1c3f5f673fb28aac8d31f2",
+      "after": "6c194372ed386783466d308d93fcfaa157fb7f6eec1c3f5f673fb28aac8d31f2",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-18-review-saves.json",
+      "before": "c1f893c3fb9e1f6bba3e84df1c34a9d05c03766cf79b967033f90750051c8417",
+      "after": "c1f893c3fb9e1f6bba3e84df1c34a9d05c03766cf79b967033f90750051c8417",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-2-saves.json",
+      "before": "be9c319b8e0a3dc354170095949e17d31a96a8fd9f637ca4fe6b4a9361c34821",
+      "after": "be9c319b8e0a3dc354170095949e17d31a96a8fd9f637ca4fe6b4a9361c34821",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-20-saves.json",
+      "before": "2f047ee20ec2d295d5228f1cb38cc5b18a192edf87d92d0a02342df6ca021725",
+      "after": "2f047ee20ec2d295d5228f1cb38cc5b18a192edf87d92d0a02342df6ca021725",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-20-saves.sha256",
+      "before": "c6ff0d0e4ac8c803df133cf1d7a42386d0de5df8fc04ec1ae09cfabf52b46f17",
+      "after": "c6ff0d0e4ac8c803df133cf1d7a42386d0de5df8fc04ec1ae09cfabf52b46f17",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-21-audit-saves.json",
+      "before": "658dd136236724b3c53bf43043ff15d8b3c582af1a5f55b2a4a85436ce4bd7d2",
+      "after": "658dd136236724b3c53bf43043ff15d8b3c582af1a5f55b2a4a85436ce4bd7d2",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-21-audit-saves.sha256",
+      "before": "6bac785d2f555b14c29eb5b7173adbbccea7dbc0e487bb931debe29997b868d9",
+      "after": "6bac785d2f555b14c29eb5b7173adbbccea7dbc0e487bb931debe29997b868d9",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-3-saves.json",
+      "before": "e4e46fa95df10eb2f1ef28f162b9104a8072a0e202b92c588907c78b45107648",
+      "after": "e4e46fa95df10eb2f1ef28f162b9104a8072a0e202b92c588907c78b45107648",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-4-review-saves.json",
+      "before": "099630bf2baa63b3193a9af3324603441e8653fde9e25c61004f743b0c1d4e64",
+      "after": "099630bf2baa63b3193a9af3324603441e8653fde9e25c61004f743b0c1d4e64",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-6-saves.json",
+      "before": "f820e49f65039eb3d402200f84e23d47607b0fd2958aa81938ad038c9cc03b71",
+      "after": "f820e49f65039eb3d402200f84e23d47607b0fd2958aa81938ad038c9cc03b71",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-7-review-saves.json",
+      "before": "5036eeea3a0732e573a0645b39644c1e72b774731fa3b11f017be531c081df78",
+      "after": "5036eeea3a0732e573a0645b39644c1e72b774731fa3b11f017be531c081df78",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-8-saves.json",
+      "before": "9ed0bd451c1aa5ab417a06bf94025256077f32dd607d391a1787ee4a3734e42d",
+      "after": "9ed0bd451c1aa5ab417a06bf94025256077f32dd607d391a1787ee4a3734e42d",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-9-saves.json",
+      "before": "7a266f7a49e5f9d84da99c8225a9bdd62c20af86f589e91af752bb2c7f97a384",
+      "after": "7a266f7a49e5f9d84da99c8225a9bdd62c20af86f589e91af752bb2c7f97a384",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/catalog-contracts.json",
+      "before": "a5379a8c95b0a783ea10a63054fc368c05def32b4878933cac0f99154d77be26",
+      "after": "608e87796218f235a0ca7318a6cdc80fdc85248bde210924475fd52dcead41f2",
+      "equal": false
+    },
+    {
+      "path": "tests/fixtures/catalog-prose-contracts.json",
+      "before": "efbfb978477f2e7591806c893f78061f8d18ea50f0c741e10d1324b4cb206a6a",
+      "after": "315888a87401006ceaccb25b99d8fd015977d2460e52b142c6cee46fd86eb13d",
+      "equal": false
+    },
+    {
+      "path": "tests/fixtures/scheduling-revision11.json",
+      "before": "0ee65cb659e833800736550aac11f3d4f2c926ff5d801660573546e07afc741f",
+      "after": "0ee65cb659e833800736550aac11f3d4f2c926ff5d801660573546e07afc741f",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v1-contract.json",
+      "before": "550b68c9b9d1ebf5e859c2882bafddb48e459484a7d4b39c946f45385ce49011",
+      "after": "550b68c9b9d1ebf5e859c2882bafddb48e459484a7d4b39c946f45385ce49011",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v1-saves.json",
+      "before": "4710d23b31f2924ae31939176e002f00ce12187d1c5f2d15c0c8af23a6340ed3",
+      "after": "4710d23b31f2924ae31939176e002f00ce12187d1c5f2d15c0c8af23a6340ed3",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v2-contract.json",
+      "before": "dbd3de5bb73a64f71d2b69bf64c681ec5de7ed7542c1157705babea7085c6102",
+      "after": "dbd3de5bb73a64f71d2b69bf64c681ec5de7ed7542c1157705babea7085c6102",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v2-saves.json",
+      "before": "bda04f103cc79e08377355c7644582ef1cd828e4f17f8e77ab04176b3c9009f9",
+      "after": "bda04f103cc79e08377355c7644582ef1cd828e4f17f8e77ab04176b3c9009f9",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v3-contract.json",
+      "before": "00422c655e368db0a3ba70c91b852ed60abc48c6431794bfa9dde2ca7b566ae4",
+      "after": "00422c655e368db0a3ba70c91b852ed60abc48c6431794bfa9dde2ca7b566ae4",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v3-saves.json",
+      "before": "00b382c13f6f78ba568c531b6c191e17775c154656fe1b6ea52b16af0652e5ef",
+      "after": "00b382c13f6f78ba568c531b6c191e17775c154656fe1b6ea52b16af0652e5ef",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/v5-historical-render-hashes.json",
+      "before": "793dfc302db564c90c4dea9f46a8557bcb6029dac21e2c13f54ba0063a73b692",
+      "after": "793dfc302db564c90c4dea9f46a8557bcb6029dac21e2c13f54ba0063a73b692",
+      "equal": true
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "before": "796ecad9bc328cce71cc672c9ead6197c2dc28deb8be1c47fcf9053454a77610",
+      "after": "796ecad9bc328cce71cc672c9ead6197c2dc28deb8be1c47fcf9053454a77610",
+      "equal": true
+    },
+    {
+      "path": "public/favicon-32.png",
+      "before": "9b79ebf6f98a181b1ad465d6d1c6c5756b1cf6d3a83cf4af324fbbfe6d4985ac",
+      "after": "9b79ebf6f98a181b1ad465d6d1c6c5756b1cf6d3a83cf4af324fbbfe6d4985ac",
+      "equal": true
+    },
+    {
+      "path": "public/favicon.ico",
+      "before": "bd1f5de6d95f2894e098d28be17c4eeb5bc629d89e60987a0e426ed367d3401a",
+      "after": "bd1f5de6d95f2894e098d28be17c4eeb5bc629d89e60987a0e426ed367d3401a",
+      "equal": true
+    },
+    {
+      "path": "public/favicon.svg",
+      "before": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6",
+      "after": "61c2f530e5cac577ca4680773323769f213067cf189be6e218569ad69e8201e6",
+      "equal": true
+    },
+    {
+      "path": "public/icon-192.png",
+      "before": "98b57440248084fe4f8f3a918c449ad5a1addcc39ddf3d50e366ac8daedc04ba",
+      "after": "98b57440248084fe4f8f3a918c449ad5a1addcc39ddf3d50e366ac8daedc04ba",
+      "equal": true
+    },
+    {
+      "path": "public/icon-512.png",
+      "before": "bf735207f4a404880905209442846882507af1cf66e566151d46d5cc918e9a43",
+      "after": "bf735207f4a404880905209442846882507af1cf66e566151d46d5cc918e9a43",
+      "equal": true
+    },
+    {
+      "path": "public/site.webmanifest",
+      "before": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8",
+      "after": "3e277aa8eddb012d714a099fb8c628576cdc5e35a2a6b7bee96a74f6436b5db8",
+      "equal": true
+    },
+    {
+      "path": "public/art/approve.png",
+      "before": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4",
+      "after": "77b80236ec8fa78c7e9b1502977bc5281628108f8db8a2458ce3255e986adbe4",
+      "equal": true
+    },
+    {
+      "path": "public/art/approve.webp",
+      "before": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44",
+      "after": "d0357b7e2b224e79b081ca60780dfce51ea648eb2391452b9f0272d275373f44",
+      "equal": true
+    },
+    {
+      "path": "public/art/background-wide.webp",
+      "before": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2",
+      "after": "adc462f5a1fffbe3ab361f98ef197b78d67ac681346958b6b5ef65e05c9739f2",
+      "equal": true
+    },
+    {
+      "path": "public/art/background.png",
+      "before": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928",
+      "after": "0cdecb9a688426fef64e0583e417ecef269586784b6c70a0e742f0b5b1d17928",
+      "equal": true
+    },
+    {
+      "path": "public/art/background.webp",
+      "before": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb",
+      "after": "caf9592fde9464a4e682e70654b9330e01d82e7296b90e354c523734683eccbb",
+      "equal": true
+    },
+    {
+      "path": "public/art/defer.png",
+      "before": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2",
+      "after": "eff21cb79cb31251fa3f6e267a7904ab62ec86becbbadf04c96f709d98f060a2",
+      "equal": true
+    },
+    {
+      "path": "public/art/defer.webp",
+      "before": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48",
+      "after": "8a176e5ca241c94977b71396c7db174e5f3564d4ea7b130150bf8fa02aac8a48",
+      "equal": true
+    },
+    {
+      "path": "public/art/note.png",
+      "before": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179",
+      "after": "842c41906e61ca91929557417dbcef87b8d6cdf60b4a123e73b68e91c9549179",
+      "equal": true
+    },
+    {
+      "path": "public/art/note.webp",
+      "before": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f",
+      "after": "59eec8604c31603b54cbfcb6af1fbf89e7c32dfe0cb1f3d946f2bbd111eabc0f",
+      "equal": true
+    },
+    {
+      "path": "public/art/paper-mobile.png",
+      "before": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b",
+      "after": "62ce29144a66aeade476ee48162c9f0722dceeb767f9bfce0a2e9afcd91c248b",
+      "equal": true
+    },
+    {
+      "path": "public/art/paper-mobile.webp",
+      "before": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841",
+      "after": "6de4c28c5bf7d668636e7943942f203fe514a84cadcea818804d8948bc866841",
+      "equal": true
+    },
+    {
+      "path": "public/art/paper.png",
+      "before": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01",
+      "after": "f97b45fb80e33019671d9755dc1db1f3da16242ce5f0c91784913bcb4cbaec01",
+      "equal": true
+    },
+    {
+      "path": "public/art/paper.webp",
+      "before": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8",
+      "after": "bb6b06f0f835c325d618d39b4571483fdd2548742cf6f747002c70dfbc8442c8",
+      "equal": true
+    },
+    {
+      "path": "public/art/reject.png",
+      "before": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb",
+      "after": "01f5f0599d9bd197f70d8cee7801f8274b0b21a584df3459b99bfc02a772f0fb",
+      "equal": true
+    },
+    {
+      "path": "public/art/reject.webp",
+      "before": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05",
+      "after": "0684e5e30e505f5d0d005002339ee3ec96a817727346f41a9cda312df45a2f05",
+      "equal": true
+    },
+    {
+      "path": "public/art/written_reply.png",
+      "before": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343",
+      "after": "dafba654e31881c0fcb4a1bed604914dff0385601c538d13e726fcb1d04a4343",
+      "equal": true
+    },
+    {
+      "path": "public/art/written_reply.webp",
+      "before": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab",
+      "after": "5a5d49915dc6e2e653bfecdd0ffc06c76effd19f340cef3df28454ba07d62eab",
+      "equal": true
+    },
+    {
+      "path": "public/fonts/OFL.txt",
+      "before": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e",
+      "after": "0333a85fe077b6849f8e417acc44e8bd879442ceb681e271acf93e2d57fd4e2e",
+      "equal": true
+    },
+    {
+      "path": "public/fonts/wenkai.woff2",
+      "before": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe",
+      "after": "91a4464017b50afef4375a08613712ebd5c5ca2513d3520811e316c27e8603fe",
+      "equal": true
+    }
+  ],
+  "appendOnly": [
+    {
+      "path": "tests/fixtures/catalog-contracts.json",
+      "oldEntries": 21,
+      "currentEntries": 22,
+      "oldCanonicalSHA256": "d234520d3cab7bbc16ac94f32105cc7a6632c97f49edbd2d335fc7ebd3921da2",
+      "unchangedPrefix": true
+    },
+    {
+      "path": "tests/fixtures/catalog-prose-contracts.json",
+      "oldEntries": 4,
+      "currentEntries": 5,
+      "oldCanonicalSHA256": "8d31577cb734e22778a6d6ccb3c9f7cc1d21f1dc48a2b2d4833da3ec01e70346",
+      "unchangedPrefix": true
+    },
+    {
+      "path": "src/game/catalog-contracts.json",
+      "oldEntries": 21,
+      "currentEntries": 22,
+      "oldCanonicalSHA256": "15d677ab7a554f85bf5e9ba81789f6ba53e984cb3c52479af4d100b705d973d1",
+      "unchangedPrefix": true
+    },
+    {
+      "path": "src/game/catalog-prose.json",
+      "oldEntries": 4,
+      "currentEntries": 5,
+      "oldCanonicalSHA256": "0d0030cd1d49aa2a9a12c01ecb0dea5b58c2b6438af9a940f5981bc347978d59",
+      "unchangedPrefix": true
+    },
+    {
+      "path": "src/game/causal-pilot.json",
+      "oldEntries": 4,
+      "currentEntries": 8,
+      "oldCanonicalSHA256": "3b0db18c9f2e78c231639f8cac60396d4cc9bab3e7cc731a580c82dd56b9c028",
+      "unchangedPrefix": true
+    }
+  ],
+  "statement": "Existing frozen engines, fixture bytes and public assets are unchanged. Only the two hash manifests have appended entries; their original entries and every prior catalog/prose/causal rule retain exact canonical values. New catalog21 fixture was captured before edits and its file hash remains fixed."
+}

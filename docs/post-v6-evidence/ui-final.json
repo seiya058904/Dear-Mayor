@@ -1,0 +1,175 @@
+{
+  "method": "Additional native restart/recovery dialog geometry, buttons, Tab and Escape checks at four actual Chromium viewports. Overlay captures use visible viewport; letter captures preserve the full flowing page. Isolated synthetic storage only; not hardware Android or manual screen-reader testing.",
+  "rows": [
+    {
+      "width": 320,
+      "damaged": false,
+      "dialogGeometry": {
+        "x": 16,
+        "y": 250.625,
+        "width": 288,
+        "height": 342.734375
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "damaged": true,
+      "dialogGeometry": {
+        "x": 16,
+        "y": 168.34375,
+        "width": 288,
+        "height": 507.296875
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "damaged": false,
+      "dialogGeometry": {
+        "x": 19.5,
+        "y": 284.8125,
+        "width": 351,
+        "height": 274.359375
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "damaged": true,
+      "dialogGeometry": {
+        "x": 19.5,
+        "y": 185.4375,
+        "width": 351,
+        "height": 473.109375
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 721,
+      "damaged": false,
+      "dialogGeometry": {
+        "x": 120.5,
+        "y": 284.8125,
+        "width": 480,
+        "height": 274.359375
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 721,
+      "damaged": true,
+      "dialogGeometry": {
+        "x": 120.5,
+        "y": 202.53125,
+        "width": 480,
+        "height": 438.921875
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 1672,
+      "damaged": false,
+      "dialogGeometry": {
+        "x": 596,
+        "y": 333.3125,
+        "width": 480,
+        "height": 274.359375
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    },
+    {
+      "width": 1672,
+      "damaged": true,
+      "dialogGeometry": {
+        "x": 596,
+        "y": 251.03125,
+        "width": 480,
+        "height": 438.921875
+      },
+      "buttons44px": true,
+      "keyboard": true,
+      "cancelPreservesPrimary": true,
+      "errors": []
+    }
+  ],
+  "images": [
+    {
+      "path": "docs/screenshots/post-v6/desktop-1672.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0428896703518c9332c7a6e89c215edb59ba71179d4fb946527806189b8c94ff"
+    },
+    {
+      "path": "docs/screenshots/post-v6/laptop-1366.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "06ce6b48af4f137573a7b098f146cdf66bb726218a0ea89e1822ec08756bd077"
+    },
+    {
+      "path": "docs/screenshots/post-v6/mobile-320-long.png",
+      "width": 320,
+      "height": 1485,
+      "sha256": "94010c094d2f5dee0151136288557985072dc55019c76b792586f6b5146c450d"
+    },
+    {
+      "path": "docs/screenshots/post-v6/mobile-390-long.png",
+      "width": 390,
+      "height": 1328,
+      "sha256": "0e098ef393aa252495f57f7f47318917bfbecc6d100582496c7bf0b3ad30e6ab"
+    },
+    {
+      "path": "docs/screenshots/post-v6/quill-reply-B-390.png",
+      "width": 390,
+      "height": 1114,
+      "sha256": "fadd85f421a7518bf87e502d29ceb76a240281773142c539bf58b430a8799ed6"
+    },
+    {
+      "path": "docs/screenshots/post-v6/recovery-390.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "f40ce4df40d0983360aca0f49bae57df97006b6bcdfead2086281e7420118af3"
+    },
+    {
+      "path": "docs/screenshots/post-v6/recovery-dialog.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a8b2ec8aede22cdd47f0f9f2349afec62f7db2e9dfcbf37eda7b97e42e282b32"
+    },
+    {
+      "path": "docs/screenshots/post-v6/reply-390.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "7394c77c83722621830a64a8f231154b6b6c47bc5ba90bb58841c496e8c02f30"
+    },
+    {
+      "path": "docs/screenshots/post-v6/tablet-721-long.png",
+      "width": 721,
+      "height": 1272,
+      "sha256": "17f9fdcfaf4b49833b0486c5b129afe4c63ea43ceaf2bd697e73ccdbf4a30db2"
+    }
+  ],
+  "desktopBaselineScreenshotSHA256": "0428896703518c9332c7a6e89c215edb59ba71179d4fb946527806189b8c94ff",
+  "desktopCurrentScreenshotSHA256": "0428896703518c9332c7a6e89c215edb59ba71179d4fb946527806189b8c94ff"
+}

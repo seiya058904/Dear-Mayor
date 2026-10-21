@@ -1,0 +1,124 @@
+{
+  "environment": {
+    "node": "v24.15.0",
+    "os": "win32 10.0.22631",
+    "cpu": "AMD Ryzen 7 9700X 8-Core Processor             ",
+    "browser": "156.0.8078.4"
+  },
+  "samplesPerProfile": 3,
+  "profiles": 4,
+  "rows": [
+    {
+      "mobile": false,
+      "slow": false,
+      "before": {
+        "document": 76.90000000596046,
+        "fcp": 160,
+        "interactiveMs": 206.1000000089407,
+        "fonts": 177.1000000089407,
+        "offline": 279,
+        "bodyTransferBytes": 24091132,
+        "headerTransferBytes": 6881,
+        "cacheDecodedBytes": 16051562,
+        "duplicateNetworkBodyBytes": 9790703
+      },
+      "after": {
+        "document": 76.59999999403954,
+        "fcp": 164,
+        "interactiveMs": 222.5,
+        "fonts": 177.5,
+        "offline": 302.3999999910593,
+        "bodyTransferBytes": 14308623,
+        "headerTransferBytes": 4865,
+        "cacheDecodedBytes": 16070245,
+        "duplicateNetworkBodyBytes": 0
+      },
+      "offlineReductionPercent": -8.387096770988997,
+      "bodyReductionPercent": 40.60626540919704
+    },
+    {
+      "mobile": true,
+      "slow": false,
+      "before": {
+        "document": 75.5,
+        "fcp": 152,
+        "interactiveMs": 205.59999999403954,
+        "fonts": 178.59999999403954,
+        "offline": 278.29999999701977,
+        "bodyTransferBytes": 24070485,
+        "headerTransferBytes": 6881,
+        "cacheDecodedBytes": 16051562,
+        "duplicateNetworkBodyBytes": 9770056
+      },
+      "after": {
+        "document": 72.6000000089407,
+        "fcp": 152,
+        "interactiveMs": 207,
+        "fonts": 181.70000000298023,
+        "offline": 305.6000000089407,
+        "bodyTransferBytes": 14308623,
+        "headerTransferBytes": 4865,
+        "cacheDecodedBytes": 16070245,
+        "duplicateNetworkBodyBytes": 0
+      },
+      "offlineReductionPercent": -9.809558035290433,
+      "bodyReductionPercent": 40.55531909722633
+    },
+    {
+      "mobile": false,
+      "slow": true,
+      "before": {
+        "document": 40410.09999999404,
+        "fcp": 40484,
+        "interactiveMs": 40538,
+        "fonts": 40483.09999999404,
+        "offline": 151443.69999998808,
+        "bodyTransferBytes": 24091132,
+        "headerTransferBytes": 6881,
+        "cacheDecodedBytes": 16051562,
+        "duplicateNetworkBodyBytes": 9790703
+      },
+      "after": {
+        "document": 40448.20000000298,
+        "fcp": 40520,
+        "interactiveMs": 40571.90000000596,
+        "fonts": 40518,
+        "offline": 90337.5,
+        "bodyTransferBytes": 14308623,
+        "headerTransferBytes": 4865,
+        "cacheDecodedBytes": 16070245,
+        "duplicateNetworkBodyBytes": 0
+      },
+      "offlineReductionPercent": 40.34911983792848,
+      "bodyReductionPercent": 40.60626540919704
+    },
+    {
+      "mobile": true,
+      "slow": true,
+      "before": {
+        "document": 40291.90000000596,
+        "fcp": 40372,
+        "interactiveMs": 40426.5,
+        "fonts": 40374.90000000596,
+        "offline": 150654,
+        "bodyTransferBytes": 24070485,
+        "headerTransferBytes": 6881,
+        "cacheDecodedBytes": 16051562,
+        "duplicateNetworkBodyBytes": 9770056
+      },
+      "after": {
+        "document": 40470,
+        "fcp": 40536,
+        "interactiveMs": 40590.09999999404,
+        "fonts": 40539.79999999702,
+        "offline": 90304.20000000298,
+        "bodyTransferBytes": 14308623,
+        "headerTransferBytes": 4865,
+        "cacheDecodedBytes": 16070245,
+        "duplicateNetworkBodyBytes": 0
+      },
+      "offlineReductionPercent": 40.05854474491021,
+      "bodyReductionPercent": 40.55531909722633
+    }
+  ]
+}

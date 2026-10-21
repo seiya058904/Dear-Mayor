@@ -95,6 +95,9 @@ export function currentDocument(state: GameState): Document {
   const contract = catalog.letters[state.current];
   if (!source || !contract) throw new Error(`Unknown document: ${state.current}`);
   const doc = { ...source, ...contract };
+  // An absent historical gate is meaningful: spreading the current source must
+  // not leak a newly authored requirement into an old pending document.
+  if (!contract.requires) delete doc.requires;
   const previous = doc.chain ? state.facts[doc.chain] : undefined;
   if (previous && catalog.chains.find(c => c.id === doc.chain)?.quotePrevious !== false &&
       state.current.endsWith("/reply")) {

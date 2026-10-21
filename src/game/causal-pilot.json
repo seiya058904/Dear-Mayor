@@ -174,5 +174,183 @@
     ],
     "introducedRevision": 21,
     "anchor": "涅尔说自己没有书可回赠，倒记得一回把帽子钉进船板的事。"
+  },
+  {
+    "source": "town/goose-feather-quill",
+    "target": "town/missing-page-two",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "笔具按实查看，玩笑不作向鹅或物主追责。",
+        "draft": "上回请来的熟手把那支笔翻来覆去看，我如今落笔慢一点，墨团少了；这回两页挤一块，可怪不到鹅了。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "代问未获安排，苔丝自行核常用工具。",
+        "draft": "上回没替我约人，我自己把常用笔一支支试了；萝莎又来问鹅的事，我让她看纸角，这回羽毛没沾果汁。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有回话，坏字未被全归给羽毛来处。",
+        "draft": "看笔的信一直没回，萝莎倒还记得那句玩笑。今天我先告诉她纸是果汁粘的，别又去同鹅讲理。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "工作用实际工具，不等玩笑变成结论。",
+        "draft": "换上的旧笔还顺手，原先赶着抄的几页也另排过了。如今这两张却黏着不肯分工，比我的新笔还赖皮。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "范围具体，不把私人笔坏变成公事征集。",
+        "draft": "只查那支笔，萝莎到门口问要不要再找几根，我说不用。今天她看见我摊着粘页，先把鹅往篮子另一边领。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "误会在实际知情者间说清，鹅继续做鹅。",
+        "draft": "上回我当面向萝莎说了笔坏的玩笑，她说鹅听不懂也好。今天看见果汁，我俩都先把杯子挪远。"
+      }
+    ],
+    "introducedRevision": 22,
+    "anchor": "两页纸被果汁粘成一张，读者说我的故事跳得太快。",
+    "minimumDays": 12
+  },
+  {
+    "source": "town/teacup-left-handle",
+    "target": "town/brush-at-door",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "学徒课加入先问使用习惯，阿满的杯把按他自己选择摆。",
+        "draft": "那节问顺手的小课上过，新伙计端杯前先等我伸手。这回他见客人满鞋泥，也先问刷子该放哪边。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "加课未获安排，阿满直接告诉伙计自己的习惯。",
+        "draft": "加课没办成，我自己跟伙计说了左手拿杯的习惯。他如今还会问一声，我想鞋刷也让用的人试试。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有回复，伙计先停止反复转杯，听阿满说明。",
+        "draft": "那封加课信没回，伙计倒没再替我转杯。我把杯子挪好，才发现地上又多了一条泥路。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "学徒知道顺手与否因人而异，不再把一种摆法当全对。",
+        "draft": "伙计上回两手各拿杯试过，笑说原来右手也会笨。这回我想让他试试长短两种刷柄，别只照我拿得顺。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "杯子放稳即可，想转哪边由使用者自己决定。",
+        "draft": "现在杯子放稳就好，我想转哪边自己转。伙计总算不用守着杯把，腾出眼睛看见了门口的泥。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "阿满与伙计说清后继续做事，没有为杯把另开一场训诫。",
+        "draft": "上回干活时把杯把说清就完了，水也没耽误喝。这回我也想早点把刷子放好，不用站在泥脚印上讲半天。"
+      }
+    ],
+    "introducedRevision": 22,
+    "anchor": "客人一路带泥进屋，我扫着扫着，像在店里修路。",
+    "minimumDays": 18
+  },
+  {
+    "source": "millerleave/continuation",
+    "target": "millerleave/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "石料小册借给格里特，他先读自己不懂的一页再回家信。",
+        "draft": "小册里那页我折了纸角，尤恩回信画了个箭头，偏偏指的不是我猜的那块石。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "借书没获安排，格里特只写家里近况，没有假装懂磨石。",
+        "draft": "小册没借到，我只写家里近况；尤恩回信问面包烤焦没有，一句也没考我磨石。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有回话，叔父先回了天气与面包，没有催交学艺成果。",
+        "draft": "借书还没回话，我先寄了天气和面包的消息；尤恩说那边也刮风，请我别让粉袋堵窗。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "尤恩选择讲石面纹路，叔父认真问了一处不懂的地方。",
+        "draft": "尤恩寄的石纹我看了半天，终于老实问他一道浅沟，他在下一封画得比手掌还大。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "家信讲了磨坊的小事，尤恩不必每次证明自己值得出门。",
+        "draft": "上回只说磨坊的小事，尤恩回我他睡的床爱响。我回说家里这张也响，倒把两封信写得很热闹。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "格里特读懂基础图，回信少了一段自己编的道理。",
+        "draft": "同行给的基础图摊在磨盘旁，我照着认出一处，给尤恩写完信，又把两个“大概”划掉了。"
+      }
+    ],
+    "introducedRevision": 22,
+    "anchor": "尤恩说学艺那边愿让他多留些日子，问我会不会不方便。"
+  },
+  {
+    "source": "ferrydaughter/continuation",
+    "target": "ferrydaughter/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "渡口按实际人手说明班次，不把女儿当固定帮工。",
+        "draft": "渡口添的班次纸被风卷起一角，黛禾进门先问我要不要一颗钉子，没有挽袖去扶船。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "添说明未获准，罗恩向乘客当面告知实际可接趟次。",
+        "draft": "班次没添在牌上，我便当面数给乘客听。黛禾经过时替我捡了个掉下的汤勺，没被算进下一趟人手。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "没有回信，罗恩未接超出自己能办的载运。",
+        "draft": "说明的信没回，我没再接忙不过来的载运。黛禾来的那天，汤还在锅里，不用捞一碗路上喝。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "需要的人手按实际约定，不靠亲属关系补缺。",
+        "draft": "现在要人帮一趟，我先问时辰和工钱。黛禾进门时只带琴盒，没有替我塞进一张值船单。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "安排依据真实需要，没有把全部工作都写成紧急。",
+        "draft": "我把真需要两人的趟次圈出来，才发现有几回独自也能慢慢办。黛禾笑我终于肯承认嗓门不算人手。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "罗恩拒接多余行程，没有把已收的钱变成女儿的义务。",
+        "draft": "多出来的行程我婉拒了。有位客人又问黛禾在不在，我说她回来吃饭，手里的空碗先递给她。"
+      }
+    ],
+    "introducedRevision": 22,
+    "anchor": "黛禾来吃饭，我准备问三十件学艺的事，她先问汤。"
   }
 ]

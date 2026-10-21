@@ -33499,5 +33499,236 @@
     "revision": 21,
     "chains": [],
     "letters": {}
+  },
+  {
+    "revision": 22,
+    "chains": [],
+    "letters": {
+      "quietchoir/continuation": {
+        "id": "quietchoir/continuation",
+        "sender": "修士安瑟",
+        "kind": "letter",
+        "chain": "quietchoir",
+        "stage": 3,
+        "results": {
+          "approve": "领唱自愿换了一次，阿满在后排帮接，孩子不必承诺每回领唱。",
+          "reject": "换领唱没获准，安瑟暂停指定，先与双方重新商量。",
+          "defer": "没有回话，阿满与孩子只在私下练，没有被临时推到队前。"
+        },
+        "replies": [
+          {
+            "text": "先让两人共同起句。",
+            "result": "两人一起起句，孩子有依靠，阿满也不必独撑。"
+          },
+          {
+            "text": "只在排练里试，不立刻公开唱。",
+            "result": "角色在排练中尝试，双方可以提出不合适再改。"
+          },
+          {
+            "text": "当天想领的先问，不固定名字。",
+            "result": "每回先问意愿，前排位置没有变成谁必须完成的差事。"
+          }
+        ]
+      },
+      "ferrydaughter/reject": {
+        "id": "ferrydaughter/reject",
+        "sender": "渡船人罗恩",
+        "kind": "letter",
+        "chain": "ferrydaughter",
+        "stage": 2,
+        "results": {
+          "approve": "旧纸交还罗恩，渡口没有张贴家庭更正经过。",
+          "reject": "取回原件未获准，驿站妥存，不公开陈列。",
+          "defer": "没有回话，驿站仍停止转告不实接班讯息。"
+        },
+        "replies": [
+          {
+            "text": "原件存档，给罗恩普通副本。",
+            "result": "驿站保留来历，私人更正不作公开笑料。"
+          },
+          {
+            "text": "核更正完成后按原有办法处理旧纸。",
+            "result": "无效消息不再流传，也没有添一面认错墙。"
+          },
+          {
+            "text": "只请驿站向已问过的人说明接班未定。",
+            "result": "必要更正到达实际询问者，不扩大女儿私事。"
+          }
+        ]
+      },
+      "town/missing-page-two": {
+        "id": "town/missing-page-two",
+        "sender": "抄书人苔丝",
+        "kind": "archive",
+        "requires": {
+          "id": "town/goose-feather-quill",
+          "actions": [
+            "approve",
+            "reject",
+            "defer",
+            "written_reply"
+          ],
+          "days": 12
+        },
+        "results": {
+          "approve": "空桌借出，苔丝分开粘页并提供誊本。",
+          "reject": "借桌未准，苔丝在自家作坊处理，先向读者说明延期。",
+          "defer": "没回信，粘页妥善平放，没有被硬扯开。"
+        },
+        "replies": [
+          {
+            "text": "先请有经验的装订人看。",
+            "result": "装订人判断纸况后再处理，字迹没有为赶时间被撕掉。"
+          },
+          {
+            "text": "先誊可读部分，缺处注明。",
+            "result": "读者拿到标明缺字的临时誊本，没被虚构内容填空。"
+          },
+          {
+            "text": "请读者借别的完好副本。",
+            "result": "奥黛找来完好本供借阅，原粘页慢慢修复。"
+          }
+        ]
+      },
+      "town/teacup-left-handle": {
+        "id": "town/teacup-left-handle",
+        "sender": "客栈洗碗人阿满",
+        "kind": "letter",
+        "results": {
+          "approve": "学徒课加入先问使用习惯，阿满的杯把按他自己选择摆。",
+          "reject": "加课未获安排，阿满直接告诉伙计自己的习惯。",
+          "defer": "没有回复，伙计先停止反复转杯，听阿满说明。"
+        },
+        "replies": [
+          {
+            "text": "请学徒自己试两种拿法。",
+            "result": "学徒知道顺手与否因人而异，不再把一种摆法当全对。"
+          },
+          {
+            "text": "摆杯时把选择留给喝水的人。",
+            "result": "杯子放稳即可，想转哪边由使用者自己决定。"
+          },
+          {
+            "text": "只在实际工作时简短说清。",
+            "result": "阿满与伙计说清后继续做事，没有为杯把另开一场训诫。"
+          }
+        ]
+      },
+      "echo/post-near-letter": {
+        "id": "echo/post-near-letter",
+        "sender": "客栈洗碗人阿满",
+        "kind": "letter",
+        "requires": {
+          "id": "post/start",
+          "actions": [
+            "written_reply"
+          ],
+          "days": 12
+        },
+        "results": {
+          "approve": "普通纸借到，阿满按自己的方式写信，没有被要求一定交驿站。",
+          "reject": "领纸没获安排，阿满用自己的干净纸角先写。",
+          "defer": "没有回复，阿满把想说的话记在心里，没请人代写他的私事。"
+        },
+        "replies": [
+          {
+            "text": "请阿满直接与奥黛商量纸。",
+            "result": "阿满自愿选纸，奥黛没问必须给谁写。"
+          },
+          {
+            "text": "先口述给自己听，再决定是否写。",
+            "result": "阿满发现一句想保留的话，是否成信仍由他决定。"
+          },
+          {
+            "text": "留一段自己的空闲，不必借镇里时间。",
+            "result": "阿满把信放在自己的饭后写，没有让母亲为等信特意守门。"
+          }
+        ]
+      },
+      "town/brush-at-door": {
+        "id": "town/brush-at-door",
+        "sender": "客栈洗碗人阿满",
+        "kind": "note",
+        "requires": {
+          "id": "town/teacup-left-handle",
+          "actions": [
+            "approve",
+            "reject",
+            "defer",
+            "written_reply"
+          ],
+          "days": 18
+        },
+        "results": {
+          "approve": "旧鞋刷借出，门边留出不碍路的位置。",
+          "reject": "鞋刷没借到，阿满按原清扫安排处理泥迹。",
+          "defer": "没有回复，店内没有因泥脚临时加收未约费用。"
+        },
+        "replies": [
+          {
+            "text": "由客栈自己买合用刷，公物不外借。",
+            "result": "店主自行承担经营用具，不算帮工欠下的开销。"
+          },
+          {
+            "text": "先用现有门垫，磨坏由店内补。",
+            "result": "清洁有实际工具，损耗不强转给来客。"
+          },
+          {
+            "text": "雨大时增加一次已商定的清扫。",
+            "result": "额外工作明确约好，不只喊阿满多顺手一下。"
+          }
+        ]
+      },
+      "town/goose-feather-quill": {
+        "id": "town/goose-feather-quill",
+        "sender": "抄书人苔丝",
+        "kind": "note",
+        "results": {
+          "approve": "笔具按实查看，玩笑不作向鹅或物主追责。",
+          "reject": "代问未获安排，苔丝自行核常用工具。",
+          "defer": "没有回话，坏字未被全归给羽毛来处。"
+        },
+        "replies": [
+          {
+            "text": "先换已有合用笔，眼下要抄的另排。",
+            "result": "工作用实际工具，不等玩笑变成结论。"
+          },
+          {
+            "text": "只核这支，不让萝莎收全镇羽毛。",
+            "result": "范围具体，不把私人笔坏变成公事征集。"
+          },
+          {
+            "text": "向萝莎当面解释即可，不另发告示。",
+            "result": "误会在实际知情者间说清，鹅继续做鹅。"
+          }
+        ]
+      },
+      "quietchoir/defer": {
+        "id": "quietchoir/defer",
+        "sender": "修士安瑟",
+        "kind": "letter",
+        "chain": "quietchoir",
+        "stage": 2,
+        "results": {
+          "approve": "小夹记录不同记法及来源，没有擅定唯一真本。",
+          "reject": "留夹没获准，阿满自己保存纸，安瑟不改他的记忆。",
+          "defer": "没有回话，安瑟先把自己的记法另写一张，不覆盖阿满那张。"
+        },
+        "replies": [
+          {
+            "text": "请每位讲述者确认愿否留名。",
+            "result": "愿留名的记来源，不愿者只记不具名讲述。"
+          },
+          {
+            "text": "先只记录口头差别。",
+            "result": "安瑟向阿满念回自己记下的差别，得到确认才保存。"
+          },
+          {
+            "text": "两种都唱一次，不评年代。",
+            "result": "大家听见不同尾句，只谈感受，没有凭喜欢判断哪种最古老。"
+          }
+        ]
+      }
+    }
   }
 ]

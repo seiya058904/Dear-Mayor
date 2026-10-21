@@ -1,0 +1,3359 @@
+{
+  "environment": {
+    "node": "v24.15.0",
+    "os": "win32 10.0.22631",
+    "cpu": "AMD Ryzen 7 9700X 8-Core Processor             ",
+    "browser": "156.0.8078.4"
+  },
+  "method": "Three independent cold contexts per device/profile. Gzip server; shared nominal 200000 bytes/s +150ms response latency, 50ms FIFO budget, worker requests included. Windows timers may reduce attained rate. Times are local controlled simulation, not production or hardware Android. Interactive is an actual saved decision after FCP and two animation frames. Complete offline time waits for SW ready and controller, then tests offline reload, other paper viewport and reply C.",
+  "rows": [
+    {
+      "phase": "after",
+      "sample": 0,
+      "mobile": false,
+      "slow": false,
+      "cpu": 1,
+      "document": 79.20000000298023,
+      "fonts": 181.29999999701977,
+      "offline": 304.20000000298023,
+      "fcp": 164,
+      "interactiveMs": 222.5,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 1,
+      "mobile": false,
+      "slow": false,
+      "cpu": 1,
+      "document": 76.59999999403954,
+      "fonts": 176.29999999701977,
+      "offline": 298.5,
+      "fcp": 156,
+      "interactiveMs": 201.09999999403954,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 2,
+      "mobile": false,
+      "slow": false,
+      "cpu": 1,
+      "document": 70.29999999701977,
+      "fonts": 177.5,
+      "offline": 302.3999999910593,
+      "fcp": 168,
+      "interactiveMs": 224.79999999701977,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 0,
+      "mobile": true,
+      "slow": false,
+      "cpu": 1,
+      "document": 72.6000000089407,
+      "fonts": 181.70000000298023,
+      "offline": 305.6000000089407,
+      "fcp": 152,
+      "interactiveMs": 206.40000000596046,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 1,
+      "mobile": true,
+      "slow": false,
+      "cpu": 1,
+      "document": 75.70000000298023,
+      "fonts": 189.5,
+      "offline": 313.5,
+      "fcp": 148,
+      "interactiveMs": 207,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 2,
+      "mobile": true,
+      "slow": false,
+      "cpu": 1,
+      "document": 71.20000000298023,
+      "fonts": 178.29999999701977,
+      "offline": 299.6000000089407,
+      "fcp": 156,
+      "interactiveMs": 217.70000000298023,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 0,
+      "mobile": false,
+      "slow": true,
+      "cpu": 4,
+      "document": 40470.29999999702,
+      "fonts": 40544,
+      "offline": 90428.29999999702,
+      "fcp": 40544,
+      "interactiveMs": 40600.59999999404,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 1,
+      "mobile": false,
+      "slow": true,
+      "cpu": 4,
+      "document": 40318.59999999404,
+      "fonts": 40396.70000000298,
+      "offline": 90221.29999999702,
+      "fcp": 40396,
+      "interactiveMs": 40449.70000000298,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 2,
+      "mobile": false,
+      "slow": true,
+      "cpu": 4,
+      "document": 40448.20000000298,
+      "fonts": 40518,
+      "offline": 90337.5,
+      "fcp": 40520,
+      "interactiveMs": 40571.90000000596,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 0,
+      "mobile": true,
+      "slow": true,
+      "cpu": 4,
+      "document": 40332.59999999404,
+      "fonts": 40413.59999999404,
+      "offline": 90255.59999999404,
+      "fcp": 40416,
+      "interactiveMs": 40471.70000000298,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 1,
+      "mobile": true,
+      "slow": true,
+      "cpu": 4,
+      "document": 40470,
+      "fonts": 40539.79999999702,
+      "offline": 90408.59999999404,
+      "fcp": 40536,
+      "interactiveMs": 40590.09999999404,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    },
+    {
+      "phase": "after",
+      "sample": 2,
+      "mobile": true,
+      "slow": true,
+      "cpu": 4,
+      "document": 40472.09999999404,
+      "fonts": 40541.70000000298,
+      "offline": 90304.20000000298,
+      "fcp": 40540,
+      "interactiveMs": 40594.09999999404,
+      "bodyTransferBytes": 14308623,
+      "headerTransferBytes": 4865,
+      "cacheDecodedBytes": 16070245,
+      "cache": [
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/approve.webp",
+          "decodedBytes": 88108
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background.webp",
+          "decodedBytes": 1739326
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/defer.webp",
+          "decodedBytes": 85438
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/apple-touch-icon.png",
+          "decodedBytes": 18449
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper-mobile.webp",
+          "decodedBytes": 1290128
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/background-wide.webp",
+          "decodedBytes": 1886514
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/reject.webp",
+          "decodedBytes": 89968
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/written_reply.webp",
+          "decodedBytes": 90802
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-Ba535Gfm.css",
+          "decodedBytes": 8742
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/assets/index-BtaAa2MV.js",
+          "decodedBytes": 2832322
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/note.webp",
+          "decodedBytes": 1312942
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/art/paper.webp",
+          "decodedBytes": 1163606
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon-32.png",
+          "decodedBytes": 1354
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.ico",
+          "decodedBytes": 4378
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/wenkai.woff2",
+          "decodedBytes": 5305668
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/favicon.svg",
+          "decodedBytes": 727
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/fonts/OFL.txt",
+          "decodedBytes": 5176
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-192.png",
+          "decodedBytes": 20533
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/icon-512.png",
+          "decodedBytes": 123721
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/index.html",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/site.webmanifest",
+          "decodedBytes": 280
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/",
+          "decodedBytes": 1010
+        },
+        {
+          "cache": "dear-mayor-fcefdc414870-%2F",
+          "url": "/build-info.json",
+          "decodedBytes": 43
+        }
+      ],
+      "requests": [
+        {
+          "url": "/",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/wenkai.woff2",
+          "bodyBytes": 5291372,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-BtaAa2MV.js",
+          "bodyBytes": 1097577,
+          "headerBytes": 208,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-Ba535Gfm.css",
+          "bodyBytes": 2746,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/sw.js",
+          "bodyBytes": 2142,
+          "headerBytes": 205,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background.webp",
+          "bodyBytes": 1739842,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper-mobile.webp",
+          "bodyBytes": 1290539,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/approve.webp",
+          "bodyBytes": 88084,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/reject.webp",
+          "bodyBytes": 89925,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/defer.webp",
+          "bodyBytes": 85349,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/written_reply.webp",
+          "bodyBytes": 90835,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/apple-touch-icon.png",
+          "bodyBytes": 18333,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/background-wide.webp",
+          "bodyBytes": 1887068,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/note.webp",
+          "bodyBytes": 1307836,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/art/paper.webp",
+          "bodyBytes": 1163960,
+          "headerBytes": 203,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon-32.png",
+          "bodyBytes": 1377,
+          "headerBytes": 199,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.ico",
+          "bodyBytes": 4371,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "bodyBytes": 351,
+          "headerBytes": 202,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/fonts/OFL.txt",
+          "bodyBytes": 2314,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-192.png",
+          "bodyBytes": 20367,
+          "headerBytes": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/icon-512.png",
+          "bodyBytes": 122740,
+          "headerBytes": 201,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/index.html",
+          "bodyBytes": 607,
+          "headerBytes": 198,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/site.webmanifest",
+          "bodyBytes": 218,
+          "headerBytes": 214,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/build-info.json",
+          "bodyBytes": 63,
+          "headerBytes": 204,
+          "encoding": "gzip"
+        }
+      ],
+      "offlineResizeReply": true
+    }
+  ]
+}

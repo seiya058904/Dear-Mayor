@@ -1,0 +1,35 @@
+{
+  "method": "Unmodified captured baseline production dist 804d09a -> current production dist on the same localhost origin. Two controlled tabs, waiting update, offline viewport/paper/reply, close tabs, new worker activation, exact catalog21 pending and offline real decision. Isolated contexts; no personal browser data.",
+  "rows": [
+    {
+      "prefix": "/",
+      "oldVersion": "b15f1bcf851f",
+      "nextVersion": "fcefdc414870",
+      "oldCacheNames": [
+        "dear-mayor-b15f1bcf851f"
+      ],
+      "cacheNames": [
+        "dear-mayor-b15f1bcf851f",
+        "dear-mayor-fcefdc414870-%2F"
+      ],
+      "oldTabsWaitingOffline": true,
+      "oldPendingExact": true,
+      "newWorkerOfflineDecision": true
+    },
+    {
+      "prefix": "/Dear-Mayor/",
+      "oldVersion": "b15f1bcf851f",
+      "nextVersion": "fcefdc414870",
+      "oldCacheNames": [
+        "dear-mayor-b15f1bcf851f"
+      ],
+      "cacheNames": [
+        "dear-mayor-b15f1bcf851f",
+        "dear-mayor-fcefdc414870-%2FDear-Mayor%2F"
+      ],
+      "oldTabsWaitingOffline": true,
+      "oldPendingExact": true,
+      "newWorkerOfflineDecision": true
+    }
+  ]
+}

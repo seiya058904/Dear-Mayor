@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import design from '../docs/V4-CAUSAL-PILOT.json' with { type: 'json' };
-import runtime from '../src/game/causal-pilot.json' with { type: 'json' };
+import allRuntime from '../src/game/causal-pilot.json' with { type: 'json' };
 import { currentDocument, decide, newGame } from '../src/game/engine';
 import { restore } from '../src/game/persistence';
 import { documents } from '../src/content';
@@ -14,6 +14,8 @@ import { createHash } from 'node:crypto';
 import historicalRenders from './fixtures/v5-historical-render-hashes.json';
 
 const cases = design.cases.filter(entry => ['clock', 'cellarmusic', 'bluewash', 'readaloud'].includes(entry.chain));
+// Keep the exact published V5/V6 table contract; later rules have their own tests.
+const runtime=allRuntime.filter(entry=>entry.introducedRevision<=21);
 function reach(target: string, source: string, action: Action, reply?: number, revision = 21) {
   let state = newGame(6271, revision);
   for (let n = 0; n < 1200 && state.current !== target; n++) {
@@ -84,7 +86,7 @@ test('V5 captured bytes, pending documents, six outcomes and history survive V6 
     assert.deepEqual(currentDocument(restore(JSON.stringify(state))),fixture.document);
     for(const [action,reply] of [['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const){
       const next=decide(state,state.current,action,reply);
-      assert.equal(next.catalogRevision,21);
+      assert.equal(next.catalogRevision,latestCatalogRevision);
       assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);
       assert.deepEqual(next.history.slice(0,state.history.length),state.history);
       assert.deepEqual(restore(JSON.stringify(next)),next);
@@ -136,7 +138,7 @@ for(const rule of runtime.filter(r=>r.introducedRevision===21)) test(`${rule.tar
   // Source happened in 20; only the following real decision upgrades to 21.
   state=decide(state,state.current,'approve',undefined,20);
   while(state.current!==rule.target)state=decide(state,state.current,'approve');
-  assert.equal(state.catalogRevision,21);
+  assert.equal(state.catalogRevision,latestCatalogRevision);
   assert.deepEqual(currentDocument(state).body,documents[rule.target].body);
   assert.deepEqual(currentDocument(restore(JSON.stringify(state))),currentDocument(state));
   // Even a source decided at the upgrade point cannot enable a catalog20 start.
@@ -144,7 +146,7 @@ for(const rule of runtime.filter(r=>r.introducedRevision===21)) test(`${rule.tar
   while(source21.current!==rule.source)source21=decide(source21,source21.current,'approve',undefined,20);
   source21=decide(source21,source21.current,'approve');
   while(source21.current!==rule.target)source21=decide(source21,source21.current,'approve');
-  assert.equal(source21.history.find(h=>h.id===rule.source)!.nextCatalogRevision,21);
+  assert.equal(source21.history.find(h=>h.id===rule.source)!.nextCatalogRevision,latestCatalogRevision);
   assert.deepEqual(currentDocument(source21).body,documents[rule.target].body);
   assert.deepEqual(currentDocument({...state,initialCatalogRevision:21}).body,documents[rule.target].body,'source20 cannot satisfy rule21');
 });

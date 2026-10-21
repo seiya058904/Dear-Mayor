@@ -14,7 +14,7 @@ export const Petition = forwardRef<
     >
       <picture>
         <source
-          media="(max-width: 720px)"
+          media="(max-width: 1199px), (max-height: 679px)"
           srcSet={`${import.meta.env.BASE_URL}art/paper-mobile.webp`}
         />
         <img

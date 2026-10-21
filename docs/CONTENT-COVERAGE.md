@@ -17,30 +17,30 @@
 | maxBodyCharacters | 204 |
 | previousBatchNodes | 1160 |
 | newNodesThisBatch | 0 |
-| changedPreviousMachineContractsThisBatch | 31 |
+| changedPreviousMachineContractsThisBatch | 6 |
 | standaloneItems | 586 |
-| unconditionalStandaloneItems | 514 |
-| conditionalEchoItems | 72 |
+| unconditionalStandaloneItems | 512 |
+| conditionalEchoItems | 74 |
 | gatedChainOpenings | 1 |
-| echoesPerRun | 18 |
+| echoesPerRun | 20 |
 | specialOrUpperLevelItems | 139 |
 | postExhaustionRepeatingVariants | 4 |
 | unionReachable | 1160 |
-| catalogRevision | 19 |
-| catalogCompatibilityFixtureCases | 207 |
+| catalogRevision | 22 |
+| catalogCompatibilityFixtureCases | 285 |
 | migrationFixtureCases | 55 |
 | v1FixtureCases | 16 |
 | v2FixtureCases | 20 |
 | v3FixtureCases | 19 |
 
-静态 1160 节点中，互斥故事分支与回声不能在同一局全见。单局 860 = 82×4 + 514 + 18。4 种耗尽后循环不计原创节点。
+静态 1160 节点中，互斥故事分支与回声不能在同一局全见。单局 860 = 82×4 + 512 + 20。4 种耗尽后循环不计原创节点。
 
 完整性错误：0；完全重复正文：0；四字片段 Jaccard ≥0.45 的可疑对：0。
 达到至少四节点的长重复句：0。均在 JSON 报告列出；未通过替换字符规避检测。
 
 1000+ 静态原创节点完整性门槛：PASS（当前 1160；全池结构与调度覆盖，不等于文学验收）。1000 次决定模拟包含循环，不能充作 1000 封原创。
 
-16 个 v1、20 个 v2、19 个 v3 固定样本及 176 个旧内容目录样本是冻结引擎生成的合法格式回归夹具，包含 v1→v2 前缀及耗尽/循环。不是收集的玩家个人数据。实际测试结果见 QA。
+16 个 v1、20 个 v2、19 个 v3 固定样本及 285 个旧内容目录样本是冻结引擎生成的合法格式回归夹具，包含 v1→v2 前缀及耗尽/循环。不是收集的玩家个人数据。实际测试结果见 QA。
 
 ## 二十种子长期模拟
 
@@ -50,20 +50,20 @@
 | 1 | 1000 | 860 | 1000 | 251 | 0 |
 | 2 | 1000 | 860 | 1000 | 251 | 0 |
 | 3 | 1000 | 860 | 1000 | 251 | 0 |
-| 4 | 1000 | 860 | 1000 | 251 | 0 |
+| 4 | 1000 | 860 | 1000 | 257 | 0 |
 | 5 | 1000 | 860 | 1000 | 251 | 0 |
 | 6 | 1000 | 860 | 1000 | 251 | 0 |
 | 7 | 1000 | 860 | 1000 | 251 | 0 |
 | 8 | 1000 | 860 | 1000 | 251 | 0 |
-| 9 | 1000 | 860 | 1000 | 251 | 0 |
+| 9 | 1000 | 860 | 1000 | 260 | 0 |
 | 10 | 1000 | 860 | 1000 | 251 | 0 |
 | 11 | 1000 | 860 | 1000 | 251 | 0 |
 | 12 | 1000 | 860 | 1000 | 251 | 0 |
 | 13 | 1000 | 860 | 1000 | 251 | 0 |
-| 14 | 1000 | 860 | 1000 | 251 | 0 |
-| 15 | 1000 | 860 | 1000 | 251 | 0 |
+| 14 | 1000 | 860 | 1000 | 259 | 0 |
+| 15 | 1000 | 860 | 1000 | 268 | 0 |
 | 16 | 1000 | 860 | 1000 | 251 | 0 |
-| 17 | 1000 | 860 | 1000 | 251 | 0 |
+| 17 | 1000 | 860 | 1000 | 265 | 0 |
 | 18 | 1000 | 860 | 1000 | 251 | 0 |
 | 19 | 1000 | 860 | 1000 | 251 | 0 |
 
@@ -332,7 +332,7 @@
 | lastloom/finale | 留下一张椅子的位置 | 织工绮蔻 | letter | 4 | — |
 | ferrydaughter/start | 女儿不想继承那支长篙 | 渡船人罗恩 | letter | 1 | — |
 | ferrydaughter/approve | 旧消息下来了，我还在岸边 | 渡船人罗恩 | letter | 2 | — |
-| ferrydaughter/reject | 我自己去把那张纸拿回了 | 渡船人罗恩 | letter | 2 | — |
+| ferrydaughter/reject | 我自己去把那张纸撤下了 | 渡船人罗恩 | letter | 2 | — |
 | ferrydaughter/defer | 她把篙放回了我的船 | 渡船人罗恩 | letter | 2 | — |
 | ferrydaughter/reply | 琴盒里有一条河 | 渡船人罗恩 | letter | 2 | — |
 | ferrydaughter/continuation | 渡口少一双手也要照常开船 | 渡船人罗恩 | letter | 3 | — |
@@ -703,7 +703,7 @@
 | town/wrong-wedding | 给马的请帖 | 驿夫塞缪尔 | archive | 独立 | — |
 | town/inn-half-song | 只唱到一半的歌 | 客栈洗碗人阿满 | letter | 独立 | — |
 | town/snow-wood | 冬柴里的一根梁 | 木匠玛塔 | letter | 独立 | — |
-| town/missing-page-two | 第二页在第一页里面 | 抄书人苔丝 | archive | 独立 | — |
+| town/missing-page-two | 第二页在第一页里面 | 抄书人苔丝 | archive | 独立 | town/goose-feather-quill: approve/reject/defer/written_reply +12天 |
 | town/bread-end | 面包头不该没人要 | 面包师彼得 | note | 独立 | — |
 | town/ferry-dog | 狗不上船的理由 | 渡船人罗恩 | letter | 独立 | — |
 | town/old-date | 日期被油抹掉了 | 没有署名的旧信 | archive | 独立 | — |
@@ -840,7 +840,7 @@
 | town/pretend-invitation | 戏里的请帖不能领真晚饭 | 巡游戏班学徒洛洛 | archive | 独立 | — |
 | town/sugar-on-register | 糖粉不是新落款 | 镇厅书记官露西安 | note | 独立 | — |
 | town/dry-socks-stop | 我想在路上换一双干袜 | 驿夫塞缪尔 | letter | 独立 | — |
-| town/brush-at-door | 泥先住在鞋上就好 | 客栈洗碗人阿满 | note | 独立 | — |
+| town/brush-at-door | 泥先住在鞋上就好 | 客栈洗碗人阿满 | note | 独立 | town/teacup-left-handle: approve/reject/defer/written_reply +18天 |
 | town/low-stirring-seat | 汤还没好，我的腿先想坐了 | 厨娘妮娜 | letter | 独立 | — |
 | town/mill-funnel | 面粉不需要第二顶帽子 | 磨坊主格里特 | note | 独立 | — |
 | town/windy-stall-cloth | 风把我的摊布穿走了 | 菜贩萝莎 | letter | 独立 | — |

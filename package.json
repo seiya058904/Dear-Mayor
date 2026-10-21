@@ -7,10 +7,12 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build && node scripts/build-sw.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "tsx --test tests/engine.test.ts tests/expansion.test.ts tests/v2-compatibility.test.ts tests/catalog-compatibility.test.ts tests/causal-pilot.test.ts",
+    "test": "tsx --test tests/engine.test.ts tests/expansion.test.ts tests/v2-compatibility.test.ts tests/catalog-compatibility.test.ts tests/causal-pilot.test.ts tests/post-v6.test.ts",
     "catalog:snapshot": "tsx scripts/snapshot-catalog.ts",
     "content:report": "tsx scripts/content-report.ts",
     "content:sample": "tsx scripts/content-sample.ts",
+    "content:impact": "tsx scripts/content-impact.ts",
+    "content:audit-sample": "tsx scripts/audit-sample.ts",
     "bench": "tsx scripts/benchmark.ts",
     "test:e2e": "playwright test",
     "check": "tsc -b && npm test"

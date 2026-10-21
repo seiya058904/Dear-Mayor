@@ -68,11 +68,11 @@ Approval, rejection, silence, and specific instructions are tracked separately. 
   <tr>
     <td width="50%" valign="top">
       <h3>📜 1,160 Authored Nodes</h3>
-      <p>Eighty-two branching storylines, 514 unconditional standalone letters, and 72 conditional echo nodes. The writing is authored and bundled with the game, not generated on demand.</p>
+      <p>Eighty-two branching storylines, 512 unconditional standalone letters, 72 mutually exclusive echo nodes, and two delayed return letters. The writing is authored and bundled with the game, not generated on demand.</p>
     </td>
     <td width="50%" valign="top">
       <h3>🧩 Consequences That Return</h3>
-      <p>Each storyline unfolds through four experienced stages: an opening request, a decision branch, a follow-up, and a resolution.</p>
+      <p>Each storyline unfolds through four experienced stages. Eight relationships now carry exact memories of approval, refusal, silence, or each of the three instructions into a later letter.</p>
     </td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@ Approval, rejection, silence, and specific instructions are tracked separately. 
   </tr>
 </table>
 
-The desktop composition is based on a 1672 × 941 reference layout. The portrait interface is an additional mobile adaptation, not a claim of pixel-perfect reproduction.
+These screenshots show the current built game in Chromium. The desktop composition is based on a 1672 × 941 reference layout. Narrow screens use flowing paper with readable text and room around its decoration. This adaptation does not claim pixel-perfect reproduction.
 
 <a id="play-or-run-locally"></a>
 ## 🚀 Play or Run Locally
@@ -156,6 +156,8 @@ npm run check                # TypeScript and engine regression tests
 npm run build                # Production build, including the offline service worker
 npx playwright install chromium
 npm run test:e2e             # Browser interaction and offline tests
+npm run content:report       # Regenerate the current catalog inventory
+npm run content:impact       # Compare visible causal coverage with catalog 21
 npm run preview              # Preview the production build
 ~~~
 
@@ -173,6 +175,8 @@ Progress is stored locally for the **current browser and site origin**. The host
 
 - Clearing site data may erase your progress. There is no cloud sync or cross-device save transfer.
 - **Restart Season** replaces the current run only after confirmation.
+- If an unreadable save cannot be backed up, its original text stays protected until you explicitly discard it. The recovery dialog also offers an export.
+- Updates preserve the wording and options of the letter already on your desk. Newly added callbacks apply to new runs with compatible content rules.
 - Offline continuation requires a successful initial load and complete resource caching in the production build.
 - Editing the same run in multiple tabs at once is not supported.
 
@@ -192,6 +196,7 @@ For contributors and future iterations:
 
 - [Content and save contracts](docs/CONTENT.md) · [Design decisions](docs/DECISIONS.md) · [Repository guidance](AGENTS.md)
 - [Art and asset provenance](docs/ASSETS.md) · [Test and release evidence](docs/QA.md)
+- [Post-V6 audit](docs/POST-V6-AUDIT.md) · [Visible causal coverage](docs/CONTENT-IMPACT.md)
 
 ## 📖 Assets and Usage
 

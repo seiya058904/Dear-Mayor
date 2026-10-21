@@ -391,7 +391,7 @@ h1.long-title {
   border: 1px solid #a9692b;
   padding: 12px 18px;
   font-size: 19px;
-  z-index: 8;
+  z-index: 2;
 }
 .save-warning button {
   border: 0;
@@ -402,7 +402,7 @@ h1.long-title {
 .signature {
   top: 674px;
 }
-@media (max-width: 720px) {
+@media (max-width: 1199px), (max-height: 679px) {
   :root {
     background: #c38d58;
   }
@@ -420,6 +420,8 @@ h1.long-title {
     top: auto;
     transform: none;
     width: 100%;
+    max-width: 720px;
+    margin-inline: auto;
     height: auto;
     min-height: calc(100svh - 70px);
   }
@@ -457,7 +459,7 @@ h1.long-title {
     font-size: 26px;
     line-height: 1.4;
     letter-spacing: 1px;
-    margin: 0 -8px 22px;
+    margin: 0 0 22px;
   }
   .letter-source {
     position: static;
@@ -496,18 +498,22 @@ h1.long-title {
     left: auto;
     top: auto;
     width: 100%;
+    max-width: 560px;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px 8px;
-    margin: 12px 0;
+    margin: 12px auto;
   }
   .decision,
   .decision-reject,
   .decision-defer,
   .decision-written_reply {
     width: 100%;
-    height: 60px;
+    min-width: 0;
+    height: auto;
+    min-height: 60px;
+    aspect-ratio: 271 / 95;
   }
   .restart-link {
     position: relative;
@@ -581,12 +587,12 @@ h1.long-title {
     scroll-behavior: auto !important;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 1199px), (max-height: 679px) {
   .game-viewport {
     height: auto;
   }
   .petition {
-    padding: 98px 52px 82px;
+    padding: 130px 18% 120px;
     min-height: 680px;
   }
   .letter-date {
@@ -605,7 +611,8 @@ h1.long-title {
   }
   .reply-note {
     background-image: url("/art/paper-mobile.webp");
-    padding: 65px 52px;
+    max-width: 720px;
+    padding: 80px clamp(54px, 18vw, 130px);
   }
   .reply-note h2 {
     font-size: 24px;
@@ -616,5 +623,27 @@ h1.long-title {
   .letter-reading {
     font-size: 17px;
     line-height: 1.85;
+  }
+}
+.recovery-dialog div {
+  flex-direction: column;
+  align-items: stretch;
+}
+.restart-dialog button {
+  min-height: 44px;
+}
+@media (min-width: 721px) and (max-width: 1199px) {
+  .letter-reading {
+    font-size: 20px;
+  }
+  .petition {
+    min-height: 760px;
+    padding-top: 115px;
+  }
+  .letter-date, .signature, .letter-source {
+    font-size: 18px;
+  }
+  .reply-options button {
+    font-size: 20px;
   }
 }

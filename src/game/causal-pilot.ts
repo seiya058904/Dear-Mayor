@@ -9,7 +9,7 @@ function trustedRevision(value: number | undefined, introduced: number): boolean
 /** A small, versioned prose echo. Every uncertain history boundary keeps the original letter. */
 export function withCausalPilot(state: GameState, doc: Document): Document {
   const caseFile = pilot.find(entry => entry.target === doc.id);
-  if (!caseFile || !state.current.endsWith('/finale')) return doc;
+  if (!caseFile || state.current !== doc.id) return doc;
   const revision = caseFile.introducedRevision;
   if (state.migrationVersion !== undefined ||
       !trustedRevision(state.initialCatalogRevision, revision) ||
@@ -18,6 +18,8 @@ export function withCausalPilot(state: GameState, doc: Document): Document {
   const sources = state.history.filter(entry => entry.id === caseFile.source);
   if (sources.length !== 1) return doc;
   const source = sources[0];
+  if ('minimumDays' in caseFile && typeof caseFile.minimumDays === 'number' &&
+      (!Number.isInteger(source.day) || !Number.isInteger(state.day) || source.day + caseFile.minimumDays > state.day)) return doc;
   if (!trustedRevision(source.nextCatalogRevision, revision) ||
       source.nextCatalogRevision! > state.catalogRevision ||
       source.nextCatalogRevision! < state.initialCatalogRevision) return doc;
