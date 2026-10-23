@@ -352,5 +352,49 @@
     ],
     "introducedRevision": 22,
     "anchor": "黛禾来吃饭，我准备问三十件学艺的事，她先问汤。"
+  },
+  {
+    "source": "duettempo/continuation",
+    "target": "duettempo/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "维奥领到普通听众席位，空着双手听完弦芽的独奏。",
+        "draft": "上次空手坐在台下，我才发觉她收住尾音时，听众也会跟着静一会儿。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "代报名未获安排，维奥没领到席位，留在家里试着慢奏自己的曲子。",
+        "draft": "上次没领到席位，我在家试着慢奏；才慢半句，就忍不住想替自己找个快起来的理由。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "报名没有回音，维奥没有占用未确认的座位，错过了这次独奏。",
+        "draft": "上次报名没回，我错过了独奏。见面时我老实说没听见，没拿想象里的掌声夸她。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "维奥坐在后排，听见弦芽换气前轻轻收住尾音，散场后问了她这一处。",
+        "draft": "上次在后排听见那一下收音，我散场就问。她笑我终于问的是一句曲子，不是还能不能快点。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "弦芽愿意另约，私下把同一小段吹了两遍，让维奥听长短的区别。",
+        "draft": "私下听她吹了两遍，第二遍短一点，我反倒听出第一遍为什么要多留那口气。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "维奥留在家里独奏，给最容易赶快的一小段画了停顿记号。",
+        "draft": "上次独自练时画的停顿记号还在。她看见问我这是不是一只趴下的小虫，我说它专管拦我的手。"
+      }
+    ],
+    "introducedRevision": 23,
+    "anchor": "我与弦芽又试了一支短曲。"
   }
 ]

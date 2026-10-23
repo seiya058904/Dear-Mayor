@@ -83839,15 +83839,15 @@
     ]
   },
   "after": {
-    "revision": 22,
+    "revision": 23,
     "summary": {
       "nodes": 1160,
-      "visibleSourceNodes": 90,
-      "exactDelayedEchoSources": 8,
-      "sixWayDistinguishableSources": 20,
-      "replyIndexVisibleSources": 20,
-      "visibleOutcomeCases": 540,
-      "hiddenOutcomeCases": 2916,
+      "visibleSourceNodes": 91,
+      "exactDelayedEchoSources": 9,
+      "sixWayDistinguishableSources": 21,
+      "replyIndexVisibleSources": 21,
+      "visibleOutcomeCases": 546,
+      "hiddenOutcomeCases": 2910,
       "saveOnlyOutcomeCases": 3504,
       "unconditionalStandaloneNodes": 512,
       "conditionalNodes": 74,
@@ -83857,8 +83857,8 @@
       "category": {
         "chain": {
           "nodes": 574,
-          "visibleSources": 88,
-          "visibleOutcomes": 528
+          "visibleSources": 89,
+          "visibleOutcomes": 534
         },
         "conditional": {
           "nodes": 74,
@@ -83884,8 +83884,8 @@
         },
         "3": {
           "nodes": 82,
-          "visibleSources": 6,
-          "visibleOutcomes": 36
+          "visibleSources": 7,
+          "visibleOutcomes": 42
         },
         "4": {
           "nodes": 82,
@@ -83906,8 +83906,8 @@
         },
         "letter": {
           "nodes": 942,
-          "visibleSources": 83,
-          "visibleOutcomes": 498
+          "visibleSources": 84,
+          "visibleOutcomes": 504
         },
         "note": {
           "nodes": 79,
@@ -83993,6 +83993,16 @@
         "visibleText": "渡口添的班次纸被风卷起一角，黛禾进门先问我要不要一颗钉子，没有挽袖去扶船。"
       },
       {
+        "source": "duettempo/continuation",
+        "target": "duettempo/finale",
+        "action": "approve",
+        "reply": null,
+        "sourceDay": 86,
+        "targetDay": 98,
+        "sourceResult": "维奥领到普通听众席位，空着双手听完弦芽的独奏。",
+        "visibleText": "上次空手坐在台下，我才发觉她收住尾音时，听众也会跟着静一会儿。"
+      },
+      {
         "source": "town/goose-feather-quill",
         "target": "town/missing-page-two",
         "action": "approve",
@@ -84071,6 +84081,16 @@
         "targetDay": 65,
         "sourceResult": "添说明未获准，罗恩向乘客当面告知实际可接趟次。",
         "visibleText": "班次没添在牌上，我便当面数给乘客听。黛禾经过时替我捡了个掉下的汤勺，没被算进下一趟人手。"
+      },
+      {
+        "source": "duettempo/continuation",
+        "target": "duettempo/finale",
+        "action": "reject",
+        "reply": null,
+        "sourceDay": 86,
+        "targetDay": 98,
+        "sourceResult": "代报名未获安排，维奥没领到席位，留在家里试着慢奏自己的曲子。",
+        "visibleText": "上次没领到席位，我在家试着慢奏；才慢半句，就忍不住想替自己找个快起来的理由。"
       },
       {
         "source": "town/goose-feather-quill",
@@ -84153,6 +84173,16 @@
         "visibleText": "说明的信没回，我没再接忙不过来的载运。黛禾来的那天，汤还在锅里，不用捞一碗路上喝。"
       },
       {
+        "source": "duettempo/continuation",
+        "target": "duettempo/finale",
+        "action": "defer",
+        "reply": null,
+        "sourceDay": 86,
+        "targetDay": 98,
+        "sourceResult": "报名没有回音，维奥没有占用未确认的座位，错过了这次独奏。",
+        "visibleText": "上次报名没回，我错过了独奏。见面时我老实说没听见，没拿想象里的掌声夸她。"
+      },
+      {
         "source": "town/goose-feather-quill",
         "target": "town/missing-page-two",
         "action": "defer",
@@ -84231,6 +84261,16 @@
         "targetDay": 65,
         "sourceResult": "需要的人手按实际约定，不靠亲属关系补缺。",
         "visibleText": "现在要人帮一趟，我先问时辰和工钱。黛禾进门时只带琴盒，没有替我塞进一张值船单。"
+      },
+      {
+        "source": "duettempo/continuation",
+        "target": "duettempo/finale",
+        "action": "written_reply",
+        "reply": 0,
+        "sourceDay": 86,
+        "targetDay": 98,
+        "sourceResult": "维奥坐在后排，听见弦芽换气前轻轻收住尾音，散场后问了她这一处。",
+        "visibleText": "上次在后排听见那一下收音，我散场就问。她笑我终于问的是一句曲子，不是还能不能快点。"
       },
       {
         "source": "town/goose-feather-quill",
@@ -84313,6 +84353,16 @@
         "visibleText": "我把真需要两人的趟次圈出来，才发现有几回独自也能慢慢办。黛禾笑我终于肯承认嗓门不算人手。"
       },
       {
+        "source": "duettempo/continuation",
+        "target": "duettempo/finale",
+        "action": "written_reply",
+        "reply": 1,
+        "sourceDay": 86,
+        "targetDay": 98,
+        "sourceResult": "弦芽愿意另约，私下把同一小段吹了两遍，让维奥听长短的区别。",
+        "visibleText": "私下听她吹了两遍，第二遍短一点，我反倒听出第一遍为什么要多留那口气。"
+      },
+      {
         "source": "town/goose-feather-quill",
         "target": "town/missing-page-two",
         "action": "written_reply",
@@ -84391,6 +84441,16 @@
         "targetDay": 65,
         "sourceResult": "罗恩拒接多余行程，没有把已收的钱变成女儿的义务。",
         "visibleText": "多出来的行程我婉拒了。有位客人又问黛禾在不在，我说她回来吃饭，手里的空碗先递给她。"
+      },
+      {
+        "source": "duettempo/continuation",
+        "target": "duettempo/finale",
+        "action": "written_reply",
+        "reply": 2,
+        "sourceDay": 86,
+        "targetDay": 98,
+        "sourceResult": "维奥留在家里独奏，给最容易赶快的一小段画了停顿记号。",
+        "visibleText": "上次独自练时画的停顿记号还在。她看见问我这是不是一只趴下的小虫，我说它专管拦我的手。"
       },
       {
         "source": "town/goose-feather-quill",
@@ -149490,68 +149550,80 @@
         "stage": 3,
         "kind": "letter",
         "category": "chain",
-        "distinctFutureChoiceSignatures": 1,
+        "distinctFutureChoiceSignatures": 6,
         "sharedEventFollowups": [],
         "choices": [
           {
             "action": "approve",
             "reply": null,
-            "classification": "HIDDEN_STATE_ONLY",
+            "classification": "VISIBLE",
             "replyIndexAffectsFuture": null,
-            "sourceResultReadByRenderer": false,
+            "sourceResultReadByRenderer": true,
             "futureIds": [],
             "schedule": [],
-            "text": []
+            "text": [
+              "duettempo/finale: 上次空手坐在台下，我才发觉她收住尾音时，听众也会跟着静一会儿。"
+            ]
           },
           {
             "action": "reject",
             "reply": null,
-            "classification": "HIDDEN_STATE_ONLY",
+            "classification": "VISIBLE",
             "replyIndexAffectsFuture": null,
-            "sourceResultReadByRenderer": false,
+            "sourceResultReadByRenderer": true,
             "futureIds": [],
             "schedule": [],
-            "text": []
+            "text": [
+              "duettempo/finale: 上次没领到席位，我在家试着慢奏；才慢半句，就忍不住想替自己找个快起来的理由。"
+            ]
           },
           {
             "action": "defer",
             "reply": null,
-            "classification": "HIDDEN_STATE_ONLY",
+            "classification": "VISIBLE",
             "replyIndexAffectsFuture": null,
-            "sourceResultReadByRenderer": false,
+            "sourceResultReadByRenderer": true,
             "futureIds": [],
             "schedule": [],
-            "text": []
+            "text": [
+              "duettempo/finale: 上次报名没回，我错过了独奏。见面时我老实说没听见，没拿想象里的掌声夸她。"
+            ]
           },
           {
             "action": "written_reply",
             "reply": 0,
-            "classification": "HIDDEN_STATE_ONLY",
-            "replyIndexAffectsFuture": false,
-            "sourceResultReadByRenderer": false,
+            "classification": "VISIBLE",
+            "replyIndexAffectsFuture": true,
+            "sourceResultReadByRenderer": true,
             "futureIds": [],
             "schedule": [],
-            "text": []
+            "text": [
+              "duettempo/finale: 上次在后排听见那一下收音，我散场就问。她笑我终于问的是一句曲子，不是还能不能快点。"
+            ]
           },
           {
             "action": "written_reply",
             "reply": 1,
-            "classification": "HIDDEN_STATE_ONLY",
-            "replyIndexAffectsFuture": false,
-            "sourceResultReadByRenderer": false,
+            "classification": "VISIBLE",
+            "replyIndexAffectsFuture": true,
+            "sourceResultReadByRenderer": true,
             "futureIds": [],
             "schedule": [],
-            "text": []
+            "text": [
+              "duettempo/finale: 私下听她吹了两遍，第二遍短一点，我反倒听出第一遍为什么要多留那口气。"
+            ]
           },
           {
             "action": "written_reply",
             "reply": 2,
-            "classification": "HIDDEN_STATE_ONLY",
-            "replyIndexAffectsFuture": false,
-            "sourceResultReadByRenderer": false,
+            "classification": "VISIBLE",
+            "replyIndexAffectsFuture": true,
+            "sourceResultReadByRenderer": true,
             "futureIds": [],
             "schedule": [],
-            "text": []
+            "text": [
+              "duettempo/finale: 上次独自练时画的停顿记号还在。她看见问我这是不是一只趴下的小虫，我说它专管拦我的手。"
+            ]
           }
         ]
       },

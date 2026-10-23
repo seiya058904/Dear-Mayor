@@ -5,7 +5,8 @@ import {newGame,decide,currentDocument} from '../src/game/engine';
 import {documents} from '../src/content';
 import pilot from '../src/game/causal-pilot.json' with {type:'json'};
 import fixtures from './fixtures/catalog-21-audit-saves.json' with {type:'json'};
-const key='dear-mayor:save:v1',rules=pilot.filter(r=>r.introducedRevision===22);
+import editorial22 from './fixtures/catalog-22-editorial-saves.json' with {type:'json'};
+const key='dear-mayor:save:v1',rules=pilot.filter(r=>r.introducedRevision>=22);
 const choices=[['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const;
 for(const motion of ['reduce','no-preference'] as const)
 for(const [action,label] of [['approve','批准'],['reject','不批准'],['defer','搁置']] as const)
@@ -68,7 +69,7 @@ for(const rule of rules)for(let v=0;v<6;v++)test(`post-V6 exact six-way offline 
  await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.at(-1).result,key)).toBe(doc.replies[2].result);
  await page.reload();await expect(page.locator('.save-warning')).toHaveCount(0);expect(errors).toEqual([]);
 });
-for(const fixture of fixtures)test(`post-V6 old full pending ${fixture.name}`,async({page})=>{
+for(const fixture of [...fixtures,...editorial22.pending])test(`post-V6 old full pending ${fixture.name}`,async({page})=>{
  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');const raw=JSON.stringify(fixture.state);
  await page.evaluate(({key,raw})=>localStorage.setItem(key,raw),{key,raw});await page.reload();
  await expect(page.locator('h1')).toHaveText(fixture.document.title);await expect(page.locator('.signature')).toHaveText(fixture.document.sender);

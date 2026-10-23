@@ -232,11 +232,13 @@ test('v4 design-only causal pilot has 8 reachable stage-three sources and distin
  assert.equal(pilot.runtimeEnabled,false);assert.equal(pilot.cases.length,8);
  for(const c of pilot.cases){assert.equal(documents[c.source].stage,3);assert.equal(documents[c.target].stage,4);assert.equal(c.variants.length,6);assert.equal(new Set(c.variants.map(v=>v.draft)).size,6);}
  for(let variant=0;variant<6;variant++){
-  const action:Action=variant<3?actions[variant]:'written_reply';let s=newGame(10531);const seen=new Set();
+  // This archived V4 proposal describes catalog19 outcomes, before later edits.
+  // Keep testing that exact historical route; catalog23 has separate live tests.
+  const action:Action=variant<3?actions[variant]:'written_reply';let s=newGame(10531,19);const seen=new Set();
   for(let i=0;i<860;i++){
    const c=pilot.cases.find(c=>c.target===s.current);
    if(c){const v=c.variants[variant],h=s.history.find(h=>h.id===c.source);assert.ok(h);assert.equal(h.action,v.action);assert.equal(h.reply??null,v.reply);assert.equal(h.result,v.sourceResult);assert.ok(s.day>=h.day);assert.deepEqual(restore(JSON.stringify(s)),s);seen.add(c.target);}
-   s=decide(s,s.current,action,variant<3?undefined:variant-3);
+   s=decide(s,s.current,action,variant<3?undefined:variant-3,19);
   }
   assert.equal(seen.size,8);
  }

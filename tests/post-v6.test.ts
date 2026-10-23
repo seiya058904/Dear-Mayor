@@ -13,10 +13,55 @@ import {withCausalPilot} from '../src/game/causal-pilot';
 import pilot from '../src/game/causal-pilot.json' with {type:'json'};
 import fixtures from './fixtures/catalog-21-audit-saves.json' with {type:'json'};
 import oldStreams from './fixtures/catalog-1-21-render-streams.json' with {type:'json'};
+import editorial22 from './fixtures/catalog-22-editorial-saves.json' with {type:'json'};
 import type {Action,GameState} from '../src/game/types';
 import {impactReport} from '../scripts/content-impact';
 
 const choices=[['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const;
+test('catalog23 editorial keeps every catalog22 stream and the 18 pre-edit pending documents',()=>{
+ assert.equal(createHash('sha256').update(readFileSync('tests/fixtures/catalog-22-editorial-saves.json')).digest('hex'),readFileSync('tests/fixtures/catalog-22-editorial-saves.sha256','utf8').trim());
+ assert.equal(editorial22.pending.length,18);
+ for(const row of editorial22.streams){
+  let state=newGame(6271,22),hash=createHash('sha256'),count=0;
+  while(!state.current.startsWith('season/')){
+   assert.ok(count++<1160);hash.update(JSON.stringify(currentDocument(state))+'\n');
+   const [action,reply]=choices[row.variant];state=decide(state,state.current,action,reply,22);
+  }
+  assert.equal(count,row.count);assert.equal(hash.digest('hex'),row.documentsSHA256);
+  assert.equal(createHash('sha256').update(JSON.stringify(state)).digest('hex'),row.stateSHA256);
+ }
+ for(const fixture of editorial22.pending){
+  const state=restore(JSON.stringify(fixture.state));assert.deepEqual(currentDocument(state),fixture.document,fixture.name);
+  for(const [action,reply] of choices){
+   const next=decide(state,state.current,action,reply);
+   assert.equal(next.catalogRevision,latestCatalogRevision);
+   assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);
+   assert.deepEqual(restore(JSON.stringify(next)),next);
+  }
+ }
+});
+test('catalog23 duet remembers six real choices; old starts and ambiguous histories keep the static letter',()=>{
+ const rule=pilot.find(r=>r.introducedRevision===23)!;
+ assert.equal(rule.source,'duettempo/continuation');assert.equal(rule.variants.length,6);
+ for(let v=0;v<6;v++)for(const seed of [0,37,6271,10531]){
+  const state=reach(rule.target,rule.source,v,seed,23),doc=currentDocument(state),variant=rule.variants[v];
+  const source=state.history.find(h=>h.id===rule.source)!;
+  assert.equal(source.result,variant.sourceResult);assert.equal(source.action,variant.action);assert.equal(source.reply??null,variant.reply);
+  assert.ok(doc.body[0].includes(variant.draft));
+  for(const other of rule.variants.filter(x=>x!==variant))assert.ok(!doc.body[0].includes(other.draft));
+  assert.deepEqual(currentDocument(restore(JSON.stringify(state))),doc);
+  const base=documents[rule.target];
+  for(const patch of [{initialCatalogRevision:22},{catalogRevision:22},{history:state.history.filter(h=>h.id!==rule.source)},{history:[...state.history,source]},{history:state.history.map(h=>h.id===rule.source?{...h,result:'untrusted'}:h)}])assert.deepEqual(withCausalPilot({...state,...patch},base),base);
+  for(const [action,reply] of choices){const next=decide(state,state.current,action,reply);assert.deepEqual(restore(JSON.stringify(next)),next);}
+ }
+ const mixed=reach(rule.source,rule.source,0,6271,22);
+ let next=decide(mixed,mixed.current,'approve');
+ while(next.current!==rule.target)next=decide(next,next.current,'approve');
+ assert.deepEqual(currentDocument(next).body,documents[rule.target].body);
+ assert.deepEqual(currentDocument(restore(JSON.stringify(next))),currentDocument(next));
+ assert.equal(documents['eleventh/school-quiet-bell'].replies[0].text,'请埃芙在钟前等候，另记真实时辰。');
+ assert.equal(catalogAt(22).letters['eleventh/school-quiet-bell'].replies[0].text,'由我在钟前等候，另记真实时辰。');
+});
 test('every catalog1-21 full six-policy run preserves 81,168 baseline pending documents and exhausted states',()=>{
  assert.equal(createHash('sha256').update(readFileSync('tests/fixtures/catalog-1-21-render-streams.json')).digest('hex'),readFileSync('tests/fixtures/catalog-1-21-render-streams.sha256','utf8').trim());
  assert.equal(oldStreams.rows.length,126);
@@ -81,7 +126,7 @@ test('catalog22 adds four exact six-way echoes without changing any V5/V6 rule o
  assert.equal(rules.length,4);assert.equal(rules.flatMap(r=>r.variants).length,24);
  assert.equal(Object.keys(documents).length,1160);assert.equal(chains.length,82);
  for(const rule of rules){
-  assert.equal(rule.introducedRevision,latestCatalogRevision);
+  assert.equal(rule.introducedRevision,22);
   assert.equal(documents[rule.target].body[0].split(rule.anchor).length,2);
   assert.equal(new Set(rule.variants.map(v=>v.draft)).size,6);
   for(let v=0;v<6;v++){
@@ -143,7 +188,7 @@ test('catalog21 full fixtures were captured before edits and retain every visibl
  for(const fixture of fixtures){
   const state=restore(JSON.stringify(fixture.state));assert.deepEqual(currentDocument(state),fixture.document,fixture.name);
   assert.deepEqual(currentDocument(restore(JSON.stringify(state))),fixture.document);
-  for(const [action,reply] of choices){const next=decide(state,state.current,action,reply);assert.equal(next.catalogRevision,22);assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);assert.deepEqual(restore(JSON.stringify(next)),next);}
+  for(const [action,reply] of choices){const next=decide(state,state.current,action,reply);assert.equal(next.catalogRevision,latestCatalogRevision);assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);assert.deepEqual(restore(JSON.stringify(next)),next);}
  }
 });
 test('20 seeds ×1000 mixed decisions: 860 authored, six choices, no sibling/repeat/stall, pending drained and checkpoints replay',()=>{
