@@ -47,7 +47,9 @@ export default function App() {
       ?.querySelector<HTMLElement>("h1")
       ?.focus({ preventScroll: true });
   }, [doc.id]);
-  useEffect(() => {
+  // Apply the design scale before the first paint, including when the web font
+  // is already ready. A passive effect can expose a frame at the default scale.
+  useLayoutEffect(() => {
     const resize = () => {
       const scale = Math.min(
         window.innerWidth / 1672,

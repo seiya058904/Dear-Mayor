@@ -19,7 +19,10 @@ const originalArt = new Set(['background','note','paper','paper-mobile','approve
 for (const png of originalArt) {
   if (!paths.includes(png.replace(/\.png$/, '.webp'))) throw new Error(`Missing lossless alternative for ${png}`);
 }
-const urls = paths.filter(p => !originalArt.has(p)).map((p) => "./" + p.replace(/^dist\//, ""));
+// Keep the source font available, like the original PNGs, but cache only its
+// verified web subset. It includes all current/frozen prose and UI characters.
+if (!paths.includes('dist/fonts/wenkai-game.woff2')) throw new Error('Missing game font');
+const urls = paths.filter(p => !originalArt.has(p) && p !== 'dist/fonts/wenkai.woff2').map((p) => "./" + p.replace(/^dist\//, ""));
 await writeFile(
   "dist/build-info.json",
   JSON.stringify({ version, commit: process.env.GITHUB_SHA ?? "local" }),

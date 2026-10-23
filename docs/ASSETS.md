@@ -10,6 +10,7 @@
 | `public/art/paper.png` | filled_paper 经内置 imagegen 编辑，移除全部文字，保留装饰框、百合、分隔线、红章与透明边缘 |
 | `public/art/paper-mobile.png` | 桌面动态纸面经内置 imagegen 生成竖版，移除内部固定分隔线与红章，避免随长文拉伸后压字 |
 | `public/fonts/wenkai.woff2` | LXGWWenKaiLite-Regular.ttf 完整字符集转换为 WOFF2，未删字；原 OFL 随包保留 |
+| `public/fonts/wenkai-game.woff2` | 从上述原件派生的网页子集；覆盖当前/历史内容、界面和动态日期字符，保留字形、度量及 hinting；仅此文件用于页面与离线缓存 |
 
 ## 生成提示词
 
@@ -24,6 +25,8 @@
 ## 字体
 
 来源：[LXGW WenKai Lite 官方仓库](https://github.com/lxgw/LxgwWenKai-Lite)。使用其 Regular 完整字体，以 FontTools 4.67.0 / Brotli 1.2.0 转为网页 WOFF2（约 5.3 MB，原 TTF 约 13.9 MB），仅作格式转换。它是可读的风格替代，不宣称与参考图字形相同。许可见 `public/fonts/OFL.txt`。
+
+2026-10-23 网页交付子集：原件和 OFL 原样保留，`scripts/subset-font.py` 使用独立的 FontTools 4.60.1 工具环境生成 `wenkai-game.woff2`，不增加 npm 或 CI 安装依赖。OFL 文件的附加许可明确包含仅用于网页交付的子集。生成器保留所有布局特性、名称、hinting，并重新打开产物逐字形校验轮廓、横纵度量和指令；校验清单见 `scripts/font-coverage.json`。`npm run check` 扫描整个 `src/`（含冻结引擎与目录），新增字符不在现有覆盖内时必须重新生成并复核；`font.spec.ts` 对全部保留字符执行正常/合成粗体像素比较，验证首装不会请求完整原件、离线仍可批示。不是只按首封文书取字，也未以系统字体替代文楷。
 
 ## 视觉真值与差异
 

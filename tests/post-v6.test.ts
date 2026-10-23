@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync,writeFileSync,mkdtempSync,mkdirSync,unlinkSync,rmdirSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdtempSync,mkdirSync,unlinkSync,rmdirSync,existsSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {resolve,join} from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -38,18 +38,27 @@ test('identical app resources from different commits have distinct offline/build
  try{
   for(const commit of ['a'.repeat(40),'b'.repeat(40)]){
    const root=mkdtempSync(join(tmpdir(),'dear-mayor-sw-contract-'));roots.push(root);mkdirSync(join(root,'dist','art'),{recursive:true});
+   mkdirSync(join(root,'dist','fonts'));
+   for(const name of ['wenkai.woff2','wenkai-game.woff2'])writeFileSync(join(root,'dist','fonts',name),'same synthetic font');
    writeFileSync(join(root,'dist','index.html'),'<!doctype html><title>Same assets</title>');
    for(const name of names)writeFileSync(join(root,'dist','art',name+'.webp'),'same synthetic resource');
    execFileSync(process.execPath,[buildScript],{cwd:root,env:{...process.env,GITHUB_SHA:commit}});
    const info=JSON.parse(readFileSync(join(root,'dist','build-info.json'),'utf8'));versions.push(info.version);assert.equal(info.commit,commit);
    const worker=readFileSync(join(root,'dist','sw.js'),'utf8');assert.ok(worker.includes('dear-mayor-'+info.version));
    const manifest=JSON.parse(worker.match(/const FILES = (.*);/)![1]);
+   assert.ok(manifest.some((f:{url:string})=>f.url==='./fonts/wenkai-game.woff2'));
+   assert.ok(!manifest.some((f:{url:string})=>f.url==='./fonts/wenkai.woff2'));
    assert.equal(manifest.find((f:{url:string})=>f.url==='./build-info.json').integrity,'sha256-'+createHash('sha256').update(readFileSync(join(root,'dist','build-info.json'))).digest('base64'));
   }
   assert.notEqual(versions[0],versions[1]);
  }finally{
   // Remove only this test's exact named files, then its now-empty directories.
-  for(const root of roots){for(const name of names)unlinkSync(join(root,'dist','art',name+'.webp'));for(const name of ['index.html','sw.js','build-info.json'])unlinkSync(join(root,'dist',name));rmdirSync(join(root,'dist','art'));rmdirSync(join(root,'dist'));rmdirSync(root);}
+  for(const root of roots){
+   for(const name of [...names.map(n=>'art/'+n+'.webp'),'fonts/wenkai.woff2','fonts/wenkai-game.woff2','index.html','sw.js','build-info.json']){
+    const file=join(root,'dist',name);if(existsSync(file))unlinkSync(file);
+   }
+   for(const dir of ['art','fonts',''])rmdirSync(join(root,'dist',dir));rmdirSync(root);
+  }
  }
 });
 const rules=pilot.filter(r=>r.introducedRevision===22);

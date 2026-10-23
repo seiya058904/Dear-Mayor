@@ -47,6 +47,7 @@ test('v4 offline cache contains runtime WebP and font without duplicate referenc
  for(const name of ['background','note','paper','paper-mobile','approve','reject','defer','written_reply']){
   expect(urls.some(u=>u.endsWith(`/art/${name}.webp`))).toBe(true);expect(urls.some(u=>u.endsWith(`/art/${name}.png`))).toBe(false);
  }
- expect(urls.some(u=>u.endsWith('/fonts/wenkai.woff2'))).toBe(true);
+ expect(urls.some(u=>u.endsWith('/fonts/wenkai-game.woff2'))).toBe(true);
+ expect(urls.some(u=>u.endsWith('/fonts/wenkai.woff2'))).toBe(false);
  await context.setOffline(true);await page.reload();await page.getByRole('button',{name:'批示回复',exact:true}).click();await expect(page.locator('[data-choice="0"]')).toBeVisible();
 });
