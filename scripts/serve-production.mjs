@@ -5,7 +5,9 @@ import {resolve,extname,sep} from 'node:path';
 const root=resolve(process.env.DIST_DIR || 'dist');
 const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webmanifest':'application/manifest+json','.woff2':'font/woff2','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon','.svg':'image/svg+xml','.txt':'text/plain'};
 createServer((req,res)=>{
- const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+ let pathname;
+ try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}
+ catch{res.writeHead(400).end();return;}
  const file=resolve(root,'.'+pathname.replace(/^\/Dear-Mayor(?=\/)/,'').replace(/\/$/,'/index.html'));
  if(!file.startsWith(root+sep)){res.writeHead(403).end();return;}
  try{
