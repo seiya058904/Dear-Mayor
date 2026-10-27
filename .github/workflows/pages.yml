@@ -1,4 +1,9 @@
 name: Verify and publish
+# Pushes and pull requests run the type check and unit tests, the 151 core browser tests, a
+# 40-test sample of the three version-migration matrices (278 tests that repeat the same
+# behavior across catalog and save combinations), and an 11-test smoke run under the Pages
+# subpath. The complete suite, with every matrix test at both the root and the subpath, runs
+# weekly and on demand, split into shards.
 on:
   push:
     branches: [main]
@@ -14,13 +19,14 @@ on:
       - 'CLAUDE.md'
       - '**/readme-*'
   workflow_dispatch:
+  schedule:
+    - cron: '23 4 * * 1'
 permissions:
   contents: read
 concurrency:
-  group: pages-${{ github.ref }}
+  group: pages-${{ github.ref }}-${{ github.event_name }}
   cancel-in-progress: true
 jobs:
-  # Type check and unit tests run beside the browser suites instead of before them.
   check:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
@@ -32,25 +38,73 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
-  # The same production build is exercised at the site root and under the Pages subpath
-  # in parallel, so the two full browser suites no longer run back to back.
-  e2e:
-    name: e2e (${{ matrix.name }} ${{ matrix.shard }})
+  quick:
+    name: quick (${{ matrix.name }})
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 20
     permissions:
       contents: read
       pages: read
     strategy:
       fail-fast: false
       matrix:
-        # Each full browser suite takes about 13 minutes, so each is split into two shards.
-        # Every test still runs exactly once per path.
         include:
-          - {name: root, game_path: /, shard: 1/2}
-          - {name: root, game_path: /, shard: 2/2}
-          - {name: subpath, game_path: /Dear-Mayor/, shard: 1/2}
-          - {name: subpath, game_path: /Dear-Mayor/, shard: 2/2}
+          - {name: core 1/2, path: /, publish: true, shard: '1/2', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
+          - {name: core 2/2, path: /, shard: '2/2', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
+          - {name: matrix sample, path: /, grep: 'catalog (1|9|17), save [0-9]+: upgrades|post-V6 exact six-way offline return (town/brush-at-door|ferrydaughter/finale)/5|post-V6 old full pending (town/teacup-left-handle|millerleave/finale)-5'}
+          - {name: subpath smoke, path: /Dear-Mayor/, files: 'game.spec sw.spec layout.spec font.spec'}
+    env:
+      GAME_PATH: ${{ matrix.path }}
+      GREP: ${{ matrix.grep }}
+      GREP_INVERT: ${{ matrix.grep_invert }}
+      SHARD: ${{ matrix.shard }}
+      FILES: ${{ matrix.files }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Run this slice of the browser suite
+        run: |
+          args=(--project=functional)
+          [ -n "$FILES" ] && args+=($FILES)
+          [ -n "$GREP" ] && args+=(--grep "$GREP")
+          [ -n "$GREP_INVERT" ] && args+=(--grep-invert "$GREP_INVERT")
+          [ -n "$SHARD" ] && args+=("--shard=$SHARD")
+          npm run test:e2e -- "${args[@]}"
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+        if: matrix.publish && github.ref == 'refs/heads/main' && github.event_name == 'push'
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        if: matrix.publish && github.ref == 'refs/heads/main' && github.event_name == 'push'
+        with:
+          path: dist
+  full:
+    name: full (${{ matrix.name }})
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pages: read
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: root 1/4, path: /, publish: true, shard: '1/4'}
+          - {name: root 2/4, path: /, shard: '2/4'}
+          - {name: root 3/4, path: /, shard: '3/4'}
+          - {name: root 4/4, path: /, shard: '4/4'}
+          - {name: subpath 1/4, path: /Dear-Mayor/, shard: '1/4'}
+          - {name: subpath 2/4, path: /Dear-Mayor/, shard: '2/4'}
+          - {name: subpath 3/4, path: /Dear-Mayor/, shard: '3/4'}
+          - {name: subpath 4/4, path: /Dear-Mayor/, shard: '4/4'}
+    env:
+      GAME_PATH: ${{ matrix.path }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
@@ -61,27 +115,30 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e -- --shard=${{ matrix.shard }}
-        name: Browser suite (${{ matrix.name }} ${{ matrix.shard }})
-        env:
-          GAME_PATH: ${{ matrix.game_path }}
+        name: Run this shard of the full browser suite
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
-        if: matrix.name == 'root' && matrix.shard == '1/2' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: matrix.publish && github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
-        if: matrix.name == 'root' && matrix.shard == '1/2' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: matrix.publish && github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
         with:
           path: dist
   verify:
-    needs: [check, e2e]
+    needs: [check, quick, full]
     if: always()
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
       - env:
           CHECK: ${{ needs.check.result }}
-          E2E: ${{ needs.e2e.result }}
-        run: test "$CHECK" = success && test "$E2E" = success
+          QUICK: ${{ needs.quick.result }}
+          FULL: ${{ needs.full.result }}
+        run: |
+          test "$CHECK" = success
+          case "$QUICK" in success|skipped) ;; *) exit 1;; esac
+          case "$FULL" in success|skipped) ;; *) exit 1;; esac
+          test "$QUICK" = success -o "$FULL" = success
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     needs: verify
     runs-on: ubuntu-24.04
     timeout-minutes: 10
