@@ -50,8 +50,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {name: core 1/2, path: /, publish: true, shard: '1/2', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
-          - {name: core 2/2, path: /, shard: '2/2', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
+          - {name: core 1/4, path: /, publish: true, shard: '1/4', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
+          - {name: core 2/4, path: /, shard: '2/4', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
+          - {name: core 3/4, path: /, shard: '3/4', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
+          - {name: core 4/4, path: /, shard: '4/4', grep_invert: '(catalog [0-9]+, save [0-9]+: upgrades|post-V6 exact six-way offline return|post-V6 old full pending)'}
           - {name: matrix sample, path: /, grep: 'catalog (1|9|17), save [0-9]+: upgrades|post-V6 exact six-way offline return (town/brush-at-door|ferrydaughter/finale)/5|post-V6 old full pending (town/teacup-left-handle|millerleave/finale)-5'}
           - {name: subpath smoke, path: /Dear-Mayor/, files: 'game.spec sw.spec layout.spec font.spec'}
     env:
@@ -68,7 +70,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
+      - run: |
+          for i in 1 2 3; do
+            timeout 180 npx playwright install --with-deps chromium && break
+            [ "$i" = 3 ] && exit 1
+            sleep 5
+          done
       - name: Run this slice of the browser suite
         run: |
           args=(--project=functional)
@@ -103,6 +110,9 @@ jobs:
           - {name: subpath 2/4, path: /Dear-Mayor/, shard: '2/4'}
           - {name: subpath 3/4, path: /Dear-Mayor/, shard: '3/4'}
           - {name: subpath 4/4, path: /Dear-Mayor/, shard: '4/4'}
+          # The performance test depends on the whole functional project, and a dependency is
+          # never sharded, so it runs alone with --no-deps and the functional shards stay even.
+          - {name: performance, path: /, performance: true}
     env:
       GAME_PATH: ${{ matrix.path }}
     steps:
@@ -113,9 +123,22 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e -- --shard=${{ matrix.shard }}
-        name: Run this shard of the full browser suite
+      - run: |
+          for i in 1 2 3; do
+            timeout 180 npx playwright install --with-deps chromium && break
+            [ "$i" = 3 ] && exit 1
+            sleep 5
+          done
+      - name: Run this slice of the full browser suite
+        env:
+          PERFORMANCE: ${{ matrix.performance }}
+          SHARD: ${{ matrix.shard }}
+        run: |
+          if [ -n "$PERFORMANCE" ]; then
+            npm run test:e2e -- --project=performance --no-deps
+          else
+            npm run test:e2e -- --project=functional --shard="$SHARD"
+          fi
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
         if: matrix.publish && github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch'
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
