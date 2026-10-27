@@ -35,20 +35,22 @@ jobs:
   # The same production build is exercised at the site root and under the Pages subpath
   # in parallel, so the two full browser suites no longer run back to back.
   e2e:
-    name: e2e (${{ matrix.name }})
+    name: e2e (${{ matrix.name }} ${{ matrix.shard }})
     runs-on: ubuntu-24.04
-    timeout-minutes: 40
+    timeout-minutes: 25
     permissions:
       contents: read
       pages: read
     strategy:
       fail-fast: false
       matrix:
+        # Each full browser suite takes about 13 minutes, so each is split into two shards.
+        # Every test still runs exactly once per path.
         include:
-          - name: root
-            game_path: /
-          - name: subpath
-            game_path: /Dear-Mayor/
+          - {name: root, game_path: /, shard: 1/2}
+          - {name: root, game_path: /, shard: 2/2}
+          - {name: subpath, game_path: /Dear-Mayor/, shard: 1/2}
+          - {name: subpath, game_path: /Dear-Mayor/, shard: 2/2}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
@@ -58,14 +60,14 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npx playwright install --with-deps chromium
-      - run: npm run test:e2e
-        name: Browser suite (${{ matrix.name }})
+      - run: npm run test:e2e -- --shard=${{ matrix.shard }}
+        name: Browser suite (${{ matrix.name }} ${{ matrix.shard }})
         env:
           GAME_PATH: ${{ matrix.game_path }}
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
-        if: matrix.name == 'root' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: matrix.name == 'root' && matrix.shard == '1/2' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
-        if: matrix.name == 'root' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        if: matrix.name == 'root' && matrix.shard == '1/2' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: dist
   verify:
