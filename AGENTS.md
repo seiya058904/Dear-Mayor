@@ -22,3 +22,11 @@ Every letter has one actionable request and three distinct authored replies. Eac
 - Playwright 固定 1.64.1：@playwright/test 已在 package.json 里精确锁定（不要写 ^、~ 或 latest），配套 chromium build 1248 位于 %LOCALAPPDATA%\ms-playwright。
 - 不要升级、降级或另装第二个 Playwright 版本，也不要把浏览器下载到别的目录或自行构建 Chromium。
 - 确需换版本时，先与其他使用 Playwright 的仓库统一到同一版本，再改本仓库并跑一次浏览器测试。
+
+## CI policy (minimal-test principle)
+
+The owner decided on 2026-10-27 that CI should run the smallest set of checks relevant to a change and keep heavy suites for schedules and manual runs. Do not undo this by running the full suite on every push.
+
+- Pushes and pull requests run the type check and unit tests, the 151 core browser tests, a 40-test sample of the three version-migration matrices (278 tests that repeat the same behavior), and an 11-test smoke run under the Pages subpath.
+- The complete suite, with every test at the root and the subpath in eight shards, runs weekly and on manual dispatch.
+- The `verify` job is the single gate for deploy. README, AGENTS and CLAUDE changes do not start the workflow.
