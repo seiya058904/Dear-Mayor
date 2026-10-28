@@ -165,7 +165,7 @@ jobs:
           case "$FULL" in success|skipped) ;; *) exit 1;; esac
           test "$QUICK" = success -o "$FULL" = success
   deploy:
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    if: always() && needs.verify.result == 'success' && github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     needs: verify
     runs-on: ubuntu-24.04
     timeout-minutes: 10
