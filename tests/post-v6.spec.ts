@@ -24,7 +24,7 @@ test('post-V6 held Enter follows focus to the new heading without deciding anoth
  await page.getByRole('button',{name:'批准',exact:true}).focus();await page.keyboard.down('Enter');
  await expect(page.locator('article')).not.toHaveAttribute('data-letter-id','bridge/start');
  await expect(page.locator('h1')).toBeFocused();await page.keyboard.down('Enter');await page.keyboard.up('Enter');
- expect(await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.length,key)).toBe(1);
+ expect(await page.evaluate(key=>(() => { try { return JSON.parse(localStorage.getItem(key) ?? 'null')?.history.length ?? -1; } catch { return -1; } })(),key)).toBe(1);
 });
 
 test('post-V6 choir silence branch keeps Aman identity through refresh and a real decision',async({page})=>{
@@ -145,8 +145,8 @@ for(const [index,raw] of invalid.entries())test(`post-V6 damaged save ${index}: 
  await page.keyboard.press('Escape');await page.reload();await expect(dialog).toBeVisible();
  expect(await page.evaluate(key=>localStorage.getItem(key),key)).toBe(raw);
  await page.getByRole('button',{name:'舍弃旧档并重开'}).click();await expect(dialog).not.toBeVisible();
- await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.length,key)).toBe(0);
- await page.getByRole('button',{name:'不批准',exact:true}).click();await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.length,key)).toBe(1);
+ await expect.poll(()=>page.evaluate(key=>(() => { try { return JSON.parse(localStorage.getItem(key) ?? 'null')?.history.length ?? -1; } catch { return -1; } })(),key)).toBe(0);
+ await page.getByRole('button',{name:'不批准',exact:true}).click();await expect.poll(()=>page.evaluate(key=>(() => { try { return JSON.parse(localStorage.getItem(key) ?? 'null')?.history.length ?? -1; } catch { return -1; } })(),key)).toBe(1);
  await page.reload();await expect(page.locator('.save-warning')).toHaveCount(0);
 });
 test('post-V6 recovery success warning is accurate and cannot escape into reply focus loop',async({page})=>{
@@ -158,7 +158,7 @@ test('post-V6 recovery success warning is accurate and cannot escape into reply 
  await screenshot(page,'warning-behind-reply');
  for(let i=0;i<8;i++){await page.keyboard.press('Tab');expect(await page.locator('.reply-note').evaluate(e=>e.contains(document.activeElement))).toBe(true);}
  await page.keyboard.press('Escape');await page.getByRole('button',{name:'批准',exact:true}).click();
- await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.length,key)).toBe(1);
+ await expect.poll(()=>page.evaluate(key=>(() => { try { return JSON.parse(localStorage.getItem(key) ?? 'null')?.history.length ?? -1; } catch { return -1; } })(),key)).toBe(1);
  expect(await page.evaluate(key=>localStorage.getItem(key+':recovery'),key)).toBe('{broken');
 });
 test('post-V6 restart write failure preserves the current season and primary bytes',async({page})=>{

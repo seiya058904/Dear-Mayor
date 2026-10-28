@@ -46,5 +46,5 @@ test('game font retains every included glyph raster and never fetches the source
   expect(await page.evaluate(() => [...document.fonts].some(f => f.family === 'WenKai' && f.status === 'loaded'))).toBe(true);
   await page.getByRole('button', { name: '批示回复', exact: true }).click();
   await page.locator('[data-choice="2"]').click();
-  await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('dear-mayor:save:v1')!).history.length)).toBe(1);
+  await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('dear-mayor:save:v1') ?? 'null')?.history.length)).toBe(1);
 });

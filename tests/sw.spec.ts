@@ -50,7 +50,7 @@ test('post-V6 complete offline cache verifies every byte, retries stale/failed r
   await context.setOffline(true);await page.reload();await page.setViewportSize({width:768,height:1024});
   await expect(page.locator('.paper-art')).toBeVisible();expect(await page.locator('.paper-art').evaluate((e:HTMLImageElement)=>e.complete&&e.naturalWidth>0)).toBe(true);
   await page.getByRole('button',{name:'批示回复',exact:true}).click();await expect(page.locator('[data-choice]')).toHaveCount(3);await page.locator('[data-choice="1"]').click();
-  await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('dear-mayor:save:v1')!).history.length)).toBe(1);
+  await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('dear-mayor:save:v1') ?? 'null')?.history.length)).toBe(1);
  }finally{await context.setOffline(false);await page.goto('about:blank');await host.close();}
 });
 test('post-V6 root and Pages workers keep independent complete caches on the same origin',async({page,context})=>{

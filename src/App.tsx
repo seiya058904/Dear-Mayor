@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { currentDocument, decide, newGame } from "./game/engine";
-import { loadGame, saveGame } from "./game/persistence";
+import { loadGame, saveGameWithLock, saveFailure } from "./game/persistence";
 import type { Action } from "./game/types";
 import { actions, DecisionButton } from "./components/DecisionButton";
 import { Petition } from "./components/Petition";
@@ -19,6 +19,7 @@ export default function App() {
     }
   });
   const [game, setGame] = useState(initial.state);
+  const [conflicted, setConflicted] = useState(false);
   const [warning, setWarning] = useState(initial.warning);
   const [recovery, setRecovery] = useState(initial.recovery);
   const [recoveryOpen, setRecoveryOpen] = useState(Boolean(initial.recovery && !initial.recovery.backedUp));
@@ -28,6 +29,7 @@ export default function App() {
   const [restartOpen, setRestartOpen] = useState(false);
   const [departing, setDeparting] = useState<Action | null>(null);
   const locked = useRef(false);
+  const conflict = useRef(false);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const frame = useRef<HTMLDivElement>(null);
   const paper = useRef<HTMLElement>(null);
@@ -76,9 +78,15 @@ export default function App() {
     else recoveryDialog.current?.close();
   }, [recoveryOpen]);
 
-  function persist(next: typeof game) {
+  async function persist(next: typeof game) {
     try {
-      if (!saveGame(localStorage, next)) {
+      if (!await saveGameWithLock(localStorage, next)) {
+        if (saveFailure(localStorage) === "conflict") {
+          conflict.current = true;
+          setConflicted(true);
+          setWarning("另一页面已更新进度。本页已停止保存，请载入最新进度后继续。");
+          return false;
+        }
         setWarning(
           "这次进度未能保存。请保持页面开启，或检查浏览器的存储设置。",
         );
@@ -92,8 +100,8 @@ export default function App() {
       return false;
     }
   }
-  function choose(action: Action, index?: number) {
-    if (locked.current) return;
+  async function choose(action: Action, index?: number) {
+    if (locked.current || conflicted) return;
     if (recovery && !recovery.backedUp) {
       setReplyOpen(false);
       setRecoveryOpen(true);
@@ -102,7 +110,8 @@ export default function App() {
     const next = decide(game, doc.id, action, index);
     if (next === game) return;
     locked.current = true;
-    persist(next); // Commit before animation; a reload can never duplicate this decision.
+    const saved = await persist(next); // Commit under the origin lock before animation.
+    if (!saved && conflict.current) { locked.current = false; setReplyOpen(false); return; }
     setReplyOpen(false);
     setDeparting(action);
     const reduced = window.matchMedia(
@@ -125,10 +134,13 @@ export default function App() {
         ?.focus(),
     );
   }
-  function restart() {
-    if (locked.current) return;
+  async function restart() {
+    if (locked.current || conflicted) return;
     const next = newGame();
-    if (!persist(next)) {
+    locked.current = true;
+    const saved = await persist(next);
+    locked.current = false;
+    if (!saved) {
       setRestartError("重启未能保存，当前一季仍保留。请检查存储设置后再试。");
       return;
     }
@@ -148,15 +160,19 @@ export default function App() {
     link.href=url;link.download="dear-mayor-recovery.txt";link.click();
     setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
-  function discardAndRestart() {
+  async function discardAndRestart() {
+    if (locked.current || conflicted) return;
     if (!recovery) return;
     const next=newGame();
+    locked.current = true;
     try {
-      if (!saveGame(localStorage,next,recovery.raw)) throw new Error("Not saved");
+      if (!await saveGameWithLock(localStorage,next,recovery.raw)) throw new Error("Not saved");
     } catch {
+      locked.current = false;
       setRecoveryError("未能重开：存储不可写，或原存档已变化。原文没有被替换，请重新载入后查看。");
       return;
     }
+    locked.current = false;
     setGame(next);setRecovery(null);setWarning("");setRecoveryOpen(false);
     requestAnimationFrame(()=>paper.current?.querySelector<HTMLElement>("h1")?.focus());
   }
@@ -181,7 +197,7 @@ export default function App() {
               <DecisionButton
                 key={a.id}
                 {...a}
-                disabled={Boolean(departing)}
+                disabled={Boolean(departing) || conflicted}
                 expanded={replyOpen}
                 onClick={() =>
                   a.id === "written_reply" ? setReplyOpen(true) : choose(a.id)
@@ -192,7 +208,7 @@ export default function App() {
           <button
             type="button"
             className="restart-link"
-            disabled={Boolean(departing)}
+            disabled={Boolean(departing) || conflicted}
             onClick={() => {
               setRestartError("");
               if (recovery && !recovery.backedUp) setRecoveryOpen(true);
@@ -213,7 +229,8 @@ export default function App() {
           <aside className="save-warning" role="status" inert={replyOpen || restartOpen || recoveryOpen}>
             {warning}
             {recovery && !recovery.backedUp && <button onClick={()=>setRecoveryOpen(true)}>处理旧存档</button>}
-            <button onClick={() => setWarning("")} aria-label="收起存档提示">
+            {conflicted && <button onClick={() => window.location.reload()}>载入最新进度</button>}
+            <button hidden={conflicted} onClick={() => setWarning("")} aria-label="收起存档提示">
               收起
             </button>
           </aside>

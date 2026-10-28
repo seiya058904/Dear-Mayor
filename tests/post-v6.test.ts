@@ -231,3 +231,19 @@ test('all storage writes denied or read access forbidden: no throw and no primar
  const normal=memory(JSON.stringify(newGame()));assert.equal(loadGame(normal.storage).warning,'');assert.deepEqual(normal.writes,[]);
  const next=decide(newGame(),newGame().current,'written_reply',2);assert.equal(saveGame(normal.storage,next),true);assert.deepEqual(restore(normal.data.get(SAVE_KEY)!),next);
 });
+
+
+test('stale pages cannot overwrite decisions, restart or migrate over a newer save',()=>{
+ const area=new Map<string,string>();
+ const tab=()=>({getItem:(k:string)=>area.get(k)??null,setItem:(k:string,v:string)=>{area.set(k,v);},removeItem:(k:string)=>{area.delete(k);}});
+ const a=tab(),b=tab();let current=loadGame(a).state;const stale=loadGame(b).state;
+ for(let i=0;i<20;i++){current=decide(current,current.current,'approve');assert.equal(saveGame(a,current),true);}
+ const raw=area.get(SAVE_KEY);
+ assert.equal(saveGame(b,decide(stale,stale.current,'reject')),false);
+ assert.equal(saveGame(b,newGame()),false);
+ assert.equal(area.get(SAVE_KEY),raw);
+ const refreshed=loadGame(b).state;
+ assert.equal(saveGame(b,decide(refreshed,refreshed.current,'reject')),true);
+ assert.equal(restore(area.get(SAVE_KEY)!).history.length,21);
+ assert.equal(saveGame(a,newGame()),false);
+});

@@ -12,6 +12,17 @@ export type StorageLike=Pick<Storage,'getItem'|'setItem'|'removeItem'>;
 export type DamagedSave={raw:string;backedUp:boolean};
 // Avoid replaying a long, already validated transcript on every ordinary save.
 const verifiedRaw=new WeakMap<StorageLike,string>();
+// A validated save is not permission to overwrite another page's progress.
+const expectedRaw=new WeakMap<StorageLike,string|null>();
+const saveFailures=new WeakMap<StorageLike,'conflict'|'storage'>();
+export function saveFailure(storage:StorageLike){return saveFailures.get(storage);}
+export async function saveGameWithLock(storage:StorageLike,state:GameState,discardRaw?:string):Promise<boolean>{
+ try{
+  // Never silently fall back to an unlocked cross-document read/modify/write.
+  if(!globalThis.navigator?.locks){saveFailures.set(storage,'storage');return false;}
+  return await navigator.locks.request(SAVE_KEY,()=>saveGame(storage,state,discardRaw));
+ }catch{saveFailures.set(storage,'storage');return false;}
+}
 function preserveDamaged(storage:StorageLike,raw:string):boolean{
  try{
   const key=`${SAVE_KEY}:recovery`,existing=storage.getItem(key);
@@ -80,6 +91,7 @@ export function loadGame(storage:StorageLike):{state:GameState;warning:string;re
  let raw:string|null=null;
  try{
   raw=storage.getItem(SAVE_KEY);
+  expectedRaw.set(storage,raw);
   const state=raw!==null?restore(raw):newGame();
   if(raw!==null)verifiedRaw.set(storage,raw);
   return {state,warning:'',recovery:null};
@@ -92,9 +104,11 @@ export function loadGame(storage:StorageLike):{state:GameState;warning:string;re
  }
 }
 export function saveGame(storage:StorageLike,state:GameState,discardRaw?:string):boolean{
+ saveFailures.set(storage,'storage');
  try{
   const original=storage.getItem(SAVE_KEY);
-  if(discardRaw!==undefined&&original!==discardRaw)return false;
+  const expected=discardRaw!==undefined?discardRaw:expectedRaw.get(storage)??null;
+  if(original!==expected){saveFailures.set(storage,'conflict');return false;}
   if(original!==null&&discardRaw===undefined){
    if(verifiedRaw.get(storage)!==original){
     try{restore(original);verifiedRaw.set(storage,original);}
@@ -107,6 +121,6 @@ export function saveGame(storage:StorageLike,state:GameState,discardRaw?:string)
     if(version){const key=`${SAVE_KEY}:v${version}-backup`;if(!storage.getItem(key))storage.setItem(key,original);}
    }
   }
-  const raw=JSON.stringify(state);storage.setItem(SAVE_KEY,raw);verifiedRaw.set(storage,raw);return true;
+  const raw=JSON.stringify(state);storage.setItem(SAVE_KEY,raw);verifiedRaw.set(storage,raw);expectedRaw.set(storage,raw);saveFailures.delete(storage);return true;
  }catch{return false;}
 }
