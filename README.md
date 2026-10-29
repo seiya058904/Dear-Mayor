@@ -1,6 +1,12 @@
 <h1 align="center">✉️ DEAR MAYOR</h1>
 
 <p align="center">
+  <a href="https://seiya058904.github.io/Dear-Mayor/">
+    <img src="docs/media/readme-cover.svg" width="100%" alt="Illustrated cream letter paper, a wax seal and a pen for Dear Mayor, a quiet game about answering a small town." />
+  </a>
+</p>
+
+<p align="center">
   <strong>Every letter asks for an answer. Every answer leaves a trace.</strong>
 </p>
 
@@ -165,7 +171,7 @@ npm run preview              # Preview the production build
 
 The production build is written to `dist/`. Runtime content, fonts, and artwork ship with the game. There is no authentication backend, analytics SDK, or runtime CDN dependency.
 
-Pushing to `main` triggers the [verification and GitHub Pages workflow](https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml). Check the workflow for current deployment status.
+Changes covered by the [verification and GitHub Pages workflow](https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml) are checked before deployment from `main`; README and cover-only changes are excluded. Check the workflow for current deployment status.
 
 </details>
 
@@ -178,7 +184,7 @@ Progress is stored locally for the **current browser and site origin**. The host
 - If an unreadable save cannot be backed up, its original text stays protected until you explicitly discard it. The recovery dialog also offers an export.
 - Updates preserve the wording and options of the letter already on your desk. Newly added callbacks apply to new runs with compatible content rules.
 - Offline continuation requires a successful initial load and complete resource caching in the production build.
-- Editing the same run in multiple tabs at once is not supported.
+- If another tab saves newer progress, this page stops saving and offers **Load Latest Progress**. Continue from the updated run instead of keeping two active copies. Saving requires a browser with the Web Locks API, available on the HTTPS site and supported localhost browsers.
 
 ## 🛠️ Repository Guide
 

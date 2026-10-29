@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Dear Mayor — illustrated letter cover</title>
+  <desc id="desc">Illustrated cream letter paper, a wax seal and a pen for Dear Mayor, a quiet game about answering a small town.</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffdf4"/><stop offset="1" stop-color="#f5ecd9"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#f8e8bd"/><stop offset="1" stop-color="#e7ddc6"/></radialGradient>
+  </defs>
+  <rect width="1200" height="400" rx="20" fill="url(#light)"/>
+  <rect x="18" y="18" width="1164" height="364" rx="12" fill="none" stroke="#ac9673"/>
+  <path d="M45 58h28M59 44v28M1127 342h28M1141 328v28" stroke="#ac9673" stroke-width="2"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#45392c">
+    <text x="66" y="110" font-size="21" letter-spacing="5">LETTERS FROM A SMALL TOWN</text>
+    <text x="61" y="190" font-size="73" letter-spacing="2">DEAR MAYOR</text>
+    <text x="66" y="244" font-size="28">Every answer leaves a trace.</text>
+  </g>
+  <path d="M66 278h520" stroke="#bfa67d"/>
+  <g font-family="Arial, sans-serif" fill="#6a5740" font-size="16" letter-spacing="3">
+    <text x="66" y="316">READ</text><text x="218" y="316">REPLY</text><text x="376" y="316">REMEMBER</text>
+  </g>
+  <g transform="translate(800 35) rotate(7 140 155)">
+    <rect x="11" y="15" width="263" height="309" rx="5" fill="#c9b99a" opacity=".42"/>
+    <rect width="263" height="309" rx="5" fill="url(#paper)" stroke="#b6a17b"/>
+    <path d="M32 40h199M32 49h199" stroke="#bcaa8a"/>
+    <path d="M38 86h163M38 105h184M38 124h172M38 143h151M38 172h178M38 191h128" stroke="#a19581" stroke-width="3" stroke-linecap="round"/>
+    <path d="M39 238c29-22 16 23 42 0s21 18 44 0" fill="none" stroke="#6b5c49" stroke-width="2.5"/>
+    <circle cx="199" cy="256" r="27" fill="#9a5149"/><circle cx="199" cy="256" r="20" fill="none" stroke="#c58670"/>
+    <path d="M189 264v-17l10-7 10 7v17h-20m5 0v-11h10v11" fill="none" stroke="#efd7b2" stroke-width="2"/>
+  </g>
+  <path d="M1107 80c21 74 8 143-11 219" fill="none" stroke="#776647" stroke-width="8" stroke-linecap="round"/>
+  <path d="m1096 299-6 26 12-22" fill="#45392c"/>
+
+</svg>
