@@ -21,7 +21,7 @@ Every letter has one actionable request and three distinct authored replies. Eac
 
 - Playwright 固定 1.64.1：@playwright/test 已在 package.json 里精确锁定（不要写 ^、~ 或 latest），配套 chromium build 1248 位于 %LOCALAPPDATA%\ms-playwright。
 - 不要升级、降级或另装第二个 Playwright 版本，也不要把浏览器下载到别的目录或自行构建 Chromium。
-- 确需换版本时，先与其他使用 Playwright 的仓库统一到同一版本，再改本仓库并跑一次浏览器测试。
+- 确需换版本时，先取得依赖更新授权，核对本仓库兼容性与浏览器配置，并运行相应浏览器回归；其他仓库各自按其范围和授权处理。
 
 ## CI policy (minimal-test principle)
 
@@ -30,3 +30,8 @@ The owner decided on 2026-10-27 that CI should run the smallest set of checks re
 - Pushes and pull requests run the type check and unit tests, the 151 core browser tests, a 40-test sample of the three version-migration matrices (278 tests that repeat the same behavior), and an 11-test smoke run under the Pages subpath.
 - The complete suite, with every test at the root and the subpath in eight shards, runs weekly and on manual dispatch.
 - The `verify` job is the single gate for deploy. README, AGENTS and CLAUDE changes do not start the workflow.
+
+## Browser tool selection
+
+- Prefer Ego Browser for exploratory navigation, visual review and interactive checks when available. Use Playwright for repeatable regression, CI, isolation, request interception or other automation requiring its APIs; combine tools when useful. If Ego is unavailable, use a suitable existing browser tool.
+- Keep this repository's required browser commands, versions, profiles and safety boundaries; an exploratory check does not replace required automated tests. Do not alter real user data or production state for testing. Report the tools, coverage and any untested paths.
