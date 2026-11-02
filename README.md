@@ -169,7 +169,7 @@ npm run preview              # Preview the production build
 
 **React 19 · TypeScript · Vite 8 · Playwright**
 
-The production build is written to `dist/`. Runtime content, fonts, and artwork ship with the game. There is no authentication backend, analytics SDK, or runtime CDN dependency.
+The production build is written to `dist/`. Runtime content, fonts, and artwork ship with the game. There is no authentication backend or runtime CDN dependency for gameplay.
 
 Changes covered by the [verification and GitHub Pages workflow](https://github.com/seiya058904/Dear-Mayor/actions/workflows/pages.yml) are checked before deployment from `main`; README and cover-only changes are excluded. Check the workflow for current deployment status.
 
@@ -216,3 +216,7 @@ This repository does **not** declare a blanket license covering its code, writin
   <sub>THE TOWN DOESN'T SEND YOU A SCORE. IT SENDS ANOTHER LETTER.</sub><br />
   <sub>Dear Mayor — a writing desk, a small town, and the consequences of a reply.</sub>
 </p>
+
+## Website analytics
+
+The public website uses Cloudflare Web Analytics for aggregate page visits and performance. The beacon loads only on `seiya058904.github.io`; local previews and offline copies do not load it. No game saves, journal entries, map contents, or form values are passed to the analytics integration. Statistics start after deployment and do not recover earlier traffic. See [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
