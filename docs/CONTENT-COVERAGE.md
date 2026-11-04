@@ -26,7 +26,7 @@
 | specialOrUpperLevelItems | 139 |
 | postExhaustionRepeatingVariants | 4 |
 | unionReachable | 1160 |
-| catalogRevision | 25 |
+| catalogRevision | 27 |
 | catalogCompatibilityFixtureCases | 285 |
 | migrationFixtureCases | 55 |
 | v1FixtureCases | 16 |

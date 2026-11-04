@@ -8,6 +8,8 @@ import fixtures from './fixtures/catalog-21-audit-saves.json' with {type:'json'}
 import editorial22 from './fixtures/catalog-22-editorial-saves.json' with {type:'json'};
 import editorial23 from './fixtures/catalog-23-editorial-saves.json' with {type:'json'};
 import editorial24 from './fixtures/catalog-24-editorial-saves.json' with {type:'json'};
+import editorial25 from './fixtures/catalog-25-editorial-saves.json' with {type:'json'};
+import editorial26 from './fixtures/catalog-26-editorial-saves.json' with {type:'json'};
 const key='dear-mayor:save:v1',rules=pilot.filter(r=>r.introducedRevision>=22);
 const choices=[['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const;
 for(const motion of ['reduce','no-preference'] as const)
@@ -71,7 +73,7 @@ for(const rule of rules)for(let v=0;v<6;v++)test(`post-V6 exact six-way offline 
  await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.at(-1).result,key)).toBe(doc.replies[2].result);
  await page.reload();await expect(page.locator('.save-warning')).toHaveCount(0);expect(errors).toEqual([]);
 });
-for(const fixture of [...fixtures,...editorial22.pending,...editorial23.pending.filter((_,i)=>i%4===0),...editorial24.pending.filter((_,i)=>i%4===0)])test(`post-V6 old full pending ${fixture.name}`,async({page})=>{
+for(const [tag,fixture] of [...fixtures.map(f=>['a21',f]),...editorial22.pending.map(f=>['e22',f]),...editorial23.pending.filter((_,i)=>i%4===0).map(f=>['e23',f]),...editorial24.pending.filter((_,i)=>i%4===0).map(f=>['e24',f]),...editorial25.pending.filter((_,i)=>i%4===0).map(f=>['e25',f]),...editorial26.pending.filter((_,i)=>i%4===0).map(f=>['e26',f])] as const)test(`post-V6 old full pending ${tag} ${fixture.name}`,async({page})=>{
  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');const raw=JSON.stringify(fixture.state);
  await page.evaluate(({key,raw})=>localStorage.setItem(key,raw),{key,raw});await page.reload();
  await expect(page.locator('h1')).toHaveText(fixture.document.title);await expect(page.locator('.signature')).toHaveText(fixture.document.sender);

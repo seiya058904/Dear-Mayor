@@ -16,6 +16,8 @@ import oldStreams from './fixtures/catalog-1-21-render-streams.json' with {type:
 import editorial22 from './fixtures/catalog-22-editorial-saves.json' with {type:'json'};
 import editorial23 from './fixtures/catalog-23-editorial-saves.json' with {type:'json'};
 import editorial24 from './fixtures/catalog-24-editorial-saves.json' with {type:'json'};
+import editorial25 from './fixtures/catalog-25-editorial-saves.json' with {type:'json'};
+import editorial26 from './fixtures/catalog-26-editorial-saves.json' with {type:'json'};
 import type {Action,GameState} from '../src/game/types';
 import {impactReport} from '../scripts/content-impact';
 
@@ -42,7 +44,7 @@ test('catalog23 editorial keeps every catalog22 stream and the 18 pre-edit pendi
   }
  }
 });
-for(const [label,editorial,revision,count,file] of [['third-batch rewrite (catalog 24)',editorial23,23,32,'catalog-23-editorial-saves'],['fourth-batch rewrite (catalog 25)',editorial24,24,30,'catalog-24-editorial-saves']] as const)test(`${label} keeps ${count} pending letters whole and gives new starts the new prose`,()=>{
+for(const [label,editorial,revision,count,file] of [['third-batch rewrite (catalog 24)',editorial23,23,32,'catalog-23-editorial-saves'],['fourth-batch rewrite (catalog 25)',editorial24,24,30,'catalog-24-editorial-saves'],['third-batch voice pass (catalog 26)',editorial25,25,32,'catalog-25-editorial-saves'],['fourth-batch voice pass (catalog 27)',editorial26,26,30,'catalog-26-editorial-saves']] as const)test(`${label} keeps ${count} pending letters whole and gives new starts the new prose`,()=>{
  assert.equal(createHash('sha256').update(readFileSync(`tests/fixtures/${file}.json`)).digest('hex'),readFileSync(`tests/fixtures/${file}.sha256`,'utf8').trim());
  assert.equal(editorial.pending.length,count);
  for(const fixture of editorial.pending){
