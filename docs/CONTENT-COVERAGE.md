@@ -17,7 +17,7 @@
 | maxBodyCharacters | 204 |
 | previousBatchNodes | 1160 |
 | newNodesThisBatch | 0 |
-| changedPreviousMachineContractsThisBatch | 30 |
+| changedPreviousMachineContractsThisBatch | 0 |
 | standaloneItems | 586 |
 | unconditionalStandaloneItems | 512 |
 | conditionalEchoItems | 74 |
@@ -26,7 +26,7 @@
 | specialOrUpperLevelItems | 139 |
 | postExhaustionRepeatingVariants | 4 |
 | unionReachable | 1160 |
-| catalogRevision | 27 |
+| catalogRevision | 28 |
 | catalogCompatibilityFixtureCases | 285 |
 | migrationFixtureCases | 55 |
 | v1FixtureCases | 16 |
@@ -765,38 +765,38 @@
 | echo/post-tree-change | 盆栽不是不会搬的门牌 | 照料花园的艾琳 | letter | 独立 | post/start: reject +11天 |
 | echo/post-private-slip | 认领条也有背面 | 裁缝米拉 | letter | 独立 | post/start: defer +9天 |
 | echo/post-near-letter | 写给隔着一条街的人 | 客栈洗碗人阿满 | letter | 独立 | post/start: written_reply +12天 |
-| town/eaves-two-shadows | 两位贵客带来三道影子 | 烛匠芬恩 | letter | 独立 | — |
-| town/mixed-herb-seeds | 花种包穿了药包外衣 | 药草师伊莎 | archive | 独立 | — |
-| town/wrong-town-award | 这份夸奖不是夸我们的 | 邻镇抄写员赫敏 | official | 独立 | — |
-| town/chestnut-ladle | 量栗子的不是汤勺 | 栗子贩薇朵 | note | 独立 | — |
-| town/full-inn-sign | 招牌说欢迎，房间没说有空 | 客栈老板欧妲 | letter | 独立 | — |
-| town/apprentice-order | 这张订货纸先别夸我字好 | 面包房学徒艾达 | letter | 独立 | — |
-| town/honey-lid | 蜜罐不是考臂力的 | 养蜂人佩拉 | letter | 独立 | — |
-| town/dog-rent | 爪印没有租下谷仓 | 镇厅收件人露西安 | archive | 独立 | — |
-| town/two-old-united | 巷名没谈拢，豆子先晒上了 | 阿苔与老彭 | letter | 独立 | — |
-| town/old-letter-window | 请给还没上任的镇长 | 没有署名的旧信 | archive | 独立 | — |
-| town/clock-signature | 师傅的名字我先留空 | 钟匠学徒小蓟 | note | 独立 | — |
-| town/captain-handkerchief | 这一封不归转运卷 | 转运队军官塔琳 | letter | 独立 | — |
-| town/stone-cube | 圆得不能放下的样品 | 邻镇磨石匠萨瓦 | letter | 独立 | — |
-| town/withdrawn-ladder | 梯子申请可以划回去了 | 屋顶修补人苔默 | note | 独立 | — |
-| town/broom-is-work | 我只有两只手，扫帚也占一只 | 清扫人菲恩 | letter | 独立 | — |
-| town/quiet-remembrance | 留一盏灯，不留一整夜 | 客栈老板欧妲 | letter | 独立 | — |
-| town/perfume-onion | 香袋里那半片洋葱 | 花贩莉娅 | letter | 独立 | — |
-| town/wet-broom-flag | 这不是第二面队旗 | 巡卫新兵德伊 | note | 独立 | — |
-| town/crooked-table-vote | 那张桌子不投反对票 | 行会书记露西安 | letter | 独立 | — |
-| town/rhyme-echo | 井里的诗人只会最后一行 | 乐师维奥 | letter | 独立 | — |
-| town/cat-key | 猫没有借走那本书 | 图书管理员奥黛 | archive | 独立 | — |
-| town/bathhouse-banner | 毛巾不是投降的白旗 | 澡屋主人斐拉 | letter | 独立 | — |
-| town/chess-king-wait | 国王能不能等我喝口水 | 诺拉婆婆 | note | 独立 | — |
-| town/sleeve-check | 新袖口很威风，手抬不高 | 裁缝米拉 | letter | 独立 | — |
-| town/abbot-empty-seat | 这个空座位没有人占 | 修道院院长索恩 | official | 独立 | — |
-| town/two-page-return | 补鞋的后半封像在求婚 | 驿站退件处 | archive | 独立 | — |
-| town/half-bell-hat | 帽子上的铃只管帽子 | 守钟学徒小蓟 | letter | 独立 | — |
-| town/soup-three-signatures | 我们只同意这一锅汤 | 妮娜、赫伯与栗子贩薇朵 | letter | 独立 | — |
-| town/dance-shoe-silence | 戏还没演，鞋先鼓掌 | 巡游戏班学徒洛洛 | letter | 独立 | — |
-| town/town-stamp-pillow | 印章不睡这个枕头 | 书记官露西安 | note | 独立 | — |
-| town/welcome-without-song | 我们来三个人，不来一首歌 | 邻镇书记官赫敏 | official | 独立 | — |
-| town/empty-chair-lesson | 空椅子也没有缺课 | 学堂教师埃芙 | letter | 独立 | — |
+| town/eaves-two-shadows | 请准我挪一挪会客室的灯 | 烛匠芬恩 | letter | 独立 | — |
+| town/mixed-herb-seeds | 请准作废一只装错的药袋 | 药草师伊莎 | archive | 独立 | — |
+| town/wrong-town-award | 误投的嘉奖函，请准退回 | 邻镇抄写员赫敏 | official | 独立 | — |
+| town/chestnut-ladle | 请让摊上仍用量斗 | 栗子贩薇朵 | note | 独立 | — |
+| town/full-inn-sign | 想在客栈门边添块牌子 | 客栈老板欧妲 | letter | 独立 | — |
+| town/apprentice-order | 请驿站帮我看看订货单 | 面包房学徒艾达 | letter | 独立 | — |
+| town/honey-lid | 想换一种好开的蜜罐盖 | 养蜂人佩拉 | letter | 独立 | — |
+| town/dog-rent | 一份按了爪印的租棚草稿 | 镇厅收件人露西安 | archive | 独立 | — |
+| town/two-old-united | 这几天门里晒豆子 | 阿苔与老彭 | letter | 独立 | — |
+| town/old-letter-window | 写给“未上任镇长”的旧信 | 没有署名的旧信 | archive | 独立 | — |
+| town/clock-signature | 钟的签收，请让师傅来签 | 钟匠学徒小蓟 | note | 独立 | — |
+| town/captain-handkerchief | 遗失手帕，请按普通失物办 | 转运队军官塔琳 | letter | 独立 | — |
+| town/stone-cube | 请中转处帮忙问清一张订单 | 邻镇磨石匠萨瓦 | letter | 独立 | — |
+| town/withdrawn-ladder | 借梯子的申请，请划掉 | 屋顶修补人苔默 | note | 独立 | — |
+| town/broom-is-work | 收场的活，请先分好工 | 清扫人菲恩 | letter | 独立 | — |
+| town/quiet-remembrance | 有位客人想在窗边坐一会儿 | 客栈老板欧妲 | letter | 独立 | — |
+| town/perfume-onion | 香袋混进洋葱，想写张说明 | 花贩莉娅 | letter | 独立 | — |
+| town/wet-broom-flag | 拖布请移回晾具架 | 巡卫新兵德伊 | note | 独立 | — |
+| town/crooked-table-vote | 议事桌腿短，表决想先停 | 行会书记露西安 | letter | 独立 | — |
+| town/rhyme-echo | 想在空院办一次念诗会 | 乐师维奥 | letter | 独立 | — |
+| town/cat-key | 一本薄册子漏记了借出 | 图书管理员奥黛 | archive | 独立 | — |
+| town/bathhouse-banner | 毛巾晾在窗外，请巡卫知悉 | 澡屋主人斐拉 | letter | 独立 | — |
+| town/chess-king-wait | 棋规想添一句 | 诺拉婆婆 | note | 独立 | — |
+| town/sleeve-check | 制服袖口想先试再缝 | 裁缝米拉 | letter | 独立 | — |
+| town/abbot-empty-seat | 我桌边的空椅子，请代转告 | 修道院院长索恩 | official | 独立 | — |
+| town/two-page-return | 两张装反的信纸，请准退回 | 驿站退件处 | archive | 独立 | — |
+| town/half-bell-hat | 帽子上的小铃，请准我摘下 | 守钟学徒小蓟 | letter | 独立 | — |
+| town/soup-three-signatures | 我们三家只想合煮一锅汤 | 妮娜、赫伯与栗子贩薇朵 | letter | 独立 | — |
+| town/dance-shoe-silence | 新鞋会响，想先改一段戏 | 巡游戏班学徒洛洛 | letter | 独立 | — |
+| town/town-stamp-pillow | 印章的小枕，想收起来 | 书记官露西安 | note | 独立 | — |
+| town/welcome-without-song | 来访接待，请照普通来客办 | 邻镇书记官赫敏 | official | 独立 | — |
+| town/empty-chair-lesson | 请假孩子的功课怎么安排 | 学堂教师埃芙 | letter | 独立 | — |
 | echo/clocklesson-year-class | 去年缺掉的那颗齿 | 学堂教师埃芙 | letter | 独立 | clocklesson/start: approve +190天 |
 | echo/clocklesson-year-shop | 没去成课堂的旧图还在 | 钟匠学徒小蓟 | letter | 独立 | clocklesson/start: reject +190天 |
 | echo/clocklesson-year-wait | 那只坏钟终于不当听众了 | 钟匠阿尔诺 | letter | 独立 | clocklesson/start: defer +190天 |
@@ -809,36 +809,36 @@
 | echo/miller-after-light-bag | 没带走的那口锅仍在煮汤 | 木匠学徒伊沃 | letter | 独立 | millerleave/start: reject +61天 |
 | echo/miller-after-unanswered | 那双手套并不是丢的那双 | 裁缝米拉 | letter | 独立 | millerleave/start: defer +70天 |
 | echo/miller-after-plan | 这不是尤恩磨坊的广告 | 磨坊主格里特 | letter | 独立 | millerleave/start: written_reply +65天 |
-| town/rose-with-thorns | 这束花不肯只收夸奖 | 花贩莉娅 | note | 独立 | — |
-| town/goat-court | 我带来的证人只会吃纸 | 羊倌托比 | letter | 独立 | — |
-| town/mothers-reservation | 我的午后不要全替我排好 | 珂娅的母亲 | letter | 独立 | — |
-| town/badger-banner | 横幅太长，祝词转了个弯 | 行商苏默 | note | 独立 | — |
-| town/tax-apples | 苹果不抵这份账 | 王室税务员莫温 | official | 独立 | — |
-| town/hat-of-night | 头盔里没有第二个卫兵 | 巡卫布鲁诺 | note | 独立 | — |
-| town/borrowed-shadow | 影子不该收第二份房租 | 烛匠芬恩 | letter | 独立 | — |
-| town/royal-empty-box | 空匣子不是第二件礼物 | 王室礼仪处芙嘉 | official | 独立 | — |
-| town/old-bell-anger | 我不是因为老了才嫌吵 | 钟匠阿尔诺 | letter | 独立 | — |
-| town/not-my-ribbon | 这条红带我不敢认领 | 裁缝米拉 | archive | 独立 | — |
-| town/merchant-of-weather | 晴天不是帽子里附送的 | 行商苏默 | letter | 独立 | — |
-| town/wedding-no-bell | 我们想成婚，不想叫醒整条街 | 两位准备成婚的镇民 | letter | 独立 | — |
-| town/no-free-carry | 我的个子高，不是柜子矮 | 学徒伊沃 | note | 独立 | — |
-| town/sour-bean-vote | 酸豆不能用举手变甜 | 商会代表奥斯温 | letter | 独立 | — |
-| town/stamp-on-wax | 封蜡上的印不是我按的 | 抄书人苔丝 | archive | 独立 | — |
-| town/saint-of-soup | 这锅汤不封圣 | 修士柏恩 | official | 独立 | — |
-| town/quiet-cheer | 我做成了，也不想上台 | 木匠玛塔 | letter | 独立 | — |
-| town/wrong-sleeper | 这封信不是给打鼾的人 | 驿夫塞缪尔 | note | 独立 | — |
-| town/two-puddles | 这两摊水不肯互相抵消 | 清扫人菲恩 | letter | 独立 | — |
-| town/letter-to-monday | 收信人写的是下星期 | 书记官露西安 | archive | 独立 | — |
-| town/cat-window-wages | 猫不能替我值班 | 图书管理员奥黛 | letter | 独立 | — |
-| town/do-not-bless-hat | 帽子淋湿不归修道院批准 | 院长索恩 | official | 独立 | — |
-| town/unwanted-family-recipe | 我的汤不需要嫁进谁家 | 厨娘妮娜 | letter | 独立 | — |
-| town/farewell-first | 送别的话留给还在这儿的人 | 旧船匠涅尔 | note | 独立 | — |
-| town/roof-rain-race | 两家的漏水不必争冠军 | 屋顶修补人苔默 | letter | 独立 | — |
-| town/wine-list-empty | 陈年空瓶没有陈年味道 | 客栈老板欧妲 | note | 独立 | — |
-| town/blank-birthday | 我不记得，也不想让你猜 | 阿苔 | letter | 独立 | — |
-| town/apple-stone-letter | 样石没坏，信先磨薄了 | 磨石匠萨瓦 | letter | 独立 | — |
-| town/pretend-invitation | 戏里的请帖不能领真晚饭 | 巡游戏班学徒洛洛 | archive | 独立 | — |
-| town/sugar-on-register | 糖粉不是新落款 | 镇厅书记官露西安 | note | 独立 | — |
+| town/rose-with-thorns | 免费修枝的事，请商会收回 | 花贩莉娅 | note | 独立 | — |
+| town/goat-court | 作证可以不带羊吗 | 羊倌托比 | letter | 独立 | — |
+| town/mothers-reservation | 请撤回用我名字发的约帖 | 珂娅的母亲 | letter | 独立 | — |
+| town/badger-banner | 借给商会的横幅想取回 | 行商苏默 | note | 独立 | — |
+| town/tax-apples | 有人送来苹果，请准退还 | 王室税务员莫温 | official | 独立 | — |
+| town/hat-of-night | 备用头盔，想取回 | 巡卫布鲁诺 | note | 独立 | — |
+| town/borrowed-shadow | 柜台租金，想请商会量一量 | 烛匠芬恩 | letter | 独立 | — |
+| town/royal-empty-box | 借出的礼匣，请只按借物归还 | 王室礼仪处芙嘉 | official | 独立 | — |
+| town/old-bell-anger | 邻居清晨练功，想请约时间谈 | 钟匠阿尔诺 | letter | 独立 | — |
+| town/not-my-ribbon | 失物柜里的红带，请更正记录 | 裁缝米拉 | archive | 独立 | — |
+| town/merchant-of-weather | 帽子不防雨，请帮着对话 | 行商苏默 | letter | 独立 | — |
+| town/wedding-no-bell | 婚礼不敲钟，只办登记 | 两位准备成婚的镇民 | letter | 独立 | — |
+| town/no-free-carry | 搬运名单上的名字请划掉 | 学徒伊沃 | note | 独立 | — |
+| town/sour-bean-vote | 共餐菜单只写做法 | 商会代表奥斯温 | letter | 独立 | — |
+| town/stamp-on-wax | 抄信与封蜡，请分开记录 | 抄书人苔丝 | archive | 独立 | — |
+| town/saint-of-soup | 接待名单有误，请退回重核 | 修士柏恩 | official | 独立 | — |
+| town/quiet-cheer | 新凳做成了，不想上台讲话 | 木匠玛塔 | letter | 独立 | — |
+| town/wrong-sleeper | 写给“睡得最响的人”的信 | 驿夫塞缪尔 | note | 独立 | — |
+| town/two-puddles | 门前两摊水，请各家收拾 | 清扫人菲恩 | letter | 独立 | — |
+| town/letter-to-monday | 收信人一栏写成了“下星期” | 书记官露西安 | archive | 独立 | — |
+| town/cat-window-wages | “有猫就开门”的说明请撤掉 | 图书管理员奥黛 | letter | 独立 | — |
+| town/do-not-bless-hat | 寄来的湿帽子，请准退还 | 院长索恩 | official | 独立 | — |
+| town/unwanted-family-recipe | 汤课告示上的话，请撤掉 | 厨娘妮娜 | letter | 独立 | — |
+| town/farewell-first | 朗诵时段，请取消 | 旧船匠涅尔 | note | 独立 | — |
+| town/roof-rain-race | 两家都漏雨，请帮忙约看屋 | 屋顶修补人苔默 | letter | 独立 | — |
+| town/wine-list-empty | 菜单上的“陈年特酿”请删掉 | 客栈老板欧妲 | note | 独立 | — |
+| town/blank-birthday | 祝寿请示，请撤回 | 阿苔 | letter | 独立 | — |
+| town/apple-stone-letter | 信缺了半行，请问寄信人 | 磨石匠萨瓦 | letter | 独立 | — |
+| town/pretend-invitation | 戏里的请帖，请标成道具 | 巡游戏班学徒洛洛 | archive | 独立 | — |
+| town/sugar-on-register | 登记簿沾了糖粉 | 镇厅书记官露西安 | note | 独立 | — |
 | town/dry-socks-stop | 我想在路上换一双干袜 | 驿夫塞缪尔 | letter | 独立 | — |
 | town/brush-at-door | 泥先住在鞋上就好 | 客栈洗碗人阿满 | note | 独立 | town/teacup-left-handle: approve/reject/defer/written_reply +18天 |
 | town/low-stirring-seat | 汤还没好，我的腿先想坐了 | 厨娘妮娜 | letter | 独立 | — |
