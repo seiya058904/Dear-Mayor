@@ -17,7 +17,7 @@
 | maxBodyCharacters | 204 |
 | previousBatchNodes | 1160 |
 | newNodesThisBatch | 0 |
-| changedPreviousMachineContractsThisBatch | 6 |
+| changedPreviousMachineContractsThisBatch | 32 |
 | standaloneItems | 586 |
 | unconditionalStandaloneItems | 512 |
 | conditionalEchoItems | 74 |
@@ -26,7 +26,7 @@
 | specialOrUpperLevelItems | 139 |
 | postExhaustionRepeatingVariants | 4 |
 | unionReachable | 1160 |
-| catalogRevision | 22 |
+| catalogRevision | 24 |
 | catalogCompatibilityFixtureCases | 285 |
 | migrationFixtureCases | 55 |
 | v1FixtureCases | 16 |

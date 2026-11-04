@@ -14,6 +14,7 @@ import pilot from '../src/game/causal-pilot.json' with {type:'json'};
 import fixtures from './fixtures/catalog-21-audit-saves.json' with {type:'json'};
 import oldStreams from './fixtures/catalog-1-21-render-streams.json' with {type:'json'};
 import editorial22 from './fixtures/catalog-22-editorial-saves.json' with {type:'json'};
+import editorial23 from './fixtures/catalog-23-editorial-saves.json' with {type:'json'};
 import type {Action,GameState} from '../src/game/types';
 import {impactReport} from '../scripts/content-impact';
 
@@ -38,6 +39,25 @@ test('catalog23 editorial keeps every catalog22 stream and the 18 pre-edit pendi
    assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);
    assert.deepEqual(restore(JSON.stringify(next)),next);
   }
+ }
+});
+test('catalog24 third-batch rewrite keeps the 32 catalog23 pending letters whole and gives new starts the new prose',()=>{
+ assert.equal(createHash('sha256').update(readFileSync('tests/fixtures/catalog-23-editorial-saves.json')).digest('hex'),readFileSync('tests/fixtures/catalog-23-editorial-saves.sha256','utf8').trim());
+ assert.equal(editorial23.pending.length,32);
+ for(const fixture of editorial23.pending){
+  const state=restore(JSON.stringify(fixture.state));assert.equal(state.catalogRevision,23,fixture.name);
+  assert.deepEqual(currentDocument(state),fixture.document,fixture.name);
+  assert.notDeepEqual(documents[fixture.name].body,fixture.document.body,fixture.name);
+  assert.ok(!('title' in catalogAt(latestCatalogRevision).letters[fixture.name]),fixture.name);
+  for(const [action,reply] of choices){
+   const next=decide(state,state.current,action,reply);
+   assert.equal(next.catalogRevision,latestCatalogRevision);
+   assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action],fixture.name);
+   assert.deepEqual(restore(JSON.stringify(next)),next);
+  }
+  let fresh=newGame(6271,latestCatalogRevision);
+  for(let i=0;i<1200&&fresh.current!==fixture.name&&!fresh.current.startsWith('season/');i++)fresh=decide(fresh,fresh.current,'approve');
+  if(fresh.current===fixture.name)assert.deepEqual(currentDocument(fresh).body,documents[fixture.name].body,fixture.name);
  }
 });
 test('catalog23 duet remembers six real choices; old starts and ambiguous histories keep the static letter',()=>{
