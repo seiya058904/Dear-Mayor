@@ -15,6 +15,7 @@ import fixtures from './fixtures/catalog-21-audit-saves.json' with {type:'json'}
 import oldStreams from './fixtures/catalog-1-21-render-streams.json' with {type:'json'};
 import editorial22 from './fixtures/catalog-22-editorial-saves.json' with {type:'json'};
 import editorial23 from './fixtures/catalog-23-editorial-saves.json' with {type:'json'};
+import editorial24 from './fixtures/catalog-24-editorial-saves.json' with {type:'json'};
 import type {Action,GameState} from '../src/game/types';
 import {impactReport} from '../scripts/content-impact';
 
@@ -41,11 +42,11 @@ test('catalog23 editorial keeps every catalog22 stream and the 18 pre-edit pendi
   }
  }
 });
-test('catalog24 third-batch rewrite keeps the 32 catalog23 pending letters whole and gives new starts the new prose',()=>{
- assert.equal(createHash('sha256').update(readFileSync('tests/fixtures/catalog-23-editorial-saves.json')).digest('hex'),readFileSync('tests/fixtures/catalog-23-editorial-saves.sha256','utf8').trim());
- assert.equal(editorial23.pending.length,32);
- for(const fixture of editorial23.pending){
-  const state=restore(JSON.stringify(fixture.state));assert.equal(state.catalogRevision,23,fixture.name);
+for(const [label,editorial,revision,count,file] of [['third-batch rewrite (catalog 24)',editorial23,23,32,'catalog-23-editorial-saves'],['fourth-batch rewrite (catalog 25)',editorial24,24,30,'catalog-24-editorial-saves']] as const)test(`${label} keeps ${count} pending letters whole and gives new starts the new prose`,()=>{
+ assert.equal(createHash('sha256').update(readFileSync(`tests/fixtures/${file}.json`)).digest('hex'),readFileSync(`tests/fixtures/${file}.sha256`,'utf8').trim());
+ assert.equal(editorial.pending.length,count);
+ for(const fixture of editorial.pending){
+  const state=restore(JSON.stringify(fixture.state));assert.equal(state.catalogRevision,revision,fixture.name);
   assert.deepEqual(currentDocument(state),fixture.document,fixture.name);
   assert.notDeepEqual(documents[fixture.name].body,fixture.document.body,fixture.name);
   assert.ok(!('title' in catalogAt(latestCatalogRevision).letters[fixture.name]),fixture.name);
