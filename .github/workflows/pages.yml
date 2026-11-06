@@ -37,7 +37,29 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - run: npm run check
+      - run: npx tsc -b
+  unit:
+    name: unit (${{ matrix.shard }}/4)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # Reuse the npm test file list; Node distributes the files across all four shards.
+      - name: Run unit test shard
+        run: |
+          test_command=$(node -p "require('./package.json').scripts.test")
+          [[ "$test_command" == "tsx --test "* ]] || { echo "Unexpected test command"; exit 1; }
+          read -ra test_files <<< "${test_command#tsx --test }"
+          npx tsx --test --test-shard=${{ matrix.shard }}/4 "${test_files[@]}"
   quick:
     name: quick (${{ matrix.name }})
     if: github.event_name == 'push' || github.event_name == 'pull_request'
@@ -150,17 +172,19 @@ jobs:
         with:
           path: dist
   verify:
-    needs: [check, quick, full]
+    needs: [check, unit, quick, full]
     if: always()
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
       - env:
           CHECK: ${{ needs.check.result }}
+          UNIT: ${{ needs.unit.result }}
           QUICK: ${{ needs.quick.result }}
           FULL: ${{ needs.full.result }}
         run: |
           test "$CHECK" = success
+          test "$UNIT" = success
           case "$QUICK" in success|skipped) ;; *) exit 1;; esac
           case "$FULL" in success|skipped) ;; *) exit 1;; esac
           test "$QUICK" = success -o "$FULL" = success
