@@ -5,7 +5,7 @@ test('two pages preserve the committed branch and allow explicit reload',async({
  const other=await context.newPage();await other.goto('./');
  for(let i=0;i<20;i++){
   await page.getByRole('button',{name:'批准',exact:true}).click();
-  await expect.poll(()=>page.evaluate(k=>JSON.parse(localStorage.getItem(k)!).history.length,key)).toBe(i+1);
+  await expect.poll(()=>page.evaluate(k=>JSON.parse(localStorage.getItem(k) ?? 'null')?.history.length ?? 0,key)).toBe(i+1);
   await expect(page.locator('.decisions')).toHaveAttribute('aria-busy','false');
  }
  const before=await page.evaluate(k=>localStorage.getItem(k),key);
@@ -15,7 +15,7 @@ test('two pages preserve the committed branch and allow explicit reload',async({
  expect(await page.evaluate(k=>localStorage.getItem(k),key)).toBe(before);
  await other.getByRole('button',{name:'载入最新进度'}).click();
  await other.getByRole('button',{name:'批准',exact:true}).click();
- await expect.poll(()=>other.evaluate(k=>JSON.parse(localStorage.getItem(k)!).history.length,key)).toBe(21);
+ await expect.poll(()=>other.evaluate(k=>JSON.parse(localStorage.getItem(k) ?? 'null')?.history.length ?? 0,key)).toBe(21);
 });
 test('simultaneous pages serialize saves and reject one stale writer',async({context,page})=>{
  await page.goto('./');const other=await context.newPage();await other.goto('./');
