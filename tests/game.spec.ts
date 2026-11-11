@@ -16,6 +16,7 @@ test("real decisions, cancel, duplicate lock, reload, restart and 20 continuous 
     .locator(".petition")
     .evaluate((e) => Promise.all(e.getAnimations().map((a) => a.finished)));
   await expect(page.locator("h1")).toHaveText("桥梁修缮请愿");
+  await expect(page.locator(".decision-help")).toBeHidden();
   if (process.env.QA_SCREENSHOTS)
     await page.screenshot({
       path: path.join(process.env.QA_SCREENSHOTS, "desktop.png"),
@@ -112,6 +113,14 @@ for (const viewport of [
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("./");
     await page.evaluate(() => document.fonts.ready);
+    const help=page.locator('.decision-help');
+    if(viewport.width<1200){
+      await expect(help).toBeVisible();
+      await expect(help).toHaveText('搁置即不回复、不办理；此信不会留待稍后处理。');
+      const hint=await help.boundingBox(),buttons=await page.locator('.decisions').boundingBox();
+      expect(hint!.y+hint!.height).toBeLessThanOrEqual(buttons!.y);
+      await expect(page.getByRole('button',{name:'搁置',exact:true})).toHaveAccessibleDescription(await help.innerText());
+    }else await expect(help).toBeHidden();
     expect(
       await page.evaluate(
         () => document.documentElement.scrollWidth <= innerWidth,

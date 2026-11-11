@@ -78,7 +78,7 @@ Approval, rejection, silence, and specific instructions are tracked separately. 
     </td>
     <td width="50%" valign="top">
       <h3>🧩 Consequences That Return</h3>
-      <p>Each storyline unfolds through four experienced stages. Eight relationships now carry exact memories of approval, refusal, silence, or each of the three instructions into a later letter.</p>
+      <p>Each storyline unfolds through four experienced stages. Selected later letters remember approval, refusal, silence, or the exact instruction you chose—including the early bridge storyline.</p>
     </td>
   </tr>
   <tr>

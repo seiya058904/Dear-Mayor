@@ -1,11 +1,12 @@
 import type { Action } from "../game/types";
+export const deferDescription = "搁置即不回复、不办理；此信不会留待稍后处理。";
 export const actions: { id: Action; label: string; description?: string }[] = [
   { id: "approve", label: "批准" },
   { id: "reject", label: "不批准" },
   {
     id: "defer",
     label: "搁置",
-    description: "不回复、不办理；这与正式驳回不同。",
+    description: deferDescription,
   },
   { id: "written_reply", label: "批示回复" },
 ];

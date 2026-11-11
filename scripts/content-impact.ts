@@ -35,30 +35,45 @@ export function impactReport(revision=latestCatalogRevision){
  });
  // Reach every static node through six uniform policies. Observe actual documents,
  // decisions, gate dates and rule insertion, then restore is separately tested.
- const seen=new Set<string>(),evidence:unknown[]=[];
+ const seen=new Set<string>(),evidence:{source:string;target:string;action:Action;reply:number|null;sourceDay:number;targetDay:number;sourceResult:string;visibleText:string}[]=[];
+ function recordEcho(s:GameState,rule:typeof rules[number]){
+  const source=s.history.find(h=>h.id===rule.source);
+  // A branch-specific source is legitimately absent on sibling routes.
+  if(!source)return false;
+  const variant=rule.variants.find(x=>x.action===source.action&&x.reply===(source.reply??null)&&x.sourceResult===source.result);
+  if(!variant||!currentDocument(s).body.join('').includes(variant.draft))throw Error(`Missing runtime echo ${rule.target}/${source.action}/${source.reply??'-'}`);
+  evidence.push({source:source.id,target:s.current,action:source.action,reply:source.reply??null,sourceDay:source.day,targetDay:s.day,sourceResult:source.result,visibleText:variant.draft});
+  return true;
+ }
  for(let v=0;v<6;v++){
   let s=newGame(6271,revision);
   for(let n=0;n<1200&&!s.current.startsWith('season/');n++){
    const doc=currentDocument(s);seen.add(doc.id);
    const rule=rules.find(r=>r.target===doc.id);
-   if(rule){
-    const source=s.history.find(h=>h.id===rule.source)!;
-    const variant=rule.variants.find(x=>x.action===source.action&&x.reply===(source.reply??null)&&x.sourceResult===source.result)!;
-    if(!variant||!doc.body.join('').includes(variant.draft))throw Error(`Missing runtime echo ${rule.target}/${v}`);
-    evidence.push({source:source.id,target:doc.id,action:source.action,reply:source.reply??null,sourceDay:source.day,targetDay:s.day,sourceResult:source.result,visibleText:variant.draft});
-   }
+   if(rule)recordEcho(s,rule);
    if(catalog.letters[doc.id]?.requires&&eligibleDay(doc.id,s)>s.day)throw Error(`Premature ${doc.id}`);
    const [action,reply]=outcomes[v];s=decide(s,s.current,action,reply,revision);
   }
  }
  if(seen.size!==Object.keys(catalog.letters).length)throw Error('Missing reachable nodes');
+ // Uniform policies skip bridge/approve on five routes. Reach that source first,
+ // then vary only its decision to verify every authored echo through the engine.
+ for(const rule of rules)for(const [action,reply] of outcomes){
+  if(evidence.some(e=>e.source===rule.source&&e.action===action&&e.reply===(reply??null)))continue;
+  let s=newGame(6271,revision);
+  for(let n=0;n<1200&&s.current!==rule.target&&!s.current.startsWith('season/');n++){
+   const atSource=s.current===rule.source;
+   s=decide(s,s.current,atSource?action:'approve',atSource?reply:undefined,revision);
+  }
+  if(s.current!==rule.target||!recordEcho(s,rule))throw Error(`Unreachable echo ${rule.source}/${action}/${reply??'-'}`);
+ }
  const summary={nodes:rows.length,visibleSourceNodes:rows.filter(r=>r.choices.some(c=>c.classification==='VISIBLE')).length,exactDelayedEchoSources:rules.length,sixWayDistinguishableSources:rows.filter(r=>r.distinctFutureChoiceSignatures===6).length,replyIndexVisibleSources:rows.filter(r=>r.choices.some(c=>c.replyIndexAffectsFuture===true)).length,visibleOutcomeCases:rows.flatMap(r=>r.choices).filter(c=>c.classification==='VISIBLE').length,hiddenOutcomeCases:rows.flatMap(r=>r.choices).filter(c=>c.classification==='HIDDEN_STATE_ONLY').length,saveOnlyOutcomeCases:rows.flatMap(r=>r.choices).filter(c=>c.classification==='SAVE_ONLY').length,unconditionalStandaloneNodes:rows.filter(r=>r.category==='standalone').length,conditionalNodes:rows.filter(r=>r.category==='conditional').length,runtimeReachableNodes:seen.size};
  const breakdown=Object.fromEntries(['category','stage','kind'].map(key=>[key,Object.fromEntries([...new Set(rows.map(r=>String(r[key as keyof typeof r])))].sort().map(value=>{const group=rows.filter(r=>String(r[key as keyof typeof r])===value);return [value,{nodes:group.length,visibleSources:group.filter(r=>r.choices.some(c=>c.classification==='VISIBLE')).length,visibleOutcomes:group.flatMap(r=>r.choices).filter(c=>c.classification==='VISIBLE').length}];}))]));
  return {revision,summary,breakdown,runtimeEvidence:evidence,rows};
 }
 if(process.argv[1]?.replaceAll('\\','/').endsWith('/content-impact.ts')){
  const before=impactReport(21),after=impactReport();
- const report={method:'Choice-specific forward dataflow at catalog/eligibleDay/decide/currentDocument/withCausalPilot read sites; six actual engine policies at seed 6271 verify reachability and every runtime fragment. VISIBLE may be an action-level branch shared by A/B/C; replyIndexAffectsFuture and distinctFutureChoiceSignatures explicitly distinguish exact instructions. exactDelayedEchoSources excludes the older stage1-to-reply result quotation. Shared all-action event gates are separate. HIDDEN_STATE_ONLY = chain facts differ with no later registered visible read; SAVE_ONLY = standalone outcome only stored. No claim of exhaustive natural-language causality or independent literary review.',baselineCommit:'804d09a45601db416843f5994ec5580ee5a0271c',before,after};
+ const report={method:'Choice-specific forward dataflow at catalog/eligibleDay/decide/currentDocument/withCausalPilot read sites; six actual engine policies at seed 6271 verify reachability, supplemented by source-specific decisions for branch-only echoes. Every runtime fragment is exercised. VISIBLE may be an action-level branch shared by A/B/C; replyIndexAffectsFuture and distinctFutureChoiceSignatures explicitly distinguish exact instructions. exactDelayedEchoSources excludes the older stage1-to-reply result quotation. Shared all-action event gates are separate. HIDDEN_STATE_ONLY = chain facts differ with no later registered visible read; SAVE_ONLY = standalone outcome only stored. No claim of exhaustive natural-language causality or independent literary review.',baselineCommit:'804d09a45601db416843f5994ec5580ee5a0271c',before,after};
  writeFileSync('docs/CONTENT-IMPACT.json',JSON.stringify(report,null,2)+'\n');
  writeFileSync('docs/CONTENT-IMPACT.md',['# 玩家可见因果覆盖（自动生成）','',report.method,'','基线目录 21；当前目录 '+after.revision+'。不是文字相似度统计，也不将普通重复署名算作后果。','', '| 指标 | 基线 | 当前 |','|---|---:|---:|',...Object.keys(after.summary).map(k=>`| ${k} | ${before.summary[k as keyof typeof before.summary]} | ${after.summary[k as keyof typeof after.summary]} |`),'','每封信的六结果、未来 ID/日程/文字与分类，以及类别/阶段/体裁分组见 JSON。共同行为引发的到信不冒充六路选择差异。正式拒绝与未回复各自计算。','', '## 实际引擎可见文字落点','','| source | target | action/reply | source day → target day | visible text |','|---|---|---|---|---|',...after.runtimeEvidence.map((e:any)=>`| ${e.source} | ${e.target} | ${e.action}/${e.reply??'-'} | ${e.sourceDay} → ${e.targetDay} | ${e.visibleText} |`),'','运行 `npm run content:impact` 重建。其他 seed、恢复、隔离、旧目录和混合版本由回归测试覆盖；此报告不代替真人长期试玩。',''].join('\n'));
  console.log(JSON.stringify({before:before.summary,after:after.summary},null,2));

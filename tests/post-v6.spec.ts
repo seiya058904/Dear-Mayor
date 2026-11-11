@@ -12,6 +12,7 @@ import editorial25 from './fixtures/catalog-25-editorial-saves.json' with {type:
 import editorial26 from './fixtures/catalog-26-editorial-saves.json' with {type:'json'};
 import editorial27a from './fixtures/catalog-27a-editorial-saves.json' with {type:'json'};
 import editorial27b from './fixtures/catalog-27b-editorial-saves.json' with {type:'json'};
+import bridge28 from './fixtures/catalog-28-bridge-saves.json' with {type:'json'};
 const key='dear-mayor:save:v1',rules=pilot.filter(r=>r.introducedRevision>=22);
 const choices=[['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const;
 for(const motion of ['reduce','no-preference'] as const)
@@ -75,7 +76,7 @@ for(const rule of rules)for(let v=0;v<6;v++)test(`post-V6 exact six-way offline 
  await expect.poll(()=>page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).history.at(-1).result,key)).toBe(doc.replies[2].result);
  await page.reload();await expect(page.locator('.save-warning')).toHaveCount(0);expect(errors).toEqual([]);
 });
-for(const [tag,fixture] of [...fixtures.map(f=>['a21',f]),...editorial22.pending.map(f=>['e22',f]),...editorial23.pending.filter((_,i)=>i%4===0).map(f=>['e23',f]),...editorial24.pending.filter((_,i)=>i%4===0).map(f=>['e24',f]),...editorial25.pending.filter((_,i)=>i%4===0).map(f=>['e25',f]),...editorial26.pending.filter((_,i)=>i%4===0).map(f=>['e26',f]),...editorial27a.pending.filter((_,i)=>i%4===0).map(f=>['e27a',f]),...editorial27b.pending.filter((_,i)=>i%4===0).map(f=>['e27b',f])] as [string,any][])test(`post-V6 old full pending ${tag} ${fixture.name}`,async({page})=>{
+for(const [tag,fixture] of [...fixtures.map(f=>['a21',f]),...editorial22.pending.map(f=>['e22',f]),...editorial23.pending.filter((_,i)=>i%4===0).map(f=>['e23',f]),...editorial24.pending.filter((_,i)=>i%4===0).map(f=>['e24',f]),...editorial25.pending.filter((_,i)=>i%4===0).map(f=>['e25',f]),...editorial26.pending.filter((_,i)=>i%4===0).map(f=>['e26',f]),...editorial27a.pending.filter((_,i)=>i%4===0).map(f=>['e27a',f]),...editorial27b.pending.filter((_,i)=>i%4===0).map(f=>['e27b',f]),...bridge28.pending.map(f=>['e28',f])] as [string,any][])test(`post-V6 old full pending ${tag} ${fixture.name}`,async({page})=>{
  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('./');const raw=JSON.stringify(fixture.state);
  await page.evaluate(({key,raw})=>localStorage.setItem(key,raw),{key,raw});await page.reload();
  await expect(page.locator('h1')).toHaveText(fixture.document.title);await expect(page.locator('.signature')).toHaveText(fixture.document.sender);

@@ -151,6 +151,9 @@ h1.long-title {
   text-align: right;
   max-width: 580px;
 }
+.decision-help {
+  display: none;
+}
 .decisions {
   position: absolute;
   left: 273px;
@@ -505,6 +508,17 @@ h1.long-title {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px 8px;
     margin: 12px auto;
+  }
+  .decision-help {
+    display: block;
+    max-width: 560px;
+    margin: 12px auto 0;
+    padding: 6px 12px;
+    color: var(--ink);
+    background: #fbe8ca;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
   }
   .decision,
   .decision-reject,

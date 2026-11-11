@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { currentDocument, decide, newGame } from "./game/engine";
 import { loadGame, saveGameWithLock, saveFailure } from "./game/persistence";
 import type { Action } from "./game/types";
-import { actions, DecisionButton } from "./components/DecisionButton";
+import { actions, DecisionButton, deferDescription } from "./components/DecisionButton";
 import { Petition } from "./components/Petition";
 import { ReplyNote } from "./components/ReplyNote";
 
@@ -188,6 +188,7 @@ export default function App() {
             day={game.day}
             departing={departing}
           />
+          <p className="decision-help">{deferDescription}</p>
           <nav
             className="decisions"
             aria-label="处理这份文书"

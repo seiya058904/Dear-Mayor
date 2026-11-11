@@ -1,0 +1,1101 @@
+{
+  "revision": 28,
+  "previousRulesSHA256": "2011ce11731c6377d1a62ed618654dcc03a2ceb7b7115c773df4a0411e0a5e80",
+  "streams": [
+    {
+      "variant": 0,
+      "count": 860,
+      "documentsSHA256": "4b8686e1e343d0fae7c5dc84803e394db9f99f85b31ce9e7c180eeb8986d612b",
+      "stateSHA256": "683b67580874b31af333d68087f05a59c9ed35528819deeebf64abf7a05149ca"
+    },
+    {
+      "variant": 1,
+      "count": 860,
+      "documentsSHA256": "e326a7a6557430d2b5cd607db37c78da1148b26f1b119933d7f22027d9032b4c",
+      "stateSHA256": "96f72bd8a907b6743785636ef40a28a351d796d9cfdff7a9ba7c4429d2d31a7d"
+    },
+    {
+      "variant": 2,
+      "count": 860,
+      "documentsSHA256": "69196d3640a52a714cc974f3dd24873c2159482fe5c2e0fa64d1f86e2737722c",
+      "stateSHA256": "9e5ef0adb607989ea6cd8e3598d58f77bea9955467ae0ddaef4759c5c55be369"
+    },
+    {
+      "variant": 3,
+      "count": 860,
+      "documentsSHA256": "bb21e132d4a51fcc0cde514df353574667db0599ea84bc245e5ef3c0d50cf2c1",
+      "stateSHA256": "f0db0d5fad07eb21f4b71f20ba577a13b69463b1be36ecba448140d3df8f2276"
+    },
+    {
+      "variant": 4,
+      "count": 860,
+      "documentsSHA256": "ca28aeb7be7699bf6525a3ac18a7fc13d485b1d6b4be7495be815652d82f4cf1",
+      "stateSHA256": "8f6b552d59e0c3ea4e73b14dacaf80f478d75f0d52f537ad090b2e72084188e0"
+    },
+    {
+      "variant": 5,
+      "count": 860,
+      "documentsSHA256": "5641c87d8c398dfdd5463b086b62e3b57211af23a7721666f06ab071d14aa615",
+      "stateSHA256": "4df508fbc39ce48c28a6b65a46aaa2193a9d0abe902d266107b727e96477c996"
+    }
+  ],
+  "pending": [
+    {
+      "name": "bridge/approve/0",
+      "state": {
+        "version": 2,
+        "contentVersion": 4,
+        "v3Length": 0,
+        "initialCatalogRevision": 28,
+        "catalogRevision": 28,
+        "v2Length": 0,
+        "legacyLength": 0,
+        "day": 3,
+        "inDay": 1,
+        "current": "bridge/approve",
+        "seed": 6271,
+        "history": [
+          {
+            "id": "bridge/start",
+            "day": 1,
+            "action": "approve",
+            "result": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/goose-feather-quill",
+            "day": 1,
+            "action": "approve",
+            "result": "笔具按实查看，玩笑不作向鹅或物主追责。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/teacup-left-handle",
+            "day": 1,
+            "action": "approve",
+            "result": "学徒课加入先问使用习惯，阿满的杯把按他自己选择摆。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/dawn-before-music",
+            "day": 1,
+            "action": "approve",
+            "result": "维奥收到普通请求，买面包时不再擅唱提神。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/start",
+            "day": 2,
+            "action": "approve",
+            "result": "镇里批准修钟，阿尔诺校正了钟锤，钟楼恢复十二响。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/garlic-parcel",
+            "day": 2,
+            "action": "approve",
+            "result": "寄件人补全住址后，蒜包按确认地址投递。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/long-rope-short-truth",
+            "day": 2,
+            "action": "approve",
+            "result": "存放询问先核实际车况与范围，夸口不作已成约。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/neighbor-wharf-change",
+            "day": 2,
+            "action": "approve",
+            "result": "双方联络同意按新约改日，实际各项交付另核清。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/start",
+            "day": 3,
+            "action": "approve",
+            "result": "集市给薄荷设了拴绳桩，托比负责看管。",
+            "nextCatalogRevision": 28
+          }
+        ],
+        "pending": [
+          {
+            "id": "clock/approve",
+            "due": 4,
+            "order": 5
+          },
+          {
+            "id": "goat/approve",
+            "due": 5,
+            "order": 9
+          }
+        ],
+        "started": [
+          "bridge",
+          "clock",
+          "goat"
+        ],
+        "readDaily": [
+          "town/goose-feather-quill",
+          "town/teacup-left-handle",
+          "town/dawn-before-music",
+          "town/garlic-parcel",
+          "town/long-rope-short-truth",
+          "town/neighbor-wharf-change"
+        ],
+        "facts": {
+          "bridge": {
+            "branch": "approve",
+            "lastResult": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。",
+            "lastDay": 1
+          },
+          "clock": {
+            "branch": "approve",
+            "lastResult": "镇里批准修钟，阿尔诺校正了钟锤，钟楼恢复十二响。",
+            "lastDay": 2
+          },
+          "goat": {
+            "branch": "approve",
+            "lastResult": "集市给薄荷设了拴绳桩，托比负责看管。",
+            "lastDay": 3
+          }
+        },
+        "seasonal": 0
+      },
+      "document": {
+        "title": "新桥的一声咳嗽",
+        "body": [
+          "桥板换好了，面粉车到了桥头却不敢走。车夫说以前总咳嗽一声，如今太安静。我已经上桥跺了两下，总不能天天替桥作证。能在桥头挂块验过的木牌吗？写清能走什么车，谁问我就指给谁看。"
+        ],
+        "results": {
+          "approve": "桥头挂上验桥木牌，玛塔不必再跳舞作证。",
+          "reject": "木牌未获批准，工匠轮流口头说明验桥结果。",
+          "defer": "木牌申请未获回音，车夫暂时先卸一袋面粉再过桥。"
+        },
+        "replies": [
+          {
+            "text": "请商队的空车先走一趟。",
+            "result": "商队空车示范过桥，围观者终于肯跟着走。"
+          },
+          {
+            "text": "让钟匠在木牌上刻验收日期。",
+            "result": "钟匠刻好了日期，坚称这次没有多刻一天。"
+          },
+          {
+            "text": "把验桥记录放在渡口供人翻阅。",
+            "result": "验桥记录放在渡口，大家按着手印读过。"
+          }
+        ],
+        "id": "bridge/approve",
+        "sender": "北渡口木匠行会",
+        "chain": "bridge",
+        "stage": 2,
+        "kind": "letter"
+      }
+    },
+    {
+      "name": "bridge/continuation/0",
+      "state": {
+        "version": 2,
+        "contentVersion": 4,
+        "v3Length": 0,
+        "initialCatalogRevision": 28,
+        "catalogRevision": 28,
+        "v2Length": 0,
+        "legacyLength": 0,
+        "day": 5,
+        "inDay": 2,
+        "current": "bridge/continuation",
+        "seed": 6271,
+        "history": [
+          {
+            "id": "bridge/start",
+            "day": 1,
+            "action": "approve",
+            "result": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/goose-feather-quill",
+            "day": 1,
+            "action": "approve",
+            "result": "笔具按实查看，玩笑不作向鹅或物主追责。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/teacup-left-handle",
+            "day": 1,
+            "action": "approve",
+            "result": "学徒课加入先问使用习惯，阿满的杯把按他自己选择摆。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/dawn-before-music",
+            "day": 1,
+            "action": "approve",
+            "result": "维奥收到普通请求，买面包时不再擅唱提神。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/start",
+            "day": 2,
+            "action": "approve",
+            "result": "镇里批准修钟，阿尔诺校正了钟锤，钟楼恢复十二响。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/garlic-parcel",
+            "day": 2,
+            "action": "approve",
+            "result": "寄件人补全住址后，蒜包按确认地址投递。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/long-rope-short-truth",
+            "day": 2,
+            "action": "approve",
+            "result": "存放询问先核实际车况与范围，夸口不作已成约。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/neighbor-wharf-change",
+            "day": 2,
+            "action": "approve",
+            "result": "双方联络同意按新约改日，实际各项交付另核清。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/start",
+            "day": 3,
+            "action": "approve",
+            "result": "集市给薄荷设了拴绳桩，托比负责看管。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bridge/approve",
+            "day": 3,
+            "action": "approve",
+            "result": "桥头挂上验桥木牌，玛塔不必再跳舞作证。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/abbot-empty-seat",
+            "day": 3,
+            "action": "approve",
+            "result": "接待处照实转告了来客，空椅子没人给它备茶，也没人向它行礼。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/audience-knows-ending",
+            "day": 3,
+            "action": "approve",
+            "result": "开场说明可加，观众被告知不提前喊未演情节。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "ducks/start",
+            "day": 4,
+            "action": "approve",
+            "result": "午后留了鸭群过街时段，贝拉负责清扫。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/approve",
+            "day": 4,
+            "action": "approve",
+            "result": "面包店获准补写招牌，修好的钟保持十二响。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/letter-to-monday",
+            "day": 4,
+            "action": "approve",
+            "result": "原件退给了发信人，收信人和日期两栏都空着，等他自己填。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/watch-whistle-private-test",
+            "day": 4,
+            "action": "approve",
+            "result": "试音限核准训练处并先作必要说明，不作真实警报。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bread/start",
+            "day": 5,
+            "action": "approve",
+            "result": "彼得获准办蘸汤试吃，面包终于被当作食物。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/approve",
+            "day": 5,
+            "action": "approve",
+            "result": "薄荷只在上午短时留在集市，午后回牧场。",
+            "nextCatalogRevision": 28
+          }
+        ],
+        "pending": [
+          {
+            "id": "ducks/approve",
+            "due": 6,
+            "order": 13
+          },
+          {
+            "id": "clock/continuation",
+            "due": 6,
+            "order": 14
+          },
+          {
+            "id": "bread/approve",
+            "due": 7,
+            "order": 17
+          },
+          {
+            "id": "goat/continuation",
+            "due": 7,
+            "order": 18
+          }
+        ],
+        "started": [
+          "bridge",
+          "clock",
+          "goat",
+          "ducks",
+          "bread"
+        ],
+        "readDaily": [
+          "town/goose-feather-quill",
+          "town/teacup-left-handle",
+          "town/dawn-before-music",
+          "town/garlic-parcel",
+          "town/long-rope-short-truth",
+          "town/neighbor-wharf-change",
+          "town/abbot-empty-seat",
+          "town/audience-knows-ending",
+          "town/letter-to-monday",
+          "town/watch-whistle-private-test"
+        ],
+        "facts": {
+          "bridge": {
+            "branch": "approve",
+            "lastResult": "桥头挂上验桥木牌，玛塔不必再跳舞作证。",
+            "lastDay": 3
+          },
+          "clock": {
+            "branch": "approve",
+            "lastResult": "面包店获准补写招牌，修好的钟保持十二响。",
+            "lastDay": 4
+          },
+          "goat": {
+            "branch": "approve",
+            "lastResult": "薄荷只在上午短时留在集市，午后回牧场。",
+            "lastDay": 5
+          },
+          "ducks": {
+            "branch": "approve",
+            "lastResult": "午后留了鸭群过街时段，贝拉负责清扫。",
+            "lastDay": 4
+          },
+          "bread": {
+            "branch": "approve",
+            "lastResult": "彼得获准办蘸汤试吃，面包终于被当作食物。",
+            "lastDay": 5
+          }
+        },
+        "seasonal": 0
+      },
+      "document": {
+        "title": "桥边长出的花",
+        "body": [
+          "桥头石缝冒出一丛黄花，走桥的、去渡口的都停下来看看。贝拉说比路牌还管用，我说路不能修成花盆。我们想在岸边不挡路的地方留块小花地，由她和行会照料，您能许吗？卸货的地方一寸不占。"
+        ],
+        "results": {
+          "approve": "岸边留下小花地，通行路面没有缩窄。",
+          "reject": "花地申请被拒，贝拉把花移进自家旧陶盆。",
+          "defer": "花地未获答复，贝拉只替石缝里的花浇水。"
+        },
+        "replies": [
+          {
+            "text": "留花地，但不能占用卸货处。",
+            "result": "小花地避开卸货处，商队也来浇水。"
+          },
+          {
+            "text": "把花移到渡船候船棚。",
+            "result": "花移到候船棚，等船的人认得了贝拉。"
+          },
+          {
+            "text": "请孩子画下花，原处不再栽种。",
+            "result": "孩子画下石缝黄花，岸边保留原来的路宽。"
+          }
+        ],
+        "id": "bridge/continuation",
+        "sender": "北渡口木匠行会",
+        "chain": "bridge",
+        "stage": 3,
+        "kind": "letter"
+      }
+    },
+    {
+      "name": "bridge/finale/0",
+      "state": {
+        "version": 2,
+        "contentVersion": 4,
+        "v3Length": 0,
+        "initialCatalogRevision": 28,
+        "catalogRevision": 28,
+        "v2Length": 0,
+        "legacyLength": 0,
+        "day": 7,
+        "inDay": 3,
+        "current": "bridge/finale",
+        "seed": 6271,
+        "history": [
+          {
+            "id": "bridge/start",
+            "day": 1,
+            "action": "approve",
+            "result": "镇里批准修桥，玛塔带工匠换掉了腐木，新桥面已经验过。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/goose-feather-quill",
+            "day": 1,
+            "action": "approve",
+            "result": "笔具按实查看，玩笑不作向鹅或物主追责。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/teacup-left-handle",
+            "day": 1,
+            "action": "approve",
+            "result": "学徒课加入先问使用习惯，阿满的杯把按他自己选择摆。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/dawn-before-music",
+            "day": 1,
+            "action": "approve",
+            "result": "维奥收到普通请求，买面包时不再擅唱提神。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/start",
+            "day": 2,
+            "action": "approve",
+            "result": "镇里批准修钟，阿尔诺校正了钟锤，钟楼恢复十二响。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/garlic-parcel",
+            "day": 2,
+            "action": "approve",
+            "result": "寄件人补全住址后，蒜包按确认地址投递。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/long-rope-short-truth",
+            "day": 2,
+            "action": "approve",
+            "result": "存放询问先核实际车况与范围，夸口不作已成约。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/neighbor-wharf-change",
+            "day": 2,
+            "action": "approve",
+            "result": "双方联络同意按新约改日，实际各项交付另核清。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/start",
+            "day": 3,
+            "action": "approve",
+            "result": "集市给薄荷设了拴绳桩，托比负责看管。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bridge/approve",
+            "day": 3,
+            "action": "approve",
+            "result": "桥头挂上验桥木牌，玛塔不必再跳舞作证。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/abbot-empty-seat",
+            "day": 3,
+            "action": "approve",
+            "result": "接待处照实转告了来客，空椅子没人给它备茶，也没人向它行礼。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/audience-knows-ending",
+            "day": 3,
+            "action": "approve",
+            "result": "开场说明可加，观众被告知不提前喊未演情节。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "ducks/start",
+            "day": 4,
+            "action": "approve",
+            "result": "午后留了鸭群过街时段，贝拉负责清扫。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/approve",
+            "day": 4,
+            "action": "approve",
+            "result": "面包店获准补写招牌，修好的钟保持十二响。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/letter-to-monday",
+            "day": 4,
+            "action": "approve",
+            "result": "原件退给了发信人，收信人和日期两栏都空着，等他自己填。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/watch-whistle-private-test",
+            "day": 4,
+            "action": "approve",
+            "result": "试音限核准训练处并先作必要说明，不作真实警报。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bread/start",
+            "day": 5,
+            "action": "approve",
+            "result": "彼得获准办蘸汤试吃，面包终于被当作食物。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/approve",
+            "day": 5,
+            "action": "approve",
+            "result": "薄荷只在上午短时留在集市，午后回牧场。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bridge/continuation",
+            "day": 5,
+            "action": "approve",
+            "result": "岸边留下小花地，通行路面没有缩窄。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/librarian-reserved-page",
+            "day": 5,
+            "action": "approve",
+            "result": "书页复原，涅尔知道内容后自己选择是否听那一段。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "flag/start",
+            "day": 6,
+            "action": "approve",
+            "result": "卫兵获准换大队旗，路人能看清巡卫字样。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "ducks/approve",
+            "day": 6,
+            "action": "approve",
+            "result": "河岸设了固定食槽，鸭群跟着统一喂食时刻走。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/continuation",
+            "day": 6,
+            "action": "approve",
+            "result": "婚礼获准在正午后敲小铃，大钟照常报时。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/empty-pigeon-basket",
+            "day": 6,
+            "action": "approve",
+            "result": "期待更正，空篮按物主意愿取回。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "garden/start",
+            "day": 7,
+            "action": "approve",
+            "result": "镇里准许清理废墙碎片，留出公共小花地。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bread/approve",
+            "day": 7,
+            "action": "approve",
+            "result": "食堂借出小锅，晚到的人也吃上蘸汤面包。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/continuation",
+            "day": 7,
+            "action": "approve",
+            "result": "旧申诉获准补交，书记官重新核查事实。",
+            "nextCatalogRevision": 28
+          }
+        ],
+        "pending": [
+          {
+            "id": "flag/approve",
+            "due": 8,
+            "order": 21
+          },
+          {
+            "id": "ducks/continuation",
+            "due": 8,
+            "order": 22
+          },
+          {
+            "id": "clock/finale",
+            "due": 8,
+            "order": 23
+          },
+          {
+            "id": "garden/approve",
+            "due": 9,
+            "order": 25
+          },
+          {
+            "id": "bread/continuation",
+            "due": 9,
+            "order": 26
+          },
+          {
+            "id": "goat/finale",
+            "due": 9,
+            "order": 27
+          }
+        ],
+        "started": [
+          "bridge",
+          "clock",
+          "goat",
+          "ducks",
+          "bread",
+          "flag",
+          "garden"
+        ],
+        "readDaily": [
+          "town/goose-feather-quill",
+          "town/teacup-left-handle",
+          "town/dawn-before-music",
+          "town/garlic-parcel",
+          "town/long-rope-short-truth",
+          "town/neighbor-wharf-change",
+          "town/abbot-empty-seat",
+          "town/audience-knows-ending",
+          "town/letter-to-monday",
+          "town/watch-whistle-private-test",
+          "town/librarian-reserved-page",
+          "town/empty-pigeon-basket"
+        ],
+        "facts": {
+          "bridge": {
+            "branch": "approve",
+            "lastResult": "岸边留下小花地，通行路面没有缩窄。",
+            "lastDay": 5
+          },
+          "clock": {
+            "branch": "approve",
+            "lastResult": "婚礼获准在正午后敲小铃，大钟照常报时。",
+            "lastDay": 6
+          },
+          "goat": {
+            "branch": "approve",
+            "lastResult": "旧申诉获准补交，书记官重新核查事实。",
+            "lastDay": 7
+          },
+          "ducks": {
+            "branch": "approve",
+            "lastResult": "河岸设了固定食槽，鸭群跟着统一喂食时刻走。",
+            "lastDay": 6
+          },
+          "bread": {
+            "branch": "approve",
+            "lastResult": "食堂借出小锅，晚到的人也吃上蘸汤面包。",
+            "lastDay": 7
+          },
+          "flag": {
+            "branch": "approve",
+            "lastResult": "卫兵获准换大队旗，路人能看清巡卫字样。",
+            "lastDay": 6
+          },
+          "garden": {
+            "branch": "approve",
+            "lastResult": "镇里准许清理废墙碎片，留出公共小花地。",
+            "lastDay": 7
+          }
+        },
+        "seasonal": 0
+      },
+      "document": {
+        "title": "留给下一位木匠",
+        "body": [
+          "伊沃给旧木料编号，连修过的凳腿也写成桥梁之一。他说凳子撑过很多讨论，我只好让他把字写小点。我们想把巡查簿存渡口柜里，哪些能走、哪些还待修都按实情记。能借这格柜子吗？换人接手也知道去哪里查。"
+        ],
+        "results": {
+          "approve": "巡查簿存入渡口柜，下一位木匠可据实接手。",
+          "reject": "存簿请求未获批准，行会自留原本。",
+          "defer": "存簿没有回音，伊沃把它收在师傅的工具箱。"
+        },
+        "replies": [
+          {
+            "text": "一份存渡口，一份留工棚。",
+            "result": "渡口与工棚各存一份巡查簿，交接有据。"
+          },
+          {
+            "text": "请船夫每逢大雨添一页记录。",
+            "result": "船夫承诺雨后添页，簿子记下水位而非传闻。"
+          },
+          {
+            "text": "让伊沃教下一名学徒读这本簿。",
+            "result": "伊沃开始教小徒弟读簿，先解释凳腿为何不算桥。"
+          }
+        ],
+        "id": "bridge/finale",
+        "sender": "北渡口木匠行会",
+        "chain": "bridge",
+        "stage": 4,
+        "kind": "letter"
+      }
+    },
+    {
+      "name": "bridge/finale/1",
+      "state": {
+        "version": 2,
+        "contentVersion": 4,
+        "v3Length": 0,
+        "initialCatalogRevision": 28,
+        "catalogRevision": 28,
+        "v2Length": 0,
+        "legacyLength": 0,
+        "day": 7,
+        "inDay": 3,
+        "current": "bridge/finale",
+        "seed": 6271,
+        "history": [
+          {
+            "id": "bridge/start",
+            "day": 1,
+            "action": "reject",
+            "result": "镇里正式拒绝了修桥经费，玛塔暂时封住危段，请行人绕渡口。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/goose-feather-quill",
+            "day": 1,
+            "action": "reject",
+            "result": "代问未获安排，苔丝自行核常用工具。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/teacup-left-handle",
+            "day": 1,
+            "action": "reject",
+            "result": "加课未获安排，阿满直接告诉伙计自己的习惯。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/dawn-before-music",
+            "day": 1,
+            "action": "reject",
+            "result": "代转未获安排，艾达当面向乐师说明。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/start",
+            "day": 2,
+            "action": "reject",
+            "result": "修钟经费被正式拒绝，阿尔诺没有动用镇款修钟。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/garlic-parcel",
+            "day": 2,
+            "action": "reject",
+            "result": "补址问询未获安排，蒜包作为待核地址件留存。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/long-rope-short-truth",
+            "day": 2,
+            "action": "reject",
+            "result": "代看未获安排，格里特自行请熟手核。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/neighbor-wharf-change",
+            "day": 2,
+            "action": "reject",
+            "result": "改日被正式拒绝，邻镇须与镇厅另议原约如何实际办理。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/start",
+            "day": 3,
+            "action": "reject",
+            "result": "拴桩未获批准，托比把薄荷留在牧场。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bridge/reject",
+            "day": 3,
+            "action": "reject",
+            "result": "支梁未获批准，危段继续封闭，贝拉收回了门板。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/abbot-empty-seat",
+            "day": 3,
+            "action": "reject",
+            "result": "没批代转。索恩在每份邀请里自己写明会面几个人、在哪儿。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/audience-knows-ending",
+            "day": 3,
+            "action": "reject",
+            "result": "加说明被拒，洛洛按原节目演，不擅增观众处罚。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "ducks/start",
+            "day": 4,
+            "action": "reject",
+            "result": "鸭群过街申请被拒，贝拉带它们沿河绕行。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/reject",
+            "day": 4,
+            "action": "reject",
+            "result": "借日晷未获准，彼得自己用沙漏掌握炉时。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/letter-to-monday",
+            "day": 4,
+            "action": "reject",
+            "result": "退回的办法没批。露西安把这封信放进“信息不全”的匣子，没去猜。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/watch-whistle-private-test",
+            "day": 4,
+            "action": "reject",
+            "result": "试音安排被拒，布鲁诺暂停本次新哨试吹。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bread/start",
+            "day": 5,
+            "action": "reject",
+            "result": "试吃申请被拒，彼得仍照常卖黑面包。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/reject",
+            "day": 5,
+            "action": "reject",
+            "result": "木牌未获准，托比每天站在门边劝人。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bridge/continuation",
+            "day": 5,
+            "action": "reject",
+            "result": "花地申请被拒，贝拉把花移进自家旧陶盆。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/librarian-reserved-page",
+            "day": 5,
+            "action": "reject",
+            "result": "统一处理未获确认，奥黛先把原书情况如实告诉涅尔。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "flag/start",
+            "day": 6,
+            "action": "reject",
+            "result": "大旗未获批准，卫兵继续使用旧队旗。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "ducks/reject",
+            "day": 6,
+            "action": "reject",
+            "result": "开门未获准，贝拉与熟悉河路的邻人商量轮流引鸭。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "clock/continuation",
+            "day": 6,
+            "action": "reject",
+            "result": "婚礼借铃未获准，新人改在门口拍手致意。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "town/empty-pigeon-basket",
+            "day": 6,
+            "action": "reject",
+            "result": "退回方式未定，篮子暂存，不承诺鸽信业务。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "garden/start",
+            "day": 7,
+            "action": "reject",
+            "result": "花地请求被拒，艾琳把幼苗移回自家陶盆。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "bread/reject",
+            "day": 7,
+            "action": "reject",
+            "result": "印图未获准，彼得只在柜台口头说明。",
+            "nextCatalogRevision": 28
+          },
+          {
+            "id": "goat/continuation",
+            "day": 7,
+            "action": "reject",
+            "result": "补交请求被拒，原记录继续保留。",
+            "nextCatalogRevision": 28
+          }
+        ],
+        "pending": [
+          {
+            "id": "flag/reject",
+            "due": 8,
+            "order": 21
+          },
+          {
+            "id": "ducks/continuation",
+            "due": 8,
+            "order": 22
+          },
+          {
+            "id": "clock/finale",
+            "due": 8,
+            "order": 23
+          },
+          {
+            "id": "garden/reject",
+            "due": 9,
+            "order": 25
+          },
+          {
+            "id": "bread/continuation",
+            "due": 9,
+            "order": 26
+          },
+          {
+            "id": "goat/finale",
+            "due": 9,
+            "order": 27
+          }
+        ],
+        "started": [
+          "bridge",
+          "clock",
+          "goat",
+          "ducks",
+          "bread",
+          "flag",
+          "garden"
+        ],
+        "readDaily": [
+          "town/goose-feather-quill",
+          "town/teacup-left-handle",
+          "town/dawn-before-music",
+          "town/garlic-parcel",
+          "town/long-rope-short-truth",
+          "town/neighbor-wharf-change",
+          "town/abbot-empty-seat",
+          "town/audience-knows-ending",
+          "town/letter-to-monday",
+          "town/watch-whistle-private-test",
+          "town/librarian-reserved-page",
+          "town/empty-pigeon-basket"
+        ],
+        "facts": {
+          "bridge": {
+            "branch": "reject",
+            "lastResult": "花地申请被拒，贝拉把花移进自家旧陶盆。",
+            "lastDay": 5
+          },
+          "clock": {
+            "branch": "reject",
+            "lastResult": "婚礼借铃未获准，新人改在门口拍手致意。",
+            "lastDay": 6
+          },
+          "goat": {
+            "branch": "reject",
+            "lastResult": "补交请求被拒，原记录继续保留。",
+            "lastDay": 7
+          },
+          "ducks": {
+            "branch": "reject",
+            "lastResult": "开门未获准，贝拉与熟悉河路的邻人商量轮流引鸭。",
+            "lastDay": 6
+          },
+          "bread": {
+            "branch": "reject",
+            "lastResult": "印图未获准，彼得只在柜台口头说明。",
+            "lastDay": 7
+          },
+          "flag": {
+            "branch": "reject",
+            "lastResult": "大旗未获批准，卫兵继续使用旧队旗。",
+            "lastDay": 6
+          },
+          "garden": {
+            "branch": "reject",
+            "lastResult": "花地请求被拒，艾琳把幼苗移回自家陶盆。",
+            "lastDay": 7
+          }
+        },
+        "seasonal": 0
+      },
+      "document": {
+        "title": "留给下一位木匠",
+        "body": [
+          "伊沃给旧木料编号，连修过的凳腿也写成桥梁之一。他说凳子撑过很多讨论，我只好让他把字写小点。我们想把巡查簿存渡口柜里，哪些能走、哪些还待修都按实情记。能借这格柜子吗？换人接手也知道去哪里查。"
+        ],
+        "results": {
+          "approve": "巡查簿存入渡口柜，下一位木匠可据实接手。",
+          "reject": "存簿请求未获批准，行会自留原本。",
+          "defer": "存簿没有回音，伊沃把它收在师傅的工具箱。"
+        },
+        "replies": [
+          {
+            "text": "一份存渡口，一份留工棚。",
+            "result": "渡口与工棚各存一份巡查簿，交接有据。"
+          },
+          {
+            "text": "请船夫每逢大雨添一页记录。",
+            "result": "船夫承诺雨后添页，簿子记下水位而非传闻。"
+          },
+          {
+            "text": "让伊沃教下一名学徒读这本簿。",
+            "result": "伊沃开始教小徒弟读簿，先解释凳腿为何不算桥。"
+          }
+        ],
+        "id": "bridge/finale",
+        "sender": "北渡口木匠行会",
+        "chain": "bridge",
+        "stage": 4,
+        "kind": "letter"
+      }
+    }
+  ]
+}

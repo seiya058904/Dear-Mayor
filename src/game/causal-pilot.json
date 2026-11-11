@@ -396,5 +396,93 @@
     ],
     "introducedRevision": 23,
     "anchor": "我与弦芽又试了一支短曲。"
+  },
+  {
+    "source": "bridge/approve",
+    "target": "bridge/continuation",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "桥头挂上验桥木牌，玛塔不必再跳舞作证。",
+        "draft": "您准挂的验桥木牌还在，车夫读完就走，我总算不必再上桥跺脚。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "木牌未获批准，工匠轮流口头说明验桥结果。",
+        "draft": "木牌没获准，我和工匠轮流说明哪种车能过；说到午后，嗓子倒比桥先响起来。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "木牌申请未获回音，车夫暂时先卸一袋面粉再过桥。",
+        "draft": "木牌的申请还没回音，那位车夫仍先卸一袋面粉，再慢慢把车赶过去。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "商队空车示范过桥，围观者终于肯跟着走。",
+        "draft": "按批示先过桥的那辆空车，车夫如今还爱提起，说它那天载的是一桥头人的胆子。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "钟匠刻好了日期，坚称这次没有多刻一天。",
+        "draft": "钟匠照批示刻了验收日期，刻完又数一遍，说这回连桥也不能怪他多报一天。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "验桥记录放在渡口，大家按着手印读过。",
+        "draft": "渡口的验桥记录照批示摊开了，纸角全是手印，船夫只求大家翻前先放下面粉袋。"
+      }
+    ],
+    "introducedRevision": 29,
+    "anchor": "桥头石缝冒出一丛黄花，走桥的、去渡口的都停下来看看。"
+  },
+  {
+    "source": "bridge/continuation",
+    "target": "bridge/finale",
+    "variants": [
+      {
+        "action": "approve",
+        "reply": null,
+        "sourceResult": "岸边留下小花地，通行路面没有缩窄。",
+        "draft": "贝拉在您准许的岸边花地浇水，伊沃想给每朵花编号，被她赶回木料堆。"
+      },
+      {
+        "action": "reject",
+        "reply": null,
+        "sourceResult": "花地申请被拒，贝拉把花移进自家旧陶盆。",
+        "draft": "花地没获准，贝拉把花移进自家旧陶盆；伊沃画位置时，只好把她家门口也画上。"
+      },
+      {
+        "action": "defer",
+        "reply": null,
+        "sourceResult": "花地未获答复，贝拉只替石缝里的花浇水。",
+        "draft": "花地的申请还没回音，贝拉仍只给石缝里的花浇水，水壶经过时，伊沃赶紧收起簿子。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 0,
+        "sourceResult": "小花地避开卸货处，商队也来浇水。",
+        "draft": "按您的批示留出的花地避开了卸货处，商队来浇水，伊沃忙着提醒他们别把木料也浇了。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 1,
+        "sourceResult": "花移到候船棚，等船的人认得了贝拉。",
+        "draft": "花搬到候船棚后，等船的人见了贝拉都招呼她；伊沃说，花比他先认全了渡口的人。"
+      },
+      {
+        "action": "written_reply",
+        "reply": 2,
+        "sourceResult": "孩子画下石缝黄花，岸边保留原来的路宽。",
+        "draft": "孩子们照批示画下了石缝黄花，没再添种。伊沃把画夹在簿里，翻到那页便闻一闻。"
+      }
+    ],
+    "introducedRevision": 29,
+    "anchor": "他说凳子撑过很多讨论，我只好让他把字写小点。"
   }
 ]

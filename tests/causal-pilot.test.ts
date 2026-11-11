@@ -12,6 +12,8 @@ import v5Fixtures from './fixtures/catalog-20-saves.json';
 import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import historicalRenders from './fixtures/v5-historical-render-hashes.json';
+import bridge28 from './fixtures/catalog-28-bridge-saves.json';
+import { impactReport } from '../scripts/content-impact';
 
 const cases = design.cases.filter(entry => ['clock', 'cellarmusic', 'bluewash', 'readaloud'].includes(entry.chain));
 // Keep the exact published V5/V6 table contract; later rules have their own tests.
@@ -166,5 +168,109 @@ test('published V5 algorithm and V6 agree byte-for-byte across legal V5 paths',(
       state=decide(state,state.current,v<3?(['approve','reject','defer'] as const)[v]:'written_reply',v<3?undefined:v-3,20);
     }
     assert.equal(seen.size,2);
+  }
+});
+
+const bridgeRules=allRuntime.filter(rule=>rule.introducedRevision===29);
+const bridgeChoices=[['approve',undefined],['reject',undefined],['defer',undefined],['written_reply',0],['written_reply',1],['written_reply',2]] as const;
+
+test('catalog29 adds twelve exact bridge echoes without changing earlier rules or requests',()=>{
+  const hash=(value:unknown)=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
+  assert.equal(hash(allRuntime.filter(rule=>rule.introducedRevision<29)),bridge28.previousRulesSHA256);
+  assert.deepEqual(bridgeRules.map(rule=>[rule.source,rule.target]),[
+    ['bridge/approve','bridge/continuation'],['bridge/continuation','bridge/finale'],
+  ]);
+  for(const rule of bridgeRules){
+    assert.equal(rule.variants.length,6);
+    assert.equal(documents[rule.target].body[0].split(rule.anchor).length,2);
+    const rendered=new Set<string>();
+    for(const [index,[action,reply]] of bridgeChoices.entries()){
+      const variant=rule.variants[index],source=documents[rule.source];
+      assert.equal(variant.action,action);assert.equal(variant.reply,reply??null);
+      assert.equal(variant.sourceResult,action==='written_reply'?source.replies[reply!].result:source.results[action]);
+      for(const seed of [37,6271]){
+        let state=newGame(seed,29);
+        while(state.current!==rule.target){
+          assert.ok(!state.current.startsWith('season/'));
+          const atSource=state.current===rule.source;
+          state=decide(state,state.current,atSource?action:'approve',atSource?reply:undefined,29);
+        }
+        const doc=currentDocument(state),body=doc.body.join('');rendered.add(body);
+        assert.ok(body.includes(variant.draft));
+        for(const other of rule.variants.filter(v=>v!==variant))assert.ok(!body.includes(other.draft));
+        assert.deepEqual({...doc,body:documents[rule.target].body},documents[rule.target],'only the target prose changes');
+        assert.deepEqual(currentDocument(restore(JSON.stringify(state))),doc);
+        // Stored result, not the overwritten facts cache, identifies the choice.
+        assert.deepEqual(currentDocument({...state,facts:{}}),doc);
+        const missing={...state,history:state.history.filter(h=>h.id!==rule.source)};
+        assert.deepEqual(currentDocument(missing).body,documents[rule.target].body);
+      }
+    }
+    assert.equal(rendered.size,6,'all six choices leave distinct visible memories');
+  }
+});
+
+test('bridge flower memories work after every opening branch; plaque memories never leak into siblings',()=>{
+  const plaque=bridgeRules[0],flowers=bridgeRules[1];
+  for(const [opening,openingReply] of bridgeChoices)for(const [index,[action,reply]] of bridgeChoices.entries()){
+    let state=decide(newGame(6271,29),'bridge/start',opening,openingReply,29);
+    while(state.current!=='bridge/continuation'){
+      assert.ok(!state.current.startsWith('season/'));
+      state=decide(state,state.current,'approve',undefined,29);
+    }
+    const middle=currentDocument(state).body.join('');
+    if(opening==='approve')assert.ok(middle.includes(plaque.variants[0].draft));
+    else assert.deepEqual(currentDocument(state).body,documents['bridge/continuation'].body);
+    state=decide(state,state.current,action,reply,29);
+    while(state.current!=='bridge/finale')state=decide(state,state.current,'approve',undefined,29);
+    const doc=currentDocument(state);
+    assert.ok(doc.body.join('').includes(flowers.variants[index].draft));
+    assert.deepEqual(currentDocument(restore(JSON.stringify(state))),doc);
+  }
+});
+
+test('catalog28 bridge pending, six complete streams and mixed-version continuations retain their original words',()=>{
+  const bytes=readFileSync('tests/fixtures/catalog-28-bridge-saves.json');
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),readFileSync('tests/fixtures/catalog-28-bridge-saves.sha256','utf8').trim());
+  for(const row of bridge28.streams){
+    let state=newGame(6271,28),hash=createHash('sha256'),count=0;
+    const [action,reply]=bridgeChoices[row.variant];
+    while(!state.current.startsWith('season/')){
+      assert.ok(count++<1160);hash.update(JSON.stringify(currentDocument(state))+'\n');
+      state=decide(state,state.current,action,reply,28);
+    }
+    assert.equal(count,row.count);assert.equal(hash.digest('hex'),row.documentsSHA256);
+    assert.equal(createHash('sha256').update(JSON.stringify(state)).digest('hex'),row.stateSHA256);
+  }
+  for(const fixture of bridge28.pending){
+    const state=restore(JSON.stringify(fixture.state));
+    assert.deepEqual(currentDocument(state),fixture.document);
+    for(const [action,reply] of bridgeChoices){
+      let next=decide(state,state.current,action,reply);
+      assert.equal(next.catalogRevision,latestCatalogRevision);
+      assert.equal(next.history.at(-1)!.result,action==='written_reply'?fixture.document.replies[reply!].result:fixture.document.results[action]);
+      assert.deepEqual(restore(JSON.stringify(next)),next);
+      if(state.current==='bridge/finale')continue;
+      while(next.current!=='bridge/finale'){
+        assert.ok(!next.current.startsWith('season/'));
+        if(next.current==='bridge/continuation')assert.deepEqual(currentDocument(next).body,documents[next.current].body);
+        next=decide(next,next.current,'approve');
+      }
+      assert.deepEqual(currentDocument(next).body,documents[next.current].body);
+      assert.deepEqual(currentDocument(restore(JSON.stringify(next))),currentDocument(next));
+    }
+  }
+});
+
+test('causal coverage exercises all bridge plaque choices after reaching the approve-only source',()=>{
+  const report=impactReport(29);
+  assert.equal(report.summary.nodes,1160);
+  assert.equal(report.summary.runtimeReachableNodes,1160);
+  assert.equal(report.summary.visibleSourceNodes,93);
+  assert.equal(report.summary.sixWayDistinguishableSources,23);
+  for(const rule of bridgeRules){
+    const evidence=report.runtimeEvidence.filter(row=>row.source===rule.source);
+    assert.equal(evidence.length,6);
+    assert.deepEqual(new Set(evidence.map(row=>row.visibleText)),new Set(rule.variants.map(v=>v.draft)));
   }
 });
